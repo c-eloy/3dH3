@@ -167,7 +167,30 @@
 
 Three-form field-strengths are auxiliary in three dimensions and can be integrated out, giving rise to additional gaugings and contributions to the scalar potential, or equivalently leading to new terms in the embedding tensor (see ref.~\cite{Deger:2014ofa,Eloy:2021fhc} for explicit realisations in half-maximal supergravity). We want to generalize this to maximal supergravity. For a given $\E_{8(8)}$ consistent truncations of gauge group $G_{0}$, we ask the question whether it is possible to turn on additional components in the embedding tensor (corresponding to three-form degrees of freedom). If so, the new consistent truncation has gauging $G\supset G_{0}$. We first need to identify which components of the embedding tensor correspond to these degrees of freedom, and to count the number of singlets under $G_{0}$ within them. There will be at least one singlet, corresponding to the gauging of $G_{0}$ in the initial truncation. Any additional singlet would indicate additional parameters to play with, possibly leading to new vacua.
 
+\section{\texorpdfstring{${\rm AdS}_{3}\times S^{3}$}{AdS3xS3}: a proof of concept}
+We start by reproducing the analysis of ref.~\cite{Eloy:2021fhc} to prove the validity of our method. We consider reductions within the minimal ${\cal N}=(1,0)$ six-dimensional supergravity, leading to duality group $\SO(4,4)$ in three dimensions, from which the half-maximal cases ${\cal N}=(1,1)$ and ${\cal N}=(2,0)$ can be deduced (in those cases the duality group in three dimensions in $\SO(8,4)$).
+
+The coordinates $X^{[MN]}$ of the $\SO(p,q)$ exceptional field theory of ref.~\cite{Hohm:2017wtr} sit in the adjoint $\bm{28}$ of $\SO(4,4)$. Under $\SO(4,4)\rightarrow\SO(3,3)\times\R_{+}$, it decomposes into
+\begin{equation}
+  \begin{aligned}
+    \bm{28} &\longrightarrow \bm{6}_{2} \oplus \bm{1}_{0} \oplus \bm{15}_{0} \oplus \bm{6}_{-2},\\
+    X^{MN} &\longrightarrow \{Y^{A0},Y^{0}{}_{0},Y^{[AB]},Y^{A}{}_{0}\}.
+  \end{aligned}
+\end{equation}
+Further decomposing $\SO(4,4)\rightarrow\SO(3,3)\times\R_{+}\rightarrow\SL(3)\times\R_{+}\times\R_{+}$, we get
+\begin{equation}
+  \bm{28} \longrightarrow \left[\bm{\bar{3}}_{2,2} \oplus \bm{3}_{-2,2}\right] \oplus \bm{1}_{0,0} \oplus \left[\bm{3}_{4,0} \oplus \bm{1}_{0,0} \oplus \bm{8}_{0,0} \oplus \bm{\bar{3}}_{-4,0}\right] \oplus \left[\bm{\bar{3}}_{2,-2} \oplus \bm{3}_{-2,-2}\right].
+\end{equation}
+They are two physically different possibilities to embed the internal coordinates in $X^{MN}$, corresponding to the two different half-maximal supergravities in six dimensions:\footnote{The choices are equivalent in $\SO(4,4)$ (through triality), but different once embedded in $\SO(8,4)$.}
+\begin{equation}
+  \begin{aligned}
+    {\cal N}=(1,1):&\qquad y^{m}=Y^{m0}\quad {\rm in}\quad  \bm{\bar{3}}_{2,2} \subset \bm{6}_{2},\\
+    {\cal N}=(2,0):&\qquad \tilde{y}_{m}=\varepsilon_{mnp}Y^{np}\quad {\rm in}\quad  \bm{3}_{4,0} \subset \bm{15}_{0}.
+  \end{aligned}
+\end{equation}
+
 \section{Truncations within \texorpdfstring{$\SL(8)_{\rm IIB}\subset\E_{8(8)}$}{SL(8)IIB in E8(8)}}
+We analyse here whether the type IIB $S^{7}$ truncation of ref.~\cite{Galli:2022idq} admit additional gaugings.
 
 \paragraph{10d origin of the three-forms} Both the 10d two-forms $\hat{C}_{\hat\mu\hat\nu}^{\alpha}$ ($\alpha\in{1,2}$ for $\SL(2)$ doublet) and the 10d four-form $\hat{C}_{\hat\mu\hat\nu\hat\rho\hat\sigma}$ give two-form potentials $C^{\alpha}_{\mu\nu}$ and $C_{\mu\nu mn}$ in 3d ($m,n\in\llbracket1,7\rrbracket$ are $\SL(7)$ indices). Their three-form field-strengths are dual to purely internal seven-form and five-form field-strengths $H_{(7)}^{\alpha}$ and $H_{(5)}$, respectively. We note $C_{(6)}^{\alpha}$ and $C_{(4)}$ the six-form and four-form potentials from which they derive.
 
@@ -187,17 +210,23 @@ whereas the internal coordinates are in the representation $\bm{\bar{28}}_{2}$.
 
 \ce{Give further details?}
 
-\paragraph{\boldmath $H_{(7)}^{\alpha}$ and $H_{(5)}$ in $\SL(8)_{\rm IIB}$} Now that we know what are the $\SL(8)_{\rm IIB}\times\R_{+}$ representation corresponding to the internal coordinates, $C_{(6)}^{\alpha}$ and $C_{(4)}$, we can infer those of $H_{(7)}^{\alpha}$ and $H_{(5)}$:
-\begin{equation}
+\paragraph{\boldmath $H_{(7)}^{\alpha}$ and $H_{(5)}$ in $\SL(8)_{\rm IIB}$} Now that we know what are the $\SL(8)_{\rm IIB}\times\R_{+}$ representations corresponding to the internal coordinates, $C_{(6)}^{\alpha}$ and $C_{(4)}$, we can infer those of $H_{(7)}^{\alpha}$ and $H_{(5)}$:
+\begin{equation}  \label{eq:H7H5inIIB}
   \begin{aligned}
     H_{(7)}^{\alpha} & \subset \bm{\bar{28}}_{2} \otimes \left(\bm{8}_{3}\oplus\bm{63}_{0}\right) = \bm{\bar{8}}_{5} \oplus \bm{\bar{216}}_{5} \oplus \bm{\bar{28}}_{2} \oplus \bm{\bar{36}}_{2} \oplus \bm{\bar{420}}_{2} \oplus \bm{\bar{1280}}_{2}, \\
     H_{(5)} & \subset \bm{\bar{28}}_{2} \otimes \bm{56}_{1} = \bm{8}_{3} \oplus \bm{216}_{3} \oplus \bm{1344}_{3}.
   \end{aligned}
 \end{equation}
 
-\paragraph{\boldmath $H_{(7)}^{\alpha}$ and $H_{(5)}$ in the embedding tensor}
-
-\ce{Give decomposition of the embedding tensor to identify components, and count singlets.}
+\paragraph{\boldmath $H_{(7)}^{\alpha}$ and $H_{(5)}$ in the embedding tensor} Under $\E_{8(8)}\rightarrow\SL(9)\rightarrow\SL(8)_{\rm IIB}\times\R_{+}$, the $\E_{8(8)}$ embedding tensor decomposes as
+\begin{equation}
+  \begin{aligned}
+    \bm{3875} &\longrightarrow {\color{mydarkorange}\bm{80}} \oplus \bm{240} \oplus {\color{mydarkorange}\bm{\bar{240}}} \oplus \bm{1050} \oplus {\color{mydarkorange}\bm{\bar{1050}}} \oplus {\color{mydarkorange}\bm{1215}} \\
+    &\longrightarrow \left[{\color{mydarkorange}\bm{8}_{3}} \oplus \bm{1}_{0} \oplus \bm{63}_{0} \oplus \bm{\bar{8}}_{-3}\right] \oplus \left[\bm{168}_{1} \oplus \bm{28}_{-2} \oplus \bm{36}_{-2} \oplus \bm{8}_{-5}\right] \oplus \left[{\color{mydarkorange}\bm{\bar{8}}_{5}} \oplus {\color{mydarkorange}\bm{\bar{28}}_{2}} \oplus {\color{mydarkorange}\bm{\bar{36}}_{2}} \oplus \bm{\bar{168}}_{-1} \right] \\
+    &\quad \oplus \left[\bm{70}_{4} \oplus \bm{56}_{1} \oplus \bm{504}_{1} \oplus \bm{420}_{-2}\right] \oplus \left[{\color{mydarkorange}\bm{\bar{420}}_{2}} \oplus \bm{\bar{56}}_{-1} \oplus \bm{\bar{504}}_{-2}\oplus \bm{\bar{70}}_{-4} \right] \oplus \left[{\color{mydarkorange}\bm{216}_{3}} \oplus \bm{63}_{0} \oplus \bm{720}_{0} \oplus \bm{\bar{216}}_{-3}\right].
+  \end{aligned}
+\end{equation}
+The coloured representations are those that can originate from $H_{(7)}^{\alpha}$ and $H_{(5)}$, \textit{i.e.} those in common with eq.~\eqref{eq:H7H5inIIB}. Among them, only the $\bm{\bar{36}}_{2}$ features a singlet under $\SO(8)_{\rm IIB}$. This is the singlet used in ref.~\cite{Galli:2022idq} to support the $S^{7}$ truncation, which thus do not admit further gaugings.
 
 \bibliography{ref}
 
