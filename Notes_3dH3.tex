@@ -168,26 +168,78 @@
 Three-form field-strengths are auxiliary in three dimensions and can be integrated out, giving rise to additional gaugings and contributions to the scalar potential, or equivalently leading to new terms in the embedding tensor (see ref.~\cite{Deger:2014ofa,Eloy:2021fhc} for explicit realisations in half-maximal supergravity). We want to generalize this to maximal supergravity. For a given $\E_{8(8)}$ consistent truncations of gauge group $G_{0}$, we ask the question whether it is possible to turn on additional components in the embedding tensor (corresponding to three-form degrees of freedom). If so, the new consistent truncation has gauging $G\supset G_{0}$. We first need to identify which components of the embedding tensor correspond to these degrees of freedom, and to count the number of singlets under $G_{0}$ within them. There will be at least one singlet, corresponding to the gauging of $G_{0}$ in the initial truncation. Any additional singlet would indicate additional parameters to play with, possibly leading to new vacua.
 
 \section{\texorpdfstring{${\rm AdS}_{3}\times S^{3}$}{AdS3xS3}: a proof of concept}
-We start by reproducing the analysis of ref.~\cite{Eloy:2021fhc} to prove the validity of our method. We consider reductions within the minimal ${\cal N}=(1,0)$ six-dimensional supergravity, leading to duality group $\SO(4,4)$ in three dimensions, from which the half-maximal cases ${\cal N}=(1,1)$ and ${\cal N}=(2,0)$ can be deduced (in those cases the duality group in three dimensions in $\SO(8,4)$).
+We start by reproducing the analysis of ref.~\cite{Eloy:2021fhc} to prove the validity of our method. They are two different half-maximal supergravities in six dimensions, with ${\cal N}=(2,0)$ and ${\cal N}=(1,1)$. They both admit consistent truncation on $S^{3}$~\cite{Hohm:2017wtr,Samtleben:2019zrh}, leading to half-maximal gauged supergravity in three dimensions with duality group $\SO(8,4)$. These truncations have isometry group $\SO(4)\times\SO(4)$ and are constructed in terms of two different $\SO(3,3)$ subgroups of $\SO(8,4)$:
+\begin{subequations}
+  \begin{align}
+    {\cal N}=(2,0):&\qquad \SO(8,4)\longrightarrow\SO(3,3)_{(2,0)}\times \SO(5,1)\longrightarrow\SO(3,3)_{(2,0)}\times \SO(5), \label{eq:SO84decomp20}\\
+    {\cal N}=(1,1):&\qquad \SO(8,4)\longrightarrow\SO(4,4)\times \SO(4)\longrightarrow\SO(3,3)_{(1,1)}\times\R_{+}\times\SO(4). \label{eq:SO84decomp11}
+  \end{align}
+\end{subequations}
 
-The coordinates $X^{[MN]}$ of the $\SO(p,q)$ exceptional field theory of ref.~\cite{Hohm:2017wtr} sit in the adjoint $\bm{28}$ of $\SO(4,4)$. Under $\SO(4,4)\rightarrow\SO(3,3)\times\R_{+}$, it decomposes into
-\begin{equation}
-  \begin{aligned}
-    \bm{28} &\longrightarrow \bm{6}_{2} \oplus \bm{1}_{0} \oplus \bm{15}_{0} \oplus \bm{6}_{-2},\\
-    X^{MN} &\longrightarrow \{Y^{A0},Y^{0}{}_{0},Y^{[AB]},Y^{A}{}_{0}\}.
-  \end{aligned}
-\end{equation}
-Further decomposing $\SO(4,4)\rightarrow\SO(3,3)\times\R_{+}\rightarrow\SL(3)\times\R_{+}\times\R_{+}$, we get
-\begin{equation}
-  \bm{28} \longrightarrow \left[\bm{\bar{3}}_{2,2} \oplus \bm{3}_{-2,2}\right] \oplus \bm{1}_{0,0} \oplus \left[\bm{3}_{4,0} \oplus \bm{1}_{0,0} \oplus \bm{8}_{0,0} \oplus \bm{\bar{3}}_{-4,0}\right] \oplus \left[\bm{\bar{3}}_{2,-2} \oplus \bm{3}_{-2,-2}\right].
-\end{equation}
-They are two physically different possibilities to embed the internal coordinates in $X^{MN}$, corresponding to the two different half-maximal supergravities in six dimensions:\footnote{The choices are equivalent in $\SO(4,4)$ (through triality), but different once embedded in $\SO(8,4)$.}
-\begin{equation}
-  \begin{aligned}
-    {\cal N}=(1,1):&\qquad y^{m}=Y^{m0}\quad {\rm in}\quad  \bm{\bar{3}}_{2,2} \subset \bm{6}_{2},\\
-    {\cal N}=(2,0):&\qquad \tilde{y}_{m}=\varepsilon_{mnp}Y^{np}\quad {\rm in}\quad  \bm{3}_{4,0} \subset \bm{15}_{0}.
-  \end{aligned}
-\end{equation}
+  \subsection{\texorpdfstring{${\cal N}=(2,0)$}{N=(2,0)} six-dimensional supergravity}
+
+  \paragraph{6d origin of the three-forms} The ${\cal N}=(2,0)$ supergravity features 5 self-dual two-forms $\hat{B}_{\hat\mu\hat\nu}^{i}$ ($i\in\llbracket1,5\rrbracket$ is the $\SO(5)$ vector index). They lead to two-form potentials $B_{(2)}^{i}$ in 3d, with three-form field strengths dual to purely internal three-form field-strengths $H_{(3)}^{i}$.
+
+  \ce{Should we consider the anti-self dual two-form also?}
+
+  \paragraph{\boldmath $B_{(2)}^{i}$ in $\SO(3,3)_{(2,0)}\times\SO(5)$}
+  The coordinates $X^{[MN]}$ of the $\SO(8,4)$ exceptional field theory of ref.~\cite{Hohm:2017wtr} sit in the adjoint $\bm{66}$ of $\SO(8,4)$. Under eq.~\eqref{eq:SO84decomp20}, it decomposes into
+  \begin{equation}  
+    \bm{66} \longrightarrow (\bm{6},\bm{1}) \oplus (\bm{6},\bm{5}) \oplus (\bm{15},\bm{1}) \oplus (\bm{1},\bm{5}) \oplus (\bm{1},\bm{10}).
+  \end{equation}
+  Further decomposing $\SO(3,3)_{(2,0)}\times\SO(5)\rightarrow\SL(3)\times\R_{+}\times\SO(5)$, we get
+  \begin{equation}
+    \begin{aligned}
+      \bm{66} &\longrightarrow [(\bm{\bar{3}}_{2},\bm{1})\oplus(\bm{3}_{-2},\bm{1})] \oplus [(\bm{3}_{-2},\bm{5})\oplus(\bm{\bar{3}}_{2},\bm{5})] \oplus [(\bm{3}_{4},\bm{1})\oplus(\bm{1}_{0},\bm{1})\oplus(\bm{8}_{0},\bm{1})\oplus(\bm{\bar{3}}_{-4},\bm{1})] \\
+      & \qquad \oplus (\bm{1}_{0},\bm{5}) \oplus (\bm{1}_{0},\bm{10}).
+    \end{aligned}
+  \end{equation}
+  The internal coordinates $y^{m}$ then sit in the representation $(\bm{3}_{4},\bm{1})$ and the two-form potentials $B_{(2)}^{i}$ in $(\bm{3}_{-2},\bm{5})$, they thus originate from the $\SO(3,3)_{(2,0)}\times\SO(5)$ representations $(\bm{15},\bm{1})$ and $(\bm{6},\bm{5})$, respectively.
+
+  \paragraph{\boldmath $H_{(3)}^{i}$ in $\SO(3,3)_{(2,0)}\times\SO(5)$}
+  \begin{equation}
+    H_{(3)}^{i} \subset(\bm{15},\bm{1})\otimes(\bm{6},\bm{5})=(\bm{6},\bm{5})\oplus(\bm{10},\bm{5})\oplus(\bm{\bar{10}},\bm{5})\oplus(\bm{64},\bm{5}).
+  \end{equation}
+
+  \paragraph{\boldmath $H_{(3)}^{i}$ in the embedding tensor}
+  The embedding tensor of the $\SO(8,4)$ exceptional theory has two different components: $\theta_{(MN)}\subset\bm{77}$ and $\theta_{[MNPQ]}\subset\bm{495}$. It decomposes as follows under $\SO(8,4)\rightarrow\SO(3,3)_{(2,0)}\times \SO(5)$:
+  \begin{equation}
+    \begin{aligned}
+      \bm{77} &\longrightarrow 2\times(\bm{1},\bm{1}) \oplus (\bm{6},\bm{1}) \oplus {\color{mydarkorange}(\bm{6},\bm{5})} \oplus (\bm{20'},\bm{1}) \oplus (\bm{1},\bm{5}) \oplus (\bm{1},\bm{14}),\\
+      \bm{495} &\longrightarrow (\bm{10},\bm{1}) \oplus {\color{mydarkorange}(\bm{10},\bm{5})} \oplus (\bm{\bar{10}},\bm{1}) \oplus {\color{mydarkorange}(\bm{\bar{10}},\bm{5})} \oplus (\bm{15},\bm{1}) \oplus (\bm{1},\bm{5}) \oplus (\bm{1},\bm{10}) \\
+      &\qquad\oplus (\bm{6},\bm{10}) \oplus (\bm{6},\bm{\bar{10}}) \oplus (\bm{15},\bm{5}) \oplus (\bm{15},\bm{10}),
+    \end{aligned}
+  \end{equation}
+  where the colored representations are those coming from the three-forms. Only $(\bm{10},\bm{5})$ and $(\bm{\bar{10}},\bm{5})$ feature singlets under the isometry group $\SO(4)\times\SO(4)$. One of these support the $S^{3}$ reduction, while the other can be turned on, leading to new solutions as first demonstrated in ref.~\cite{Hohm:2017wtr,Samtleben:2019zrh}. All singlets sit in $\theta_{MNPQ}$.
+
+
+ \subsection{\texorpdfstring{${\cal N}=(1,1)$}{N=(1,1)} six-dimensional supergravity}
+
+  \paragraph{6d origin of the three-forms} The ${\cal N}=(1,1)$ supergravity features a two-form $\hat{B}_{\hat\mu\hat\nu}$ Both $\hat{B}_{\hat\mu\hat\nu}$ and its dual lead to two-form potentials in 3d. Their three-form field strengths are dual to purely internal three-form field-strengths $H_{(3)}$ and $*H_{(3)}$, of two-form potentials $C_{(2)}^{1}$ and $C_{(2)}^{2}$.
+
+  \paragraph{\boldmath $C_{(2)}^{1}$ and $C_{(2)}^{2}$in $\SO(4,4)\times\SO(4)$}
+  Under $\SO(8,4)\longrightarrow\SO(4,4)\times \SO(4)$, the coordinates $X^{[MN]}$ decompose into
+  \begin{equation}  
+    \bm{66} \longrightarrow \bm{1}^{(\bm{3},\bm{1})} \oplus \bm{1}^{(\bm{1},\bm{3})} \oplus \bm{8_{\rm v}}^{(\bm{2},\bm{2})} \oplus \bm{28}^{(\bm{1},\bm{1})}.
+  \end{equation}
+  The internal coordinates and the two-form potentials are singlets under the $\SO(4)$ factor, which is related the 6d vectors only. They thus all belong to the representation $\bm{28}^{(\bm{1},\bm{1})}$.
+
+  \paragraph{\boldmath $H_{(3)}$ and $*H_{(3)}$ in $\SO(4,4)\times\SO(4)$}
+  \begin{equation}
+    H_{(3)}, *H_{3}\subset\bm{28}^{(\bm{1},\bm{1})}\otimes\bm{28}^{(\bm{1},\bm{1})}=\bm{1}^{(\bm{1},\bm{1})}\oplus\bm{28}^{(\bm{1},\bm{1})}\oplus\bm{35_{\rm v}}^{(\bm{1},\bm{1})}\oplus\bm{35_{\rm s}}^{(\bm{1},\bm{1})}\oplus\bm{35_{\rm c}}^{(\bm{1},\bm{1})}\oplus\bm{300}^{(\bm{1},\bm{1})}\oplus\bm{350}^{(\bm{1},\bm{1})}.
+  \end{equation}
+
+  \paragraph{\boldmath $H_{(3)}$ and $*H_{(3)}$ in the embedding tensor}
+  \begin{equation}
+    \begin{aligned}
+      \bm{77} &\longrightarrow {\color{mydarkorange}\bm{1}^{(\bm{1},\bm{1})}} \oplus \bm{1}^{(\bm{3},\bm{3})} \oplus \bm{8_{\rm v}}^{(\bm{2},\bm{2})} \oplus {\color{mydarkorange}\bm{35_{\rm v}}^{(\bm{1},\bm{1})}},\\
+      \bm{495} &\longrightarrow {\color{mydarkorange}\bm{1}^{(\bm{1},\bm{1})}} \oplus \bm{8_{\rm v}}^{(\bm{2},\bm{2})} \oplus \bm{28}^{(\bm{1},\bm{3})} \oplus \bm{28}^{(\bm{3},\bm{1})} \oplus {\color{mydarkorange}\bm{35_{\rm s}}^{(\bm{1},\bm{1})}} \oplus {\color{mydarkorange}\bm{35_{\rm c}}^{(\bm{1},\bm{1})}} \oplus \bm{56_{\rm v}}^{(\bm{2},\bm{2})}.
+    \end{aligned}
+  \end{equation}
+  The singlets certainly gauge the trombone symmetry. Each $\bm{35}$ feature $\SO(4)\times\SO(4)$ singlets, but \ce{less clear how to precisely relate to ref.~\cite{Eloy:2021fhc}. Need to consider quadratic constraint?}
+
+  
+
 
 \section{Truncations within \texorpdfstring{$\SL(8)_{\rm IIB}\subset\E_{8(8)}$}{SL(8)IIB in E8(8)}}
 We analyse here whether the type IIB $S^{7}$ truncation of ref.~\cite{Galli:2022idq} admit additional gaugings.
@@ -210,7 +262,7 @@ whereas the internal coordinates are in the representation $\bm{\bar{28}}_{2}$.
 
 \ce{Give further details?}
 
-\paragraph{\boldmath $H_{(7)}^{\alpha}$ and $H_{(5)}$ in $\SL(8)_{\rm IIB}$} Now that we know what are the $\SL(8)_{\rm IIB}\times\R_{+}$ representations corresponding to the internal coordinates, $C_{(6)}^{\alpha}$ and $C_{(4)}$, we can infer those of $H_{(7)}^{\alpha}$ and $H_{(5)}$:
+\paragraph{\boldmath $H_{(7)}^{\alpha}$ and $H_{(5)}$ in $\SL(8)_{\rm IIB}\times\R_{+}$} Now that we know what are the $\SL(8)_{\rm IIB}\times\R_{+}$ representations corresponding to the internal coordinates, $C_{(6)}^{\alpha}$ and $C_{(4)}$, we can infer those of $H_{(7)}^{\alpha}$ and $H_{(5)}$:
 \begin{equation}  \label{eq:H7H5inIIB}
   \begin{aligned}
     H_{(7)}^{\alpha} & \subset \bm{\bar{28}}_{2} \otimes \left(\bm{8}_{3}\oplus\bm{63}_{0}\right) = \bm{\bar{8}}_{5} \oplus \bm{\bar{216}}_{5} \oplus \bm{\bar{28}}_{2} \oplus \bm{\bar{36}}_{2} \oplus \bm{\bar{420}}_{2} \oplus \bm{\bar{1280}}_{2}, \\
@@ -227,6 +279,127 @@ whereas the internal coordinates are in the representation $\bm{\bar{28}}_{2}$.
   \end{aligned}
 \end{equation}
 The coloured representations are those that can originate from $H_{(7)}^{\alpha}$ and $H_{(5)}$, \textit{i.e.} those in common with eq.~\eqref{eq:H7H5inIIB}. Among them, only the $\bm{\bar{36}}_{2}$ features a singlet under $\SO(8)_{\rm IIB}$. This is the singlet used in ref.~\cite{Galli:2022idq} to support the $S^{7}$ truncation, which thus do not admit further gaugings.
+
+
+\section{Truncations within \texorpdfstring{$\SL(8)_{\rm IIA}\subset\E_{8(8)}$}{SL(8)IIA in E8(8)}}
+
+Can be seen as further reduction of four dimensional $\E_{7(7)}$ solutions on a circle. Under $\E_{8(8)}\rightarrow\E_{7(7)}\times\SL(2)\rightarrow\E_{7(7)}\times\R_{+}$,
+\begin{equation}
+  \bm{248} \longrightarrow (\bm{1},\bm{3}) \oplus (\bm{56},\bm{2}) \oplus (\bm{133},\bm{3})\longrightarrow \bm{1}_{2} \oplus \bm{56}_{1} \oplus \bm{1}_{0} \oplus \bm{133}_{0} \oplus \bm{56}_{-1} \oplus \bm{1}_{-2}.
+\end{equation}
+The $\E_{7(7)}$ coordinates are in the $\bm{56}_{1}$, and $C_{(6)}$ in $\bm{56}_{-1}$ (11d $\hat{C}_{\hat\mu\hat\nu\hat\rho}$ leads to $C_{\mu\nu\,m}$ in 3d, $H_{\mu\nu\rho\,m}$ dual to purely internal $H_{(7)}$ of potential $C_{(6)}$). Then,
+\begin{equation}
+    H_{(7)} \subset \bm{56}_{1} \otimes \bm{56}_{-1} = \bm{1}_{0} \oplus \bm{133}_{0} \oplus \bm{1463}_{0} \oplus \bm{1539}_{0}.
+\end{equation}
+Under $\E_{8(8)}\rightarrow\E_{7(7)}\times\SL(2)\rightarrow\E_{7(7)}\times\R_{+}$, the $\E_{8(8)}$ embedding tensor decomposes as
+\begin{equation}
+    \bm{3875} \longrightarrow \bm{133}_{2} \oplus \bm{56}_{1} \oplus \bm{912}_{1} \oplus {\color{mydarkorange}\bm{1}_{0}} \oplus {\color{mydarkorange}\bm{133}_{0}} \oplus {\color{mydarkorange}\bm{1539}_{0}} \oplus \bm{56}_{-1} \oplus \bm{912}_{-1} \oplus \bm{133}_{-2}.
+\end{equation}
+
+\paragraph{\boldmath $\SO(8)_{\rm IIA}$ singlets}
+Under $\E_{7(7)}\rightarrow\SL(8)_{\rm IIA}$:
+\begin{equation}
+  \begin{aligned}
+    \bm{133} & \longrightarrow \bm{63} \oplus \bm{70},\\
+    \bm{1539} & \longrightarrow \bm{63} \oplus \bm{378} \oplus \bm{\bar{378}} \oplus \bm{720}.
+  \end{aligned}
+\end{equation}
+No singlet other that $\bm{1}$.
+
+\paragraph{\boldmath $\SO(7)$ singlets}
+Under $\E_{7(7)}\rightarrow\SL(7)\times\R_{+}$:
+\begin{equation}
+  \begin{aligned}
+    \bm{133} & \longrightarrow \bm{1}_{0} \oplus \ldots,\\
+    \bm{1539} & \longrightarrow \bm{1}_{0} \oplus \ldots
+  \end{aligned}
+\end{equation}
+where only representations featuring $\SO(7)$ singlets have been specified.
+
+\paragraph{\boldmath $\SO(6)\times\R_{+}$ singlets}
+Under $\E_{7(7)}\rightarrow\SL(6)\times\SL(2)\times\R_{+}$:
+\begin{equation}
+  \begin{aligned}
+    \bm{133} & \longrightarrow (\bm{1},\bm{1})_{0} \oplus \ldots,\\
+    \bm{1539} & \longrightarrow 2\times(\bm{1},\bm{1})_{0} \oplus \ldots\\
+  \end{aligned}
+\end{equation}
+where only representations featuring $\SO(6)\times\R_{+}$ singlets have been specified.
+
+\paragraph{\boldmath $\SO(5)\times\SO(3)$ singlets}
+Under $\E_{7(7)}\rightarrow\SL(5)\times\SL(3)\times\R_{+}$:
+\begin{equation}
+  \begin{aligned}
+    \bm{133} & \longrightarrow (\bm{1},\bm{1})_{0} \oplus \ldots,\\
+    \bm{1539} & \longrightarrow 2\times(\bm{1},\bm{1})_{0} \oplus \ldots\\
+  \end{aligned}
+\end{equation}
+where only representations featuring $\SO(5)\times\SO(3)$ singlets have been specified.
+
+\paragraph{\boldmath $\SO(4)\times\SO(4)$ singlets}
+Under $\E_{7(7)}\rightarrow\SL(4)\times\SL(4)\times\R_{+}$:
+\begin{equation}
+  \begin{aligned}
+    \bm{133} & \longrightarrow (\bm{1},\bm{1})_{0} \oplus (\bm{1},\bm{1})_{4} \oplus (\bm{1},\bm{1})_{-4} \oplus \ldots,\\
+    \bm{1539} & \longrightarrow 2\times(\bm{1},\bm{1})_{0} \oplus \ldots\\
+  \end{aligned}
+\end{equation}
+where only representations featuring $\SO(4)\times\SO(4)$ singlets have been specified.
+
+
+\paragraph*{} The singlets always come from the $\bm{63}$ and $\bm{720}$ of $\SL(8)_{\rm IIB}$ (and $\bm{70}$ for $\SL(4)\times\SL(4)\times\R_{+}$).
+
+\appendix
+
+\section{Miniminal ${\cal N}=(1,0)$ six-dimensional supergravity}
+We consider reductions within the minimal ${\cal N}=(1,0)$ six-dimensional supergravity, leading to duality group $\SO(4,4)$ in three dimensions, from which the half-maximal cases ${\cal N}=(1,1)$ and ${\cal N}=(2,0)$ can be deduced (in those cases the duality group in three dimensions in $\SO(8,4)$).
+
+The coordinates $X^{[MN]}$ of the $\SO(p,q)$ exceptional field theory of ref.~\cite{Hohm:2017wtr} sit in the adjoint $\bm{28}$ of $\SO(4,4)$. Under $\SO(4,4)\rightarrow\SO(3,3)\times\R_{+}$, it decomposes into
+\begin{equation}  
+  \begin{aligned}
+    \bm{28} &\longrightarrow \bm{6}_{2} \oplus \bm{1}_{0} \oplus \bm{15}_{0} \oplus \bm{6}_{-2},\\
+    X^{MN} &\longrightarrow \{Y^{A0},Y^{0}{}_{0},Y^{[AB]},Y^{A}{}_{0}\}.
+  \end{aligned}
+\end{equation}
+Further decomposing $\SO(4,4)\rightarrow\SO(3,3)\times\R_{+}\rightarrow\SL(3)\times\R_{+}\times\R_{+}$, we get
+\begin{equation}  \label{eq:decomp28SO8}
+  \bm{28} \longrightarrow \left[\bm{\bar{3}}_{2,2} \oplus \bm{3}_{-2,2}\right] \oplus \bm{1}_{0,0} \oplus \left[\bm{3}_{4,0} \oplus \bm{1}_{0,0} \oplus \bm{8}_{0,0} \oplus \bm{\bar{3}}_{-4,0}\right] \oplus \left[\bm{\bar{3}}_{2,-2} \oplus \bm{3}_{-2,-2}\right].
+\end{equation}
+They are two physically different possibilities to embed the internal coordinates in $X^{MN}$, corresponding to the two different half-maximal supergravities in six dimensions:\footnote{The choices are equivalent in $\SO(4,4)$ (through triality), but different once embedded in $\SO(8,4)$.}
+\begin{equation}  \label{eq:coordSO8}
+  \begin{aligned}
+    {\cal N}=(1,1):&\qquad y^{m}=Y^{m0}\subset\bm{\bar{3}}_{2,2} \longleftarrow \bm{6}_{2},\\
+    {\cal N}=(2,0):&\qquad \tilde{y}_{m}=\varepsilon_{mnp}Y^{np}\subset\bm{3}_{4,0}\longleftarrow\bm{15}_{0}.
+  \end{aligned}
+\end{equation}
+
+\paragraph{6d origin of the three-forms} The ${\cal N}=(1,0)$ supergravity features a two-form $\hat{B}_{\hat\mu\hat\nu}$. Both $\hat{B}_{\hat\mu\hat\nu}$ and its dual lead to two-form potentials in 3d. Their three-form field strengths are dual to purely internal three-form field-strengths $H_{(3)}$ and $*H_{(3)}$, of two-form potentials $C_{(2)}^{1}$ and $C_{(2)}^{2}$.
+
+\paragraph{\boldmath $C_{(2)}^{1}$ and $C_{(2)}^{2}$ in $\SO(3,3)\times\R_{+}$} Given the decomposition~\eqref{eq:decomp28SO8} and the coordinates~\eqref{eq:coordSO8}, the two forms sit in the following representations:
+\begin{equation}
+  \begin{aligned}
+    {\cal N}=(1,1):&\qquad C^{1}_{(2)}\subset\bm{\bar{3}}_{-4,0} \longleftarrow\bm{15}_{0}\quad{\rm and}\quad C^{2}_{(2)}\subset\bm{3}_{4,0} \longleftarrow\bm{15}_{0},\\
+    {\cal N}=(2,0):&\qquad C^{1}_{(2)}\subset\bm{3}_{-2,2} \longleftarrow\bm{6}_{2}\quad{\rm and}\quad C^{2}_{(2)}\subset\bm{\bar{3}}_{2,2} \longleftarrow\bm{6}_{2}.
+  \end{aligned}
+\end{equation}
+
+\paragraph{\boldmath $H_{(3)}$ and $*H_{(3)}$ in $\SO(3,3)\times\R_{+}$}
+\begin{equation}
+  \begin{aligned}
+    {\cal N}=(1,1):&\qquad H_{(3)},*H_{(3)} \subset\bm{6}_{2}\otimes\bm{15}_{0}=\bm{6}_{2}\oplus\bm{10}_{2}\oplus\bm{\bar{10}}_{2}\oplus\bm{64}_{2},\\
+    {\cal N}=(2,0):&\qquad H_{(7)},*H_{(7)} \subset\bm{10}_{0}\otimes\bm{6}_{2}=\bm{6}_{2}\oplus\bm{10}_{2}\oplus\bm{\bar{10}}_{2}\oplus\bm{64}_{2},
+  \end{aligned}
+\end{equation}
+
+\paragraph{\boldmath $H_{(3)}$ and $*H_{(3)}$ in the embedding tensor} The embedding tensor of the $\SO(4,4)$ exceptional theory has two different components: $\theta_{[MNPQ]}\subset\bm{35_{\rm s}}\oplus\bm{35_{\rm c}}$ and $\theta_{(MN)}\subset\bm{35_{\rm v}}$. It decomposes as follows under $\SO(4,4)\rightarrow\SO(3,3)\times\R_{+}$:
+\begin{equation}
+  \begin{aligned}
+    \bm{35_{\rm v}} &\longrightarrow \bm{1}_{4} \oplus {\color{mydarkorange}\bm{6}_{2}} \oplus \bm{1}_{0} \oplus \bm{20'}_{0} \oplus \bm{6}_{-2} \oplus \bm{1}_{-4},\\
+    \bm{35_{\rm s}} &\longrightarrow {\color{mydarkorange}\bm{10}_{2}} \oplus \bm{15}_{0}  \oplus \bm{\bar{10}}_{-2},\\
+    \bm{35_{\rm c}} &\longrightarrow {\color{mydarkorange}\bm{\bar{10}}_{2}} \oplus \bm{15}_{0}  \oplus \bm{10}_{-2},
+  \end{aligned}
+\end{equation}
+where the colored representations are those coming from the three-forms. Only $\bm{10}_{2}$ and $\bm{\bar{10}}_{2}$ feature $\SO(4)$ singlets. \ce{So no distinction between (1,1) and (2,0)? Because triality, or I made errors?}
 
 \bibliography{ref}
 
