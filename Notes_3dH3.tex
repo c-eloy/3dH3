@@ -1,0 +1,205 @@
+%!TEX output_directory = aux
+
+\documentclass[11pt]{article}
+
+\usepackage[english]{babel}
+
+% ---- FONT & MICROTYPOGRAPHY ----
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{moresize}
+
+% ---- FORMATTING ----
+\usepackage{csquotes,textcase,xspace}
+
+% ---- PAGE LAYOUT ----
+\usepackage{geometry}
+\geometry{top=2.5cm,bottom=2cm,inner=2cm,outer=2cm,footnotesep=7mm plus 4pt minus 4pt}
+\usepackage{setspace}
+\setstretch{1.1}
+
+% ---- GRAPHIQUE ----
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[font=small,labelfont=bf,labelsep=space]{caption}
+\usepackage{subfigure}
+\captionsetup{width=0.9\textwidth,font={small,stretch=1.1}}
+\addto\captionsenglish{\renewcommand{\figurename}{Fig.}}
+\addto\captionsenglish{\renewcommand{\tablename}{Tab.}}
+\definecolor{JoliBleu}{rgb}{0,0.55,0.55}
+\definecolor{JoliVert}{rgb}{0.15,0.6,0}
+\definecolor{JoliRouge}{rgb}{0.86,0.08,0}
+\definecolor{JoliJaune}{rgb}{1,0.75,0}
+\definecolor{JoliGris}{rgb}{0.52,0.52,0.51}
+\definecolor{myblue}{RGB}{26, 77, 116}
+\definecolor{myorange}{RGB}{181, 116, 30}
+\definecolor{mydarkorange}{RGB}{166, 88, 0}
+\definecolor{mygreen}{RGB}{21, 124, 80}
+\definecolor{myblack}{RGB}{43, 65, 82}
+\definecolor{myred}{rgb}{0.5, 0.0, 0.13}
+
+% ---- SECTIONING ----
+\usepackage{titlesec}
+\titleformat{\section}[block]{\Large\boldmath\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}[block]{\large\boldmath\bfseries}{\thesubsection}{0.5em}{}
+\usepackage{appendix}
+\renewcommand{\setthesection}{\Alph{section}}
+\renewcommand{\restoreapp}{}
+\makeatletter
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\@addtoreset{equation}{section}
+\makeatother
+
+% ---- FOOTERS HEADERS ----
+\usepackage[bottom]{footmisc}
+\usepackage{fancyhdr}
+
+% ---- TABLE OF CONTENTS ----
+\usepackage{titletoc}
+\setcounter{tocdepth}{3}
+
+% ---- BIBLIOGRAPHY ----
+\usepackage[nosort]{cite}
+\bibliographystyle{utphys}
+\newcommand{\eprint}[1]{{\href{http://arxiv.org/abs/#1}{\texttt{[#1]}}}}
+\newcommand{\eprintN}[1]{{\href{http://arxiv.org/abs/#1}{\texttt{#1 [hep-th]}}}}
+\newcommand{\doi}[2]{\href{http://dx.doi.org/#2}{#1}}
+
+% ---- HYPER REF ----
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,
+        pdfstartview=FitV,
+        linkcolor= mydarkorange,
+        citecolor= mydarkorange,
+        urlcolor= JoliGris!60!black,
+        hypertexnames=false,
+        linktoc=page}
+
+% ---- TIKZ ----
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+% ---- MATHS ----
+\usepackage{amsmath,amssymb,amsfonts,dsfont}
+\usepackage{mathrsfs}
+\usepackage{physics}
+\usepackage{ytableau}
+\ytableausetup{boxsize=1.1em,centertableaux}
+\usepackage{stmaryrd}
+\usepackage{nicefrac}
+\allowdisplaybreaks[1]
+% \usepackage{bbold}
+\usepackage{cases}
+\usepackage{bm}
+
+% ---- TABLES ----
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{pdflscape}
+\usepackage{array}
+
+% ---- ENUMERATION ----
+\usepackage[shortlabels]{enumitem}
+
+% ---- MATHS COMMANDS ----
+\newcommand{\A}{\ensuremath{\mathcal{A}}\xspace}
+\newcommand{\F}{\ensuremath{\mathcal{F}}\xspace}
+\renewcommand{\H}{\ensuremath{\mathcal{H}}\xspace}
+\newcommand{\M}{\ensuremath{\mathcal{M}}\xspace}
+\renewcommand{\P}{\ensuremath{\mathcal{P}}\xspace}
+\newcommand{\J}{\ensuremath{\mathcal{J}}\xspace}
+\renewcommand{\d}{\ensuremath{\mathrm{d}}\xspace}
+\renewcommand{\H}{\ensuremath{\mathcal{H}}\xspace}
+\newcommand{\SO}{\ensuremath{\mathrm{SO}}\xspace}
+\renewcommand{\O}{\ensuremath{\mathrm{O}}\xspace}
+\newcommand{\SL}{\ensuremath{\mathrm{SL}}\xspace}
+\newcommand{\E}{\ensuremath{\mathrm{E}}\xspace}
+\newcommand{\R}{\ensuremath{\mathbb{R}}\xspace}
+\newcommand{\Odd}{\ensuremath{\mathrm{O}(d,d)}\xspace}
+\newcommand{\odd}{\ensuremath{\mathfrak{o}(d,d)}\xspace}
+\renewcommand{\Tr}[1]{\ensuremath{\mathrm{Tr}\left(#1\right)}\xspace}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+
+% ---- COMMENTS ----
+\newcommand{\ce}[1]{\marginpar{\parbox{\marginparwidth}{\boldmath $\Longleftarrow$}}
+{\boldmath\bfseries #1}}
+
+% ---- TITLE PAGE ----
+\usepackage[affil-it]{authblk}
+\def\preprint{}
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null\hfill\texttt{\preprint}
+  \vskip 4em%
+  \begin{center}%
+  \let \footnote \thanks
+    {\LARGE\bfseries\boldmath \@title \par}%
+    \vskip 2.5em%
+    % {\large
+    %   \lineskip .5em%
+    %   \begin{center}
+    %     \begin{minipage}{0.95\textwidth}
+    %         \begin{tabular}[t]{c}%
+    %         \@author
+    %         \end{tabular}
+    %     \end{minipage}    
+    %   \end{center}\par}%
+    % \vskip 1em%
+   {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\renewcommand\Authands{ and }
+
+\title{Notes: New gaugings in 3d from three-form}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+Three-form field-strengths are auxiliary in three dimensions and can be integrated out, giving rise to additional gaugings and contributions to the scalar potential, or equivalently leading to new terms in the embedding tensor (see ref.~\cite{Deger:2014ofa,Eloy:2021fhc} for explicit realisations in half-maximal supergravity). We want to generalize this to maximal supergravity. For a given $\E_{8(8)}$ consistent truncations of gauge group $G_{0}$, we ask the question whether it is possible to turn on additional components in the embedding tensor (corresponding to three-form degrees of freedom). If so, the new consistent truncation has gauging $G\supset G_{0}$. We first need to identify which components of the embedding tensor correspond to these degrees of freedom, and to count the number of singlets under $G_{0}$ within them. There will be at least one singlet, corresponding to the gauging of $G_{0}$ in the initial truncation. Any additional singlet would indicate additional parameters to play with, possibly leading to new vacua.
+
+\section{Truncations within \texorpdfstring{$\SL(8)_{\rm IIB}\subset\E_{8(8)}$}{SL(8)IIB in E8(8)}}
+
+\paragraph{10d origin of the three-forms} Both the 10d two-forms $\hat{C}_{\hat\mu\hat\nu}^{\alpha}$ ($\alpha\in{1,2}$ for $\SL(2)$ doublet) and the 10d four-form $\hat{C}_{\hat\mu\hat\nu\hat\rho\hat\sigma}$ give two-form potentials $C^{\alpha}_{\mu\nu}$ and $C_{\mu\nu mn}$ in 3d ($m,n\in\llbracket1,7\rrbracket$ are $\SL(7)$ indices). Their three-form field-strengths are dual to purely internal seven-form and five-form field-strengths $H_{(7)}^{\alpha}$ and $H_{(5)}$, respectively. We note $C_{(6)}^{\alpha}$ and $C_{(4)}$ the six-form and four-form potentials from which they derive.
+
+
+\paragraph{\boldmath $C_{(6)}^{\alpha}$ and $C_{(4)}$ in $\SL(8)_{\rm IIB}\times\R_{+}$} In the $\E_{8(8)}\rightarrow\SL(7)\times\SL(2)\times\R_{+}$ decomposition
+\begin{equation}
+  \begin{aligned}
+    \bm{248} \longrightarrow & \ (\bm{7},\bm{1})_{12} \oplus (\bm{\bar{7}},\bm{2})_{6} \oplus (\bm{\bar{35}},\bm{1})_{6} \oplus (\bm{21},\bm{2})_{3} \oplus (\bm{1},\bm{1})_{0} \oplus (\bm{1},\bm{3})_{0} \oplus (\bm{48},\bm{1})_{0} \\
+    & \oplus (\bm{\bar{21}},\bm{2})_{-3} \oplus (\bm{35},\bm{1})_{-6} \oplus (\bm{7},\bm{2})_{-9} \oplus (\bm{\bar{7}},\bm{1})_{-12}
+  \end{aligned} 
+\end{equation}
+of the $\E_{8(8)}$ coordinates $X^{M}$, $C_{(6)}^{\alpha}$ and $C_{(4)}$ sit in the representations $(\bm{7},\bm{2})_{-9}$ and $(\bm{35},\bm{1})_{-6}$, respectively.\footnote{The internal coordinates $y^{m}$ are in the representation $(\bm{7},\bm{1})_{12}$, and $\bm{\bar{7}}^{\wedge 4}=\bm{35}$ and $\bm{\bar{7}}^{\wedge 6}=\bm{7}$.} They originate from the representations $\bm{8}_{3}\oplus\bm{63}_{0}$ and $\bm{56}_{1}$ in $\E_{8(8)}\rightarrow\SL(9)\rightarrow\SL(8)_{\rm IIB}\times\R_{+}$ decomposition
+\begin{equation}
+  \bm{248} \longrightarrow \bm{80} \oplus \bm{84} \oplus \bm{\bar{84}} \longrightarrow \left[\bm{8}_{3} \oplus \bm{1}_{0} \oplus \bm{63}_{0} \oplus \bm{\bar{8}}_{-3}\right] \oplus \left[\bm{56}_{1} \oplus \bm{28}_{-2}\right] \oplus \left[\bm{\bar{28}}_{2} \oplus \bm{\bar{56}}_{-1}\right],
+\end{equation}
+whereas the internal coordinates are in the representation $\bm{\bar{28}}_{2}$.
+
+\ce{Give further details?}
+
+\paragraph{\boldmath $H_{(7)}^{\alpha}$ and $H_{(5)}$ in $\SL(8)_{\rm IIB}$} Now that we know what are the $\SL(8)_{\rm IIB}\times\R_{+}$ representation corresponding to the internal coordinates, $C_{(6)}^{\alpha}$ and $C_{(4)}$, we can infer those of $H_{(7)}^{\alpha}$ and $H_{(5)}$:
+\begin{equation}
+  \begin{aligned}
+    H_{(7)}^{\alpha} & \subset \bm{\bar{28}}_{2} \otimes \left(\bm{8}_{3}\oplus\bm{63}_{0}\right) = \bm{\bar{8}}_{5} \oplus \bm{\bar{216}}_{5} \oplus \bm{\bar{28}}_{2} \oplus \bm{\bar{36}}_{2} \oplus \bm{\bar{420}}_{2} \oplus \bm{\bar{1280}}_{2}, \\
+    H_{(5)} & \subset \bm{\bar{28}}_{2} \otimes \bm{56}_{1} = \bm{8}_{3} \oplus \bm{216}_{3} \oplus \bm{1344}_{3}.
+  \end{aligned}
+\end{equation}
+
+\paragraph{\boldmath $H_{(7)}^{\alpha}$ and $H_{(5)}$ in the embedding tensor}
+
+\ce{Give decomposition of the embedding tensor to identify components, and count singlets.}
+
+\bibliography{ref}
+
+
+\end{document}
