@@ -92,6 +92,7 @@
 % \usepackage{bbold}
 \usepackage{cases}
 \usepackage{bm}
+\usepackage{extarrows}
 
 % ---- TABLES ----
 \usepackage{multirow}
@@ -125,7 +126,7 @@
 
 % ---- COMMENTS ----
 \newcommand{\ce}[1]{\marginpar{\parbox{\marginparwidth}{\boldmath $\Longleftarrow$}}
-{\boldmath\bfseries #1}}
+{\boldmath\bfseries (ce: #1)}}
 
 % ---- TITLE PAGE ----
 \usepackage[affil-it]{authblk}
@@ -297,7 +298,7 @@ Under $\E_{8(8)}\rightarrow\E_{7(7)}\times\SL(2)\rightarrow\E_{7(7)}\times\R_{+}
 \end{equation}
 \ce{A priori the $\bm{912}_{1}$ is the 4d embedding tensor, which should support the 4d gaugings, so we need only one singlet in three-form.}
 
-\paragraph{\boldmath $\SO(8)_{\rm IIA}$ singlets}
+% \paragraph{\boldmath $\SO(8)_{\rm IIA}$ singlets}
 Under $\E_{7(7)}\rightarrow\SL(8)_{\rm IIA}$:
 \begin{equation}
   \begin{aligned}
@@ -305,50 +306,160 @@ Under $\E_{7(7)}\rightarrow\SL(8)_{\rm IIA}$:
     \bm{1539} & \longrightarrow \bm{63} \oplus \bm{378} \oplus \bm{\bar{378}} \oplus \bm{720}.
   \end{aligned}
 \end{equation}
-No singlet other that $\bm{1}$.
+No $\SO(8)_{\rm IIA}$ singlet other that $\bm{1}$.
 
-\paragraph{\boldmath $\SO(7)$ singlets}
-Under $\E_{7(7)}\rightarrow\SL(7)\times\R_{+}$:
+% \paragraph{\boldmath $\SO(7)$ singlets}
+% Under $\E_{7(7)}\rightarrow\SL(7)\times\R_{+}$:
+% \begin{equation}
+%   \begin{aligned}
+%     \bm{133} & \longrightarrow \bm{1}_{0} \oplus \ldots,\\
+%     \bm{1539} & \longrightarrow \bm{1}_{0} \oplus \ldots
+%   \end{aligned}
+% \end{equation}
+% where only representations featuring $\SO(7)$ singlets have been specified.
+
+% \paragraph{\boldmath $\SO(6)\times\R_{+}$ singlets}
+% Under $\E_{7(7)}\rightarrow\SL(6)\times\SL(2)\times\R_{+}$:
+% \begin{equation}
+%   \begin{aligned}
+%     \bm{133} & \longrightarrow (\bm{1},\bm{1})_{0} \oplus \ldots,\\
+%     \bm{1539} & \longrightarrow 2\times(\bm{1},\bm{1})_{0} \oplus \ldots\\
+%   \end{aligned}
+% \end{equation}
+% where only representations featuring $\SO(6)\times\R_{+}$ singlets have been specified.
+
+% \paragraph{\boldmath $\SO(5)\times\SO(3)$ singlets}
+% Under $\E_{7(7)}\rightarrow\SL(5)\times\SL(3)\times\R_{+}$:
+% \begin{equation}
+%   \begin{aligned}
+%     \bm{133} & \longrightarrow (\bm{1},\bm{1})_{0} \oplus \ldots,\\
+%     \bm{1539} & \longrightarrow 2\times(\bm{1},\bm{1})_{0} \oplus \ldots\\
+%   \end{aligned}
+% \end{equation}
+% where only representations featuring $\SO(5)\times\SO(3)$ singlets have been specified.
+
+% \paragraph{\boldmath $\SO(4)\times\SO(4)$ singlets}
+% Under $\E_{7(7)}\rightarrow\SL(4)\times\SL(4)\times\R_{+}$:
+% \begin{equation}
+%   \begin{aligned}
+%     \bm{133} & \longrightarrow (\bm{1},\bm{1})_{0} \oplus (\bm{1},\bm{1})_{4} \oplus (\bm{1},\bm{1})_{-4} \oplus \ldots,\\
+%     \bm{1539} & \longrightarrow 2\times(\bm{1},\bm{1})_{0} \oplus \ldots\\
+%   \end{aligned}
+% \end{equation}
+% where only representations featuring $\SO(4)\times\SO(4)$ singlets have been specified.
+
+% \paragraph*{} The singlets always come from the $\bm{63}$ and $\bm{720}$ of $\SL(8)_{\rm IIB}$ (and $\bm{70}$ for $\SL(4)\times\SL(4)\times\R_{+}$).
+
+\section{\texorpdfstring{$S^{1}$}{S1} reductions of 4d dyonic gaugings}
+Dyonic truncations from type II supergravities to four-dimensional gauged supergravity have been constructed in ref.~\cite{Inverso:2016eet} with $\E_{7(7)}$ exceptional field theory. Here, we further compactify on a circle and study whether it is possible to turn on additional gauging in three dimensions. Schematically:
+% \begin{equation}
+%   \text{Type IIA/B sugra} \xlongrightarrow[\SL(8-p)\times\SL(p)]{S^{7-p}\times S^{p-1}} \text{4d gauged sugra} \xlongrightarrow[\SL(2)]{S^{1}} \text{3d gauged sugra}.
+% \end{equation}
 \begin{equation}
   \begin{aligned}
-    \bm{133} & \longrightarrow \bm{1}_{0} \oplus \ldots,\\
-    \bm{1539} & \longrightarrow \bm{1}_{0} \oplus \ldots
+    \begin{tikzpicture}
+    \draw (0,0) node (10d) [align=center] {Type IIA/B \\ supergravity};
+    \draw ($(10d)+(6,0)$) node (4d) [align=center] {4d gauged \\ supergravity};
+    \draw ($(4d)+(4,0)$) node (3d) [align=center] {3d gauged \\ supergravity};
+
+    \draw [thick, -stealth] (10d) -- (4d) node [midway, above] {\small $S^{7-p}\times S^{p-1}$} node [midway, below] {\small $\SL(8-p)\times \SL(p)$};
+    \draw [thick, -stealth] (4d) -- (3d) node [midway, above] {\small $S^{1}$} node [midway, below] {\small $\SL(2)$};
+    \draw [thick, -stealth] ($(10d)-(0,0.6)$) arc [start angle=-160,end angle=-20,x radius=5.3,y radius=1.25] node [midway, above] {\small $S^{7-p}\times S^{p-1}\times S^{1}$} node [midway, below] {\small $\SL(8-p)\times \SL(p)\times \SL(2)$};
+    \end{tikzpicture}
   \end{aligned}
 \end{equation}
-where only representations featuring $\SO(7)$ singlets have been specified.
-
-\paragraph{\boldmath $\SO(6)\times\R_{+}$ singlets}
-Under $\E_{7(7)}\rightarrow\SL(6)\times\SL(2)\times\R_{+}$:
+The truncation from 10d to 3d is constructed using $\E_{8(8)}$ exceptional field theory, with isometries embedded as $\SL(8-p)\times\SL(p)\times\SL(2) \subset \E_{7(7)} \times \SL(2) \subset \E_{8(8)}$. Under $\E_{8(8)}\rightarrow\E_{7(7)}\times\SL(2)$, the ExFT coordinates decompose as
 \begin{equation}
-  \begin{aligned}
-    \bm{133} & \longrightarrow (\bm{1},\bm{1})_{0} \oplus \ldots,\\
-    \bm{1539} & \longrightarrow 2\times(\bm{1},\bm{1})_{0} \oplus \ldots\\
-  \end{aligned}
+  \bm{248} \longrightarrow (\bm{1},\bm{3}) \oplus (\bm{56},\bm{2}) \oplus (\bm{133},\bm{3}).
 \end{equation}
-where only representations featuring $\SO(6)\times\R_{+}$ singlets have been specified.
+The $\E_{7(7)}$ coordinates sit in $(\bm{56},\bm{2})$. \ce{Further review ref.~\cite{Inverso:2016eet}? At least coordinates and cie. Details of IIA and IIB embeddings of forms?}
 
-\paragraph{\boldmath $\SO(5)\times\SO(3)$ singlets}
-Under $\E_{7(7)}\rightarrow\SL(5)\times\SL(3)\times\R_{+}$:
-\begin{equation}
-  \begin{aligned}
-    \bm{133} & \longrightarrow (\bm{1},\bm{1})_{0} \oplus \ldots,\\
-    \bm{1539} & \longrightarrow 2\times(\bm{1},\bm{1})_{0} \oplus \ldots\\
-  \end{aligned}
-\end{equation}
-where only representations featuring $\SO(5)\times\SO(3)$ singlets have been specified.
+  \subsection{\texorpdfstring{$S^{3}\times S^{3}\times S^{1}$}{S3xS3xS1}}
+  In ref.~\cite{Inverso:2016eet}, a truncation from type IIB to 4d on $S^{3}\times S^{3}\times S^{1}$ has been constructed. The type IIB two-forms $\hat{C}^{\alpha}_{\hat{\mu}\hat{\nu}}$ ($\alpha$ denotes a $\SL(2)_{\rm IIB}$ doublet) lead to seven-form field-strengths $H_{(7)}^{\alpha}=\d C_{(6)}^{\alpha}$. We search for singlets within $H_{(7)}^{\alpha}$ on $S^{3}\times S^{3}\times S^{1}$. Coordinates $\{y^{m}\}$ on $S^{3}\times S^{3}$, $z$ on $S^{1}$. Choice of gauge such that $H_{(7)}^{\alpha}$ given by
+  \begin{equation}
+    \partial_{z}C_{mnpqrs}^{\alpha}.
+  \end{equation}
+  Thus, we have to search for singlets in $C_{(6)}^{\alpha}$, built on $S^{3}\times S^{3}$ only. \ce{Is the choice of gauge always possible?}
 
-\paragraph{\boldmath $\SO(4)\times\SO(4)$ singlets}
-Under $\E_{7(7)}\rightarrow\SL(4)\times\SL(4)\times\R_{+}$:
-\begin{equation}
-  \begin{aligned}
-    \bm{133} & \longrightarrow (\bm{1},\bm{1})_{0} \oplus (\bm{1},\bm{1})_{4} \oplus (\bm{1},\bm{1})_{-4} \oplus \ldots,\\
-    \bm{1539} & \longrightarrow 2\times(\bm{1},\bm{1})_{0} \oplus \ldots\\
-  \end{aligned}
-\end{equation}
-where only representations featuring $\SO(4)\times\SO(4)$ singlets have been specified.
+  We first have to identify how $\SL(2)_{\rm IIB}$ is embedded in $\E_{7(7)}$ (which will help us to identify $\SL(2)_{\rm IIB}$ doublets like $C_{(6)}^{\alpha}$). To do so, we first follow ref.~\cite{Inverso:2016eet}, where the internal coordinates $\{y^{m}\}$ are embedded into $\E_{7(7)}$ following the decomposition $\E_{7(7)}\longrightarrow\SL(6)\times\SL(2)_{\rm IIB}\times\R^{+}_{\rm IIB}$:
+  \begin{equation}
+    \bm{56} \rightarrow (\bm{6'},\bm{1})_{-4} \oplus (\bm{6},\bm{2})_{-2} \oplus (\bm{20},\bm{1})_{0} \oplus (\bm{6'},\bm{2})_{2} \oplus (\bm{6},\bm{1})_{4},
+  \end{equation}
+  with coordinates in $(\bm{6'},\bm{1})_{-4}$. To build the truncation on $S^{3}\times S^{3}$, we are rather interested in the decomposition under $\E_{7(7)}\longrightarrow\SL(4)_{1}\times\SL(4)_{2}\times\R^{+}_{\SL(8)}$ (through $\SL(8)$):
+  \begin{equation}
+    \bm{56} \rightarrow \left[(\bm{6},\bm{1})_{2} \oplus (\bm{4},\bm{4})_{0} \oplus (\bm{1},\bm{6})_{-2}\right] \oplus \left[(\bm{1},\bm{6})_{2} \oplus (\bm{\bar{4}},\bm{\bar{4}})_{0} \oplus (\bm{6},\bm{1})_{-2}\right].
+  \end{equation}
+  We compare these two decompositions by further decomposing under
+  \begin{equation}
+    \begin{aligned}
+     (i):&\qquad \E_{7(7)}\longrightarrow\SL(6)\times\SL(2)_{\rm IIB}\times\R^{+}_{\rm IIB} \longrightarrow \SL(3)_{1}\times\SL(3)_{2}\times\R^{+}_{\SL(6)}\times\R^{+}_{\SL(2)_{\rm IIB}}\times\R^{+}_{\rm IIB},\\
+     (ii):&\qquad \E_{7(7)}\longrightarrow\SL(4)_{1}\times\SL(4)_{2}\times\R^{+}_{\SL(8)} \longrightarrow \SL(3)_{1}\times\SL(3)_{2}\times\R^{+}_{1}\times\R^{+}_{2}\times\R^{+}_{\SL(8)}.
+    \end{aligned}
+  \end{equation}
+  We get the following:
+  \begin{equation}
+    \begin{aligned}
+    \bm{56} &\overset{(i)}{\longrightarrow} \Big[(\bm{\bar{3}},\bm{1})_{-1,0,-4} \oplus (\bm{1},\bm{\bar{3}})_{1,0,-4}\Big] \oplus \Big[(\bm{3},\bm{1})_{1,1,-2} \oplus (\bm{3},\bm{1})_{1,-1,-2} \oplus (\bm{1},\bm{3})_{-1,1,-2} \oplus (\bm{1},\bm{3})_{-1,-1,-2}\Big] \\
+    &\qquad \oplus \Big[(\bm{1},\bm{1})_{3,0,0} \oplus (\bm{1},\bm{1})_{-3,0,0} \oplus (\bm{3},\bm{\bar{3}})_{-1,0,0} \oplus (\bm{\bar{3}},\bm{3})_{1,0,0}\Big] \\
+    &\qquad \oplus \Big[(\bm{\bar{3}},\bm{1})_{-1,1,2} \oplus (\bm{\bar{3}},\bm{1})_{-1,-1,2} \oplus (\bm{1},\bm{\bar{3}})_{1,1,2} \oplus (\bm{1},\bm{\bar{3}})_{1,-1,2}\Big] \oplus \Big[(\bm{3},\bm{1})_{1,0,4} \oplus (\bm{1},\bm{3})_{-1,0,4}\Big],\\[10pt]
+    \bm{56} &\overset{(ii)}{\longrightarrow} \Big[(\bm{\bar{3}},\bm{1})_{2,0,2} \oplus (\bm{3},\bm{1})_{-2,0,2} \oplus (\bm{1},\bm{1})_{-3,-3,0} \oplus (\bm{1},\bm{3})_{-3,1,0}\oplus (\bm{3},\bm{1})_{1,-3,0} \oplus (\bm{3},\bm{3})_{1,1,0}\\
+      &\quad\qquad \oplus (\bm{1},\bm{\bar{3}})_{0,2,-2} \oplus (\bm{1},\bm{3})_{0,-2,-2}\Big] \oplus \Big[(\bm{1},\bm{\bar{3}})_{0,2,2} \oplus (\bm{1},\bm{3})_{0,-2,2} \oplus (\bm{1},\bm{1})_{3,3,0} \oplus (\bm{1},\bm{\bar{3}})_{3,-1,0}\\
+      &\quad\qquad \oplus (\bm{\bar{3}},\bm{1})_{-1,3,0} \oplus (\bm{\bar{3}},\bm{\bar{3}})_{-1,-1,0} \oplus (\bm{\bar{3}},\bm{1})_{2,0,-2} \oplus (\bm{3},\bm{1})_{-2,0,-2}\Big].
+    \end{aligned}
+  \end{equation}
 
+  From these decompositions we extract the relations between the charges:
+  \begin{equation}
+    \begin{cases}
+    q_{\SL(6)} = -\dfrac{1}{2}(q_{\SL(3)_{1}}+q_{\SL(3)_{2}}), \\[7pt]
+    q_{\SL(2)_{\rm IIB}} = \dfrac{1}{4}\,\left(q_{\SL(3)_{1}}-q_{\SL(3)_{2}}+q_{\SL(8)}\right), \\[7pt]
+    q_{\rm IIB} = \dfrac{1}{2}\,\left(-q_{\SL(3)_{1}}+q_{\SL(3)_{2}}+3\,q_{\SL(8)}\right).
+    \end{cases}
+  \end{equation}
+  So the coordinates are inside $(\bm{6},\bm{1})_{-2}\oplus(\bm{1},\bm{6})_{2}$ of $\SL(4)_{1}\times\SL(4)_{2}\times\R^{+}_{\SL(8)}$. \ce{Problem with $3, \bar{3}$? Comes from identification $\bm{6'}=\bm{\bar{6}}$?}
 
-\paragraph*{} The singlets always come from the $\bm{63}$ and $\bm{720}$ of $\SL(8)_{\rm IIB}$ (and $\bm{70}$ for $\SL(4)\times\SL(4)\times\R_{+}$).
+  We now turn to the six-form potential $C_{(6)}^{\alpha}$, which sits in the representation $\bm{133}$ of $\E_{7(7)}$. Under $\E_{7(7)} \rightarrow \SL(8)$, it decomposes as $\bm{133} \rightarrow \bm{63} \oplus \bm{70}$, and
+  \begin{equation}
+    \begin{aligned}
+    \SL(8) & \longrightarrow \SL(4) \times \SL(4) \times \R^{+} \\
+    \bm{63} & \longrightarrow (\bm{4},\bm{\bar{4}})_{2} \oplus (\bm{1},\bm{1})_{0} \oplus (\bm{1},\bm{15})_{0} \oplus (\bm{15},\bm{1})_{0} \oplus (\bm{\bar{4}},\bm{4})_{-2} \\
+    \bm{70} & \longrightarrow (\bm{1},\bm{1})_{4} \oplus (\bm{\bar{4}},\bm{4})_{2} \oplus (\bm{6},\bm{6})_{0} \oplus (\bm{4},\bm{\bar{4}})_{-2} \oplus (\bm{1},\bm{1})_{-4}.
+    \end{aligned}
+  \end{equation}
+  Given that $C_{(6)}^{\alpha}$ is a $\SL(2)_{\rm IIB}$ doublet of fixed $R_{\rm IIB}^{+}$ charge, let us spell out the charges explicitly. In $\bm{63}$:
+  \begin{equation}
+    \begin{aligned}
+    \SL(4) \times \SL(4) \times \R^{+} & \longrightarrow \SL(3) \times \SL(3) \times \R^{+}_{\SL(2)_{\rm IIB}} \times \R^{+}_{\rm IIB} \\
+    (\bm{4},\bm{\bar{4}})_{2} & \longrightarrow (\bm{1},\bm{1})_{-1,6} \oplus (\bm{1},\bm{\bar{3}})_{0,4} \oplus (\bm{3},\bm{1})_{0,4} \oplus (\bm{3},\bm{\bar{3}})_{1,2}\\
+    (\bm{1},\bm{1})_{0} & \longrightarrow (\bm{1},\bm{1})_{0,0} \\
+    (\bm{1},\bm{15})_{0} & \longrightarrow (\bm{1},\bm{1})_{0,0} \oplus (\bm{1},\bm{3})_{-1,2} \oplus (\bm{1},\bm{\bar{3}})_{1,-2} \oplus (\bm{1},\bm{8})_{0,0}\\
+    (\bm{15},\bm{1})_{0} & \longrightarrow (\bm{1},\bm{1})_{0,0} \oplus (\bm{3},\bm{1})_{1,-2} \oplus (\bm{\bar{3}},\bm{1})_{-1,2} \oplus (\bm{8},\bm{1})_{0,0} \\
+    (\bm{\bar{4}},\bm{4})_{-2} & \longrightarrow (\bm{1},\bm{1})_{1,-6} \oplus (\bm{1},\bm{3})_{0,-4} \oplus (\bm{\bar{3}},\bm{1})_{0,-4} \oplus (\bm{\bar{3}},\bm{3})_{-1,-2}.
+    \end{aligned}
+  \end{equation}
+  In $\bm{70}$:
+  \begin{equation}
+    \begin{aligned}
+    \SL(4) \times \SL(4) \times \R^{+} & \longrightarrow \SL(3) \times \SL(3) \times \R^{+}_{\SL(2)_{\rm IIB}} \times \R^{+}_{\rm IIB} \\
+    (\bm{1},\bm{1})_{4} & \longrightarrow (\bm{1},\bm{1})_{1,6}\\
+    (\bm{\bar{4}},\bm{4})_{2} & \longrightarrow (\bm{1},\bm{1})_{2,0} \oplus (\bm{1},\bm{3})_{1,2} \oplus (\bm{\bar{3}},\bm{1})_{1,2} \oplus (\bm{\bar{3}},\bm{3})_{0,4} \\
+    (\bm{6},\bm{6})_{0} & \longrightarrow (\bm{3},\bm{3})_{0,0} \oplus (\bm{3},\bm{\bar{3}})_{-1,2} \oplus (\bm{\bar{3}},\bm{3})_{1,-2} \oplus (\bm{\bar{3}},\bm{\bar{3}})_{0,0} \\
+    (\bm{4},\bm{\bar{4}})_{-2} & \longrightarrow (\bm{1},\bm{1})_{-2,0} \oplus (\bm{1},\bm{\bar{3}})_{-1,-2} \oplus (\bm{3},\bm{1})_{-1,-2} \oplus (\bm{3},\bm{\bar{3}})_{0,-4} \\
+    (\bm{1},\bm{1})_{-4} & \longrightarrow (\bm{1},\bm{1})_{-1,-6}
+    \end{aligned}
+  \end{equation}
+  $\SO(3)\times\SO(3)$ singlets $\SL(2)_{\rm IIB}$ doublets and of given $R_{\rm IIB}^{+}$ charge are given by
+  \begin{equation}
+    (\bm{1},\bm{1})_{1,6} \oplus (\bm{1},\bm{1})_{-1,6} \subset (\bm{1},\bm{1})_{4} \oplus (\bm{4}, \bm{\bar{4}})_{2} \quad {\rm and} \quad (\bm{1},\bm{1})_{1,-6} \oplus (\bm{1},\bm{1})_{-1,-6} \subset (\bm{1},\bm{1})_{-4} \oplus (\bm{\bar{4}}, \bm{4})_{-2},
+  \end{equation}
+  where we wrote embeddings of $\SL(3) \times \SL(3) \times \R^{+}_{\SL(2)_{\rm IIB}} \times \R^{+}_{\rm IIB}$ in $\SL(4) \times \SL(4) \times \R^{+}$. These doublets correspond to $C_{(6)}^{\alpha}$ and the analogous $C^{(6)\,\alpha}$. So
+  \begin{equation}
+    C_{(6)}^{\alpha} \subset (\bm{1},\bm{1})_{4} \oplus (\bm{4},\bm{\bar{4}})_{2}.
+  \end{equation}
+  \ce{But no $(\bm{4},\bm{\bar{4}})$ in $\left((\bm{6},\bm{1})_{2}\oplus(\bm{1},\bm{6})_{-2}\right)^{\wedge 6}$...}
+
+  \subsection{\texorpdfstring{$S^{7-p}\times S^{p-1}$}{S7-pxSp-1}}
+  ...
 
 \appendix
 
