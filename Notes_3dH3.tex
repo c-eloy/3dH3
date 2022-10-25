@@ -286,7 +286,7 @@ The coloured representations are those that can originate from $H_{(7)}^{\alpha}
 
 Can be seen as further reduction of four dimensional $\E_{7(7)}$ solutions on a circle. Under $\E_{8(8)}\rightarrow\E_{7(7)}\times\SL(2)\rightarrow\E_{7(7)}\times\R_{+}$,
 \begin{equation}
-  \bm{248} \longrightarrow (\bm{1},\bm{3}) \oplus (\bm{56},\bm{2}) \oplus (\bm{133},\bm{3})\longrightarrow \bm{1}_{2} \oplus \bm{56}_{1} \oplus \bm{1}_{0} \oplus \bm{133}_{0} \oplus \bm{56}_{-1} \oplus \bm{1}_{-2}.
+  \bm{248} \longrightarrow (\bm{1},\bm{3}) \oplus (\bm{56},\bm{2}) \oplus (\bm{133},\bm{1})\longrightarrow \bm{1}_{2} \oplus \bm{56}_{1} \oplus \bm{1}_{0} \oplus \bm{133}_{0} \oplus \bm{56}_{-1} \oplus \bm{1}_{-2}.
 \end{equation}
 The $\E_{7(7)}$ coordinates are in the $\bm{56}_{1}$, and $C_{(6)}$ in $\bm{56}_{-1}$ (11d $\hat{C}_{\hat\mu\hat\nu\hat\rho}$ leads to $C_{\mu\nu\,m}$ in 3d, $H_{\mu\nu\rho\,m}$ dual to purely internal $H_{(7)}$ of potential $C_{(6)}$). Then,
 \begin{equation}
@@ -461,6 +461,90 @@ The $\E_{7(7)}$ coordinates sit in $(\bm{56},\bm{2})$. \ce{Further review ref.~\
   \subsection{\texorpdfstring{$S^{7-p}\times S^{p-1}$}{S7-pxSp-1}}
   ...
 
+
+\section{\texorpdfstring{${\rm AdS}_{3}\times S^{3}\times S^{3}\times S^{1}$}{AdS3xS3xS3xS1}}
+Ten-dimensional maximal supergravity features a solution on ${\rm AdS}_{3}\times S^{3}_{+}\times S^{3}_{-}\times S^{1}$, whose vacuum preserves ${\cal N}=(4,4)$ supersymmetries. The superisometries are given by
+\begin{equation}
+  D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R},   
+\end{equation}
+with $\alpha$ the ratio of the spheres $S^{3}$ radii. The even part of $D^{1}(2,1;\alpha)$ is isomorphic to $\SL(2,\mathbb{R})\times\SO(3)^{+}\times\SO(3)^{-}$~\cite{Gunaydin:1986fe}, so that the bosonic symmetries at the vacuum are given by
+\begin{equation}
+  \underbrace{\SL(2,\mathbb{R})_{\rm L}\times\SL(2,\mathbb{R})_{\rm R}}_{\textstyle {\rm AdS}_{3}}\underbrace{\times\SO(3)^{+}_{\rm L}\times\SO(3)^{+}_{\rm R}}_{\textstyle S^{3}_{+}}\times\underbrace{\SO(3)^{-}_{\rm L}\times\SO(3)^{-}_{\rm R}}_{\textstyle S^{3}_{-}}.
+\end{equation}
+
+This vacuum has been described with an $\SO(8,8)$ embedding tensor $\theta_{IJ\vert KL}$ in ref.~\cite{Eloy:2020uix}. Possible to build an $\E_{8(8)}$ embedding tensor using $\theta_{IJ\vert KL}$~\cite{Deger:2019tem}: the maximal theory can be truncated to a half-maximal subsector upon truncating the coset space
+\begin{equation} \label{eq:E8SO88}
+{\rm E}_{8(8)}/{\rm SO}(16) \longrightarrow \SO(8,8)/(\SO(8)\times\SO(8)).
+\end{equation}
+Specifically, splitting the ${\rm E}_{8(8)}$ generators according to
+\begin{equation}
+  \left\{L^{[IJ]}, Y^{A}\right\},\quad I\in\llbracket1,16\rrbracket,\;\; A\in\llbracket1,128\rrbracket,
+\end{equation}
+into $\SO(8,8)$ and its orthogonal complement (transforming in the spinor representation ${\bf 128}_{\rm s}$ of $\SO(8,8)$), an embedding tensor of the maximal theory takes the form
+\begin{equation} \label{eq:embmax}
+  \begin{cases}
+  \Theta_{IJ|KL} = \theta_{IJ|KL},\medskip\\
+  \Theta_{A|B} =-\dfrac{1}{2}\theta\,\eta_{AB}+\dfrac{1}{96}\,\Gamma^{IJKL}_{AB}\,\theta_{IJ\vert KL},
+  \end{cases}
+\end{equation}
+where $\Gamma^{IJKL}_{AB}$ denotes the four-fold product of $\SO(8,8)$ $\Gamma$ matrices. Spectrum computed in ref.~\cite{Eberhardt:2017fsi}, organized into long multiplets $\left[\ell^{+}_{R},\ell^{-}_{R},\ell^{+}_{L},\ell^{-}_{L}\right]$ of $D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R}$.
+
+  \subsection{Deformations from \texorpdfstring{${\rm AdS}_{3}\times S^{3}$}{AdS3xS3}}
+  In ref.~\cite{Eloy:2021fhc}, deformation of ${\rm AdS}_{3}\times S^{3}$ built from a $\SO(8,4)$ coset-representative $v(\omega,\zeta)$. For generic $(\omega,\zeta)$, ${\cal N}=0$, but along
+  \begin{equation}
+    \zeta^{2}=1-e^{-2\omega},
+  \end{equation}
+  ${\cal N}=(4,0)$.
+
+  From this deformation, we can generate of deformation of ${\rm AdS}_{3}\times S^{3}_{+}\times S^{3}_{-}\times S^{1}$: first embed $v$ in ${\cal V}\in\SO(8,8)$, then deform embedding tensor $T={\cal V}^{-1}\cdot\theta$, and embed $T$ in $\E_{8(8)}$. Two different ways of embedding $v$ in $\SO(8,8)$ $\implies$ ${\cal V}^{(+)}(\omega_{+},\zeta_{+})$ and ${\cal V}^{(-)}(\omega_{-},\zeta_{-})$. Then, four-parameter deformation from
+  \begin{equation}
+    {\cal V}(\omega_{+},\zeta_{+},\omega_{-},\zeta_{-})={\cal V}^{(+)}{\cal V}^{(-)}.
+  \end{equation}
+  \ce{More possibilities?}
+
+  Symmetries:
+  \begin{equation}
+   \begin{tikzpicture}
+      \draw (0,0) node (round) {${\rm SO}(4)_{+} \times{\rm SO}(4)_{-} $};
+      \draw ($(round)+(-4,0)$) node {\small Round spheres};
+      \draw ($(round)+(5,0)$) node (susy) {\small ${\cal N}=(4,4)$};
+      \draw [thick,-stealth] (round) -- +(-2.5,-2.5) node (defp) [below] {${\rm U}(1)\times{\rm U}(1) \times{\rm SO}(4)_{-}$} node [midway,above left] {$(\omega_{+},\zeta_ {+})$};
+      \draw [thick,-stealth] (round) -- +(2.5,-2.5) node (defm) [below] {${\rm SO}(4)_{+} \times{\rm U}(1)\times{\rm U}(1)$} node [midway,above right] {$(\omega_{-},\zeta_ {-})$};
+      \draw ($(susy)+(0,-2.5)$) node [below] {\small ${\cal N}=0$};
+      \draw [thick,-stealth] (defm) -- +(-2.5,-2.5) node (defpm) [below] {${\rm U}(1)\times{\rm U}(1) \times{\rm U}(1)\times{\rm U}(1)$} node [above=1.2cm] {$(\omega_{+},\zeta_ {+},\omega_{-},\zeta_ {-})$};
+      \draw [thick,-stealth] (defp) -- +(2.5,-2.5);
+      \draw ($(susy)+(0,-5.5)$) node {\small ${\cal N}=0$};
+    \end{tikzpicture}
+  \end{equation}
+  Two lines along which ${\cal N}=(4,0)$;
+  \begin{equation}
+    \begin{cases}
+      \zeta^{2}_{+}=1-e^{-2\omega_{+}},\\
+      \omega_{-}=\zeta_{-}=0,
+    \end{cases}
+    \quad 
+    \begin{cases}
+      \omega_{+}=\zeta_{+}=0,\\
+      \zeta^{2}_{-}=1-e^{-2\omega_{-}}.
+    \end{cases}
+  \end{equation}
+  \ce{More?}
+
+  \subsubsection{Deformation \texorpdfstring{${\cal V}^{(+)}$}{V+}}
+  Study of deformation with ${\cal V}^{(+)}$ with half-maximal theory (access to full spectrum). For $\zeta^{2}_{+}=1-e^{-2\omega_{+}}$, $D^{1}(2,1;\alpha)_{\rm L}$ broken, for even part:
+  \begin{equation}
+    \SL(2,\mathbb{R})_{\rm L}\times\SO(3)^{+}_{\rm L}\times\SO(3)^{-}_{\rm L} \longrightarrow \SL(2,\mathbb{R})_{\rm L}\times\SO(2)^{+}_{\rm L}\times\SO(3)^{-}_{\rm L}
+  \end{equation}
+  Then spectrum organized in terms of lon multiplet of $D^{1}(2,1;\alpha)_{\rm R}$, charge $q_{\rm L}^{+}$ and spin $j_{\rm L}^{+}$:
+  \begin{equation}
+    \left[\ell^{+}_{R},\ell^{-}_{R}\right]^{j_{\rm L}^{+}}_{_{\rm L}^{+}},
+  \end{equation}
+  with conformal weight:
+  \begin{equation}
+    \Delta_{q}^{\ell^{+},\ell^{-}} = -\frac{1}{2} + \frac{1}{2}\sqrt{1+\frac{4\ell^{+}(\ell^{+}+1)+q^{2}(e^{2\omega}-1)+4\alpha^{2}\ell^{-}(\ell^{-}+1)}{1+\alpha^{2}}}.
+  \end{equation}
+  For ${\cal V}^{(-)}$, $\alpha\rightarrow\alpha^{-1}$.
+
 \appendix
 
 \section{Miniminal ${\cal N}=(1,0)$ six-dimensional supergravity}
@@ -511,7 +595,7 @@ They are two physically different possibilities to embed the internal coordinate
     \bm{35_{\rm c}} &\longrightarrow {\color{mydarkorange}\bm{\bar{10}}_{2}} \oplus \bm{15}_{0}  \oplus \bm{10}_{-2},
   \end{aligned}
 \end{equation}
-where the colored representations are those coming from the three-forms. Only $\bm{10}_{2}$ and $\bm{\bar{10}}_{2}$ feature $\SO(4)$ singlets. \ce{So no distinction between (1,1) and (2,0)? Because triality, or I made errors?}
+where the colored representations are those coming from the three-forms. Only $\bm{10}_{2}$ and $\bm{\bar{10}}_{2}$ feature $\SO(4)$ singlets. \ce{So no distinction between (1,1) and (2,0)? Because triality, or I made errors?} $\leq$
 
 \bibliography{ref}
 
