@@ -1,0 +1,518 @@
+\documentclass[a4paper, 11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts,slashed}
+%\usepackage{arydshln}
+%\usepackage[greek,english]{babel}
+%\usepackage{cancel}
+%\usepackage{upgreek}
+\usepackage{float}
+\usepackage{cite}
+%\usepackage{url}
+\usepackage{latexsym}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{epsfig}
+%\usepackage{isomath}
+\usepackage{latexsym,amssymb}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{hyperref}
+%\usepackage{fontenc}
+\usepackage{graphicx,tikz}
+\usepackage{multirow}
+\setcounter{MaxMatrixCols}{13}
+%\usepackage{xfrac}
+%\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+%\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{stmaryrd}
+%%%%%%%%% Packages to show breakings %%%%%%%%%
+\usepackage{enumerate}
+\usepackage[shortlabels]{enumitem}
+
+
+%  PDF specials
+%\newif\ifpdf
+\usepackage{ifpdf}
+\ifx\pdfoutput\undefined
+\pdffalse
+\usepackage{cite}
+\else
+\pdfoutput=1
+\pdftrue
+%\usepackage[pdftex]{hyperref}
+\pdfcompresslevel=9
+\fi
+\DeclareFontFamily{OMS}{rsfs}{\skewchar\font'60}
+\DeclareFontShape{OMS}{rsfs}{m}{n}{<-5>rsfs5 <5-7>rsfs7 <7->rsfs10 }{}
+\DeclareSymbolFont{rsfs}{OMS}{rsfs}{m}{n}
+\DeclareSymbolFontAlphabet{\Scr}{rsfs}
+\newcommand{\RRB}[2]{\makebox[#1]{$\left.\rule{0pt}{#2}\right)$}}
+\newcommand{\LRB}[2]{\makebox[#1]{$\left(\rule{0pt}{#2}\right.$}}
+\newcommand{\RSB}[2]{\makebox[#1]{$\left.\rule{0pt}{#2}\right]$}}
+\newcommand{\LSB}[2]{\makebox[#1]{$\left[\rule{0pt}{#2}\right.$}}
+\newcommand{\gr}[1]{\begin{greek}#1\end{greek}}
+\setlength{\parskip}{0pt} \setlength{\parindent}{0.5cm}
+\setcounter{footnote}{0}
+\renewcommand{\theequation}{\thesection.\arabic{equation}}
+\numberwithin{equation}{section}
+\def\be{\begin{equation}}
+	\def\ee{\end{equation}}
+\def\ba{\begin{array}}
+	\def\ea{\end{array}}
+\newcommand{\ho}[1]{$\, ^{#1}$}
+\newcommand{\hoch}[1]{$\, ^{#1}$}
+\newcommand{\bea}{\begin{eqnarray}}
+	\newcommand{\eea}{\end{eqnarray}}
+\newcommand{\ds}{\displaystyle}
+\newcommand{\BNA}{\makebox[0.8em]{\tiny$b\neq a$}}
+\newcommand{\notEq}[2]{\makebox[0.8em]{\tiny$#1\neq #2$}}
+\newcommand{\ph}{\alpha}
+\newcommand{\scal}{z}
+\newcommand{\bscal}{\bar\scal}
+\newcommand{\scalC}{\pi}
+%%%%%%%%%%%%%%%%% formatting
+\textwidth 165mm \textheight 220mm \topmargin 0pt \oddsidemargin 2mm
+%%% macros
+\newcommand{\rmg}[1]{\mbox{{\small \textgreek{#1}}}}
+\newcommand{\rmgg}[1]{\mathrm{#1}}
+\newcommand{\ft}[2]{{\textstyle\frac{#1}{#2}}}
+
+
+\newcommand{\uA}{{\underline{A}}}
+\newcommand{\uB}{{\underline{B}}}
+\newcommand{\uC}{{\underline{C}}}
+\newcommand{\uD}{{\underline{D}}}
+\newcommand{\uE}{{\underline{E}}}
+\newcommand{\uF}{{\underline{F}}}
+\newcommand{\uG}{{\underline{G}}}
+\newcommand{\uM}{{\underline{M}}}
+\newcommand{\uN}{{\underline{N}}}
+\newcommand{\uP}{{\underline{P}}}
+\newcommand{\dom}{{\dot{m}}}
+\newcommand{\don}{{\dot{n}}}
+\newcommand{\dop}{{\dot{p}}}
+\newcommand{\doq}{{\dot{q}}}
+\newcommand{\dor}{{\dot{r}}}
+\newcommand{\ua}{{\overline{\alpha}}}
+\newcommand{\ub}{{\overline{\beta}}}
+\newcommand{\uc}{{\overline{\gamma}}}
+\newcommand{\ude}{{\overline{\delta}}}
+\newcommand{\AI}{\left(A^{-1}(\eta)\right)}
+\newcommand{\ff}[1]{\mathfrak{#1}}
+\newcommand{\fA}{\ff{A}}
+\newcommand{\fB}{\ff{B}}
+\newcommand{\FF}{{\cal F}}
+\newcommand{\FG}{{\cal G}}
+\newcommand{\ov}[1]{\overline{#1}}
+
+%
+%\newcommand{\hc}{{\rm h.c.}}
+%\newcommand{\bbox}{\lower.2ex\hbox{$\Box$}}
+%% Formatting of group names
+\newcommand{\un}[1]{\mathrm{SU}( #1 )}
+\newcommand{\ON}[1]{\mathrm{O}( #1 )}
+\newcommand{\SU}[1]{\mathrm{SU}( #1 )}
+\newcommand{\SL}[1]{\mathrm{SL}( #1 )}
+\newcommand{\GL}[1]{\mathrm{GL}( #1 )}
+\newcommand{\SO}[1]{\mathrm{SO}( #1 )}
+\newcommand{\UO}{\mathrm{U}(1)}
+\newcommand{\U}[1]{\mathrm{U}(#1)}
+\newcommand{\Spin}[1]{\mathrm{Spin}(#1)}
+\newcommand{\EE}{E_{8(8)}}
+\newcommand{\USp}[1]{\mathrm{USp}(#1)}
+\newcommand{\Un}[1]{\mathrm{U}(#1)}
+\newcommand{\Gt}{\mathrm{G}_{2(2)}}
+\newcommand{\Ff}{\mathrm{F}_{4(4)}}
+\newcommand{\En}[1]{E_{#1(#1)}}
+\newcommand{\Gst}{G_S}
+\newcommand{\Msc}{{\cal M}_{\rm scalar}}
+\newcommand{\SUc}[2]{\mathrm{S}(\U{#1}\times\U{#2})}
+
+\newcommand{\Com}[2]{\mathrm{Com}_{#1}(#2)}
+\newcommand{\SLA}{\SL{8}_{\rm IIA}}
+\newcommand{\SLB}{\SL{8}_{\rm IIB}}
+
+%% Formatting Lie algebra names
+\newcommand{\su}[1]{\mathfrak{su}(#1)}
+\newcommand{\so}[1]{\mathfrak{so}(#1)}
+\newcommand{\usp}[1]{\mathfrak{usp}(#1)}
+\newcommand{\gt}{\mathfrak{G}_2}
+\newcommand{\fF}{\mathfrak{F}_4}
+\newcommand{\uu}{\mathfrak{u}(1)}
+
+\newcommand{\ud}[1]{\underline{#1}}
+
+%% Group theory stuff
+\newcommand{\mbf}[1]{\mathbf{#1}}
+\newcommand{\mbfb}[1]{\mathbf{\left(#1\right)}}
+%\newcommand{\obf}[1]{\overline{\mathbf{#1}}}
+\newcommand{\obf}[1]{\mbf{\overline{\mathbf{#1}}}}
+\newcommand{\trep}[1]{(\mbf{#1})}
+\newcommand{\PR}[1]{(\mathbb{P}_{#1})}
+
+\newcommand{\Leib}[2]{\llbracket #1,#2 \rrbracket}
+
+%\newcommand{}
+\newcommand{\+}{\oplus}
+\newcommand{\cc}{\text{c.c.}}
+
+%%%%%%%% generalised stuff
+\newcommand{\gL}{\mathcal{L}}
+\newcommand{\gM}{\mathcal{M}}
+\newcommand{\tw}{{\cal U}}
+\newcommand{\kr}[2]{\delta^{#1}_{#2}}
+\newcommand{\cU}{{\cal U}}
+\newcommand{\UI}{\left(U^{-1}\right)}
+\newcommand{\flt}[1]{\underline{#1}}
+\newcommand{\fl}[1]{\ov{#1}}
+\newcommand{\cY}{{\cal Y}}
+\newcommand{\vg}{\mathring{g}}
+\newcommand{\cP}{{\cal P}}
+\newcommand{\cV}{{\cal V}}
+\newcommand{\cVI}{\left(\cV^{-1}\right)}
+\newcommand{\cA}{\mathcal{A}}
+\newcommand{\cB}{\mathcal{B}}
+\newcommand{\cC}{\mathcal{C}}
+
+%%%%%%%% math operators
+\DeclareMathOperator{\tr}{Tr}
+%% Comments
+\newcommand{\EM}[1]{\textcolor{red}{#1}}
+\newcommand{\MG}[1]{\textcolor{blue}{#1}}
+\newcommand{\CE}[1]{\textcolor{green}{#1}}
+\newcommand{\CG}{\Com{G}{\EE}}
+\newcommand{\cJ}{{\cal J}}
+
+%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+	
+\begin{titlepage}
+	\vfill
+	\begin{flushright}
+		HU-EP-23/XX
+	\end{flushright}
+	
+	\vfill
+	
+	
+	\begin{center}
+		\baselineskip=16pt
+		{\Large \bf Adding fluxes to consistent truncations: \\ IIB supergravity on ${\rm AdS}_3 \times S^3 \times S^3 \times S^1$}
+		\vskip 2cm
+		{\large \bf Camille Eloy$^a$\footnote{\tt camille.eloy@vub.be}, Michele Galli$^b$\footnote{\tt michele.galli@physik.hu-berlin.de},  Emanuel Malek$^b$\footnote{\tt emanuel.malek@physik.hu-berlin.de}}
+		\vskip .6cm
+		{\it $^a$ Theoretische Natuurkunde, Vrije Universiteit Brussel, and the Interational Solvay, \\
+			Institutes, Pleinlaan 2, B-1050 Brussels, Belgium}
+		\\ \ \\
+		{\it $^b$ Institut f\"ur Physik, Humboldt-Universit\"at zu Berlin, \\IRIS Geb\"aude, Zum Gro\ss en Windkanal 2, 12489 Berlin, Germany \\ \ \\}
+		\vskip 1cm
+	\end{center}
+	\vfill
+		
+	\begin{abstract}
+		We use $\EE$ Exceptional Field Theory to construct the consistent truncation of IIB supergravity on $S^3 \times S^3 \times S^1$ to maximal 3-dimensional ${\cal N}=16$ gauged supergravity containing the ${\cal N}=(4,4)$ AdS$_3$ vacuum. We explain how to achieve this by adding a 7-form flux to the $S^1$ reduction of the dyonic $\En{7}$ truncation on $S^3 \times S^3$ previously constructed in the literature. Our truncation Ansatz includes, in addition to the ${\cal N}=(4,4)$ vacuum, a host of moduli breaking some or all of the supersymmetries. We explicitly construct the uplift of a subset of these to construct new supersymmetric and non-supersymmetric AdS$_3$ vacua of IIB string theory, and show how the moduli space of AdS$_3$ vacua of six-dimensional gauged supergravity studied in \cite{Eloy:2021fhc} is compactified upon lifting to 10 dimensions. Along the way, we also derive the form of 3-dimensional ${\cal N}=16$ gauged supergravity in terms of the embedding tensor.
+	\end{abstract}
+	\vskip 0cm
+		
+	\vfill
+		
+	\setcounter{footnote}{0} 
+		
+\end{titlepage}
+	
+\tableofcontents
+	
+\newpage
+
+\EM{To do:
+\begin{itemize}
+	\item Think about title - mention new AdS$_3$ vacua? Lifting AdS$_3$ vacua?
+	\item Move 3-d gauged SUGRA to somewhere else??
+	\item Discuss IIA (and IIB -- Jerome's story) T-duals
+\end{itemize}
+}
+
+\section{Introduction}
+
+\section{Review of $\EE$ ExFT and consistent truncations} \label{s:Review}
+Review relevant bits of \cite{Hohm:2014fxa} and \cite{Galli:2022idq}.
+
+A consistent truncation requires that the objects
+\begin{equation} \label{eq:DoubleU}
+	\ff{U}_{\fl{M}} = (\cU_{\fl{M}},\,\Sigma_{\fl{M}}) \,, \qquad \Sigma_{\fl{M}\,M} = \frac{1}{60} \rho^{-1} f_{\fl{M}}{}^{\fl{N}\fl{P}}\, U_{\fl{N}\,P} \partial_M U_{\fl{P}}{}^{P} \,, \qquad \cU_{\fl{M}}{}^M = \rho^{-1} U_{\fl{M}}{}^M \,,
+\end{equation}
+satisfy the differential condition
+\begin{equation} \label{eq:GenLeibniz}
+	\gL_{\ff{U}_{\fl{M}}} {\cU}_{\fl{N}}{}^M = X_{\fl{M}\fl{N}}{}^{\fl{P}}\, \cU_{\fl{P}}{}^M \,,
+\end{equation}
+with $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ constant.
+
+\section{3-dimensional ${\cal N}=16$ gauged supergravity} \label{s:3dSUGRA}
+
+\section{Adding fluxes to consistent truncations} \label{s:AddFlux}
+In order to construct the consistent truncation around the ${\cal N}=(4,4)$ AdS$_3 \times S^3 \times S^3 \times S^1$ vacuum of IIB supergravity, a promising starting point is the dyonic $S^3 \times S^3$ truncation of IIB supergravity constructed in \cite{Inverso:2016eet}, and further reducing this on $S^1$. However, this will not give the correct AdS$_3$ vacuum since the truncation is missing the 7-form flux on $S^3 \times S^3 \times S^1$ that is required. Indeed, the 3-dimensional gauged supergravity that would be obtained as discussed way does not have any AdS$_3$ vacua. We can remedy this situation by defining a new consistent truncation by adding a 7-form flux to the one obtained from the $S^3 \times S^3$ reduction constructed in $\En{7}$ ExFT.
+
+This motivates the following question, given a consistent truncation, i.e. $\cU_{\fl{M}}{}^M$, satisfying \eqref{eq:GenLeibniz}, when can we add a new flux component of string theory to the compactification to obtain a new consistent truncation? Adding a new flux component to the truncation is equivalent to twisting the generalised frame as follows
+\begin{equation} \label{eq:Twisting}
+	\cU_{\fl{M}}{}^M \longrightarrow \cU'_{\fl{M}}{}^M = \cU_{\fl{M}}{}^N \exp(C)_N{}^M \,,
+\end{equation}
+where $C$ denotes the $\EE$ generator corresponding to the potential we want to add to the compactification. The effect of the twist \eqref{eq:Twisting} is that the generalised Lie derivative of $\cU'$ satisfies
+\begin{equation}
+	\gL_{\ff{U}'_{\fl{M}}} \cU'_{\fl{N}}{}^M = \left( \gL_{\ff{U}_{\fl{M}}} \cU_{\fl{N}}{}^N + F_{PQ}{}^N\, \cU_{\fl{M}}{}^P\, \cU_{\fl{N}}{}^Q \right) \exp(C)_N{}^M \,,
+\end{equation}
+where $F_{MN}{}^P$ is a tensor in the $\mathbf{1} \oplus \mathbf{248} \oplus \mathbf{3875}$ of $\EE$, i.e. the same representation as the embedding tensor, corresponding to the field strength of the potential $C$ in \eqref{eq:Twisting}. Using \eqref{eq:GenLeibniz}, we now have
+\begin{equation}
+	\gL_{\ff{U}'_{\fl{M}}} \cU'_{\fl{N}}{}^M = \left( X_{\fl{M}\fl{N}}{}^{\fl{P}} + \rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\fl{P}} \right) \cU'_{\fl{P}}{}^M \,,
+\end{equation}
+where we defined
+\begin{equation} \label{eq:FlatF}
+	F_{\fl{M}\fl{N}}{}^{\fl{P}} \equiv \UI_{\fl{M}}{}^M\, \UI_{\fl{N}}{}^N\, U_P{}^{\fl{P}}\, F_{MN}{}^P \,,
+\end{equation}
+and $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ is already constant. Therefore, we have a consistent truncation if and only iff $\rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\fl{P}}$ is constant.
+
+A particularly simple way of having constant $\rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\fl{P}}$ is to consider fluxes which are stabilised by the twist matrix $U_M{}^{\fl{M}}$. The twist matrix typically only lives in a subgroup $G \subset \EE$. Therefore, in this case, we can simply tune the $G$-singlet components of the flux $F_{MN}{}^P$ to be proportional to $\rho$ to obtain a new consistent truncation.
+
+\subsection{Adding fluxes to the $S^3$ truncation of 6-dimensional supergravity} \label{s:S3Flux}
+Before dealing with the $S^3 \times S^3 \times S^1$ truncation, let us demonstrate this methdology for the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity on $S^3$, which was constructed in \cite{Eloy:2021fhc}. As discussed in \cite{Eloy:2021fhc}, the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity to 3-dimensional half-maximal gauged supergravity can be described using the $\SO{8,4}$ ExFT \cite{Hohm:2017wtr,Samtleben:2019zrh}. On the other hand, the consistent truncation on $S^3$ is conveniently described by twist matrices living in $\SL{4} \simeq \SO{3,3}$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} \EM{I think the twist matrix of \cite{Baguet:2015iou,Lee:2014mla,Hohm:2014qga} coincide in the $\SL{4}$ case, right? Camille, do you agree?} with the embedding $\SO{3,3} \subset \SO{4,4} \subset \SO{8,4}$. However, the twist matrix in \cite{Eloy:2021fhc} differs from this $\SO{3,3}$ twist matrix \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} by an additional parameter, $\lambda$, which gives rise to an external 3-form flux or, equivalently, a new internal 3-form flux.
+
+\subsubsection{The $S^3$ twist matrix}
+Since it will play a role throughout this paper, we will begin by giving the $\SL{4} \simeq \SO{3,3}$ twist matrix that describes the consistent truncation on $S^3$. Here, we give a slightly different, but equivalent, form of the twist matrix constructed in \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} for the consistent truncation on $S^n$.
+
+\EM{Maybe even move this $\SL{n+1}$ ExFT to the review section?}
+We use an $\SL{n+1}$ ExFT, like in \cite{Lee:2014mla}, which encodes an $n$-dimensional metric and volume-form flux, i.e. Freund-Rubin compactifications, and is thus a natural description of $S^n$ compactifications. The $\SL{n+1}$ ExFT formally has coordinates in the antisymmetric representation of $\SL{n+1}$, $y^{IJ} = - y^{JI}$, with $I = 1, \ldots, n+1$, and similarly, generalised vector fields transform in the antisymmetric representation of $\SL{n+1}$. The generalised Lie derivative on a generalised tensor in the fundamental $V^I$ of weight $\lambda$ is given by
+\begin{equation} \label{eq:SLnGenLie}
+	\gL_\Lambda V^I = \frac12 \Lambda^{JK} \partial_{JK} V^{I} - V^J \partial_{JK} \Lambda^{IK} + \left( \frac{\lambda}{2} + \frac{1}{n+1} \right) V^I \partial_{JK} \Lambda^{JK} \,,
+\end{equation}
+and similarly for other generalised tensors. Closure of the generalised Lie derivative \eqref{eq:SLnGenLie} requires the section condition
+\begin{equation} \label{eq:SLnSC}
+	\partial_{[IJ} \otimes \partial_{KL]} = 0 \,,
+\end{equation}
+which restricts the dependence of all fields to a subset of physical coordinates.
+
+We are interested in the maximal solutions of the section condition \eqref{eq:SLnSC} which preserve a $\SL{n} \subset \SL{n+1}$ subgroup. Under this decomposition $\SL{n+1} \rightarrow \SL{n}$ with $V^I = \left( V^i,\, V^0 \right)$, where $i = 1, \ldots, n$, we solve the section condition by having physical coordinates $y^{i0}$ on the $n$-dimensional manifold $M$, i.e. $\partial_{ij} = 0$ for all fields with only $\partial_{i0} \neq 0$. Correspondingly, the generalised tangent bundle, whose sections are in the antisymmetric representation of $\SL{n+1}$ and carry weight $\frac{n-3}{n+1}$, decomposes as
+\begin{equation} \label{eq:SLnE}
+	E = TM \oplus \Lambda^{n-2} T^*M \,,
+\end{equation}
+Note that for the case of interest to us, $n=3$, \eqref{eq:SLnE} reduces to
+\begin{equation}
+	E = TM \oplus T^*M \,,
+\end{equation}
+and its fibres transform in the $\mathbf{6}$ of $\SL{4} \simeq \SO{3,3}$. It is convenient to also introduce the generalised bundle with fibres in the anti-fundamental of $\SL{n+1}$, which is, similarly, given by
+\begin{equation}
+	N = T^*M \oplus \Lambda^{n} T^*M \,.
+\end{equation}
+Sections of $N$ are generalised tensors transforming in the anti-fundamental of $\SL{n+1}$ and carrying weight $\frac{2}{n+1}$. For $V, V' \in \Gamma(E)$ and $W \in \Gamma(N)$, the generalised Lie derivative \eqref{eq:SLnGenLie} reduces to
+\begin{equation}
+	\begin{split}
+		\gL_{V} V' &= [v, v'] + L_{v} \omega'_{(n-2)} - \imath_{v'} \omega_{(n-2)} \,, \\
+		\gL_{V} W &= L_v \omega_{(1)} + L_v \omega_{(n)} - \EM{\alpha} \omega_{(1)} \wedge \omega_{(n-2)} \,,
+	\end{split}
+\end{equation}
+\EM{(I think $\alpha = 1$ but not 100\% sure)}
+where we write $V = v + \omega_{(n-2)}$, $V' = v' + \omega'_{(n-2)}$ and $W = \omega_{(1)} + \omega_{(n)}$ as a formal of vectors and $p$-forms, and $L$ denotes the ordinary Lie derivative and $[v,v']$ the ordinary Lie bracket between vector fields $v$ and $v'$.
+
+We can now describe the $S^n$ consistent truncation using the $\SL{n+1}$ ExFT above. Let $Y^I$, $I = 1, \ldots, n+1$ be the embedding coordinates of $S^{n} \subset \mathbb{R}^{n+1}$, such that $Y^I\, Y_I = 1$. On $S^n$, we can define a parallelisation of $N$ using the generalised frame \EM{Check sign of A! Although I'm pretty confident about it.}
+\begin{equation}\label{eq:SnFrame}
+	\cU^{\fl{I}} = dY^{\fl{I}} + Y^{\fl{I}}\, vol_{S^n} - A \wedge dY^{\fl{I}} \,,
+\end{equation}
+where $A$ is an $(n-1)$-potential with field strength $dA = (n-1) vol_{S^n}$, and
+\begin{equation}
+	vol_{S^n} = \epsilon_{I_1 I_2 \ldots I_{n+1}} Y^{I_1}\, dY^{I_2} \wedge \ldots \wedge dY^{I_{n+1}} \,,
+\end{equation}
+is the volume form on $S^n$. The frame in \eqref{eq:SnFrame} has the important property that the $n+1$ generalised tensors are nowhere vanishing since $dY^I = 0$ only when $Y^I = 1$.
+
+In a local basis, \eqref{eq:SnFrame} gives us a $\GL{n+1}$ matrix, $\cU_I{}^{\fl{I}}$, whose determinant allows us to define the scalar density
+\begin{equation} \label{eq:rho}
+	\rho = \left(\det \cU_I{}^{\fl{I}}\right)^{-1/2} = \left(\det \mathring{g}\right)^{-1/2} \,,
+\end{equation}
+with $\mathring{g}$ the round metric on $S^n$. Using \eqref{eq:SnFrame} and \eqref{eq:rho} we can define the $\SL{n}$ twist matrix
+\begin{equation} \label{eq:SLnFrame}
+	U_I{}^{\fl{I}} = \rho^{2/(n+1)}\, \cU_I{}^{\fl{I}} \,.
+\end{equation}
+and hence a generalised frame for $E$ or a generalised bundle in any other rep of $\SL{n+1}$.
+
+Evaluating \eqref{eq:SLnFrame} and \eqref{eq:rho} on the northern hemisphere $Y^I = \left( y^i,\, \sqrt{1-y^i y_i}\right)$, $i = 1, \ldots, n$ and using the gauge choice for the potential $A$
+\begin{equation}
+	A_{ij} = \epsilon_{ijk}\, y^k (1 + K(v)) \,,
+\end{equation}
+with $v = y^i\, y^i$ and $\epsilon_{ijk}$ the volume form on $S^3$, we precisely recover the $\SL{4}$ twist matrix of \cite{Hohm:2014qga}, i.e.
+\begin{equation} \label{eq:SLnTwist}
+	\UI_{\fl{I}}{}^I = \begin{pmatrix}
+		\left(1-v\right)^{-1/4} \left( \delta_i{}^j + y_i\, y^j K(v) \right) & y_i \left(1-v\right)^{1/4} \\
+		y^j \left(1-v\right)^{1/4} K(v) & \left(1-v\right)^{3/4}
+	\end{pmatrix} \,.
+\end{equation}
+Moreover, the generalised frame for $E$ precisely coincides with the twist matrix in \cite{Lee:2014mla,Baguet:2015iou}. \EM{Give it explicitly?}
+
+\EM{To do: Should mention Leibniz parallelisability somewhere and the embedding tensor that arises}
+
+\subsubsection{Adding flux}
+To demonstrate our methodology, we will now show how the parameter $\lambda$ introduced in \cite{Eloy:2021fhc} can be obtained by the twisting procedure outlined in \ref{s:AddFlux}. Let us decompose $\SO{4,4} \rightarrow \SO{3,3} \times \SO{1,1}$, such that
+\begin{equation}
+	\begin{split}
+		\mathbf{8} &\rightarrow \mathbf{6_0} \oplus \mathbf{1_2} \oplus \mathbf{1_{-2}} \,, \\
+		\mathbf{28} &\rightarrow \mathbf{15_0} \oplus \mathbf{6_2} \oplus \mathbf{6_{-2}} \oplus \mathbf{1_0} \,.
+	\end{split}
+\end{equation}
+Correspondingly, we write a $\SO{4,4}$ vector $V^M$ as
+\begin{equation}
+	V^M = \left( V^A,\, V^z,\, V^{\bar{z}} \right) \,,
+\end{equation}
+where $A = 1, \ldots, 6$ labels the vector of $\SO{3,3}$ and $z$, $\bar{z}$ label the $\mathbf{1_2}$ and $\mathbf{1_{-2}}$, respectively.
+
+We denote by $U_A{}^{\ov{A}}$ the $\SO{3,3}$ twist matrix corresponding to the $S^3$ truncation constructed in \cite{Lee:2014mla,Baguet:2015iou} and obtained from \eqref{eq:SLnFrame}, \eqref{eq:rho}, \eqref{eq:SLnTwist}. Then, we can add a 3-form potential by twisting with the $\SO{4,4}$ generator
+\begin{equation} \label{eq:C2S3example}
+	(e^C)^{MN} = C_A \left( t^A \right)^{MN} \,,
+\end{equation}
+with $C_A$ an element of the $\mathbf{6_{2}}$, and $\left( t^A \right)^{MN}$ the corresponding to $\SO{4,4}$ generator whose only non-zero component is
+\begin{equation}
+	\left(t^A\right)^{Bz} = \eta^{AB} \,.
+\end{equation}
+Here $\eta_{MN}$ and $\eta_{AB}$ are the $\SO{4,4}$ and $\SO{3,3}$ invariant metrics, respectively, and are used to raise/lower the corresponding vector indices. Decomposing with respect to the geometric $\SL{3} \times \mathbb{R}^+$ of the $S^3$,  the coordinates on $S^3$ live in the $Y^A = \left( y^i,\, y_i \right)$, $i = 1, 2, 3$, while $C_A = \left( C_i,\, C^i \right)$ naturally contains a 2-form $C^i$. The field strength $H_3 = \partial^A C_A = \partial_i C^i$ is a singlet of $\SO{3,3}$ and thus we see that $F_{AB}{}^C$ in \eqref{eq:FlatF} is constant and we obtain a consistent truncation with a new 3-form flux. Evaluating the twist matrix
+\begin{equation}
+	U'_M{}^{\ov{M}} = (e^C)_M{}^N  U_N{}^{\ov{M}} \,,
+\end{equation}
+explicitly using \eqref{eq:C2S3example} and setting $C^i = \lambda\, \xi^i$ in the notatin of \cite{Eloy:2021fhc}, we obtain precisely the twist matrix used in \cite{Eloy:2021fhc} for the consistent truncation of 6-dimensional ${\cal N}=(1,1)$ supergravity on $S^3$ with $H_3$ flux. \EM{Give precise form of $C^i$ such that we recover $\lambda$?}
+
+%\EM{Spell out this as an example of the method}\\
+%In fact, the consistent truncation of AdS$_3 \times S^3$ constructed in \cite{Eloy:2021fhc} can be understood exactly as arising in this way: it utilises the generalised parallelisability of $S^3$ with $U_M{}^A \in \SL{4} \simeq \SO{3,3}$ twist matrices but then adds a volume flux to the $S^3$ which is a singlet of $\SL{4}$ to obtain a new twist matrix via \eqref{eq:Twisting} which lives in $\SO{4,4}$. \EM{Should mention that this is a subsector of the $\SO{4,8}$ setup there?}
+We will now follow this same procedure in the next section to obtain the consistent truncation of IIB supergravity on $S^3 \times S^3 \times S^1$ with 7-form flux.
+
+\subsection{Adding flux to the $S^3 \times S^3 \times S^1$ truncation of IIB supergravity}
+Our strategy for constructing the consistent truncation on $S^3 \times S^3 \times S^1$ with 7-form flux is to embed the $S^3 \times S^3$ truncation of $\En{7}$ ExFT \cite{Inverso:2017lrz} into $\EE \rightarrow \En{7} \times \SL{2}$, as described in \cite{Galli:2022idq} to generate the consistent truncation on $S^3 \times S^3 \times S^1$ without 7-form flux. We then add a 7-form flux to this truncation as outlined above.
+
+\subsubsection{The $S^3 \times S^3$ truncation} \label{s:S3S3}
+Let us first review the dyonic $S^3 \times S^3$ truncation of IIB supergravity \cite{Inverso:2017lrz}, which forms the starting point of our construction. The key step in the construction of \cite{Inverso:2017lrz} is that we can use the $\SL{4}$ generalised frame \eqref{eq:SLnFrame} to form a generalised Leibniz parallelisation of $\En{7}$ via the embedding
+\begin{equation}
+	\En{7} \rightarrow \SL{8} \rightarrow \SL{4} \times \SL{4} \times \mathbb{R}^+ \,.
+\end{equation}
+The fundamental of $\En{7}$ then decomposes as
+\begin{equation}
+	\mathbf{56} \rightarrow \mathbf{28} \oplus \overline{\mathbf{28}} \rightarrow \left[ \mathbf{\left(6,1\right)_2} \oplus \mathbf{\left(1,6\right)_{-2}} \oplus \mathbf{\left(4,4\right)_0} \right] \oplus \left[ \mathbf{\left(6,1\right)_{-2}} \oplus \mathbf{\left(1,6\right)_{2}} \oplus \mathbf{\left(\overline{4},\overline{4}\right)_0} \right] \,,
+\end{equation}
+where the first square brackets denote the branching of the $\mathbf{28}$ under $\SL{4} \times \SL{4} \times \mathbb{R}^+$ and the second square brackets that of the $\mathbf{\overline{28}}$. Crucially, for the generalised Leibniz condition \eqref{eq:GenLeibniz} to hold, the coordinates and generalised vector fields corresponding to the two $\SL{4}$'s must be embedded within the $\mathbf{28}$ and $\mathbf{\overline{28}}$, respectively, which we will call ``electric'' and ``magnetic'' coordinates, following \cite{Inverso:2017lrz}. Thus, we write the 56 $\En{7}$ coordinates as
+\begin{equation}
+	Y^M = \left( Y^{\cA\cB} ,\, Y_{\cA\cB} \right) \,,
+\end{equation}
+with $\cA, \cB = 1, \ldots, 8$ labelling the fundamental of $\SL{8}$, corresponding to the decomposition $\En{7} \rightarrow \SL{8}$. Following the conventions of \cite{Inverso:2017lrz}, the coordinates of the two $\SL{4}$ ExFTs are embedded as $Y^{IJ} \subset Y^{\cA\cB}$, with $I, J = 1, 2, 3, 8$, and $Y_{AB} \subset Y_{\cA\cB}$, with $A, B = 4, 5, 6, 7$. Solving the $\SL{4}$ ExFT section condition for $Y^{IJ}$ and $Y_{AB}$ guarantees a solution to the $\En{7}$ ExFT, and we choose the solution where the six physical coordinates of IIB are
+\begin{equation} \label{eq:PhysicalCoords}
+	y^i = Y^{i8},\, \qquad \tilde{y}_a = Y_{a7} \,, \qquad i = 1, 2, 3 \,, \qquad a = 4, 5, 6 \,.
+\end{equation}
+
+We can now use one copy of the $\SL{4}$ frame \eqref{eq:SLnFrame} for each $\SL{4}$ subgroup to construct a generalised parallelisation for the full $\En{7}$ ExFT, with an embedding tensor via \eqref{eq:GenLeibniz} \EM{given by \ldots}.
+
+\EM{Include breaking of adjoint here?}\\
+\EM{Should mention the geometric $\SL{3}$ subgroups here???}
+
+\subsubsection{The $S^3 \times S^3 \times S^1$ truncation} \label{s:S3S3S1}
+We now construct the consistent truncation on $S^3 \times S^3 \times S^1$ by embedding the $\En{7}$ twist matrix corresponding to the $S^3 \times S^3$ truncation reviewed above \ref{s:S3S3} in $\EE$ via the branching $\EE \rightarrow \En{7} \times \SL{2}$, such that $\mathbf{248} \rightarrow \mathbf{\left(133,1\right)} \oplus \mathbf{\left(56,2\right)} \oplus \mathbf{\left(1,3\right)}$. As explained in \cite{Galli:2022idq}, we can construct a consistent truncation on $M \times S^1$ to 3-dimensional gauged supergravity by embedding a consistent truncation on $M$ to 4-dimensional supergravity, characterised by a $\En{7}$ twist matrix, as follows. The $\EE$ twist matrix is parameterised by the $\En{7}$ twist matrix describing the consistent truncation on $M$ and the $\SL{2}$ twist matrix given by
+\begin{equation}
+	v_{\ov{i}}{}^i = \begin{pmatrix}
+		\sigma & 0 \\ 0 & \sigma^{-1}
+	\end{pmatrix} \,,
+\end{equation}
+where $\sigma$ is the $\En{7}$ scalar density used to construct the $\En{7}$ truncation on $M$. Finally, the $\EE$ scalar density satisfies $\rho = \sigma^2$ to ensure a consistent truncation on $S^3 \times S^3 \times S^1$. However, we still need to add the 7-form flux to obtain the ${\cal N}=(4,4)$ AdS$_3$ vacuum we are looking for. To do this, let us first review the group theory of the $S^3 \times S^3$ truncation, since this will allow us to determine whether the 7-form flux is stabilised by the twist matrix.
+
+\subsubsection{Adding flux}
+%We now wish to add a 7-form flux to the $S^3 \times S^3 \times S^1$ truncation constructed above.
+To add a 7-form flux to the above truncation, we will follow the logic laid out in section \ref{s:AddFlux}, i.e. we will investigate whether the 7-form flux is stabilised by the twist matrix on $S^3 \times S^3 \times S^1$ constructed in section \ref{s:S3S3S1}. Thus, we need to understand 
+%the group theory underlying the consistent truncation on $S^3 \times S^3$ \cite{Inverso:2016eet}. The $\En{7}$ twist matrix describing this truncation is constructed from two $\SL{4}$ twist matrices, one for each $S^3$ similar to \ref{s:S3Flux}, via the decomposition
+%\begin{equation}
+%	\En{7} \rightarrow \SL{8} \rightarrow \SL{4} \times \SL{4} \times \mathbb{R}^+ \,,
+%\end{equation}
+%under which the fundamental of $\En{7}$ branches as
+%\begin{equation}
+%	\mathbf{56} \rightarrow \mathbf{28} \oplus \overline{\mathbf{28}} \rightarrow \left[ \mathbf{\left(6,1\right)_2} \oplus \mathbf{\left(1,6\right)_{-2}} \oplus \mathbf{\left(4,4\right)_0} \right] \oplus \left[ \mathbf{\left(6,1\right)_{-2}} \oplus \mathbf{\left(1,6\right)_{2}} \oplus \mathbf{\left(\overline{4},\overline{4}\right)_0} \right] \,,
+%\end{equation}
+%where the first square brackets denote the branching of the $\mathbf{28}$ under $\SL{4} \times \SL{4} \times \mathbb{R}^+$ and the second square brackets that of the $\mathbf{\overline{28}}$.
+%We want to see if 
+whether IIB supergravity admits a 7-form field strength that is a singlet under these two $\SL{4}$ groups. To answer this question, we pick a gauge where the 6-form potential lives entirely in $S^3 \times S^3$ but depends on the $S^1$ coordinate, $z$. Therefore, in this gauge choice, the 6-form potential correspond sto an adjoint generator of $\En{7}$, and since the $S^1$ coordinate is an $\En{7}$ singlet, this adjoint generator must be a singlet under $\SL{4} \times \SL{4} \subset \SL{8} \subset \En{7}$ in order for us to have a consistent truncation.
+
+IIB supergravity contains an S-duality doublet of 6-forms, which we can easily identify using the decomposition $\En{7} \rightarrow \SL{6} \times \SL{2} \times \mathbb{R}^+_{\rm IIB}$, under which the $\En{7}$ adjoint decomposes as
+\begin{equation} \label{eq:AdjointSL6}
+	\begin{split}
+		\mathbf{133} &\rightarrow \mathbf{\left(35,1\right)_0} \oplus \mathbf{\left(1,3\right)_0} \oplus \mathbf{\left(1,1\right)_0} \oplus \mathbf{\left(1,2\right)_{\pm 6}} \\
+		& \quad \oplus \mathbf{\left(\overline{15},2\right)_2} \oplus \mathbf{\left(\overline{15},1\right)_{-4}} \oplus \mathbf{\left(15,2\right)_{-2}} \oplus \mathbf{\left(15,1\right)_4} \,.
+	\end{split}
+\end{equation}
+The 6-form doublet corresponds to the $\mathbf{\left(1,2\right)}_{6}$. To understand if one of the 6-forms in the doublet are singlets under $\SL{4} \times \SL{4} \subset \En{7}$, we must decompose $\En{7}$ with respect to the common subgroup of $\SL{4} \times \SL{4}$ and $\SL{6} \times \SL{2}$, which is $\SL{3}_1 \times \SL{3}_2 \times \mathbb{R}^+ \times \mathbb{R}^+$. The two $\SL{3}$ subgroups are defined by the embedding of the physical coordinates \eqref{eq:PhysicalCoords} into $\SL{4} \times \SL{4} \subset \SL{8} \subset \En{7}$. An important for us is to correctly identify the $\mathbb{R}^+$ charges in both decompositions. We have, on the one hand,
+\begin{equation} \label{eq:SL4SL4}
+	\begin{split}
+		\En{7} &\rightarrow \SL{8} \rightarrow \SL{4} \times \SL{4} \times \mathbb{R}^+_{\SL{8}} \\
+		&\rightarrow \SL{3}_1 \times \SL{3}_2 \times \mathbb{R}^+_1 \times \mathbb{R}^+_2 \times \mathbb{R}^+_{\SL{8}} \,,
+	\end{split}
+\end{equation}
+and, on the other,
+\begin{equation} \label{eq:SL6SL2}
+	\begin{split}
+		\En{7} &\rightarrow \SL{6} \times \SL{2} \times \mathbb{R}^+_{\rm IIB} \\
+		&\rightarrow \SL{3}_1 \times \SL{3}_2 \times \mathbb{R}^+_{\SL{2}} \times \mathbb{R}^+_{\SL{6}} \times \mathbb{R}^+_{\rm IIB} \,.
+	\end{split}
+\end{equation}
+Here, we label the $\mathbb{R}^+$'s with a subscript that refers to the the groups they belong belong to. The $\mathbb{R}^+$ generators of the two decompositions are related as
+\begin{equation} \label{eq:R+charges}
+	\begin{split}
+		\mathbb{R}^+_{\SL{6}} &= - \frac12 \left( \mathbb{R}^+_{\SL{3}_1} + \mathbb{R}^+_{\SL{3}_2} \right) \,, \\
+		\mathbb{R}^+_{\SL{2}} &= \frac14 \left( \mathbb{R}^+_{\SL{3}_1} - \mathbb{R}^+_{\SL{3}_2} + \mathbb{R}^+_{\SL{8}} \right) \,, \\
+		\mathbb{R}^+_{\rm IIB} &= \frac12 \left( \mathbb{R}^+_{\SL{3}_1} - \mathbb{R}^+_{\SL{3}_2} - 3\, \mathbb{R}^+_{\SL{8}} \right) \,.
+	\end{split}
+\end{equation}
+
+The branching of the adjoint \eqref{eq:AdjointSL6} under $\SL{6} \times \SL{2} \times \mathbb{R}^+_{\rm IIB}$ in \eqref{eq:SL6SL2} needs to now be compared with that via $\SL{4} \times \SL{4} \times \mathbb{R}^+_{\SL{8}}$, given by
+\begin{equation}
+	\begin{split}
+		\mathbf{133} &\rightarrow \mathbf{63} \oplus \mathbf{70} \\
+		&\rightarrow \mathbf{\left(15,1\right)_0} \oplus \mathbf{\left(1,15\right)_0} \oplus \mathbf{\left(1,1\right)_0} \oplus \mathbf{\left(4,\overline{4}\right)_2} \oplus \mathbf{\left(\overline{4},4\right)_{-2}} \\
+		& \quad \oplus \mathbf{\left(1,1\right)_{-4}} \oplus \mathbf{\left(1,1\right)_{4}} \oplus \mathbf{\left(4,\overline{4}\right)_{-2}} \oplus \mathbf{\left(\overline{4},4\right)_{2}} \oplus \mathbf{\left(6,6\right)_0} \,.
+	\end{split}
+\end{equation}
+Using \eqref{eq:R+charges}, we can now identify each of the singlet generators $\left(1,1\right)_{\pm4}$ with one of the $\SL{2}$ doublet generators of charge $\mp 6$. Therefore, we find exactly one singlet $\SL{4} \times \SL{4}$ generator, which we can write as $t_{1238}$, corresponding to a 6-form potential. The other $\SL{4} \times \SL{4}$ singlet generator, $t_{4567}$, only differs by a compact generator and thus does not corresponding to a different physical field. Finally, the other elements of the $\SL{2}$ doublet of 6-form potential can be mapped to the $\mathbf{\left(4,\overline{4}\right)_{2}} \oplus \mathbf{\left(\overline{4},4\right)_{-2}}$ generators, specifically $t_7{}^8$ and $t_8{}^7$ and are clearly not $\SL{4}$ singlets.
+\EM{Is this sufficiently clear? I am not so sure...}
+
+Therefore, we can add a 7-form flux to the twist matrix using
+\begin{equation}
+	\cU_{\fl{M}}{}^M \longrightarrow \cU'_{\fl{M}}{}^M = \cU_{\fl{M}}{}^N \exp(C)_N{}^M \,,
+\end{equation}
+with $C_M{}^N = \lambda\, z\, t_{1238\,M}{}^N$ and $\lambda$ a numerical parameter corresponding to the amount of 7-form flux. \EM{Is there a density factor that needs to be added?} \EM{The resulting embedding tensor is \ldots}
+
+%, which transform under the subgroup $\SL{6} \times \SL{2} \times \mathbb{R}^+_{IIB} \subset \En{7}$ as $\mathbf{\left(1,2\right)_{6}} \subset \mathbf{133}$
+
+%\EM{Describe how $C_6{}^\alpha$ sits in here}
+
+\section{Moduli of AdS$_3 \times S^3 \times S^3 \times S^1$}
+
+\subsection{Moduli in gauged supergravity}
+
+\subsection{Moduli in 10 dimensions}
+
+\paragraph{SUSY deformation}
+\begin{equation}
+	\begin{split}
+		ds^2 &= \alpha^2 \left[ ds^2_{\mathbb{CP}^1} + \kappa^2 \right] + ds^2_{\tilde{S}^3} + e^{-4\omega} d\psi^2 \,, \\
+		\kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{1-e^{2\omega}} d\psi \,, \\
+		d\sigma &= vol_{\mathbb{CP}^1} \,.
+	\end{split}
+\end{equation}
+
+\paragraph{Non-SUSY deformation}
+\begin{equation}
+\begin{split}
+ds^2 &= \alpha^2 \left[ d\alpha_1^2 +  ds^2_{\mathbb{CP}^1} + \kappa^2 \right] + ds^2_{\tilde{S}^3} + e^{-4\omega} d\psi^2 \,, \\
+\kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{1-e^{2\omega}} d\psi \,, \\
+d\sigma &= vol_{\mathbb{CP}^1} \,.
+\end{split}
+\end{equation}
+
+\subsection{Compactification of the moduli space}
+
+\section{Conclusions}
+
+\section*{Acknowledgements}
+We are grateful to XXX for useful discussions and correspondence. CE is supported by the FWO-Vlaanderen through the project G006119N and by the Vrije Universiteit Brussel through the Strategic Research Program ``High-Energy Physics''. MG and EM are supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) via the Emmy Noether program ``Exploring the landscape of string theory flux vacua using exceptional field theory'' (project number 426510644).
+	
+\bibliographystyle{JHEP}
+\bibliography{NewBib}
+	
+\end{document}

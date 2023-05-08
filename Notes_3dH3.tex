@@ -416,7 +416,7 @@ The $\E_{7(7)}$ coordinates sit in $(\bm{56},\bm{2})$. \ce{Further review ref.~\
     q_{\rm IIB} = \dfrac{1}{2}\,\left(-q_{\SL(3)_{1}}+q_{\SL(3)_{2}}+3\,q_{\SL(8)}\right).
     \end{cases}
   \end{equation}
-  So the coordinates are inside $(\bm{6},\bm{1})_{-2}\oplus(\bm{1},\bm{6})_{2}$ of $\SL(4)_{1}\times\SL(4)_{2}\times\R^{+}_{\SL(8)}$. \ce{Problem with $3, \bar{3}$? Comes from identification $\bm{6'}=\bm{\bar{6}}$?}
+  So the coordinates are inside $(\bm{6},\bm{1})_{-2}\oplus(\bm{1},\bm{6})_{-2}$ of $\SL(4)_{1}\times\SL(4)_{2}\times\R^{+}_{\SL(8)}$. \ce{Problem with $3, \bar{3}$? Comes from identification $\bm{6'}=\bm{\bar{6}}$?}
 
   We now turn to the six-form potential $C_{(6)}^{\alpha}$, which sits in the representation $\bm{133}$ of $\E_{7(7)}$. Under $\E_{7(7)} \rightarrow \SL(8)$, it decomposes as $\bm{133} \rightarrow \bm{63} \oplus \bm{70}$, and
   \begin{equation}
@@ -537,7 +537,7 @@ where $\Gamma^{IJKL}_{AB}$ denotes the four-fold product of $\SO(8,8)$ $\Gamma$ 
   \end{equation}
   Then spectrum organized in terms of lon multiplet of $D^{1}(2,1;\alpha)_{\rm R}$, charge $q_{\rm L}^{+}$ and spin $j_{\rm L}^{+}$:
   \begin{equation}
-    \left[\ell^{+}_{R},\ell^{-}_{R}\right]^{j_{\rm L}^{+}}_{_{\rm L}^{+}},
+    \left[\ell^{+}_{R},\ell^{-}_{R}\right]^{j_{\rm L}^{+}}_{q_{\rm L}^{+}},
   \end{equation}
   with conformal weight:
   \begin{equation}
@@ -595,7 +595,27 @@ They are two physically different possibilities to embed the internal coordinate
     \bm{35_{\rm c}} &\longrightarrow {\color{mydarkorange}\bm{\bar{10}}_{2}} \oplus \bm{15}_{0}  \oplus \bm{10}_{-2},
   \end{aligned}
 \end{equation}
-where the colored representations are those coming from the three-forms. Only $\bm{10}_{2}$ and $\bm{\bar{10}}_{2}$ feature $\SO(4)$ singlets. \ce{So no distinction between (1,1) and (2,0)? Because triality, or I made errors?} $\leq$
+where the colored representations are those coming from the three-forms. Only $\bm{10}_{2}$ and $\bm{\bar{10}}_{2}$ feature $\SO(4)$ singlets. \ce{So no distinction between (1,1) and (2,0)? Because triality, or I made errors?}
+
+\section{\texorpdfstring{$\E_{8(8)}$}{E8(8)} identities}
+
+\begin{gather}
+  \eta^{MN} = \frac{1}{60}\,f^{MK}{}_{L}f^{NL}{}_{K}, \\
+  \M^{PM}\M^{QN}f_{PQ}{}^{K} = - f^{MN}{}_{L}\M^{LK}, \\
+  J_{\bar M\bar N}{}^{\bar P} = U_{\bar M}{}^{M}\partial_{M}U_{\bar N}{}^{P}U^{\bar P}{}_{P}, \\
+  f^{K}{}_{MR}f^{RL}{}_{N}\,J_{KP}{}^{Q}J_{LU}{}^{V} = J_{MP}{}^{Q}J_{NU}{}^{V}+J_{NP}{}^{Q}J_{MU}{}^{V},\\
+  f^{MN}{}_{P}J_{KL}{}^{P} = -2\,J_{KP}{}^{[M}f^{N]P}{}_{L}, \\
+  J_{MN}{}^{P} = \frac{1}{60} \,f_{N}{}^{PR}f_{RK}{}^{L}J_{ML}{}^{K}, \\
+  J_{MN}{}^{P} = -\frac{1}{30} \,f_{N}{}^{KR}f_{R}{}^{P}{}_{L}J_{MK}{}^{L},\\
+  f_{M}{}^{KL}J_{KL}{}^{R}J_{RP}{}^{Q} = f_{M}{}^{KL}J_{RQ}{}^{P}J_{KL}{}^{K},\\
+  2\,J_{L[M}{}^{K}f_{N]K}{}^{L} = -f_{MN}{}^{K}J_{LK}{}^{L}.
+\end{gather}
+
+Section constraint (one of them):
+\begin{equation}
+  f^{K}{}_{MR}f^{RL}{}_{N} \,\partial_{K}\otimes\partial_{L} = 2\,\partial_{(M}\otimes\partial_{N)}.
+\end{equation}
+
 
 \bibliography{ref}
 
