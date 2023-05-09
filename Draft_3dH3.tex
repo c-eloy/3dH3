@@ -1,3 +1,5 @@
+%!TEX output_directory = aux
+
 \documentclass[a4paper, 11pt]{article}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{amsfonts,slashed}
@@ -30,6 +32,9 @@
 %%%%%%%%% Packages to show breakings %%%%%%%%%
 \usepackage{enumerate}
 \usepackage[shortlabels]{enumitem}
+
+\usepackage{xspace}
+\usepackage{mathrsfs}
 
 
 %  PDF specials
@@ -120,7 +125,7 @@
 \newcommand{\UO}{\mathrm{U}(1)}
 \newcommand{\U}[1]{\mathrm{U}(#1)}
 \newcommand{\Spin}[1]{\mathrm{Spin}(#1)}
-\newcommand{\EE}{E_{8(8)}}
+\newcommand{\EE}{\ensuremath{E_{8(8)}}\xspace}
 \newcommand{\USp}[1]{\mathrm{USp}(#1)}
 \newcommand{\Un}[1]{\mathrm{U}(#1)}
 \newcommand{\Gt}{\mathrm{G}_{2(2)}}
@@ -178,10 +183,17 @@
 
 %%%%%%%% math operators
 \DeclareMathOperator{\tr}{Tr}
+
+% ---- MATHS COMMANDS ----
+\newcommand{\M}{\ensuremath{\mathcal{M}}\xspace}
+\newcommand{\A}{\ensuremath{\mathcal{A}}\xspace}
+\renewcommand{\d}{\ensuremath{\mathrm{d}}\xspace}
+
 %% Comments
 \newcommand{\EM}[1]{\textcolor{red}{#1}}
 \newcommand{\MG}[1]{\textcolor{blue}{#1}}
-\newcommand{\CE}[1]{\textcolor{green}{#1}}
+\definecolor{darkorange}{RGB}{166, 88, 0}
+\newcommand{\CE}[1]{\textcolor{darkorange}{#1}}
 \newcommand{\CG}{\Com{G}{\EE}}
 \newcommand{\cJ}{{\cal J}}
 
@@ -236,23 +248,144 @@
 
 \section{Introduction}
 
-\section{Review of $\EE$ ExFT and consistent truncations} \label{s:Review}
-Review relevant bits of \cite{Hohm:2014fxa} and \cite{Galli:2022idq}.
+\section{\texorpdfstring{\EE}{E8(8)} ExFT and consistent truncations} \label{s:Review}
 
-A consistent truncation requires that the objects
-\begin{equation} \label{eq:DoubleU}
-	\ff{U}_{\fl{M}} = (\cU_{\fl{M}},\,\Sigma_{\fl{M}}) \,, \qquad \Sigma_{\fl{M}\,M} = \frac{1}{60} \rho^{-1} f_{\fl{M}}{}^{\fl{N}\fl{P}}\, U_{\fl{N}\,P} \partial_M U_{\fl{P}}{}^{P} \,, \qquad \cU_{\fl{M}}{}^M = \rho^{-1} U_{\fl{M}}{}^M \,,
+\subsection{Review of \texorpdfstring{\EE}{E8(8)} exceptional field theory}
+The \EE exceptional field theory, first constructed in ref.~\cite{Hohm:2014fxa}, is an \EE duality-covariant formulation of type II and 11d supergravities. It is defined on a set of $3+248$ coordinates made of three-dimensonal external coordinates $\{x^{\mu}\}$ and internal coordinates $\{Y^{M}\}$ in the 248-dimensional adjoint representation of \EE. The dependance of the fields on these coordinates is constrained by the ``section constraints''\footnote{We use the notation $\otimes$ to indicate that both derivatives may act on different functions.}
+\begin{equation} \label{eq:sectionconstraints}
+	\begin{cases}
+		\eta^{MN}\partial_{M}\otimes\partial_{N} = 0,\\
+		f^{MN}{}_{P}\,\partial_{M}\otimes\partial_{N} = 0,\\
+		(\mathbb{P}_{3875})_{MN}{}^{KL}\partial_{K}\otimes\partial_{L} = 0,
+	\end{cases}
 \end{equation}
-satisfy the differential condition
+where $f_{MN}{}^{P}$ are the structure constants of \EE, $\eta_{MN} = (1/60)\,f_{MK}{}^{L}f_{NL}{}^{K}$ its Cartan-Killing metric and $(\mathbb{P}_{3875})_{MN}{}^{KL}$ is the projector on the representation $\mathbf{3875}$:
+\begin{equation}
+	(\mathbb{P}_{3875})_{MN}{}^{KL} = \frac{1}{7}\, \delta_{(M}{}^{K}\delta_{N)}{}^{L}-\frac{1}{56}\,\eta_{MN}\eta^{KL}-\frac{1}{14}\,f^{P}{}_{M}{}^{(K}f_{PN}{}^{L)}.
+\end{equation}
+Here and in the following, \EE indices are raised and lowered by the Cartan-Killing metric $\eta_{MN}$. The section constraints~\eqref{eq:sectionconstraints} ensure that the fields depends only on the 7- or 8-dimensional physical internal coordinates embeded in $Y^{M}$.
+
+The theory describes the dynamics of the following bosonic fields:
+\begin{equation}
+	\left\{g_{\mu\nu}, \M_{MN}, A_{\mu}{}^{M}, B_{\mu\,M}\right\},
+\end{equation}
+with $g_{\mu\nu}$ the 3-dimensinal external metric, $\M_{MN}$ the generalized metric parametrizing the coset space $\EE/\SO{16}$ and the gauge fields $A_{\mu}{}^{M}$ and $B_{\mu\,M}$. It is a gauge theory, invariant under the generalized Lie derivative of parameters $\Upsilon=(\Lambda^{M},\Sigma_{M})$, whose action on a vector $V^{M}$ of weight $\lambda$ is given by
+\begin{equation} \label{eq:genlie}
+	{\cal L}_{\Upsilon} V^{M} = \Lambda^{N}\partial_{N}V^{M}-60\,(\mathbb{P}_{248})^{M}{}_{N}{}^{K}{}_{L}\,V^{N}\partial_{K}\Lambda^{L} + \lambda\, V^{M}\partial_{N}\Lambda^{N}+f^{MN}{}_{K}\Sigma_{N}V^{K},
+\end{equation}
+with $(\mathbb{P}_{248})^{M}{}_{N}{}^{K}{}_{L}=(1/60)\,f^{M}{}_{NP}f^{PK}{}_{L}$ the projector on the adjoint representation. These transformations are well-defined (in particular, they close into an algebra) only if the parameters $\Sigma_{M}$ and the fields $B_{\mu\, M}$ are covariantly constrained: they have to satisfy algebraic constraints similar to eq.~\eqref{eq:sectionconstraints} and be compatibile with the partial derivatives. We require that
+\begin{equation} \label{eq:sectionconstraint2}
+	\begin{cases}
+		\eta^{MN}C_{M}\otimes C'_{N} = 0,\\
+		f^{MN}{}_{P}\,C_{M}\otimes C'_{N} = 0,\\
+		(\mathbb{P}_{3875})_{MN}{}^{KL}C_{K}\otimes C'_{L} = 0,
+	\end{cases}
+	\forall\  C_{M}, C'_{M} \in \{\partial_{M}, \Sigma_{M}, B_{\mu\,M}\}.
+\end{equation}
+
+\paragraph{}
+The bosonic action of \EE exceptional field theory is invariant under the transformations~\eqref{eq:genlie} and has the expression
+\begin{equation} \label{eq:ExFTaction}
+	S_{\rm ExFT} = \int d^{3}x\,d^{248}Y\,\sqrt{\vert g\vert} \bigg(\widehat{R}+\frac{1}{240}\,D_{\mu}\M_{MN}D^{\mu}\M^{MN}+\mathscr{L}_{\rm int}+\frac{1}{\sqrt{\vert g\vert}}\,\mathscr{L}_{\rm CS}\bigg).
+\end{equation}
+$\widehat{R}$ is the \EE-covariantised Ricci scalar and the covariant derivative is defined as
+\begin{equation}
+	D_{\mu} = \partial_{\mu} - {\cal L}_{(A_{\mu}, B_{\mu})}.
+\end{equation}
+$\mathscr{L}_{\rm int}$ is a potential term depending only on internal derivatives:
+\begin{equation}
+	\begin{aligned}
+		\mathscr{L}_{\rm int} &= \frac{1}{240}\,\M^{MN}\partial_{M}\M^{KL}\partial_{N}\M_{KL} - \frac{1}{2}\,\M^{MN}\partial_{M}\M^{KL}\partial_{L}\M_{NK} \\
+		&\quad -\frac{1}{7200}\,f^{NQ}{}_{P}f^{MS}{}_{R}\,\M^{PK}\partial_{M}\M_{QK}\,\M^{RL}\partial_{N}\M_{SL}\\
+		&\quad +\frac{1}{2}\,g^{-1}\partial_{M}g\,\partial_{N}\M^{MN} + \frac{1}{4}\,\M^{MN}\,g^{-2}\partial_{M}g\,\partial_{N}g + \frac{1}{4}\,\M^{MN}\,\partial_{M}g_{\mu\nu}\,\partial_{N}g^{\mu\nu}.
+	\end{aligned}
+\end{equation}
+Finally, $\mathscr{L}_{\rm CS}$ is a Chern-Simons term required to impose the on-shell duality between scalar and vector fields:
+\begin{equation}
+	\begin{aligned}
+		\mathscr{L}_{\rm CS} &= \frac{1}{2}\,\varepsilon^{\mu\nu\rho}\,\bigg(F_{\mu\nu}{}^{M}B_{\rho\,M}-f_{KL}{}^{N}\,\partial_{\mu}A_{\nu}{}^{K}\partial_{N}A_{\rho}{}^{L}-\frac{2}{3}\,f^{N}{}_{KL}\,\partial_{M}\partial_{N}A_{\mu}{}^{K}A_{\nu}{}^{M}A_{\rho}{}^{L}\\
+		&\quad -\frac{1}{3}\,f_{MKL}\,f^{KP}{}_{Q}\,f^{LR}{}_{S}\,A_{\mu}{}^{M}\partial_{P}A_{\nu}{}^{Q}\partial_{R}A_{\rho}{}^{S}\bigg),
+	\end{aligned}
+\end{equation}
+where $F_{\mu\nu}{}^{M}$ is the covariant field strength of $A_{\mu}{}^{M}$ (see eq. (2.26) of ref.~\cite{Hohm:2014fxa}).
+
+\subsection{Generalized Scherk-Schwarz ansatz and consistent truncations}
+The \EE exceptional field theory is well suited to the construction of consistent truncation of type~II and 11d supergravities to three-dimensional maximal supergravity. These truncations arise as generalised Scherk-Schwarz reduction, described by an \EE-valued twist matrix $U_{\fl{M}}{}^{M}$ and a scale factor $\rho$. The compactification Ansätze are as follows~\cite{Galli:2022idq}:
+\begin{equation} \label{eq:GSSansatz}
+	\begin{aligned}
+		g_{\mu\nu}(x,Y)&=\rho(Y)^{-2}\,\mathring{g}_{\mu\nu}(x),\\
+		\M_{MN}(x,Y)&=U^{\fl{M}}{}_{M}(Y)\,U^{\fl{N}}{}_{N}(Y)\,\M_{\fl{MN}}(x),\\
+		A_{\mu}{}^{M}(x,Y)=&\rho(Y)^{-1}\,U_{\fl{M}}{}^{M}(Y)\,\A_{\mu}{}^{\fl{M}}(x),\\
+		B_{\mu\,M}(x,Y)&=\Sigma_{\fl{M}\,M}(Y)\,\A_{\mu}{}^{\fl{M}}(x),
+	\end{aligned}
+\end{equation}
+with
+\begin{equation}
+	\Sigma_{\fl{M}\,M}=\frac{\rho^{-1}}{60}\,f_{\fl{M}}{}^{\fl{PQ}}\,U_{\fl{P}P}\,\partial_{M}U_{\fl{Q}}{}^{P}.
+\end{equation}
+The fields with flat indices $\fl{M}$ (in the $\mathbf{248}$ representation of \EE) describe the three-dimensional theory; all the dependence on the internal manifold is factored out in $U_{\fl{M}}{}^{M}$ and $\rho$. Note that with the definition of $\Sigma_{\fl{M}\,M}$ the condition~\eqref{eq:sectionconstraint2} is automatically satisfied.
+
+The Ansätze~\eqref{eq:GSSansatz} describe a consistent truncation if the following condition is satisfied:
 \begin{equation} \label{eq:GenLeibniz}
-	\gL_{\ff{U}_{\fl{M}}} {\cU}_{\fl{N}}{}^M = X_{\fl{M}\fl{N}}{}^{\fl{P}}\, \cU_{\fl{P}}{}^M \,,
+	\gL_{\ff{U}_{\fl{M}}} {\cU}_{\fl{N}}{}^M = X_{\fl{M}\fl{N}}{}^{\fl{P}}\, \cU_{\fl{P}}{}^M,
 \end{equation}
-with $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ constant.
+with $\cU_{\fl{M}}{}^M = \rho^{-1} U_{\fl{M}}{}^M$, $\ff{U}_{\fl{M}} = (\cU_{\fl{M}},\,\Sigma_{\fl{M}})$ and $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ a constant tensor. This condition ensures that the factorised form of the Ansätze~\eqref{eq:GSSansatz} is preserved by the generalized Lie derivative, \textit{e.g.}
+\begin{equation}
+	\begin{aligned}
+		D_{\mu}\M(x,Y) &= U^{\fl{M}}{}_{M}(Y)\,U^{\fl{N}}{}_{N}(Y)\,{\cal D}_{\mu}\M_{\fl{MN}}(x),\\
+		{\cal L}_{(A_{\mu},B_{\nu})}A_{\mu}(x,Y) &= \rho(Y)^{-1}\,U_{\fl{M}}{}^{M}(Y)\,\llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}(x),
+	\end{aligned}
+\end{equation}
+where
+\begin{equation}
+	{\cal D}_{\mu}\M_{\fl{MN}} = \partial_{\mu}\M_{\fl{MN}}-2\,\A_{\mu}{}^{\fl{P}}X_{\fl{P}(\fl{M})}{}^{\fl{Q}}\M_{\fl{N})\fl{Q}} \quad {\rm and} \quad \llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}=X_{\fl{PQ}}{}^{\fl{M}}\A_{\mu}{}^{\fl{P}}\A_{\nu}^{\fl{Q}}.
+\end{equation}
 
-\section{3-dimensional ${\cal N}=16$ gauged supergravity} \label{s:3dSUGRA}
+
+
+The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity. It has the following expression:
+\begin{equation}
+	\begin{aligned}
+		X_{\bar M\bar N}{}^{\bar P}&=-\rho^{-1}\,\Gamma_{\bar M\bar N}{}^{\bar P} + \rho^{-1}\,f^{\bar P}{}_{\bar N\bar Q}f^{\bar Q\bar K}{}_{\bar L}\,\Gamma_{\bar K\bar M}{}^{\bar L}-\frac{1}{60}\,\rho^{-1}\,f^{\bar P\bar K}{}_{\bar N}f_{\bar M\bar L}{}^{\bar Q}\,\Gamma_{\bar K\bar Q}{}^{\bar L}\\
+		&\quad-\frac{1}{2}\,\rho^{-1}\,f^{\bar P}{}_{\bar N\bar Q}f^{\bar Q\bar K}{}_{\bar M}\,\Gamma_{\bar R\bar K}{}^{\bar R}+\left(\delta_{\bar M}{}^{\bar K}\delta_{\bar N}{}^{\bar P}-\frac{1}{2}\,f_{\bar M}{}^{\bar L\bar K}f_{\bar N\bar L}{}^{\bar P}\right)\,\xi_{\bar K}.
+	\end{aligned}
+\end{equation}
+Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\bar M\bar N}{}^{\bar P}=U_{\bar M}{}^{K}U_{\bar N}{}^{L}\partial_{K}U^{\bar P}{}_{L}$ and the trombone gauging
+\begin{equation}
+	\xi_{\bar M} = 2\,U_{\bar M}{}^{N}\partial_{N}\rho^{-1}+\rho^{-1}\,\partial_{N}U_{\bar M}{}^{N}.
+\end{equation}
+In the following, we consider $\xi_{\bar M}=0$. The embedding tensor is most nicely expressed once projected on the adjoint representation
+\begin{equation}
+	X_{\bar M\bar N} = -\frac{1}{60}\,X_{\bar M\bar P}{}^{\bar Q}\,f_{\bar N\bar Q}{}^{\bar P} = 2\,\rho^{-1}\,\Gamma_{(\bar M\bar N)} - \rho^{-1}\,\Gamma_{\bar K(\bar M}{}^{\bar L}\,f_{\bar N)\bar L}{}^{\bar K},
+\end{equation}
+with the projection of the current $\Gamma_{\bar M\bar N} = (1/60)\,\Gamma_{\bar M\bar P}{}^{\bar Q}\,f_{\bar N\bar Q}{}^{\bar P}$.
+
+
+% Consider a twist matrix $U_{\bar M}{}^{M}$ and a scale factor $\rho$. A consistent truncation requires that the objects
+% \begin{equation} \label{eq:DoubleU}
+% 	\ff{U}_{\fl{M}} = (\cU_{\fl{M}},\,\Sigma_{\fl{M}}) \,, \qquad \Sigma_{\fl{M}\,M} = \frac{1}{60} \rho^{-1} f_{\fl{M}}{}^{\fl{N}\fl{P}}\, U_{\fl{N}\,P} \partial_M U_{\fl{P}}{}^{P} \,, \qquad \cU_{\fl{M}}{}^M = \rho^{-1} U_{\fl{M}}{}^M \,,
+% \end{equation}
+% satisfy the differential condition
+% \begin{equation} \label{eq:GenLeibniz}
+% 	\gL_{\ff{U}_{\fl{M}}} {\cU}_{\fl{N}}{}^M = X_{\fl{M}\fl{N}}{}^{\fl{P}}\, \cU_{\fl{P}}{}^M \,,
+% \end{equation}
+
+
+With the generalized Scherk-Schwarz Ansätze~\eqref{eq:GSSansatz}, the action~\eqref{eq:ExFTaction} becomes
+\begin{equation}
+	\begin{aligned}
+		S_{\rm ExFT} \underset{\rm gSS}{=} \int\d^{248}Y\,\rho^{-1}\int \d^{3}x & \bigg[\sqrt{\vert\mathring{g}\vert}\bigg(\mathring{R}+\frac{1}{240}\,{\cal D}_{\mu}\M_{\bar M\bar N}{\cal D}^{\mu}\M^{\bar M\bar N}-V\bigg) \\
+		&-\varepsilon^{\mu\nu\rho}\,X_{\bar M\bar N}\,\A_{\mu}{}^{\bar M} \left(\partial_{\nu}\A_{\rho}{}^{\bar N}-\frac{1}{3}\,\llbracket\A_{\nu},\A_{\rho}\rrbracket^{\bar N}\right)\bigg],
+	\end{aligned}
+\end{equation}
+with the potential\footnote{To obtain this potential, one has to add the total derivative $-\partial_{M}\left(\sqrt{\vert g\vert}\,\partial_{N}\M^{MN}+(4/3)\,\M^{MN}\partial_{N}\sqrt{\vert g\vert}\right)$ to $\sqrt{\vert g\vert}\,\mathscr{L}_{\rm int}$.}
+\begin{equation}
+	V = X_{\bar M\bar N}\,X_{\bar P\bar Q}\left(\frac{1}{28}\,\M^{\bar M\bar P}\M^{\bar N\bar Q}+\frac{1}{2}\,\M^{\bar M\bar P}\eta^{\bar N\bar Q}+\frac{13}{28}\,\eta^{\bar M\bar P}\eta^{\bar N\bar Q}\right).
+\end{equation}
+
 
 \section{Adding fluxes to consistent truncations} \label{s:AddFlux}
-In order to construct the consistent truncation around the ${\cal N}=(4,4)$ AdS$_3 \times S^3 \times S^3 \times S^1$ vacuum of IIB supergravity, a promising starting point is the dyonic $S^3 \times S^3$ truncation of IIB supergravity constructed in \cite{Inverso:2016eet}, and further reducing this on $S^1$. However, this will not give the correct AdS$_3$ vacuum since the truncation is missing the 7-form flux on $S^3 \times S^3 \times S^1$ that is required. Indeed, the 3-dimensional gauged supergravity that would be obtained as discussed way does not have any AdS$_3$ vacua. We can remedy this situation by defining a new consistent truncation by adding a 7-form flux to the one obtained from the $S^3 \times S^3$ reduction constructed in $\En{7}$ ExFT.
+In order to construct the consistent truncation around the ${\cal N}=(4,4)$ AdS$_3 \times S^3 \times S^3 \times S^1$ vacuum of IIB supergravity, a promising starting point is the dyonic $S^3 \times S^3$ truncation of IIB supergravity constructed in \cite{Inverso:2016eet}, and further reducing this on $S^1$. However, this will not give the correct AdS$_3$ vacuum since the truncation is missing the 7-form flux on $S^3 \times S^3 \times S^1$ that is required. Indeed, the 3-dimensional gauged supergravity that would be obtained as discussed way \CE{(?)} does not have any AdS$_3$ vacua. We can remedy this situation by defining a new consistent truncation by adding a 7-form flux to the one obtained from the $S^3 \times S^3$ reduction constructed in $\En{7}$ ExFT.
 
 This motivates the following question, given a consistent truncation, i.e. $\cU_{\fl{M}}{}^M$, satisfying \eqref{eq:GenLeibniz}, when can we add a new flux component of string theory to the compactification to obtain a new consistent truncation? Adding a new flux component to the truncation is equivalent to twisting the generalised frame as follows
 \begin{equation} \label{eq:Twisting}
@@ -275,7 +408,7 @@ and $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ is already constant. Therefore, we have a cons
 A particularly simple way of having constant $\rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\fl{P}}$ is to consider fluxes which are stabilised by the twist matrix $U_M{}^{\fl{M}}$. The twist matrix typically only lives in a subgroup $G \subset \EE$. Therefore, in this case, we can simply tune the $G$-singlet components of the flux $F_{MN}{}^P$ to be proportional to $\rho$ to obtain a new consistent truncation.
 
 \subsection{Adding fluxes to the $S^3$ truncation of 6-dimensional supergravity} \label{s:S3Flux}
-Before dealing with the $S^3 \times S^3 \times S^1$ truncation, let us demonstrate this methdology for the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity on $S^3$, which was constructed in \cite{Eloy:2021fhc}. As discussed in \cite{Eloy:2021fhc}, the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity to 3-dimensional half-maximal gauged supergravity can be described using the $\SO{8,4}$ ExFT \cite{Hohm:2017wtr,Samtleben:2019zrh}. On the other hand, the consistent truncation on $S^3$ is conveniently described by twist matrices living in $\SL{4} \simeq \SO{3,3}$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} \EM{I think the twist matrix of \cite{Baguet:2015iou,Lee:2014mla,Hohm:2014qga} coincide in the $\SL{4}$ case, right? Camille, do you agree?} with the embedding $\SO{3,3} \subset \SO{4,4} \subset \SO{8,4}$. However, the twist matrix in \cite{Eloy:2021fhc} differs from this $\SO{3,3}$ twist matrix \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} by an additional parameter, $\lambda$, which gives rise to an external 3-form flux or, equivalently, a new internal 3-form flux.
+Before dealing with the $S^3 \times S^3 \times S^1$ truncation, let us demonstrate this methodology for the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity on $S^3$, which was constructed in \cite{Eloy:2021fhc}. As discussed in \cite{Eloy:2021fhc}, the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity to 3-dimensional half-maximal gauged supergravity can be described using the $\SO{8,4}$ ExFT \cite{Hohm:2017wtr,Samtleben:2019zrh}. On the other hand, the consistent truncation on $S^3$ is conveniently described by twist matrices living in $\SL{4} \simeq \SO{3,3}$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} \EM{I think the twist matrix of \cite{Baguet:2015iou,Lee:2014mla,Hohm:2014qga} coincide in the $\SL{4}$ case, right? Camille, do you agree?} with the embedding $\SO{3,3} \subset \SO{4,4} \subset \SO{8,4}$. However, the twist matrix in \cite{Eloy:2021fhc} differs from this $\SO{3,3}$ twist matrix \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} by an additional parameter, $\lambda$, which gives rise to an external 3-form flux or, equivalently, a new internal 3-form flux.
 
 \subsubsection{The $S^3$ twist matrix}
 Since it will play a role throughout this paper, we will begin by giving the $\SL{4} \simeq \SO{3,3}$ twist matrix that describes the consistent truncation on $S^3$. Here, we give a slightly different, but equivalent, form of the twist matrix constructed in \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} for the consistent truncation on $S^n$.
@@ -374,7 +507,7 @@ Here $\eta_{MN}$ and $\eta_{AB}$ are the $\SO{4,4}$ and $\SO{3,3}$ invariant met
 \begin{equation}
 	U'_M{}^{\ov{M}} = (e^C)_M{}^N  U_N{}^{\ov{M}} \,,
 \end{equation}
-explicitly using \eqref{eq:C2S3example} and setting $C^i = \lambda\, \xi^i$ in the notatin of \cite{Eloy:2021fhc}, we obtain precisely the twist matrix used in \cite{Eloy:2021fhc} for the consistent truncation of 6-dimensional ${\cal N}=(1,1)$ supergravity on $S^3$ with $H_3$ flux. \EM{Give precise form of $C^i$ such that we recover $\lambda$?}
+explicitly using \eqref{eq:C2S3example} and setting $C^i = \lambda\, \xi^i$ in the notation of \cite{Eloy:2021fhc}, we obtain precisely the twist matrix used in \cite{Eloy:2021fhc} for the consistent truncation of 6-dimensional ${\cal N}=(1,1)$ supergravity on $S^3$ with $H_3$ flux. \EM{Give precise form of $C^i$ such that we recover $\lambda$?}
 
 %\EM{Spell out this as an example of the method}\\
 %In fact, the consistent truncation of AdS$_3 \times S^3$ constructed in \cite{Eloy:2021fhc} can be understood exactly as arising in this way: it utilises the generalised parallelisability of $S^3$ with $U_M{}^A \in \SL{4} \simeq \SO{3,3}$ twist matrices but then adds a volume flux to the $S^3$ which is a singlet of $\SL{4}$ to obtain a new twist matrix via \eqref{eq:Twisting} which lives in $\SO{4,4}$. \EM{Should mention that this is a subsector of the $\SO{4,8}$ setup there?}
@@ -428,7 +561,7 @@ To add a 7-form flux to the above truncation, we will follow the logic laid out 
 %\end{equation}
 %where the first square brackets denote the branching of the $\mathbf{28}$ under $\SL{4} \times \SL{4} \times \mathbb{R}^+$ and the second square brackets that of the $\mathbf{\overline{28}}$.
 %We want to see if 
-whether IIB supergravity admits a 7-form field strength that is a singlet under these two $\SL{4}$ groups. To answer this question, we pick a gauge where the 6-form potential lives entirely in $S^3 \times S^3$ but depends on the $S^1$ coordinate, $z$. Therefore, in this gauge choice, the 6-form potential correspond sto an adjoint generator of $\En{7}$, and since the $S^1$ coordinate is an $\En{7}$ singlet, this adjoint generator must be a singlet under $\SL{4} \times \SL{4} \subset \SL{8} \subset \En{7}$ in order for us to have a consistent truncation.
+whether IIB supergravity admits a 7-form field strength that is a singlet under these two $\SL{4}$ groups. To answer this question, we pick a gauge where the 6-form potential lives entirely in $S^3 \times S^3$ but depends on the $S^1$ coordinate, $z$. Therefore, in this gauge choice, the 6-form potential corresponds to an adjoint generator of $\En{7}$, and since the $S^1$ coordinate is an $\En{7}$ singlet, this adjoint generator must be a singlet under $\SL{4} \times \SL{4} \subset \SL{8} \subset \En{7}$ in order for us to have a consistent truncation.
 
 IIB supergravity contains an S-duality doublet of 6-forms, which we can easily identify using the decomposition $\En{7} \rightarrow \SL{6} \times \SL{2} \times \mathbb{R}^+_{\rm IIB}$, under which the $\En{7}$ adjoint decomposes as
 \begin{equation} \label{eq:AdjointSL6}
@@ -451,7 +584,7 @@ and, on the other,
 		&\rightarrow \SL{3}_1 \times \SL{3}_2 \times \mathbb{R}^+_{\SL{2}} \times \mathbb{R}^+_{\SL{6}} \times \mathbb{R}^+_{\rm IIB} \,.
 	\end{split}
 \end{equation}
-Here, we label the $\mathbb{R}^+$'s with a subscript that refers to the the groups they belong belong to. The $\mathbb{R}^+$ generators of the two decompositions are related as
+Here, we label the $\mathbb{R}^+$'s with a subscript that refers to the the groups they belong to. The $\mathbb{R}^+$ generators of the two decompositions are related as
 \begin{equation} \label{eq:R+charges}
 	\begin{split}
 		\mathbb{R}^+_{\SL{6}} &= - \frac12 \left( \mathbb{R}^+_{\SL{3}_1} + \mathbb{R}^+_{\SL{3}_2} \right) \,, \\
@@ -475,7 +608,7 @@ Therefore, we can add a 7-form flux to the twist matrix using
 \begin{equation}
 	\cU_{\fl{M}}{}^M \longrightarrow \cU'_{\fl{M}}{}^M = \cU_{\fl{M}}{}^N \exp(C)_N{}^M \,,
 \end{equation}
-with $C_M{}^N = \lambda\, z\, t_{1238\,M}{}^N$ and $\lambda$ a numerical parameter corresponding to the amount of 7-form flux. \EM{Is there a density factor that needs to be added?} \EM{The resulting embedding tensor is \ldots}
+with $C_M{}^N = \lambda\, z\, t_{1238\,M}{}^N$ and $\lambda$ a numerical parameter corresponding to the amount of 7-form flux. \EM{Is there a density factor that needs to be added?} \CE{Yes.} \EM{The resulting embedding tensor is \ldots}
 
 %, which transform under the subgroup $\SL{6} \times \SL{2} \times \mathbb{R}^+_{IIB} \subset \En{7}$ as $\mathbf{\left(1,2\right)_{6}} \subset \mathbf{133}$
 
@@ -488,22 +621,70 @@ with $C_M{}^N = \lambda\, z\, t_{1238\,M}{}^N$ and $\lambda$ a numerical paramet
 \subsection{Moduli in 10 dimensions}
 
 \paragraph{SUSY deformation}
+In Hopf coordinates:
 \begin{equation}
 	\begin{split}
 		ds^2 &= \alpha^2 \left[ ds^2_{\mathbb{CP}^1} + \kappa^2 \right] + ds^2_{\tilde{S}^3} + e^{-4\omega} d\psi^2 \,, \\
-		\kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{1-e^{2\omega}} d\psi \,, \\
+		\kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{\CE{-}(1-e^{2\omega})} d\psi \,, \\
 		d\sigma &= vol_{\mathbb{CP}^1} \,.
 	\end{split}
 \end{equation}
 
-\paragraph{Non-SUSY deformation}
+In spherical coordinates:
 \begin{equation}
-\begin{split}
-ds^2 &= \alpha^2 \left[ d\alpha_1^2 +  ds^2_{\mathbb{CP}^1} + \kappa^2 \right] + ds^2_{\tilde{S}^3} + e^{-4\omega} d\psi^2 \,, \\
-\kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{1-e^{2\omega}} d\psi \,, \\
-d\sigma &= vol_{\mathbb{CP}^1} \,.
-\end{split}
+	\begin{aligned}
+		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right)+\alpha^{2}\,\d s^2\left(S^{3}_{-}\right) +e^{-2\omega}\,\d\psi^{2}\\
+		&\quad+2\,\alpha\,e^{-2\omega}\,\sqrt{-1+e^{2\omega}}\left(-\cos^{2}(\theta)\,\d\varphi_{1}+\sin^{2}(\theta)\,\d\varphi_{2}\right)\,\d\psi\\[5pt]
+		&= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right)+e^{-4\omega}\,\d\psi^{2}\\
+		&\quad+\alpha^{2}\bigg[\d \theta^2+\cos^{2}(\theta)\left(\d\varphi_{1}-\frac{e^{-2\omega}}{\alpha}\sqrt{-1+e^{2\omega}}\,\d\psi\right)^{2}+\sin^{2}(\theta)\left(\d\varphi_{2}+\frac{e^{-2\omega}}{\alpha}\sqrt{-1+e^{2\omega}}\,\d\psi\right)^{2}\bigg] ,\\[5pt]
+		\d s^2\left(S^{3}_{-}\right) &= \d\theta^{2}+\cos^{2}(\theta)\,\d\varphi_{1}^{2}+\sin^{2}(\theta)\,\d\varphi_{2}^{2}.
+	\end{aligned}
 \end{equation}
+
+\paragraph{Non-SUSY deformation}
+In spherical coordinates:
+\begin{equation}
+	\begin{aligned}
+		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
+		&\quad + \alpha^{2}\left(\d\theta^{2}+\Delta\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\cos^{2}(\theta)\,\d\varphi^{2}_{1}+\Delta\left(2+e^{2\Omega}\,\zeta_{1,8}^{2}\right)\,\sin^{2}(\theta)\,\d\varphi_{2}^{2}\right)\\
+		&\quad+2\sqrt{2}\,\alpha\,\Delta\left(-\zeta_{2,3}\,\cos^{2}(\theta)\,\d\varphi_{1}+\zeta_{1,8}\,\sin^{2}(\theta)\,\d\varphi_{2}\right)\,\d\psi \\
+		&\quad+2\,\Delta\left(\cos^{2}(\theta)+e^{2\Omega}\,\sin^{2}(\theta)\right)\,\d\psi^{2},\\[5pt]
+		\Delta^{-1} &= 2\,e^{2\Omega}+\zeta_{2,3}^{2}+\cos^{2}(\theta)\left(2-2\,e^{2\Omega}-\zeta_{2,3}^{2}+e^{2\Omega}\,\zeta_{1,8}^{2}\right).
+	\end{aligned}
+\end{equation}
+
+In Hopf coordinates:
+% \begin{equation}
+% \begin{split}
+% ds^2 &= \alpha^2 \left[ d\alpha_1^2 +  ds^2_{\mathbb{CP}^1} + \kappa^2 \right] + ds^2_{\tilde{S}^3} + e^{-4\omega} d\psi^2 \,, \\
+% \kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{1-e^{2\omega}} d\psi \,, \\
+% d\sigma &= vol_{\mathbb{CP}^1} \,.
+% \end{split}
+% \end{equation}
+% \begin{equation}
+% 	\begin{aligned}
+% 		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
+% 		&\quad + \Delta\,\alpha^{2}\bigg[\frac{1}{\left(1+\vert z\vert^{2}\right)^{2}}\Big(\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(1+(2+\vert z\vert^{2})\,z_{\rm I}^{2}\right)+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,z_{\rm R}^{2}\Big)\,\d z_{\rm R}^{2}\\
+% 		&\qquad\ \  + \frac{1}{\left(1+\vert z\vert^{2}\right)^{2}}\Big(\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(1+(2+\vert z\vert^{2})\,z_{\rm R}^{2}\right)+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,z_{\rm I}^{2}\Big)\,\d z_{\rm I}^{2}\\
+% 		&\qquad\ \  + 2\,\frac{1}{\left(1+\vert z\vert^{2}\right)^{2}}\Big(-\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(2+\vert z\vert^{2}\right)+2\,e^{2\Omega}+\zeta_{2,3}^{2}\Big)\,\d z_{\rm R}\d z_{\rm I}\\
+% 		&\qquad\ \  +2\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\d\theta+\Big(\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\,\vert z\vert^{2}+2\,e^{2\Omega}+\zeta_{2,3}^{2}\Big)\,\d\theta^{2}\bigg]\\
+% 		&\quad + \Delta\,\alpha\bigg[-2\sqrt{2}\,e^{2\Omega}\,\zeta_{1,8}\,\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\,\d\psi-2\sqrt{2}\left(e^{2\Omega}\,\zeta_{1,8}\,\vert z\vert^{2}+\zeta_{2,3}\right)\,\d\theta\,\d\psi\bigg]\\
+% 		&\quad + 2\,\Delta\left(1+e^{2\Omega}\,\vert z\vert^{2}\right)\,\d\psi^{2} ,\\[5pt]
+% 		\Delta^{-1} &= 2+e^{2\Omega}\zeta_{1,8}^{2}+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\vert z\vert^{2}.
+% 	\end{aligned}
+% \end{equation}
+\begin{equation}
+	\begin{aligned}
+		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
+		&\quad + \frac{\alpha^{2}}{1+\gamma\,\vert z\vert^{2}}\bigg[\Big(\left(1+\vert z\vert^{2}\right)\left(1+z_{\rm I}^{2}\right)+\left(\gamma-1\right)\,z_{\rm R}^{2}\Big)\,\frac{\d z_{\rm R}^{2}}{\left(1+\vert z\vert^{2}\right)^{2}}\\
+		&\qquad + \Big(\left(1+\vert z\vert^{2}\right)\left(1+z_{\rm R}^{2}\right)+\left(\gamma-1\right)\,z_{\rm I}^{2}\Big)\,\frac{\d z_{\rm I}^{2}}{\left(1+\vert z\vert^{2}\right)^{2}} - 2\,\Big(1+\vert z\vert^{2}-\left(\gamma-1\right)\Big)\,\frac{\d z_{\rm R}\d z_{\rm I}}{\left(1+\vert z\vert^{2}\right)^{2}}\\
+		&\qquad+2\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\d\theta+\left(\gamma+\vert z\vert^{2}\right)\d\theta^{2}\bigg]\\
+		&\quad + \Delta\,\alpha\bigg[-2\sqrt{2}\,e^{2\Omega}\,\zeta_{1,8}\,\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\,\d\psi-2\sqrt{2}\left(e^{2\Omega}\,\zeta_{1,8}\,\vert z\vert^{2}+\zeta_{2,3}\right)\,\d\theta\,\d\psi\bigg]\\
+		&\quad + 2\,\Delta\left(1+e^{2\Omega}\,\vert z\vert^{2}\right)\,\d\psi^{2} ,\\[5pt]
+		\gamma &= \frac{2\,e^{2\Omega}+\zeta_{2,3}^{2}}{2+e^{2\Omega}\zeta_{1,8}^{2}},\qquad \Delta^{-1} = 2+e^{2\Omega}\zeta_{1,8}^{2}+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\vert z\vert^{2}.
+	\end{aligned}
+\end{equation}
+
 
 \subsection{Compactification of the moduli space}
 
