@@ -294,7 +294,7 @@ $\widehat{R}$ is the \EE-covariantised Ricci scalar and the covariant derivative
 	D_{\mu} = \partial_{\mu} - {\cal L}_{(A_{\mu}, B_{\mu})}.
 \end{equation}
 $\mathscr{L}_{\rm int}$ is a potential term depending only on internal derivatives:
-\begin{equation}
+\begin{equation} \label{eq:ExFTLint}
 	\begin{aligned}
 		\mathscr{L}_{\rm int} &= \frac{1}{240}\,\M^{MN}\partial_{M}\M^{KL}\partial_{N}\M_{KL} - \frac{1}{2}\,\M^{MN}\partial_{M}\M^{KL}\partial_{L}\M_{NK} \\
 		&\quad -\frac{1}{7200}\,f^{NQ}{}_{P}f^{MS}{}_{R}\,\M^{PK}\partial_{M}\M_{QK}\,\M^{RL}\partial_{N}\M_{SL}\\
@@ -331,7 +331,7 @@ The Ansätze~\eqref{eq:GSSansatz} describe a consistent truncation if the follow
 	\gL_{\ff{U}_{\fl{M}}} {\cU}_{\fl{N}}{}^M = X_{\fl{M}\fl{N}}{}^{\fl{P}}\, \cU_{\fl{P}}{}^M,
 \end{equation}
 with $\cU_{\fl{M}}{}^M = \rho^{-1} U_{\fl{M}}{}^M$, $\ff{U}_{\fl{M}} = (\cU_{\fl{M}},\,\Sigma_{\fl{M}})$ and $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ a constant tensor. This condition ensures that the factorised form of the Ansätze~\eqref{eq:GSSansatz} is preserved by the generalized Lie derivative, \textit{e.g.}
-\begin{equation}
+\begin{equation} \label{eq:GSSexample}
 	\begin{aligned}
 		D_{\mu}\M(x,Y) &= U^{\fl{M}}{}_{M}(Y)\,U^{\fl{N}}{}_{N}(Y)\,{\cal D}_{\mu}\M_{\fl{MN}}(x),\\
 		{\cal L}_{(A_{\mu},B_{\nu})}A_{\mu}(x,Y) &= \rho(Y)^{-1}\,U_{\fl{M}}{}^{M}(Y)\,\llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}(x),
@@ -343,8 +343,7 @@ where
 \end{equation}
 
 
-
-The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity. It has the following expression:
+For a given twist matrix $U_{\fl{M}}{}^{M}$ satisfying the consistency condition~\eqref{eq:GenLeibniz}, the action~\eqref{eq:ExFTaction} reduces to three-dimensional ${\cal N}=16$ gauged supergravity. The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity. From eq.~~\eqref{eq:GenLeibniz}, it has the following expression:
 \begin{equation}
 	\begin{aligned}
 		X_{\fl{MN}}{}^{\fl{P}}&=-\rho^{-1}\,\Gamma_{\fl{MN}}{}^{\fl{P}} + \rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}f^{\fl{QK}}{}_{\fl{L}}\,\Gamma_{\fl{KM}}{}^{\fl{L}}-\frac{1}{60}\,\rho^{-1}\,f^{\fl{PK}}{}_{\fl{N}}f_{\fl{ML}}{}^{\fl{Q}}\,\Gamma_{\fl{KQ}}{}^{\fl{L}}\\
@@ -355,11 +354,35 @@ Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\fl{MN}}{}^{\fl{P}}=U_{\f
 \begin{equation}
 	\xi_{\fl{M}} = 2\,U_{\fl{M}}{}^{N}\partial_{N}\rho^{-1}+\rho^{-1}\,\partial_{N}U_{\fl{M}}{}^{N}.
 \end{equation}
-In the following, we consider $\xi_{\fl{M}}=0$. The embedding tensor is most nicely expressed once projected on the adjoint representation
-\begin{equation}
+In the following, we consider $\xi_{\fl{M}}=0$. The embedding tensor is then most nicely expressed once projected on the adjoint representation \CE{(Give expression with projector on 3875?)}
+\begin{equation} \label{eq:symembeddingtensor}
 	X_{\fl{MN}} = -\frac{1}{60}\,X_{\fl{MP}}{}^{\fl{Q}}\,f_{\fl{NQ}}{}^{\fl{P}} = 2\,\rho^{-1}\,\Gamma_{(\fl{MN})} - \rho^{-1}\,\Gamma_{\fl{K}(\fl{M}}{}^{\fl{L}}\,f_{\fl{N})\fl{L}}{}^{\fl{K}},
 \end{equation}
 with the projection of the current $\Gamma_{\fl{MN}} = (1/60)\,\Gamma_{\fl{MP}}{}^{\fl{Q}}\,f_{\fl{NQ}}{}^{\fl{P}}$.
+
+The three-dimensional action follows from inserting the Ansätze~\eqref{eq:GSSansatz} in the ExFT action~\eqref{eq:ExFTaction}. The expressions of the kinetic and Chern-Simons terms result from eq.~\eqref{eq:GSSexample}: \CE{(A work on the Ricci scalar?)}
+\begin{equation}
+	\begin{aligned}
+		\mathscr{L}_{\rm kin} &= \frac{1}{240}\,D_{\mu}\M_{MN}D^{\mu}\M^{MN} \underset{\rm gSS}{=} \frac{\rho^{2}}{240}\,{\cal D}_{\mu}\M_{\fl{MN}}{\cal D}^{\mu}\M^{\fl{MN}}, \\
+		\mathscr{L}_{\rm CS} &\underset{\rm gSS}{=} -\rho^{-1}\,\varepsilon^{\mu\nu\rho}\,X_{\fl{MN}}\,\A_{\mu}{}^{\fl{M}} \left(\partial_{\nu}\A_{\rho}{}^{\fl{N}}-\frac{1}{3}\,\llbracket\A_{\nu},\A_{\rho}\rrbracket^{\fl{N}}\right).
+	\end{aligned}
+\end{equation}
+
+The case of the potential term $\mathscr{L}_{\rm int}$, leading to a potential $V$ for the three-dimensional scalars $\M_{\fl{MN}}$, is more subtle. We expect $V$ to be quadratic in the embedding tensor, which makes the identification of $X_{\fl{MN}}$ more complicated. We adopt the following strategy. First, we insert the generalized Sherk-Schwarz Ansätze~\eqref{eq:GSSansatz} into the expression of $\mathscr{L}_{\rm int}$~\eqref{eq:ExFTLint} with an additional total derivative: \CE{(Fill in with the eq. of 08/02, global $-1$ and  $a \rightarrow a/3$. Need to motivate the total derivative? Need to give some formula? As MMf=-fM? Ad invariance? Mention use of section constraint? Factor $\sqrt{\vert g\vert}$ to avoid carrying $\rho$ in $V$?)}
+\begin{equation} \label{eq:Lintexpansion}
+	\begin{aligned}
+		\mathscr{L}_{\rm int} + \frac{a}{\sqrt{\vert g\vert}}\,\partial_{M}\Big(&\sqrt{\vert g\vert}\,\partial_{N}\M^{MN}+\frac{4}{3}\,\M^{MN}\partial_{N}\sqrt{\vert g\vert}\Big)\\
+		&\underset{\rm gSS}{=} -\frac{1}{2}\,\M^{\fl{MN}}\,\Gamma_{\fl{MK}}\Gamma_{\fl{N}}{}^{\fl{K}} + \ldots
+	\end{aligned}
+\end{equation}
+Then, we consider the most general exactly quadratic function in $X_{\fl{MN}}$ and develop it in \EE currents using eq.~\eqref{eq:symembeddingtensor}: \CE{(Sign convention between $V$ and ${\mathscr{L}}_{\rm int}$.)}
+\begin{equation} \label{eq:Vexpansion}
+	\begin{aligned}
+		V &= X_{\fl{MN}}X_{\fl{PQ}}\left(\alpha\,\M^{\fl{MP}}\M^{\fl{NQ}}+\beta\,\M^{\fl{MP}}\eta^{\fl{NQ}}+\delta\,\eta^{\fl{MP}}\eta^{\fl{NQ}}+\gamma\,\eta^{\fl{MN}}\eta^{\fl{PQ}}\right) \\
+		&\underset{\rm gSS}{=} \rho^{-2}\bigg(14\,\alpha\,\Gamma_{\fl{MN}}\Gamma_{\fl{PQ}}\,\M^{\fl{MP}}\M^{\fl{NQ}}+\ldots\bigg).
+	\end{aligned}
+\end{equation}
+\CE{Finally, comparing eq.~\eqref{eq:Lintexpansion} and~\eqref{eq:Vexpansion}, the parameters are fixed to...} 
 
 
 % Consider a twist matrix $U_{\bar M}{}^{M}$ and a scale factor $\rho$. A consistent truncation requires that the objects
@@ -383,6 +406,7 @@ with the potential\footnote{To obtain this potential, one has to add the total d
 \begin{equation}
 	V = X_{\fl{MN}}\,X_{\fl{PQ}}\left(\frac{1}{28}\,\M^{\fl{MP}}\M^{\fl{NQ}}+\frac{1}{2}\,\M^{\fl{MP}}\eta^{\fl{NQ}}+\frac{13}{28}\,\eta^{\fl{MP}}\eta^{\fl{NQ}}\right).
 \end{equation}
+\CE{(A word on the 3d linear and quadratic constraints?)}
 
 
 \section{Adding fluxes to consistent truncations} \label{s:AddFlux}
