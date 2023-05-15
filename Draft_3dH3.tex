@@ -248,9 +248,10 @@
 
 \section{Introduction}
 
-\section{\texorpdfstring{\EE}{E8(8)} ExFT and consistent truncations} \label{s:Review}
+% \section{\texorpdfstring{\EE}{E8(8)} ExFT and consistent truncations} 
 
-\subsection{Review of \texorpdfstring{\EE}{E8(8)} exceptional field theory}
+\section{Review of \texorpdfstring{\EE}{E8(8)} exceptional field theory} \label{s:Review}
+
 The \EE exceptional field theory, first constructed in ref.~\cite{Hohm:2014fxa}, is an \EE duality-covariant formulation of type II and 11d supergravities. It is defined on a set of $3+248$ coordinates made of three-dimensonal external coordinates $\{x^{\mu}\}$ and internal coordinates $\{Y^{M}\}$ in the 248-dimensional adjoint representation of \EE. The dependance of the fields on these coordinates is constrained by the ``section constraints''\footnote{We use the notation $\otimes$ to indicate that both derivatives may act on different functions.}
 \begin{equation} \label{eq:sectionconstraints}
 	\begin{cases}
@@ -309,8 +310,8 @@ Finally, $\mathscr{L}_{\rm CS}$ is a Chern-Simons term required to impose the on
 \end{equation}
 where $F_{\mu\nu}{}^{M}$ is the covariant field strength of $A_{\mu}{}^{M}$ (see eq. (2.26) of ref.~\cite{Hohm:2014fxa}).
 
-\subsection{Generalized Scherk-Schwarz ansatz and consistent truncations}
-The \EE exceptional field theory is well suited to the construction of consistent truncation of type~II and 11d supergravities to three-dimensional maximal supergravity. These truncations arise as generalised Scherk-Schwarz reduction, described by an \EE-valued twist matrix $U_{\fl{M}}{}^{M}$ and a scale factor $\rho$. The compactification Ansätze are as follows~\cite{Galli:2022idq}:
+\section{Consistent truncations to 3-dimensional \texorpdfstring{${\cal N}=16$}{N=16} gauged supergravity}
+The \EE exceptional field theory is well suited to the construction of consistent truncation of type~II and 11d supergravities to three-dimensional maximal supergravity. These truncations arise as generalised Scherk-Schwarz reductions, described by an \EE-valued twist matrix $U_{\fl{M}}{}^{M}$ and a scale factor $\rho$. The compactification Ansätze are as follows~\cite{Galli:2022idq}:
 \begin{equation} \label{eq:GSSansatz}
 	\begin{aligned}
 		g_{\mu\nu}(x,Y)&=\rho(Y)^{-2}\,\mathring{g}_{\mu\nu}(x),\\
@@ -346,19 +347,19 @@ where
 The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity. It has the following expression:
 \begin{equation}
 	\begin{aligned}
-		X_{\bar M\bar N}{}^{\bar P}&=-\rho^{-1}\,\Gamma_{\bar M\bar N}{}^{\bar P} + \rho^{-1}\,f^{\bar P}{}_{\bar N\bar Q}f^{\bar Q\bar K}{}_{\bar L}\,\Gamma_{\bar K\bar M}{}^{\bar L}-\frac{1}{60}\,\rho^{-1}\,f^{\bar P\bar K}{}_{\bar N}f_{\bar M\bar L}{}^{\bar Q}\,\Gamma_{\bar K\bar Q}{}^{\bar L}\\
-		&\quad-\frac{1}{2}\,\rho^{-1}\,f^{\bar P}{}_{\bar N\bar Q}f^{\bar Q\bar K}{}_{\bar M}\,\Gamma_{\bar R\bar K}{}^{\bar R}+\left(\delta_{\bar M}{}^{\bar K}\delta_{\bar N}{}^{\bar P}-\frac{1}{2}\,f_{\bar M}{}^{\bar L\bar K}f_{\bar N\bar L}{}^{\bar P}\right)\,\xi_{\bar K}.
+		X_{\fl{MN}}{}^{\fl{P}}&=-\rho^{-1}\,\Gamma_{\fl{MN}}{}^{\fl{P}} + \rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}f^{\fl{QK}}{}_{\fl{L}}\,\Gamma_{\fl{KM}}{}^{\fl{L}}-\frac{1}{60}\,\rho^{-1}\,f^{\fl{PK}}{}_{\fl{N}}f_{\fl{ML}}{}^{\fl{Q}}\,\Gamma_{\fl{KQ}}{}^{\fl{L}}\\
+		&\quad-\frac{1}{2}\,\rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}f^{\fl{QK}}{}_{\fl{M}}\,\Gamma_{\fl{RK}}{}^{\fl{R}}+\left(\delta_{\fl{M}}{}^{\fl{K}}\delta_{\fl{N}}{}^{\fl{P}}-\frac{1}{2}\,f_{\fl{M}}{}^{\fl{LK}}f_{\fl{NL}}{}^{\fl{P}}\right)\,\xi_{\fl{K}}.
 	\end{aligned}
 \end{equation}
-Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\bar M\bar N}{}^{\bar P}=U_{\bar M}{}^{K}U_{\bar N}{}^{L}\partial_{K}U^{\bar P}{}_{L}$ and the trombone gauging
+Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\fl{MN}}{}^{\fl{P}}=U_{\fl{M}}{}^{K}U_{\fl{N}}{}^{L}\partial_{K}U^{\fl{P}}{}_{L}$ and the trombone gauging
 \begin{equation}
-	\xi_{\bar M} = 2\,U_{\bar M}{}^{N}\partial_{N}\rho^{-1}+\rho^{-1}\,\partial_{N}U_{\bar M}{}^{N}.
+	\xi_{\fl{M}} = 2\,U_{\fl{M}}{}^{N}\partial_{N}\rho^{-1}+\rho^{-1}\,\partial_{N}U_{\fl{M}}{}^{N}.
 \end{equation}
-In the following, we consider $\xi_{\bar M}=0$. The embedding tensor is most nicely expressed once projected on the adjoint representation
+In the following, we consider $\xi_{\fl{M}}=0$. The embedding tensor is most nicely expressed once projected on the adjoint representation
 \begin{equation}
-	X_{\bar M\bar N} = -\frac{1}{60}\,X_{\bar M\bar P}{}^{\bar Q}\,f_{\bar N\bar Q}{}^{\bar P} = 2\,\rho^{-1}\,\Gamma_{(\bar M\bar N)} - \rho^{-1}\,\Gamma_{\bar K(\bar M}{}^{\bar L}\,f_{\bar N)\bar L}{}^{\bar K},
+	X_{\fl{MN}} = -\frac{1}{60}\,X_{\fl{MP}}{}^{\fl{Q}}\,f_{\fl{NQ}}{}^{\fl{P}} = 2\,\rho^{-1}\,\Gamma_{(\fl{MN})} - \rho^{-1}\,\Gamma_{\fl{K}(\fl{M}}{}^{\fl{L}}\,f_{\fl{N})\fl{L}}{}^{\fl{K}},
 \end{equation}
-with the projection of the current $\Gamma_{\bar M\bar N} = (1/60)\,\Gamma_{\bar M\bar P}{}^{\bar Q}\,f_{\bar N\bar Q}{}^{\bar P}$.
+with the projection of the current $\Gamma_{\fl{MN}} = (1/60)\,\Gamma_{\fl{MP}}{}^{\fl{Q}}\,f_{\fl{NQ}}{}^{\fl{P}}$.
 
 
 % Consider a twist matrix $U_{\bar M}{}^{M}$ and a scale factor $\rho$. A consistent truncation requires that the objects
@@ -374,13 +375,13 @@ with the projection of the current $\Gamma_{\bar M\bar N} = (1/60)\,\Gamma_{\bar
 With the generalized Scherk-Schwarz Ansätze~\eqref{eq:GSSansatz}, the action~\eqref{eq:ExFTaction} becomes
 \begin{equation}
 	\begin{aligned}
-		S_{\rm ExFT} \underset{\rm gSS}{=} \int\d^{248}Y\,\rho^{-1}\int \d^{3}x & \bigg[\sqrt{\vert\mathring{g}\vert}\bigg(\mathring{R}+\frac{1}{240}\,{\cal D}_{\mu}\M_{\bar M\bar N}{\cal D}^{\mu}\M^{\bar M\bar N}-V\bigg) \\
-		&-\varepsilon^{\mu\nu\rho}\,X_{\bar M\bar N}\,\A_{\mu}{}^{\bar M} \left(\partial_{\nu}\A_{\rho}{}^{\bar N}-\frac{1}{3}\,\llbracket\A_{\nu},\A_{\rho}\rrbracket^{\bar N}\right)\bigg],
+		S_{\rm ExFT} \underset{\rm gSS}{=} \int\d^{248}Y\,\rho^{-1}\int \d^{3}x & \bigg[\sqrt{\vert\mathring{g}\vert}\bigg(\mathring{R}+\frac{1}{240}\,{\cal D}_{\mu}\M_{\fl{MN}}{\cal D}^{\mu}\M^{\fl{MN}}-V\bigg) \\
+		&-\varepsilon^{\mu\nu\rho}\,X_{\fl{MN}}\,\A_{\mu}{}^{\fl{M}} \left(\partial_{\nu}\A_{\rho}{}^{\fl{N}}-\frac{1}{3}\,\llbracket\A_{\nu},\A_{\rho}\rrbracket^{\fl{N}}\right)\bigg],
 	\end{aligned}
 \end{equation}
 with the potential\footnote{To obtain this potential, one has to add the total derivative $-\partial_{M}\left(\sqrt{\vert g\vert}\,\partial_{N}\M^{MN}+(4/3)\,\M^{MN}\partial_{N}\sqrt{\vert g\vert}\right)$ to $\sqrt{\vert g\vert}\,\mathscr{L}_{\rm int}$.}
 \begin{equation}
-	V = X_{\bar M\bar N}\,X_{\bar P\bar Q}\left(\frac{1}{28}\,\M^{\bar M\bar P}\M^{\bar N\bar Q}+\frac{1}{2}\,\M^{\bar M\bar P}\eta^{\bar N\bar Q}+\frac{13}{28}\,\eta^{\bar M\bar P}\eta^{\bar N\bar Q}\right).
+	V = X_{\fl{MN}}\,X_{\fl{PQ}}\left(\frac{1}{28}\,\M^{\fl{MP}}\M^{\fl{NQ}}+\frac{1}{2}\,\M^{\fl{MP}}\eta^{\fl{NQ}}+\frac{13}{28}\,\eta^{\fl{MP}}\eta^{\fl{NQ}}\right).
 \end{equation}
 
 
