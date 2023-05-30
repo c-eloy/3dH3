@@ -324,7 +324,7 @@ with
 \begin{equation}
 	\Sigma_{\fl{M}\,M}=\frac{\rho^{-1}}{60}\,f_{\fl{M}}{}^{\fl{PQ}}\,\UI_{\fl{P}P}\,\partial_{M}\UI_{\fl{Q}}{}^{P}.
 \end{equation}
-The fields with flat indices $\fl{M}$ (in the $\mathbf{248}$ representation of \EE) describe the three-dimensional theory; all the dependence on the internal manifold is factored out in $U_{\fl{M}}{}^{M}$ and $\rho$. Note that with the definition of $\Sigma_{\fl{M}\,M}$ the condition~\eqref{eq:sectionconstraint2} is automatically satisfied.
+The fields with flat indices $\fl{M}$ (in the $\mathbf{248}$ representation of \EE) describe the three-dimensional theory; all the dependence on the internal manifold is factored out in $U_{M}{}^{\fl{M}}$ and $\rho$. Note that with the definition of $\Sigma_{\fl{M}\,M}$ the condition~\eqref{eq:sectionconstraint2} is automatically satisfied.
 
 The Ansätze~\eqref{eq:GSSansatz} describe a consistent truncation if the following condition is satisfied:
 \begin{equation} \label{eq:GenLeibniz}
@@ -339,20 +339,20 @@ with $\cU_{\fl{M}}{}^M = \rho^{-1} \UI_{\fl{M}}{}^M$, $\ff{U}_{\fl{M}} = (\cU_{\
 \end{equation}
 where
 \begin{equation}
-	{\cal D}_{\mu}\M_{\fl{MN}} = \partial_{\mu}\M_{\fl{MN}}-2\,\A_{\mu}{}^{\fl{P}}X_{\fl{P}(\fl{M})}{}^{\fl{Q}}\M_{\fl{N})\fl{Q}} \quad {\rm and} \quad \llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}=X_{\fl{PQ}}{}^{\fl{M}}\A_{\mu}{}^{\fl{P}}\A_{\nu}^{\fl{Q}}.
+	{\cal D}_{\mu}\M_{\fl{MN}} = \partial_{\mu}\M_{\fl{MN}}-2\,\A_{\mu}{}^{\fl{P}}X_{\fl{P}(\fl{M}}{}^{\fl{Q}}\M_{\fl{N})\fl{Q}} \quad {\rm and} \quad \llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}=X_{\fl{PQ}}{}^{\fl{M}}\A_{\mu}{}^{\fl{P}}\A_{\nu}^{\fl{Q}}.
 \end{equation}
 
 
-For a given twist matrix $U_{M}{}^{\fl{M}}$ satisfying the consistency condition~\eqref{eq:GenLeibniz}, the action~\eqref{eq:ExFTaction} reduces to three-dimensional ${\cal N}=16$ gauged supergravity. The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity. From eq.~~\eqref{eq:GenLeibniz}, it has the following expression:
+For a given twist matrix $U_{M}{}^{\fl{M}}$ satisfying the consistency condition~\eqref{eq:GenLeibniz}, the action~\eqref{eq:ExFTaction} reduces to three-dimensional ${\cal N}=16$ gauged supergravity~\cite{Nicolai:2000sc,Nicolai:2001sv}. The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity. From eq.~~\eqref{eq:GenLeibniz}, it has the following expression:
 \begin{equation}
 	\begin{aligned}
 		X_{\fl{MN}}{}^{\fl{P}}&=-\rho^{-1}\,\Gamma_{\fl{MN}}{}^{\fl{P}} + \rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}f^{\fl{QK}}{}_{\fl{L}}\,\Gamma_{\fl{KM}}{}^{\fl{L}}-\frac{1}{60}\,\rho^{-1}\,f^{\fl{PK}}{}_{\fl{N}}f_{\fl{ML}}{}^{\fl{Q}}\,\Gamma_{\fl{KQ}}{}^{\fl{L}}\\
-		&\quad-\frac{1}{2}\,\rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}f^{\fl{QK}}{}_{\fl{M}}\,\Gamma_{\fl{RK}}{}^{\fl{R}}+\left(\delta_{\fl{M}}{}^{\fl{K}}\delta_{\fl{N}}{}^{\fl{P}}-\frac{1}{2}\,f_{\fl{M}}{}^{\fl{LK}}f_{\fl{NL}}{}^{\fl{P}}\right)\,\xi_{\fl{K}}.
+		&\quad-\frac{1}{2}\,\rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}f^{\fl{QK}}{}_{\fl{M}}\,\Gamma_{\fl{LK}}{}^{\fl{L}}+\left(\delta_{\fl{M}}{}^{\fl{K}}\delta_{\fl{N}}{}^{\fl{P}}-\frac{1}{2}\,f_{\fl{M}}{}^{\fl{LK}}f_{\fl{NL}}{}^{\fl{P}}\right)\,\xi_{\fl{K}}.
 	\end{aligned}
 \end{equation}
-Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\fl{MN}}{}^{\fl{P}}=U_{\fl{M}}{}^{K}U_{\fl{N}}{}^{L}\partial_{K}U^{\fl{P}}{}_{L}$ and the trombone gauging
+Here, we defined the \EE current $\Gamma_{\fl{MN}}{}^{\fl{P}}=\UI_{\fl{M}}{}^{K}\UI_{\fl{N}}{}^{L}\partial_{K}U_{L}{}^{\fl{P}}$ and the trombone gauging
 \begin{equation}
-	\xi_{\fl{M}} = 2\,U_{\fl{M}}{}^{N}\partial_{N}\rho^{-1}+\rho^{-1}\,\partial_{N}U_{\fl{M}}{}^{N}.
+	\xi_{\fl{M}} = 2\,\UI_{\fl{M}}{}^{N}\partial_{N}\rho^{-1}+\rho^{-1}\,\partial_{N}\UI_{\fl{M}}{}^{N}.
 \end{equation}
 In the following, we consider $\xi_{\fl{M}}=0$. The embedding tensor is then most nicely expressed once projected on the adjoint representation \CE{(Keep expression with projector on 3875?)}
 \begin{equation} \label{eq:symembeddingtensor}
@@ -385,7 +385,7 @@ Then, we consider the most general exactly quadratic function in $X_{\fl{MN}}$ a
 	\begin{aligned}
 		-V &= X_{\fl{MN}}X_{\fl{PQ}}\left(\alpha\,\M^{\fl{MP}}\M^{\fl{NQ}}+\beta\,\M^{\fl{MP}}\eta^{\fl{NQ}}+\delta\,\eta^{\fl{MP}}\eta^{\fl{NQ}}+\gamma\,\eta^{\fl{MN}}\eta^{\fl{PQ}}\right) \\
 		&\underset{\rm gSS}{=} \rho^{-2}\bigg(14\,\alpha\,\Gamma_{\fl{MN}}\Gamma_{\fl{PQ}}\,\M^{\fl{MP}}\M^{\fl{NQ}}+14\,\alpha\,\Gamma_{\fl{MN}}\Gamma_{\fl{PQ}}\,\M^{\fl{MQ}}\M^{\fl{NP}}\\
-		&\ \quad +2\,\beta\,\M^{\fl{MN}}\,\Gamma_{\fl{MK}}\Gamma^{\fl{K}}{}_{\fl{N}}+\beta\,\M^{\fl{MN}}\,\Gamma_{\fl{MK}}\Gamma_{\fl{N}}{}^{\fl{K}}+\left(-12\,\alpha+2\,\delta-(62)^2\,\gamma\right)\,\Gamma_{\fl{MN}}\Gamma^{\fl{MN}}\\
+		&\ \quad +2\,\beta\,\M^{\fl{MN}}\,\Gamma_{\fl{MK}}\Gamma^{\fl{K}}{}_{\fl{N}}+\beta\,\M^{\fl{MN}}\,\Gamma_{\fl{MK}}\Gamma_{\fl{N}}{}^{\fl{K}}+\left(-12\,\alpha+2\,\delta-(62)^2\,\gamma\right)\,\Gamma_{\fl{MN}}\Gamma^{\fl{NM}}\\
 		&\ \quad -2\,\beta\,\M^{\fl{MN}}\Gamma_{\fl{MK}}{}^{\fl{L}}\Gamma_{\fl{LN}}{}^{\fl{K}}+\beta\,\M^{\fl{MN}}\Gamma_{\fl{KM}}{}^{\fl{L}}\Gamma_{\fl{LN}}{}^{\fl{K}}+\left(7\,\alpha+\frac{\beta}{2}\right)\,\M^{\fl{MN}}\Gamma_{\fl{KM}}{}^{\fl{K}}\Gamma_{\fl{LN}}{}^{\fl{L}}\\
 		&\ \quad +14\,\alpha\,\M^{\fl{MN}}\M^{\fl{KL}}f_{\fl{QL}}{}^{\fl{P}}\Gamma_{\fl{PN}}{}^{\fl{Q}}\Gamma_{\fl{MK}}\bigg).
 	\end{aligned}
@@ -450,12 +450,12 @@ where we defined
 \begin{equation} \label{eq:FlatF}
 	F_{\fl{M}\fl{N}}{}^{\fl{P}} \equiv \UI_{\fl{M}}{}^M\, \UI_{\fl{N}}{}^N\, U_P{}^{\fl{P}}\, F_{MN}{}^P \,,
 \end{equation}
-and $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ is already constant. Therefore, we have a consistent truncation if and only iff $\rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\fl{P}}$ is constant.
+and $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ is already constant. Therefore, we have a consistent truncation if and only if $\rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\fl{P}}$ is constant.
 
 A particularly simple way of having constant $\rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\fl{P}}$ is to consider fluxes which are stabilised by the twist matrix $U_M{}^{\fl{M}}$. The twist matrix typically only lives in a subgroup $G \subset \EE$. Therefore, in this case, we can simply tune the $G$-singlet components of the flux $F_{MN}{}^P$ to be proportional to $\rho$ to obtain a new consistent truncation.
 
 \subsection{Adding fluxes to the $S^3$ truncation of 6-dimensional supergravity} \label{s:S3Flux}
-Before dealing with the $S^3 \times S^3 \times S^1$ truncation, let us demonstrate this methodology for the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity on $S^3$, which was constructed in \cite{Eloy:2021fhc}. As discussed in \cite{Eloy:2021fhc}, the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity to 3-dimensional half-maximal gauged supergravity can be described using the $\SO{8,4}$ ExFT \cite{Hohm:2017wtr,Samtleben:2019zrh}. On the other hand, the consistent truncation on $S^3$ is conveniently described by twist matrices living in $\SL{4} \simeq \SO{3,3}$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} \EM{I think the twist matrix of \cite{Baguet:2015iou,Lee:2014mla,Hohm:2014qga} coincide in the $\SL{4}$ case, right? Camille, do you agree?} with the embedding $\SO{3,3} \subset \SO{4,4} \subset \SO{8,4}$. However, the twist matrix in \cite{Eloy:2021fhc} differs from this $\SO{3,3}$ twist matrix \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} by an additional parameter, $\lambda$, which gives rise to an external 3-form flux or, equivalently, a new internal 3-form flux.
+Before dealing with the $S^3 \times S^3 \times S^1$ truncation, let us demonstrate this methodology for the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity on $S^3$, which was constructed in~\cite{Eloy:2021fhc}. As discussed in \cite{Eloy:2021fhc}, the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity to 3-dimensional half-maximal gauged supergravity can be described using the $\SO{8,4}$ ExFT \cite{Hohm:2017wtr,Samtleben:2019zrh}. On the other hand, the consistent truncation on $S^3$ is conveniently described by twist matrices living in $\SL{4} \simeq \SO{3,3}$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} \EM{I think the twist matrix of \cite{Baguet:2015iou,Lee:2014mla,Hohm:2014qga} coincide in the $\SL{4}$ case, right? Camille, do you agree?} with the embedding $\SO{3,3} \subset \SO{4,4} \subset \SO{8,4}$. However, the twist matrix in \cite{Eloy:2021fhc} differs from this $\SO{3,3}$ twist matrix \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} by an additional parameter, $\lambda$, which gives rise to an external 3-form flux or, equivalently, a new internal 3-form flux.
 
 \subsubsection{The $S^3$ twist matrix}
 Since it will play a role throughout this paper, we will begin by giving the $\SL{4} \simeq \SO{3,3}$ twist matrix that describes the consistent truncation on $S^3$. Here, we give a slightly different, but equivalent, form of the twist matrix constructed in \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} for the consistent truncation on $S^n$.
@@ -550,7 +550,7 @@ with $C_A$ an element of the $\mathbf{6_{2}}$, and $\left( t^A \right)^{MN}$ the
 \begin{equation}
 	\left(t^A\right)^{Bz} = \eta^{AB} \,.
 \end{equation}
-Here $\eta_{MN}$ and $\eta_{AB}$ are the $\SO{4,4}$ and $\SO{3,3}$ invariant metrics, respectively, and are used to raise/lower the corresponding vector indices. Decomposing with respect to the geometric $\SL{3} \times \mathbb{R}^+$ of the $S^3$,  the coordinates on $S^3$ live in the $Y^A = \left( y^i,\, y_i \right)$, $i = 1, 2, 3$, while $C_A = \left( C_i,\, C^i \right)$ naturally contains a 2-form $C^i$. The field strength $H_3 = \partial^A C_A = \partial_i C^i$ is a singlet of $\SO{3,3}$ and thus we see that $F_{AB}{}^C$ in \eqref{eq:FlatF} is constant and we obtain a consistent truncation with a new 3-form flux. Evaluating the twist matrix
+Here $\eta_{MN}$ and $\eta_{AB}$ are the $\SO{4,4}$ and $\SO{3,3}$ invariant metrics, respectively, and are used to raise/lower the corresponding vector indices. Decomposing with respect to the geometric $\SL{3} \times \mathbb{R}^+$ of the $S^3$,  the coordinates on $S^3$ live in the $Y^A = \left( y^i,\, y_i \right)$, $i = 1, 2, 3$, while $C_A = \left( C_i,\, C^i \right)$ naturally contains a 2-form $C^i$. The field strength $H_3 = \partial^A C_A = \partial_i C^i$ is a singlet of $\SO{3,3}$ and thus we see that $F_{AB}{}^C$ in \eqref{eq:FlatF} is constant \CE{(what about the $\rho$ factor?)} and we obtain a consistent truncation with a new 3-form flux. Evaluating the twist matrix
 \begin{equation}
 	U'_M{}^{\ov{M}} = (e^C)_M{}^N  U_N{}^{\ov{M}} \,,
 \end{equation}
@@ -585,6 +585,8 @@ We can now use one copy of the $\SL{4}$ frame \eqref{eq:SLnFrame} for each $\SL{
 
 \EM{Include breaking of adjoint here?}\\
 \EM{Should mention the geometric $\SL{3}$ subgroups here???}
+
+\CE{(Add $\alpha$ here?)}
 
 \subsubsection{The $S^3 \times S^3 \times S^1$ truncation} \label{s:S3S3S1}
 We now construct the consistent truncation on $S^3 \times S^3 \times S^1$ by embedding the $\En{7}$ twist matrix corresponding to the $S^3 \times S^3$ truncation reviewed above \ref{s:S3S3} in $\EE$ via the branching $\EE \rightarrow \En{7} \times \SL{2}$, such that $\mathbf{248} \rightarrow \mathbf{\left(133,1\right)} \oplus \mathbf{\left(56,2\right)} \oplus \mathbf{\left(1,3\right)}$. As explained in \cite{Galli:2022idq}, we can construct a consistent truncation on $M \times S^1$ to 3-dimensional gauged supergravity by embedding a consistent truncation on $M$ to 4-dimensional supergravity, characterised by a $\En{7}$ twist matrix, as follows. The $\EE$ twist matrix is parameterised by the $\En{7}$ twist matrix describing the consistent truncation on $M$ and the $\SL{2}$ twist matrix given by

@@ -545,6 +545,36 @@ where $\Gamma^{IJKL}_{AB}$ denotes the four-fold product of $\SO(8,8)$ $\Gamma$ 
   \end{equation}
   For ${\cal V}^{(-)}$, $\alpha\rightarrow\alpha^{-1}$.
 
+
+\section{Mass matrices}
+\subsection{Vector fields}
+\begin{equation}
+  M_{(1)}{}^{\bar M}{}_{\bar N} = X^{\bar M\bar P}\left(\eta_{\bar P\bar N} + \M_{\bar P\bar N}\right).
+\end{equation}
+
+\subsection{Scalar fields}
+We define the scalars using coset representative ${\cal V}_{\bar M}{}^{\bar N}\in\E_{8(8)}/\SO(16)$:
+\begin{equation}
+  {\cal V} = \exp\left(\Phi^{\bar A}\,T_{\bar A}\right),
+\end{equation}
+with $\left(T_{\bar A}\right)_{\bar M}{}^{\bar K}$ the non-compact generators of $\E_{8(8)}$. Let $\Delta_{\bar M\bar N}$ be a matrix such that these generators satisfy
+\begin{equation}
+  \left(T_{\bar A}\right)_{[\bar M}{}^{\bar K}\Delta_{\bar N]\bar K} = 0.
+\end{equation}
+We then construct the scalar matrix from coset representatives:
+\begin{equation}
+  \M_{\bar M\bar N} = {\cal V}_{\bar M}{}^{\bar P}{\cal V}_{\bar N}{}^{\bar Q}\,\Delta_{\bar P\bar Q}.
+\end{equation}
+
+Then, the scalar fields mass matrix (at the scalar origin) is
+\begin{equation}
+  M_{(0)\,\bar A\bar B}^{2} = {\cal P}_{\bar A}{}^{\bar M\bar N}{\cal P}_{\bar B}{}^{\bar P\bar Q}\left(\frac{1}{7}\,X_{\bar M\bar P}X_{\bar N\bar Q}+X_{\bar M\bar K}\left(\frac{1}{7}\,\Delta^{\bar K\bar L}+\eta^{\bar K\bar L}\,X_{\bar L\bar P}\,\Delta_{\bar N\bar Q}\right)\right).
+\end{equation}
+The mass matrix for a vacuum away from the scalar origin is given by the same formula, where all occurences of embedding tensor should be modified to the ``dressed'' embedding tensor.
+
+
+
+
 \appendix
 
 \section{Miniminal ${\cal N}=(1,0)$ six-dimensional supergravity}
