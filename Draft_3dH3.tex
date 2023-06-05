@@ -762,13 +762,68 @@ with $C_M{}^N = \lambda\, z\, t_{1238\,M}{}^N$ and $\lambda$ a numerical paramet
 
 %\EM{Describe how $C_6{}^\alpha$ sits in here}
 
-\section{Moduli of AdS$_3 \times S^3 \times S^3 \times S^1$} \label{s:Moduli}
+\section{Moduli of \texorpdfstring{AdS$_3 \times S^3 \times S^3 \times S^1$}{AdS3xS3xS3xS1}} \label{s:Moduli}
+
+\paragraph{10d solution}
+Pure NSNS solution, after ref.~\cite{Dei:2018yth} (but that's not the original ref):
+\begin{equation}
+	\begin{aligned}
+		\d s^{2} &= \ell_{\rm AdS}^{2}\,\d s^{2}\left({\rm AdS}_{3}\right) + \alpha^{2}\,\d s^{2}\left(S^{3}\right)+\d s^{2}\big(\widetilde{S}^{3}\big)+\d\psi^{2},\\
+		H_{(3)} &= 2\left(\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}})+\alpha^{2}\,{\rm Vol}\big(S^{3}\big)+{\rm Vol}\big(\widetilde{S}^{3}\big)\right),
+	\end{aligned}
+\end{equation}
+with $H_{(3)} = \d B_{(2)}$ and
+\begin{equation}
+	\ell_{\rm AdS}^{2} = \frac{\alpha^{2}}{1+\alpha^{2}}.
+\end{equation}
+
+The three-dimensional solution preserves ${\cal N}=(4,4)$ supercharges. The isometry group is ${\cal G}=D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R}$, with two copies of the large ${\cal N}=4$ supergroup. The parameter $\alpha$ is given by the ratio of the $S^{3}$ spheres radii. The even part of $D^{1}(2,1;\alpha)$ is isomorphic to ${\rm SL}(2,\mathbb{R})\times{\rm SO}(3)\times\widetilde{{\rm SO}(3)}$ and the bosonic isometries of the ${\rm AdS}_{3}\times S^{3}\times\widetilde{S}^{3}$ background are built from the even part of ${\cal G}$. The ${\rm AdS}_{3}$ isometry group is ${\rm SO}(2,2)\simeq{\rm SL}(2,\mathbb{R})_{\rm L}\times{\rm SL}(2,\mathbb{R})_{\rm R}$, and the factors ${\rm SO}(3)_{\rm L}\times{\rm SO}(3)_{\rm R}\times\widetilde{{\rm SO}(3)}_{\rm L}\times\widetilde{{\rm SO}(3)}_{\rm R}\simeq{\rm SO}(4)\times\widetilde{SO(4)}$ combine into the isometry groups of the two spheres.
+
+The spectrum organizes into long representations of ${\cal G}$~\cite{Eberhardt:2017fsi}. The spectrum at the consistent truncation is the one of ref.~\cite{Hohm:2005ui}. \CE{What details do we need?}
+
 
 \subsection{Moduli in gauged supergravity}
+\paragraph{S-fold like deformations} Scalar spectrum:
+\begin{equation}
+	\begin{aligned}
+		(m_{(0)}\ell_{\rm AdS})^2:	\quad 
+		&8\ [1],\quad \frac{4\,\chi_{1}^{2}}{1+\alpha^{2}}\ [2], \quad \frac{4\,\chi_{2}^{2}}{1+\alpha^{2}}\ [2], \quad \frac{(\chi_{1}+\chi_{2})^{2}}{1+\alpha^{2}}\ [4], \quad \frac{(\chi_{1}-\chi_{2})^{2}}{1+\alpha^{2}}\ [4],	\\
+		&\frac{4\,\alpha^{2}\widetilde{\chi}_{1}^{2}}{1+\alpha^{2}}\ [2], \quad \frac{4\,\alpha^{2}\widetilde{\chi}_{2}^{2}}{1+\alpha^{2}}\ [2], \quad \alpha^{2} \frac{(\widetilde{\chi}_{1}+\widetilde{\chi}_{2})^{2}}{1+\alpha^{2}}\ [4], \quad \alpha^{2} \frac{(\widetilde{\chi}_{1}-\widetilde{\chi}_{2})^{2}}{1+\alpha^{2}}\ [4],	\\
+		& \frac{\left(\chi_{1} + \chi_{2} \pm \alpha\,(\widetilde{\chi}_{1}+\widetilde{\chi}_{2})\right)^{2}}{1+\alpha^{2}}\ [2+2], \quad \frac{\left(\chi_{1} - \chi_{2} \pm \alpha\,(\widetilde{\chi}_{1}-\widetilde{\chi}_{2})\right)^{2}}{1+\alpha^{2}}\ [2+2],\\
+		&1+\frac{\left(\chi_{1}-\alpha\,\widetilde{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}-\alpha\,\widetilde{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+		&1+\frac{\left(\chi_{1}+\alpha\,\widetilde{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}+\alpha\,\widetilde{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+		&1+\frac{\left(\chi_{1}-\alpha\,\widetilde{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}-\alpha\,\widetilde{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+		&1+\frac{\left(\chi_{1}+\alpha\,\widetilde{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}+\alpha\,\widetilde{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+		&1+\frac{\left(\chi_{2}-\alpha\,\widetilde{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}-\alpha\,\widetilde{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+		&1+\frac{\left(\chi_{2}+\alpha\,\widetilde{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}+\alpha\,\widetilde{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+		&1+\frac{\left(\chi_{2}-\alpha\,\widetilde{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}-\alpha\,\widetilde{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+		&1+\frac{\left(\chi_{2}+\alpha\,\widetilde{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}+\alpha\,\widetilde{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2].
+	\end{aligned}
+\end{equation}
+
 
 \subsection{Moduli in 10 dimensions}
 \MG{Maybe we recall what the vacuum at the origin is here and reference somebody?}
 The seven form flux is unaffected by the deformations.
+
+\paragraph{S-fold like deformations}
+Using spherical coordinates for both spheres:
+\begin{equation}
+	\begin{aligned}
+		\d s^{2} &= \ell_{\rm AdS}^{2} \,\d s^{2}({\rm AdS}_{3}) +\alpha^{2}\left(\d\theta^{2} + \cos^{2}(\theta)\,\d\phi'_{1}{}^{2} + \sin^{2}(\theta)\,\d\phi'_{2}{}^{2} \right) \\
+		&\quad +\d\widetilde{\theta}^{2} + \cos^{2}(\widetilde{\theta})\,\widetilde{\d\phi'}_{1}^{2} + \sin^{2}(\widetilde{\theta})\,\widetilde{\d\phi'}_{2}^{2} + \d\psi^{2}, \\[5pt]
+		H_{(3)} &= 2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}}) + 2\,\alpha^{2}\cos(\theta)\sin(\theta)\,\d\theta\wedge\d\phi'_{1}\wedge\d\phi'_{2}+ 2\cos(\widetilde{\theta})\sin(\widetilde{\theta})\,\d\widetilde{\theta}\wedge\widetilde{\d\phi'}_{1}\wedge\widetilde{\d\phi'}_{2},
+	\end{aligned}
+\end{equation}
+where
+\begin{equation}
+	\begin{aligned}
+		\d\phi'_{1} &= \d\phi_{1} + \chi_{1}\,\d\psi,\\
+		\d\phi'_{2} &= \d\phi_{2} - \chi_{2}\,\d\psi,\\
+		\widetilde{\d\phi'}_{1} &= \d\widetilde{\phi}_{1} + \widetilde{\chi}_{1}\,\d\widetilde{\psi},\\
+		\widetilde{\d\phi'}_{2} &= \d\widetilde{\phi}_{2} - \widetilde{\chi}_{2}\,\d\widetilde{\psi}.
+	\end{aligned}
+\end{equation}
 
 \paragraph{SUSY deformation}
 
@@ -831,7 +886,7 @@ Here we study a more general deformation depending on three parameters $\Omega$,
 %\end{equation}
 \begin{equation}
 	\begin{aligned}
-		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
+		\d s^{2} &= \ell_{\rm AdS}^{2} \,\d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
 		&\quad + \alpha^{2}\left(\d\theta^{2}+\Delta\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\cos^{2}(\theta)\,\d\varphi^{2}_{1}+\Delta\left(2+e^{2\Omega}\,\zeta_{1,8}^{2}\right)\,\sin^{2}(\theta)\,\d\varphi_{2}^{2}\right)\\
 		&\quad+2\sqrt{2}\,\alpha\,\Delta\left(-\zeta_{2,3}\,\cos^{2}(\theta)\,\d\varphi_{1}+\zeta_{1,8}\,\sin^{2}(\theta)\,\d\varphi_{2}\right)\,\d\psi \\
 		&\quad+2\,\Delta\left(\cos^{2}(\theta)+e^{2\Omega}\,\sin^{2}(\theta)\right)\,\d\psi^{2},
