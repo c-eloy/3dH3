@@ -36,6 +36,7 @@
 
 \usepackage{xspace}
 \usepackage{mathrsfs}
+\usepackage{nicefrac}
 
 
 %  PDF specials
@@ -820,11 +821,23 @@ with $H_{(3)} = \d B_{(2)}$ and \CE{(with the normalization in eq.~\eqref{eq:3dp
 The $S^{1}$ coordinate $z$ has periodicity $z\rightarrow z+1$. \CE{(add $S^{1}$ modulus here?)}
 
 \paragraph{}
-The 3d solution preserves ${\cal N}=(4,4)$ supercharges, with isometry group ${\cal G}=D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R}$, \textit{i.e.} two copies of the large ${\cal N}=4$ supergroup. The even part of $D^{1}(2,1;\alpha)$ is isomorphic to ${\rm SL}(2,\mathbb{R})\times{\rm SO}(3)\times\ts{{\rm SO}(3)}$ and the bosonic isometries of the ${\rm AdS}_{3}\times S^{3}\times\ts{S}^{3}$ background are built from the even part of ${\cal G}$. The ${\rm AdS}_{3}$ isometry group is ${\rm SO}(2,2)\simeq{\rm SL}(2,\mathbb{R})_{\rm L}\times{\rm SL}(2,\mathbb{R})_{\rm R}$, and the factors ${\rm SO}(3)_{\rm L}\times{\rm SO}(3)_{\rm R}\times\ts{{\rm SO}(3)}_{\rm L}\times\ts{{\rm SO}(3)}_{\rm R}\simeq{\rm SO}(4)\times\ts{SO(4)}$ combine into the isometry groups of the two spheres. The spectrum organizes into representations $\left[\ell,\ts{\ell},\ell,\ts{\ell}\right]$ of ${\cal G}$~\cite{Eberhardt:2017fsi}, where $\ell$ and $\ts{\ell}$ label the levels on the two $S^{3}$. The highest-weight state of each representation has conformal dimension \CE{(check all this)}
-\begin{equation}
-	\Delta_{\ell,\ts{\ell},n} = 3 + \sqrt{1 + \frac{\ell(\ell+1)+\alpha^{2}\,\ts{\ell}(\ts{\ell}+1)+(2\pi\,n)^{2}}{1+\alpha^{2}}},
+The 3d solution preserves ${\cal N}=(4,4)$ supercharges, with isometry group ${\cal G}=D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R}$, \textit{i.e.} two copies of the large ${\cal N}=4$ supergroup. The even part of $D^{1}(2,1;\alpha)$ is isomorphic to ${\rm SL}(2,\mathbb{R})\times{\rm SO}(3)\times\ts{{\rm SO}(3)}$ and the bosonic isometries of the ${\rm AdS}_{3}\times S^{3}\times\ts{S}^{3}$ background are built from the even part of ${\cal G}$. The ${\rm AdS}_{3}$ isometry group is ${\rm SO}(2,2)\simeq{\rm SL}(2,\mathbb{R})_{\rm L}\times{\rm SL}(2,\mathbb{R})_{\rm R}$, and the factors ${\rm SO}(3)_{\rm L}\times{\rm SO}(3)_{\rm R}\times\ts{{\rm SO}(3)}_{\rm L}\times\ts{{\rm SO}(3)}_{\rm R}\simeq{\rm SO}(4)\times\ts{SO(4)}$ combine into the isometry groups of the two spheres. The spectrum organizes into multiplets of ${\cal G}$, made out of products of long representations $[\ell,\ts{\ell}]$ of $D^{1}(2,1;\alpha)$ (see app.~\ref{app:d21a} for a review of the representations of $D^{1}(2,1;\alpha)$). Explicitly, the spectrum is~\cite{Eberhardt:2017fsi}
+\begin{equation} \label{eq:spectrumorigin}
+	\bigoplus_{\ell,\ts{\ell}\geq0} [\ell,\ts{\ell}]\otimes[\ell,\ts{\ell}] \ \ominus\ [0,0]_{\rm s} \otimes [0,0]_{\rm s}.
 \end{equation}
-with $n$ corresponding to the $S^{1}$ harmonics. The spectrum at the consistent truncation is the one of ref.~\cite{Hohm:2005ui}. \CE{(give $\ell,\ts{\ell},n$? Distinguish between short and long multiplets? What details do we need?)}
+In each factor the lowest conformal dimension is
+\begin{equation}
+	h_{\rm L} = h_{\rm R} = -\frac{1}{2} + \frac{1}{2}\sqrt{1+\frac{4\,\ell(\ell+1)+4\,\alpha^{2}\,\ts{\ell}(\ts{\ell}+1)+(2\pi n)^{2}}{1+\alpha^{2}}},
+\end{equation}
+with $n$ corresponding to the $S^{1}$ harmonics, and the lowest conformal dimension of $[\ell,\ts{\ell}]\otimes[\ell,\ts{\ell}]$ is then
+\begin{equation} \label{eq:confdims3s3s1}
+	\Delta_{\ell,\,\ts{\ell},\,n} = h_{\rm L} + h_{\rm R} = - 1 + \sqrt{1+\frac{4\,\ell(\ell+1)+4\,\alpha^{2}\,\ts{\ell}(\ts{\ell}+1)+(2\pi n)^{2}}{1+\alpha^{2}}}.
+\end{equation}
+ For $n=0$, the representations get shortened whenever $\ell = \ts{\ell}$. The spectrum at the consistent truncation is then the one of ref.~\cite{Hohm:2005ui}. It corresponds to $\ell=\ts{\ell}=n=0$ in eq.~\eqref{eq:spectrumorigin}:
+ \begin{equation}
+ 	[0,0]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \oplus [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [0,0]_{\rm s} \oplus [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}.
+ \end{equation}
+ The first two terms build the supergravity multiplet, each of them carrying one spin-2 field, four gravitini, seven vectors and four spin-$\nicefrac{1}{2}$ fields, all massless. The only propagating degrees of freedom are in $[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}\otimes[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}$ (see the details in the tab.~4 of ref.~\cite{Hohm:2005ui}). \CE{(give these details here?)}
 
 %, which transform under the subgroup $\SL{6} \times \SL{2} \times \mathbb{R}^+_{IIB} \subset \En{7}$ as $\mathbf{\left(1,2\right)_{6}} \subset \mathbf{133}$
 
@@ -838,54 +851,64 @@ We identified a 11-parameter family of solutions, connected to the origin and gi
 	\begin{aligned}
 		{\cal V}_{\rm def} &= \exp\left[\sqrt{2}\left(\chi_{1}\big(t_{(\mathbf{28},\mathbf{2})}\big)_{23,-}+\chi_{2}\big(t_{(\mathbf{28},\mathbf{2})}\big)_{81,-}+\ts{\chi}_{1}\big(t_{(\mathbf{\fl{28}},\mathbf{2})}\big)_{56,-}+\ts{\chi}_{2}\big(t_{(\mathbf{\fl{28}},\mathbf{2})}\big)_{74,-}\right)\right] \\
 		& \times \exp\left[\sqrt{2}\left(\zeta_{1}\big(t_{(\mathbf{\fl{28}},\mathbf{2})}\big)_{23,+}+\zeta_{2}\big(t_{(\mathbf{\fl{28}},\mathbf{2})}\big)_{81,+}+\ts{\zeta}_{1}\big(t_{(\mathbf{28},\mathbf{2})}\big)_{56,+}+\ts{\zeta}_{2}\big(t_{(\mathbf{28},\mathbf{2})}\big)_{74,+}\right)\right] \\
-		& \times \exp\bigg[\Omega\left(\big(t_{(\mathbf{63},\mathbf{1})}\big)_{1}{}^{1}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{2}{}^{2}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{3}{}^{3}+\big(t_{(\mathbf{63},\mathbf{1})}\big)_{8}{}^{8}\right)\\
-		&\ \qquad+\ts{\Omega}\left(\big(t_{(\mathbf{63},\mathbf{1})}\big)_{4}{}^{4}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{5}{}^{5}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{6}{}^{6}+\big(t_{(\mathbf{63},\mathbf{1})}\big)_{7}{}^{7}\right)\bigg] \\
+		& \times \exp\bigg[\Omega\Big(\big(t_{(\mathbf{63},\mathbf{1})}\big)_{1}{}^{1}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{2}{}^{2}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{3}{}^{3}+\big(t_{(\mathbf{63},\mathbf{1})}\big)_{8}{}^{8}\Big)\\
+		&\ \qquad+\ts{\Omega}\Big(\big(t_{(\mathbf{63},\mathbf{1})}\big)_{4}{}^{4}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{5}{}^{5}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{6}{}^{6}+\big(t_{(\mathbf{63},\mathbf{1})}\big)_{7}{}^{7}\Big)\bigg] \\
 		& \times \exp\left[\ln(T)\left(\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{I}{}^{I}-\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{A}{}^{A}-\frac{1}{2}\,\big(t_{(\mathbf{1},\mathbf{3})}\big)_{1}\right)\right],
 	\end{aligned}
 \end{equation}
 where we denoted the generators according to the decomposition~\eqref{eq:248decompoinSL8}. The $(\chi_{i},\ts{\chi}_{i},\zeta_{i},\ts{\zeta}_{i})$ deformations excite the $(\mathbf{6},\mathbf{1})_{2}$ and $(\mathbf{1},\mathbf{6})_{2}$ generators in the branching~\eqref{eq:56inSL4SL4}. \CE{(Describe what we do for $T$? I think there is some freedom in the coeff there.)} \CE{(Describe what we do for $\Omega$? Possible to change the signs to $(+,+,-,-)$, but very long to compute uplift.)}
 
 
-\paragraph{S-fold like deformations} Scalar spectrum:
-\begin{equation}
-	\begin{aligned}
-		(m_{(0)}\ell_{\rm AdS})^2:	\quad 
-		&8\ [1],\quad \frac{4\,\chi_{1}^{2}}{1+\alpha^{2}}\ [2], \quad \frac{4\,\chi_{2}^{2}}{1+\alpha^{2}}\ [2], \quad \frac{(\chi_{1}+\chi_{2})^{2}}{1+\alpha^{2}}\ [4], \quad \frac{(\chi_{1}-\chi_{2})^{2}}{1+\alpha^{2}}\ [4],	\\
-		&\frac{4\,\alpha^{2}\ts{\chi}_{1}^{2}}{1+\alpha^{2}}\ [2], \quad \frac{4\,\alpha^{2}\ts{\chi}_{2}^{2}}{1+\alpha^{2}}\ [2], \quad \alpha^{2} \frac{(\ts{\chi}_{1}+\ts{\chi}_{2})^{2}}{1+\alpha^{2}}\ [4], \quad \alpha^{2} \frac{(\ts{\chi}_{1}-\ts{\chi}_{2})^{2}}{1+\alpha^{2}}\ [4],	\\
-		& \frac{\left(\chi_{1} + \chi_{2} \pm \alpha\,(\ts{\chi}_{1}+\ts{\chi}_{2})\right)^{2}}{1+\alpha^{2}}\ [2+2], \quad \frac{\left(\chi_{1} - \chi_{2} \pm \alpha\,(\ts{\chi}_{1}-\ts{\chi}_{2})\right)^{2}}{1+\alpha^{2}}\ [2+2],\\
-		&1+\frac{\left(\chi_{1}-\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}-\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
-		&1+\frac{\left(\chi_{1}+\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}+\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
-		&1+\frac{\left(\chi_{1}-\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}-\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
-		&1+\frac{\left(\chi_{1}+\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}+\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
-		&1+\frac{\left(\chi_{2}-\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}-\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
-		&1+\frac{\left(\chi_{2}+\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}+\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
-		&1+\frac{\left(\chi_{2}-\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}-\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
-		&1+\frac{\left(\chi_{2}+\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}+\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2].
-	\end{aligned}
-\end{equation}
+% \paragraph{S-fold like deformations} Scalar spectrum:
+% \begin{equation}
+% 	\begin{aligned}
+% 		(m_{(0)}\ell_{\rm AdS})^2:	\quad 
+% 		&8\ [1],\quad \frac{4\,\chi_{1}^{2}}{1+\alpha^{2}}\ [2], \quad \frac{4\,\chi_{2}^{2}}{1+\alpha^{2}}\ [2], \quad \frac{(\chi_{1}+\chi_{2})^{2}}{1+\alpha^{2}}\ [4], \quad \frac{(\chi_{1}-\chi_{2})^{2}}{1+\alpha^{2}}\ [4],	\\
+% 		&\frac{4\,\alpha^{2}\ts{\chi}_{1}^{2}}{1+\alpha^{2}}\ [2], \quad \frac{4\,\alpha^{2}\ts{\chi}_{2}^{2}}{1+\alpha^{2}}\ [2], \quad \alpha^{2} \frac{(\ts{\chi}_{1}+\ts{\chi}_{2})^{2}}{1+\alpha^{2}}\ [4], \quad \alpha^{2} \frac{(\ts{\chi}_{1}-\ts{\chi}_{2})^{2}}{1+\alpha^{2}}\ [4],	\\
+% 		& \frac{\left(\chi_{1} + \chi_{2} \pm \alpha\,(\ts{\chi}_{1}+\ts{\chi}_{2})\right)^{2}}{1+\alpha^{2}}\ [2+2], \quad \frac{\left(\chi_{1} - \chi_{2} \pm \alpha\,(\ts{\chi}_{1}-\ts{\chi}_{2})\right)^{2}}{1+\alpha^{2}}\ [2+2],\\
+% 		&1+\frac{\left(\chi_{1}-\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}-\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+% 		&1+\frac{\left(\chi_{1}+\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}+\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+% 		&1+\frac{\left(\chi_{1}-\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}-\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+% 		&1+\frac{\left(\chi_{1}+\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{1}+\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+% 		&1+\frac{\left(\chi_{2}-\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}-\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+% 		&1+\frac{\left(\chi_{2}+\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}+\alpha\,\ts{\chi}_{1}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+% 		&1+\frac{\left(\chi_{2}-\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}-\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2], \\
+% 		&1+\frac{\left(\chi_{2}+\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}} \pm 2\,\sqrt{1+\frac{\left(\chi_{2}+\alpha\,\ts{\chi}_{2}\right)^{2}}{1+\alpha^{2}}}\ [2+2].
+% 	\end{aligned}
+% \end{equation}
 
 
 \subsection{Moduli in 10 dimensions}
 The seven form flux is unaffected by the deformations.
 
-\paragraph{S-fold like deformations (only $(\chi, \ts{\chi})$)}
+\paragraph{\boldmath $(\chi, \ts{\chi}, T)$}
 Using spherical coordinates for both spheres:
 \begin{equation}
 	\begin{aligned}
 		\d s^{2} &= \ell_{\rm AdS}^{2} \,\d s^{2}({\rm AdS}_{3}) +\alpha^{2}\left(\d\theta^{2} + \cos^{2}(\theta)\,\d\phi'_{1}{}^{2} + \sin^{2}(\theta)\,\d\phi'_{2}{}^{2} \right) \\
-		&\quad +\d\ts{\theta}^{2} + \cos^{2}(\ts{\theta})\,\d\ts{\phi}'_{1}{}^{2} + \sin^{2}(\ts{\theta})\,\d\ts{\phi}'_{2}{}^{2} + \d z^{2}, \\[5pt]
+		&\quad +\d\ts{\theta}^{2} + \cos^{2}(\ts{\theta})\,\d\ts{\phi}'_{1}{}^{2} + \sin^{2}(\ts{\theta})\,\d\ts{\phi}'_{2}{}^{2} + T^{2}\,\d z^{2}, \\[5pt]
 		H_{(3)} &= 2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}}) + 2\,\alpha^{2}\cos(\theta)\sin(\theta)\,\d\theta\wedge\d\phi'_{1}\wedge\d\phi'_{2}+ 2\cos(\ts{\theta})\sin(\ts{\theta})\,\d\ts{\theta}\wedge\d\ts{\phi}'_{1}\wedge\d\ts{\phi}'_{2},
 	\end{aligned}
 \end{equation}
 where
 \begin{equation}
-	\begin{aligned}
-		\d\phi'_{1} &= \d\phi_{1} + \chi_{1}\,\d z,\\
-		\d\phi'_{2} &= \d\phi_{2} + \chi_{2}\,\d z,\\
-		\d\ts{\phi}'_{1} &= \d\ts{\phi}_{1} + \ts{\chi}_{1}\,\d z,\\
-		\d\ts{\phi}'_{2} &= \d\ts{\phi}_{2} + \ts{\chi}_{2}\,\d z.
-	\end{aligned}
+	\begin{cases}
+		\displaystyle \d\phi'_{1} = \d\phi_{1} + \frac{1}{\alpha}\,\chi_{1}\,\d z,\\[6pt]
+		\displaystyle \d\phi'_{2} = \d\phi_{2} + \frac{1}{\alpha}\,\chi_{2}\,\d z,
+	\end{cases}\qquad
+	\begin{cases}
+		\d\ts{\phi}'_{1} = \d\ts{\phi}_{1} + \ts{\chi}_{1}\,\d z,\\[6pt]
+		\d\ts{\phi}'_{2} = \d\ts{\phi}_{2} + \ts{\chi}_{2}\,\d z.
+	\end{cases}
 \end{equation}
+
+This deformation breaks $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. Concerning the spectrum, the conformal dimension of each field (\textit{c.f.} eq.~\eqref{eq:confdims3s3s1}) get shifted by replacing
+\begin{equation}
+	2\pi n\longrightarrow \frac{2\pi n}{T} + \frac{1}{2T}\Big((q_{\rm R}+q_{\rm L})\,\chi_{1}+(q_{\rm R}-q_{\rm L})\,\chi_{2}+ \alpha\,(\ts{q}_{\rm R}+\ts{q}_{\rm L})\,\ts{\chi}_{1}+ \alpha\,(\ts{q}_{\rm L}-\ts{q}_{\rm R})\,\ts{\chi}_{2}\Big),
+\end{equation}
+where the $q$ denote the charges under the different ${\rm U}(1)$. \CE{(Issue here!)}
+
+\CE{(Discuss SUSY enhancement)}
 
 \paragraph{SUSY deformation}
 
@@ -1012,6 +1035,37 @@ Note that setting $...$ recovers the supersymmetric deformation described earlie
 
 \section*{Acknowledgements}
 We are grateful to XXX for useful discussions and correspondence. CE is supported by the FWO-Vlaanderen through the project G006119N and by the Vrije Universiteit Brussel through the Strategic Research Program ``High-Energy Physics''. MG and EM are supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) via the Emmy Noether program ``Exploring the landscape of string theory flux vacua using exceptional field theory'' (project number 426510644).
+
+\appendix
+
+\section{Representations of \texorpdfstring{$D^{1}(2,1;\alpha)$}{D(2,1,a)}} \label{app:d21a}
+The supergroup $D^{1}(2,1;\alpha)$ has
+\begin{equation}
+	{\rm SL}(2,\mathbb{R})\times{\rm SU}(2)\times\ts{{\rm SU}(2)}
+\end{equation}
+as even part. Its multiplets are labelled by the spins $\ell$ and $\ts{\ell}$ of each ${\rm SU}(2)$ factor and the eigenvalue $h$ of the $\mathfrak{sl}(2,\mathbb{R})$ generator. Generic short multiplets $[\ell,\ts{\ell}]_{\rm s}$ are given by~\cite{deBoer:1999gea,Eberhardt:2017fsi}
+\begin{equation}
+	\begin{array}{cc}
+	 h_{0} & \big(\ell,\ts{\ell}\big) \\[5pt]
+	 h_{0} + \nicefrac{1}{2} & \big(\ell+\nicefrac{1}{2},\ts{\ell}-\nicefrac{1}{2}\big) \oplus \big(\ell-\nicefrac{1}{2},\ts{\ell}-\nicefrac{1}{2}\big) \oplus \big(\ell-\nicefrac{1}{2},\ts{\ell}+\nicefrac{1}{2}\big) \\[5pt]
+	 h_{0}+1 & \big(\ell,\ts{\ell}-1\big) \oplus \big(\ell,\ts{\ell}\big) \oplus \big(\ell-1,\ts{\ell}\big) \\[5pt]
+	 h_{0} + \nicefrac{3}{2} & \big(\ell-\nicefrac{1}{2},\ts{\ell}-\nicefrac{1}{2}\big),
+	\end{array}
+\end{equation}
+with $h_{0}=(\alpha\,\ell+\ts{\ell})/(1+\alpha)$.\footnote{Shortenings occur for $\ell<1$ or $\ts{\ell}<1$, see ref.~\cite{deBoer:1999gea}. \CE{(Add them here?)}} Two short multiplets can combine into a long multiplets $[\ell,\ts{\ell}]$ as follows:
+\begin{equation}
+ 	[\ell,\ts{\ell}] = [\ell,\ts{\ell}]_{\rm s} \oplus [\ell+\nicefrac{1}{2},\ts{\ell}+\nicefrac{1}{2}]_{\rm s}.
+\end{equation}
+The value of $h$ is then not constrained. The explicit content of the long representation $[\ell,\ts{\ell}]$  is
+\begin{equation}
+	\begin{array}{cc}
+	 h & \big(\ell,\ts{\ell}\big) \\[5pt]
+	 h + \nicefrac{1}{2} & \big(\ell+\nicefrac{1}{2},\ts{\ell}+\nicefrac{1}{2}\big) \oplus\big(\ell+\nicefrac{1}{2},\ts{\ell}-\nicefrac{1}{2}\big) \oplus \big(\ell-\nicefrac{1}{2},\ts{\ell}+\nicefrac{1}{2}\big) \oplus \big(\ell-\nicefrac{1}{2},\ts{\ell}-\nicefrac{1}{2}\big) \\[5pt]
+	 h+1 & \big(\ell+1,\ts{\ell}\big) \oplus \big(\ell,\ts{\ell}-1\big) \oplus \big(\ell,\ts{\ell}\big) \oplus \big(\ell,\ts{\ell}\big) \oplus \big(\ell-1,\ts{\ell}\big)\oplus \big(\ell,\ts{\ell}+1\big) \\[5pt]
+	 h + \nicefrac{3}{2} & \big(\ell+\nicefrac{1}{2},\ts{\ell}+\nicefrac{1}{2}\big) \oplus\big(\ell+\nicefrac{1}{2},\ts{\ell}-\nicefrac{1}{2}\big) \oplus \big(\ell-\nicefrac{1}{2},\ts{\ell}+\nicefrac{1}{2}\big) \oplus \big(\ell-\nicefrac{1}{2},\ts{\ell}-\nicefrac{1}{2}\big) \\[5pt]
+	 h + 2 & \big(\ell,\ts{\ell}\big).
+	\end{array}
+\end{equation}
 	
 \bibliographystyle{JHEP}
 \bibliography{NewBib}
