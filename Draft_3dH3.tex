@@ -357,7 +357,7 @@ with $\cU_{\fl{M}}{}^M = \rho^{-1} \UI_{\fl{M}}{}^M$, $\ff{U}_{\fl{M}} = (\cU_{\
 \end{equation}
 where
 \begin{equation} \label{eq:3dCovDeriv}
-	{\cal D}_{\mu}\M_{\fl{MN}} = \partial_{\mu}\M_{\fl{MN}}-2\,\A_{\mu}{}^{\fl{P}}X_{\fl{P}(\fl{M})}{}^{\fl{Q}}\M_{\fl{N})\fl{Q}}\,, \quad {\rm and} \quad \llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}=X_{\fl{PQ}}{}^{\fl{M}}\A_{\mu}{}^{\fl{P}}\A_{\nu}^{\fl{Q}} \,.
+	{\cal D}_{\mu}\M_{\fl{MN}} = \partial_{\mu}\M_{\fl{MN}}-2\,\A_{\mu}{}^{\fl{P}}X_{\fl{P}(\fl{M}}{}^{\fl{Q}}\M_{\fl{N})\fl{Q}}\,, \quad {\rm and} \quad \llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}=X_{\fl{PQ}}{}^{\fl{M}}\A_{\mu}{}^{\fl{P}}\A_{\nu}^{\fl{Q}} \,.
 \end{equation}
 
 Thus, for a given twist matrix $U_{M}{}^{\fl{M}}$ satisfying the consistency condition~\eqref{eq:GenLeibniz}, the action~\eqref{eq:ExFTaction} reduces to three-dimensional ${\cal N}=16$ gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv}. The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity, as is clear from its appearance in \eqref{eq:3dCovDeriv} in the gauge-covariant derivative and the gauge algebra of the vector fields. From eq. \eqref{eq:GenLeibniz}, it has the following expression in terms of the twist matrix and $\rho$
@@ -367,7 +367,7 @@ Thus, for a given twist matrix $U_{M}{}^{\fl{M}}$ satisfying the consistency con
 		&\quad-\frac{1}{2}\,\rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}\,f^{\fl{QK}}{}_{\fl{M}}\,\Gamma_{\fl{RK}}{}^{\fl{R}}+\left(\delta_{\fl{M}}{}^{\fl{K}}\delta_{\fl{N}}{}^{\fl{P}}-\frac{1}{2}\,f_{\fl{M}}{}^{\fl{LK}}f_{\fl{NL}}{}^{\fl{P}}\right)\,\xi_{\fl{K}}\,.
 	\end{aligned}
 \end{equation}
-Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\fl{MN}}{}^{\fl{P}}=U_{\fl{M}}{}^{K}U_{\fl{N}}{}^{L}\partial_{K}U^{\fl{P}}{}_{L}$ and the trombone gauging
+Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\fl{MN}}{}^{\fl{P}}=\UI_{\fl{M}}{}^{K}\UI_{\fl{N}}{}^{L}\partial_{K}U_{L}{}^{\fl{P}}$ and the trombone gauging
 \begin{equation} \label{eq:Trombone}
 	\begin{split}
 		\xi_{\fl{M}} %&= 2\,U_{\fl{M}}{}^{N}\partial_{N}\rho^{-1}+\rho^{-1}\,\partial_{N}U_{\fl{M}}{}^{N} \\
@@ -789,36 +789,35 @@ and has the following non-vanishing components:
 	\begin{aligned}
 		X_{(\mathbf{63},\mathbf{1});(\mathbf{28},\mathbf{2})}:&
 		\begin{cases}
-			\displaystyle X_{\fl{I}}{}^{\fl{J}}{}_{;\fl{KL}+}=-\frac{1}{\alpha}\,\delta_{\fl{I[K}}\delta_{\fl{L]}}{}^{\fl{J}},\\[7pt]
+			\displaystyle X_{\fl{I}}{}^{\fl{J}}{}_{;\fl{KL}+}=-\frac{1}{\alpha}\,\delta_{\fl{I}[\fl{K}}\delta_{\fl{L}]}{}^{\fl{J}},\\[7pt]
 			\displaystyle X_{\fl{A}}{}^{\fl{I}}{}_{;\fl{BJ}+}=-\frac{1}{2\alpha}\,\delta_{\fl{AB}}\delta_{\fl{J}}{}^{\fl{I}},\\
 		\end{cases} \\[5pt]
 		X_{(\mathbf{63},\mathbf{1});(\mathbf{\fl{28}},\mathbf{2})}:&
 		\begin{cases}
-			\displaystyle X_{\fl{A}}{}^{\fl{B}}{}_{;}{}^{\fl{CD}}{}_{+}=-\,\delta_{\fl{A}}{}^{\fl{[C}}\delta^{\fl{D]B}},\\[7pt]
+			\displaystyle X_{\fl{A}}{}^{\fl{B}}{}_{;}{}^{\fl{CD}}{}_{+}=-\,\delta_{\fl{A}}{}^{[\fl{C}}\delta^{\fl{D}]\fl{B}},\\[7pt]
 			\displaystyle X_{\fl{A}}{}^{\fl{I}}{}_{;}{}^{\fl{BJ}}{}_{+}=-\frac{1}{2}\,\delta_{\fl{A}}{}^{\fl{B}}\delta^{\fl{IJ}},\\
 		\end{cases} \\[5pt]
-		X_{(\mathbf{70},\mathbf{1});(\mathbf{1},\mathbf{3})}:&\  X_{\fl{IJKL};\fl{\alpha}} = -\frac{\lambda}{12\sqrt{6}}\,\varepsilon_{\fl{IJKL}}\,\delta_{\fl{\alpha}2},
+		X_{(\mathbf{70},\mathbf{1});(\mathbf{1},\mathbf{3})}:&\  X_{\fl{IJKL};++} = -\frac{\lambda}{12\sqrt{6}}\,\varepsilon_{\fl{IJKL}}.
 	\end{aligned}
 \end{equation}
-with the component $\fl{\alpha} = 2$ of the adjoint of ${\rm SL}(2)$ corresponding to the generator $e = \begin{pmatrix} 0 & 1 \\ 0 & 0\end{pmatrix}$ in the basis $\fl{i}=\{+,-\}$. With this embedding tensor, the potential~\eqref{eq:3dpotential} is stabilized at the scalar origin for $\lambda=4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$. We fix this value in the following.
+With this embedding tensor, the potential~\eqref{eq:3dpotential} is stabilized at the scalar origin for $\lambda=4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$. We fix this value in the following.
 
+% \EM{Give embedding tensor components wrt the 3-d basis used for the moduli}\\
+% \EM{Vacuum condition for $\lambda$}\\
+% \EM{SUSY AdS$_3$ vacuum in 10-d}
 
-\EM{Give embedding tensor components wrt the 3-d basis used for the moduli}\\
-\EM{Vacuum condition for $\lambda$}\\
-\EM{SUSY AdS$_3$ vacuum in 10-d}
-
-\paragraph{} At $\lambda=4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$, the three-dimensional solution described by the embedding tensor~\eqref{eq:embeddingtensor@origin} corresponds to the consistent truncation of the pure NSNS ten-dimensional solution ~\cite{deBoer:1999gea}
+\paragraph{} At $\lambda=4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$, the three-dimensional solution described by the embedding tensor~\eqref{eq:embeddingtensor@origin} corresponds to the consistent truncation of the pure NSNS ten-dimensional solution~\cite{deBoer:1999gea}
 \begin{equation}
 	\begin{aligned}
 		\d s^{2} &= \ell_{\rm AdS}^{2}\,\d s^{2}\left({\rm AdS}_{3}\right) + \alpha^{2}\,\d s^{2}\big(S^{3}\big)+\d s^{2}\big(\ts{S}^{3}\big)+\d z^{2},\\
 		H_{(3)} &= 2\left(\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}})+\alpha^{2}\,{\rm Vol}\big(S^{3}\big)+{\rm Vol}\big(\ts{S}^{3}\big)\right),
 	\end{aligned}
 \end{equation}
-with $H_{(3)} = \d B_{(2)}$ and \CE{(with the normalization in eq.~\eqref{eq:3dpotential} and $\ell_{\rm AdS}^{2}=2/V_{0}$, the code gives an additional factor $1/2$)}
+with $H_{(3)} = \d B_{(2)}$ and
 \begin{equation}
 	\ell_{\rm AdS}^{2} = \frac{\alpha^{2}}{1+\alpha^{2}}.
 \end{equation}
-The $S^{1}$ coordinate $z$ has periodicity $z\rightarrow z+1$. \CE{(add $S^{1}$ modulus here?)}
+The $S^{1}$ coordinate $z$ has periodicity $z\rightarrow z+2\pi$.
 
 \paragraph{}
 The 3d solution preserves ${\cal N}=(4,4)$ supercharges, with isometry group ${\cal G}=D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R}$, \textit{i.e.} two copies of the large ${\cal N}=4$ supergroup. The even part of $D^{1}(2,1;\alpha)$ is isomorphic to ${\rm SL}(2,\mathbb{R})\times{\rm SO}(3)\times\ts{{\rm SO}(3)}$ and the bosonic isometries of the ${\rm AdS}_{3}\times S^{3}\times\ts{S}^{3}$ background are built from the even part of ${\cal G}$. The ${\rm AdS}_{3}$ isometry group is ${\rm SO}(2,2)\simeq{\rm SL}(2,\mathbb{R})_{\rm L}\times{\rm SL}(2,\mathbb{R})_{\rm R}$, and the factors ${\rm SO}(3)_{\rm L}\times{\rm SO}(3)_{\rm R}\times\ts{{\rm SO}(3)}_{\rm L}\times\ts{{\rm SO}(3)}_{\rm R}\simeq{\rm SO}(4)\times\ts{SO(4)}$ combine into the isometry groups of the two spheres. The spectrum organizes into multiplets of ${\cal G}$, made out of products of long representations $[\ell,\ts{\ell}]$ of $D^{1}(2,1;\alpha)$ (see app.~\ref{app:d21a} for a review of the representations of $D^{1}(2,1;\alpha)$). Explicitly, the spectrum is~\cite{Eberhardt:2017fsi}
@@ -834,10 +833,10 @@ with $n$ corresponding to the $S^{1}$ harmonics, and the lowest conformal dimens
 	\Delta_{\ell,\,\ts{\ell},\,n} = h_{\rm L} + h_{\rm R} = - 1 + \sqrt{1+\frac{4\,\ell(\ell+1)+4\,\alpha^{2}\,\ts{\ell}(\ts{\ell}+1)+(2\pi n)^{2}}{1+\alpha^{2}}}.
 \end{equation}
  For $n=0$, the representations get shortened whenever $\ell = \ts{\ell}$. The spectrum at the consistent truncation is then the one of ref.~\cite{Hohm:2005ui}. It corresponds to $\ell=\ts{\ell}=n=0$ in eq.~\eqref{eq:spectrumorigin}:
- \begin{equation}
- 	[0,0]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \oplus [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [0,0]_{\rm s} \oplus [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}.
+ \begin{equation} \label{eq:CTmultorigin}
+ 	[0,0]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \ \oplus \ [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [0,0]_{\rm s} \ \oplus \ [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}.
  \end{equation}
- The first two terms build the supergravity multiplet, each of them carrying one spin-2 field, four gravitini, seven vectors and four spin-$\nicefrac{1}{2}$ fields, all massless. The only propagating degrees of freedom are in $[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}\otimes[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}$ (see the details in the tab.~4 of ref.~\cite{Hohm:2005ui}). \CE{(give these details here?)}
+ The first two terms build the supergravity multiplet, each of them carrying one spin-2 field, four gravitini, seven vectors and four spin-$\nicefrac{1}{2}$ fields, all massless. The only propagating degrees of freedom are in $[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}\otimes[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}$ (see the details in the tab.~4 of ref.~\cite{Hohm:2005ui}).
 
 %, which transform under the subgroup $\SL{6} \times \SL{2} \times \mathbb{R}^+_{IIB} \subset \En{7}$ as $\mathbf{\left(1,2\right)_{6}} \subset \mathbf{133}$
 
@@ -856,7 +855,7 @@ We identified a 11-parameter family of solutions, connected to the origin and gi
 		& \times \exp\left[\ln(T)\left(\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{I}{}^{I}-\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{A}{}^{A}-\frac{1}{2}\,\big(t_{(\mathbf{1},\mathbf{3})}\big)_{1}\right)\right],
 	\end{aligned}
 \end{equation}
-where we denoted the generators according to the decomposition~\eqref{eq:248decompoinSL8}. The $(\chi_{i},\ts{\chi}_{i},\zeta_{i},\ts{\zeta}_{i})$ deformations excite the $(\mathbf{6},\mathbf{1})_{2}$ and $(\mathbf{1},\mathbf{6})_{2}$ generators in the branching~\eqref{eq:56inSL4SL4}. \CE{(Describe what we do for $T$? I think there is some freedom in the coeff there.)} \CE{(Describe what we do for $\Omega$? Possible to change the signs to $(+,+,-,-)$, but very long to compute uplift.)}
+where we denoted the generators according to the decomposition~\eqref{eq:248decompoinSL8}. The $(\chi_{i},\ts{\chi}_{i},\zeta_{i},\ts{\zeta}_{i})$ deformations excite the $(\mathbf{6},\mathbf{1})_{2}$ and $(\mathbf{1},\mathbf{6})_{2}$ generators in the branching~\eqref{eq:56inSL4SL4}. \CE{(Describe what we do for $T$? I think there is some freedom in the coeff there.)} \CE{(Describe what we do for $\Omega$? Check coeff with code. Possible to change the signs to $(+,+,-,-)$, but very long to compute uplift.)}
 
 
 % \paragraph{S-fold like deformations} Scalar spectrum:
@@ -902,13 +901,116 @@ where
 	\end{cases}
 \end{equation}
 
-This deformation breaks $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. Concerning the spectrum, the conformal dimension of each field (\textit{c.f.} eq.~\eqref{eq:confdims3s3s1}) get shifted by replacing
-\begin{equation}
-	2\pi n\longrightarrow \frac{2\pi n}{T} + \frac{1}{2T}\Big((q_{\rm R}+q_{\rm L})\,\chi_{1}+(q_{\rm R}-q_{\rm L})\,\chi_{2}+ \alpha\,(\ts{q}_{\rm R}+\ts{q}_{\rm L})\,\ts{\chi}_{1}+ \alpha\,(\ts{q}_{\rm L}-\ts{q}_{\rm R})\,\ts{\chi}_{2}\Big),
+This deformation breaks $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. Concerning the spectrum, the conformal dimension of each physical field (\textit{c.f.} eq.~\eqref{eq:confdims3s3s1}) get shifted by replacing
+\begin{equation} \label{eq:confdimshiftchi}
+	2\pi n\longrightarrow \frac{2\pi n}{T} + \frac{1}{2T}\Big((q_{\rm L}+q_{\rm R})\,\chi_{1}+(q_{\rm L}-q_{\rm R})\,\chi_{2}+ \alpha\,(\ts{q}_{\rm L}+\ts{q}_{\rm R})\,\ts{\chi}_{1}+ \alpha\,(\ts{q}_{\rm R}-\ts{q}_{\rm L})\,\ts{\chi}_{2}\Big),
 \end{equation}
-where the $q$ denote the charges under the different ${\rm U}(1)$. \CE{(Issue here!)}
+where the $q$ denote the charges under the different ${\rm U}(1)$.
 
-\CE{(Discuss SUSY enhancement)}
+Eq.~\eqref{eq:confdimshiftchi} can be used to search for SUSY enhancement points within the 5-parameter landscape. At the undeformed origin, the massless gravitini sit in the two first multiplets in eq.~\eqref{eq:CTmultorigin} with ${\rm SO}(3)_{\rm L}\times\ts{{\rm SO}(3)}_{\rm L}\times{\rm SO}(3)_{\rm R}\times\ts{{\rm SO}(3)}_{\rm R}$ spins
+\begin{equation}
+	\big(\nicefrac{1}{2},\nicefrac{1}{2};0,0\big) \quad {\rm and} \quad \big(0,0;\nicefrac{1}{2},\nicefrac{1}{2}\big).
+\end{equation}
+and conformal dimension $\Delta=\nicefrac{3}{2}$. Turning on the deformation leads to a split into four groups of two modes, with the following ${\rm U}(1)_{\rm L}\times\ts{{\rm U}(1)}_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm R}$ charges and conformal dimensions:
+\begin{equation}
+	\begin{aligned}
+		\left(\pm1,\pm1;0,0\right):\quad \Delta=\frac{1}{2}+\sqrt{1+\frac{\left(\chi_{1}+\chi_{2}+\alpha\,\big(\ts{\chi}_{1}-\ts{\chi}_{2}\right)^{2}\big)}{4\,T^{2}(1+\alpha^{2})}}, \\
+		\left(\pm1,\mp1;0,0\right):\quad \Delta=\frac{1}{2}+\sqrt{1+\frac{\left(\chi_{1}+\chi_{2}-\alpha\,\big(\ts{\chi}_{1}-\ts{\chi}_{2}\right)^{2}\big)}{4\,T^{2}(1+\alpha^{2})}}, \\
+		\left(0,0;\pm1,\pm1\right):\quad \Delta=\frac{1}{2}+\sqrt{1+\frac{\left(\chi_{1}-\chi_{2}+\alpha\,\big(\ts{\chi}_{1}+\ts{\chi}_{2}\right)^{2}\big)}{4\,T^{2}(1+\alpha^{2})}}, \\
+		\left(0,0;\pm1,\mp1\right):\quad \Delta=\frac{1}{2}+\sqrt{1+\frac{\left(\chi_{1}-\chi_{2}+\alpha\,\big(\ts{\chi}_{1}+\ts{\chi}_{2}\right)^{2}\big)}{4\,T^{2}(1+\alpha^{2})}}.
+	\end{aligned}
+\end{equation}
+SUSY enhancement points are then given by combinations of the parameters that leave some modes invariant with $\Delta=\nicefrac{3}{2}$. The different possibilities are listed below. \CE{(Shall we give the multiplets? At least for the truncation?)}
+
+\begin{itemize}
+	\item {\boldmath ${\cal N}=2$} The four-dimensional hypersurfaces
+	\begin{equation}
+		\chi_{2} = \chi_{1} \pm\alpha\,(\ts{\chi}_{1}+\ts{\chi}_{2}) \quad {\rm or}\quad \chi_{2} = -\chi_{1} \pm\alpha\,(\ts{\chi}_{1}-\ts{\chi}_{2}),
+	\end{equation}
+	give enhancements to ${\cal N}=(2,0)$ and ${\cal N}=(0,2)$, respectively. The spectrum then organizes into multiplets of $\SU{1\vert1,1}$.
+	\item {\boldmath ${\cal N}=4$} Choosing
+	\begin{equation}
+		\begin{cases}
+			\chi_{2} = \chi_{1},\\
+			\ts{\chi}_{2} = -\ts{\chi}_{1},
+		\end{cases}
+		\quad {\rm or}\quad
+		\begin{cases}
+			\chi_{2} = - \chi_{1},\\
+			\ts{\chi}_{2} = \ts{\chi}_{1},
+		\end{cases}
+	\end{equation}
+	leads to enhancements to ${\cal N}=(4,0)$ and ${\cal N}=(0,4)$, respectively. On these three-dimensional hyper-surfaces, the isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum reorganizes into multiplets of $D^{1}(2,1;\alpha)$. Another possibility is to set
+	\begin{equation}
+		\begin{cases}
+			\ts{\chi}_{1} = \pm \chi_{1}/\alpha,\\
+			\ts{\chi}_{2} = \mp \chi_{2}/\alpha,
+		\end{cases}
+		\quad {\rm or}\quad
+		\begin{cases}
+			\ts{\chi}_{1} = \pm \chi_{2}/\alpha,\\
+			\ts{\chi}_{2} = \mp \chi_{1}/\alpha,
+		\end{cases}
+	\end{equation}
+	giving 3-parameter families of ${\cal N}=(2,2)$ solutions, with multiplets of $\SU{1\vert1,1}_{\rm L}\times\SU{1\vert1,1}_{\rm R}$.
+	\item {\boldmath ${\cal N}=6$} Finally, for
+	\begin{equation}
+		\begin{cases}
+			\chi_{2} = \chi_{1},\\
+			\ts{\chi}_{1} = \pm \chi_{1}/\alpha,\\
+			\ts{\chi}_{2} = \mp \chi_{1}/\alpha,
+		\end{cases}
+		\quad {\rm or}\quad
+		\begin{cases}
+			\chi_{2} = -\chi_{1},\\
+			\ts{\chi}_{1} = \pm \chi_{1}/\alpha,\\
+			\ts{\chi}_{2} = \mp \chi_{1}/\alpha,
+		\end{cases}
+	\end{equation}
+	there are enhancements to ${\cal N}=(4,2)$ and ${\cal N}=(2,4)$, respectively. The isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum is then given by multiplets of $D^{1}(2,1;\alpha)_{\rm L, R}\times\SU{1\vert1,1}_{\rm R,L}$.
+\end{itemize}
+
+
+\paragraph{\boldmath $(\zeta,\ts{\zeta},T)$}
+Again with spherical coordinates:
+\begin{equation}
+	\begin{aligned}
+		\d s^{2} &= \ell_{\rm AdS}^{2}\,\d s^{2}\left({\rm AdS}_{3}\right) -\Delta\,\d z^{2}\\
+		&+ \alpha^{2}\Big[\d\theta^{2} + \Delta\left(\cos^{2}(\theta)\,\d\phi_{1}^{2}+\sin^{2}(\theta)\,\d\phi_{2}^{2}\right)\Big]+\d\ts{\theta}^{2} + \Delta\left(\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1}^{2}+\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}^{2}\right)\\
+		&+\Delta\,T^{2}\,\cos^{2}(\theta)\cos^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{2}\,\d\phi_{1}-\zeta_{2}\,\d\ts{\phi}_{1}\right)^{2}+\Delta\,T^{2}\,\sin^{2}(\theta)\sin^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{1}\,\d\phi_{2}-\zeta_{1}\,\d\ts{\phi}_{2}\right)^{2}\\
+		&+\Delta\,T^{2}\,\cos^{2}(\theta)\sin^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{1}\,\d\phi_{1}-\zeta_{2}\,\d\ts{\phi}_{2}\right)^{2}+\Delta\,T^{2}\,\sin^{2}(\theta)\cos^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{2}\,\d\phi_{2}-\zeta_{1}\,\d\ts{\phi}_{1}\right)^{2}\\
+		&-2\,\alpha\,\Delta\,T^{2}\left(\zeta_{1}\,\cos^{2}(\theta)\,\d\phi_{1}+\zeta_{2}\,\sin^{2}(\theta)\,\d\phi_{2}\right)\left(\ts{\zeta}_{1}\,\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1}+\ts{\zeta}_{2}\,\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}\right)\\
+		&+\Delta\,T^{2}\,\cos^{2}(\theta)\left(\alpha\,\zeta_{1}\,\d\phi_{1}+\d z\right)^{2}+\Delta\,T^{2}\,\sin^{2}(\theta)\left(\alpha\,\zeta_{2}\,\d\phi_{2}+\d z\right)^{2}\\
+		&+\Delta\,T^{2}\,\cos^{2}(\ts{\theta})\left(\ts{\zeta}_{1}\,\d\ts{\phi}_{1}-\d z\right)^{2}+\Delta\,T^{2}\,\sin^{2}(\ts{\theta})\left(\ts{\zeta}_{2}\,\d\ts{\phi}_{2}-\d z\right)^{2},
+	\end{aligned}
+\end{equation}
+with the warp factor
+\begin{equation}
+	\Delta^{-1} = 1+T^{2}\left(\zeta_{1}^{2}\sin^{2}(\theta)+\zeta_{2}^{2}\cos^{2}(\theta)+\ts{\zeta}_{1}^{2}\sin^{2}(\ts{\theta})+\ts{\zeta}_{2}^{2}\cos^{2}(\ts{\theta})\right).
+\end{equation}.
+
+\CE{(Expression of $H$?)}
+
+\paragraph{\boldmath $(\zeta,\ts{\zeta},\Omega,\ts{\Omega})$}
+Again with spherical coordinates:
+\begin{equation}
+	\begin{aligned}
+		\d s^{2} &= \ell_{\rm AdS}^{2}\,\d s^{2}\left({\rm AdS}_{3}\right) -\Delta\Big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\Big)\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\,\d z^{2}\\
+		&+ \alpha^{2}\Big[\d\theta^{2} + \Delta\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\Big(e^{\Omega}\cos^{2}(\theta)\,\d\phi_{1}^{2}+\sin^{2}(\theta)\,\d\phi_{2}^{2}\Big)\Big]\\
+		&+\d\ts{\theta}^{2} + \Delta\Big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\Big)\Big(\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1}^{2}+e^{\ts{\Omega}}\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}^{2}\Big)\\
+		&+\Delta\,e^{\Omega}\cos^{2}(\theta)\cos^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{2}\,\d\phi_{1}-\zeta_{2}\,\d\ts{\phi}_{1}\right)^{2}+\Delta\,e^{\ts{\Omega}}\sin^{2}(\theta)\sin^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{1}\,\d\phi_{2}-\zeta_{1}\,\d\ts{\phi}_{2}\right)^{2}\\
+		&+\Delta\,e^{\Omega+\ts{\Omega}}\cos^{2}(\theta)\sin^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{1}\,\d\phi_{1}-\zeta_{2}\,\d\ts{\phi}_{2}\right)^{2}+\Delta\,\sin^{2}(\theta)\cos^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{2}\,\d\phi_{2}-\zeta_{1}\,\d\ts{\phi}_{1}\right)^{2}\\
+		&-2\,\alpha\,\Delta\left(\zeta_{1}\,\cos^{2}(\theta)\,\d\phi_{1}+e^{\Omega}\,\zeta_{2}\,\sin^{2}(\theta)\,\d\phi_{2}\right)\left(e^{\ts{\Omega}}\,\ts{\zeta}_{1}\,\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1}+\ts{\zeta}_{2}\,\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}\right)\\
+		&+\Delta\,\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\Big[\cos^{2}(\theta)\left(\alpha\,\zeta_{1}\,\d\phi_{1}+\d z\right)^{2}+e^{\Omega}\sin^{2}(\theta)\left(\alpha\,\zeta_{2}\,\d\phi_{2}+\d z\right)^{2}\Big]\\
+		&+\Delta\Big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\Big)\Big[e^{\ts{\Omega}}\cos^{2}(\ts{\theta})\left(\ts{\zeta}_{1}\,\d\ts{\phi}_{1}-\d z\right)^{2}+\sin^{2}(\ts{\theta})\left(\ts{\zeta}_{2}\,\d\ts{\phi}_{2}-\d z\right)^{2}\Big],
+	\end{aligned}
+\end{equation}
+with the warp factor
+\begin{equation}
+	\Delta^{-1} = 1+T^{2}\left(\zeta_{1}^{2}\sin^{2}(\theta)+\zeta_{2}^{2}\cos^{2}(\theta)+\ts{\zeta}_{1}^{2}\sin^{2}(\ts{\theta})+\ts{\zeta}_{2}^{2}\cos^{2}(\ts{\theta})\right).
+\end{equation}.
+
+\CE{(Expression of $H$?)}
 
 \paragraph{SUSY deformation}
 
@@ -1052,7 +1154,18 @@ as even part. Its multiplets are labelled by the spins $\ell$ and $\ts{\ell}$ of
 	 h_{0} + \nicefrac{3}{2} & \big(\ell-\nicefrac{1}{2},\ts{\ell}-\nicefrac{1}{2}\big),
 	\end{array}
 \end{equation}
-with $h_{0}=(\alpha\,\ell+\ts{\ell})/(1+\alpha)$.\footnote{Shortenings occur for $\ell<1$ or $\ts{\ell}<1$, see ref.~\cite{deBoer:1999gea}. \CE{(Add them here?)}} Two short multiplets can combine into a long multiplets $[\ell,\ts{\ell}]$ as follows:
+with $h_{0}=(\alpha\,\ell+\ts{\ell})/(1+\alpha)$. Shortenings occur for $\ell<1$ or $\ts{\ell}<1$~\cite{deBoer:1999gea}. For instance:
+\begin{equation}
+	[0,0]_{\rm s}:\quad h_{0}=0 \quad (0,0),\qquad  [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}: \begin{array}{cc}
+	 h_{0}=\nicefrac{1}{2} & \big(\nicefrac{1}{2},\nicefrac{1}{2}\big) \\[5pt]
+	 1 & \big(1,0\big) \oplus \big(0,0\big) \oplus \big(0,1\big) \\[5pt]
+	 \nicefrac{3}{2} & \big(\nicefrac{1}{2},\nicefrac{1}{2}\big) \\[5pt]
+	 2 & \big(0,0\big).
+	\end{array}
+\end{equation}
+
+
+Two short multiplets can combine into a long multiplets $[\ell,\ts{\ell}]$ as follows:
 \begin{equation}
  	[\ell,\ts{\ell}] = [\ell,\ts{\ell}]_{\rm s} \oplus [\ell+\nicefrac{1}{2},\ts{\ell}+\nicefrac{1}{2}]_{\rm s}.
 \end{equation}
