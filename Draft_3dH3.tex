@@ -350,22 +350,22 @@ The Ansätze~\eqref{eq:GSSansatz} describe a \textit{consistent} truncation if t
 \end{equation}
 with $\cU_{\fl{M}}{}^M = \rho^{-1} \UI_{\fl{M}}{}^M$, $\ff{U}_{\fl{M}} = (\cU_{\fl{M}},\,\Sigma_{\fl{M}})$ and $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ a constant tensor. This condition ensures that the factorised form of the Ansätze~\eqref{eq:GSSansatz} is preserved by the generalized Lie derivative, \textit{e.g.}
 \begin{equation} \label{eq:GSSexample}
-	\begin{aligned}
+	\begin{split}
 		D_{\mu}\M(x,Y) &= U_{M}{}^{\fl{M}}(Y)\,U_{N}{}^{\fl{N}}(Y)\,{\cal D}_{\mu}\M_{\fl{MN}}(x)\,,\\
 		{\cal L}_{(A_{\mu},B_{\nu})}A_{\mu}(x,Y) &= \rho(Y)^{-1}\,\UI_{\fl{M}}{}^{M}(Y)\,\llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}(x)\,,
-	\end{aligned}
+	\end{split}
 \end{equation}
-where
+where \EM{Note corrected sign in first equation!}
 \begin{equation} \label{eq:3dCovDeriv}
-	{\cal D}_{\mu}\M_{\fl{MN}} = \partial_{\mu}\M_{\fl{MN}}-2\,\A_{\mu}{}^{\fl{P}}X_{\fl{P}(\fl{M}}{}^{\fl{Q}}\M_{\fl{N})\fl{Q}}\,, \quad {\rm and} \quad \llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}=X_{\fl{PQ}}{}^{\fl{M}}\A_{\mu}{}^{\fl{P}}\A_{\nu}^{\fl{Q}} \,.
+	{\cal D}_{\mu}\M_{\fl{MN}} = \partial_{\mu}\M_{\fl{MN}} + 2\,\A_{\mu}{}^{\fl{P}}X_{\fl{P}(\fl{M}}{}^{\fl{Q}}\M_{\fl{N})\fl{Q}}\,, \quad {\rm and} \quad \llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}=X_{\fl{PQ}}{}^{\fl{M}}\A_{\mu}{}^{\fl{P}}\A_{\nu}^{\fl{Q}} \,.
 \end{equation}
 
 Thus, for a given twist matrix $U_{M}{}^{\fl{M}}$ satisfying the consistency condition~\eqref{eq:GenLeibniz}, the action~\eqref{eq:ExFTaction} reduces to three-dimensional ${\cal N}=16$ gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv}. The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity, as is clear from its appearance in \eqref{eq:3dCovDeriv} in the gauge-covariant derivative and the gauge algebra of the vector fields. From eq. \eqref{eq:GenLeibniz}, it has the following expression in terms of the twist matrix and $\rho$
 \begin{equation}
-	\begin{aligned}
+	\begin{split}
 		X_{\fl{MN}}{}^{\fl{P}}&=-\rho^{-1}\,\Gamma_{\fl{MN}}{}^{\fl{P}} + \rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}\,f^{\fl{QK}}{}_{\fl{L}}\,\Gamma_{\fl{KM}}{}^{\fl{L}}-\frac{1}{60}\,\rho^{-1}\,f^{\fl{PK}}{}_{\fl{N}}\,f_{\fl{ML}}{}^{\fl{Q}}\,\Gamma_{\fl{KQ}}{}^{\fl{L}}\\
 		&\quad-\frac{1}{2}\,\rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}\,f^{\fl{QK}}{}_{\fl{M}}\,\Gamma_{\fl{RK}}{}^{\fl{R}}+\left(\delta_{\fl{M}}{}^{\fl{K}}\delta_{\fl{N}}{}^{\fl{P}}-\frac{1}{2}\,f_{\fl{M}}{}^{\fl{LK}}f_{\fl{NL}}{}^{\fl{P}}\right)\,\xi_{\fl{K}}\,.
-	\end{aligned}
+	\end{split}
 \end{equation}
 Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\fl{MN}}{}^{\fl{P}}=\UI_{\fl{M}}{}^{K}\UI_{\fl{N}}{}^{L}\partial_{K}U_{L}{}^{\fl{P}}$ and the trombone gauging
 \begin{equation} \label{eq:Trombone}
@@ -376,19 +376,19 @@ Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\fl{MN}}{}^{\fl{P}}=\UI_{
 \end{equation}
 The embedding tensor is most nicely expressed once projected on the adjoint representation
 \begin{equation} \label{eq:symembeddingtensor}
-	\begin{aligned}
+	\begin{split}
 		X_{\fl{MN}} = -\frac{1}{60}\,X_{\fl{MP}}{}^{\fl{Q}}\,f_{\fl{NQ}}{}^{\fl{P}} &= - 2\,\rho^{-1}\,\Gamma_{(\fl{MN})} - \rho^{-1}\,\Gamma_{\fl{P}(\fl{M}}{}^{\fl{Q}}\,f_{\fl{N})\fl{Q}}{}^{\fl{P}} + \frac12 f_{\ov{M}\ov{N}}{}^{\ov{P}}\, \xi_{\ov{P}} \\
 		&= - 14\,\rho^{-1}\,(\mathbb{P}_{3875})_{\fl{MN}}{}^{\fl{PQ}}\,\Gamma_{\fl{PQ}} - \frac{1}{4}\,\rho^{-1}\,\eta_{\fl{MN}}\,\Gamma_{\fl{P}}{}^{\fl{P}} + \frac12 f_{\ov{M}\ov{N}}{}^{\ov{P}}\, \xi_{\ov{P}} \,,
-	\end{aligned}
+	\end{split}
 \end{equation}
 with the projection of the current $\Gamma_{\fl{MN}} = - \tfrac{1}{60}\,\Gamma_{\fl{MP}}{}^{\fl{Q}}\,f_{\fl{NQ}}{}^{\fl{P}}$. In the following, we will focus on gaugings with $\xi_{\fl{M}}=0$.
 
 The three-dimensional action follows from inserting the Ansätze~\eqref{eq:GSSansatz} in the ExFT action~\eqref{eq:ExFTaction}. The expressions of the kinetic and Chern-Simons terms result immediately from eq.~\eqref{eq:GSSexample}
 \begin{equation}
-	\begin{aligned}
+	\begin{split}
 		\mathscr{L}_{\rm kin} &= \frac{1}{240}\,D_{\mu}\M_{MN}D^{\mu}\M^{MN} \underset{\rm gSS}{=} \frac{\rho^{2}}{240}\,{\cal D}_{\mu}\M_{\fl{MN}}{\cal D}^{\mu}\M^{\fl{MN}}, \\
 		\mathscr{L}_{\rm CS} &\underset{\rm gSS}{=} -\rho^{-1}\,\varepsilon^{\mu\nu\rho}\,X_{\fl{MN}}\,\A_{\mu}{}^{\fl{M}} \left(\partial_{\nu}\A_{\rho}{}^{\fl{N}}-\frac{1}{3}\,\llbracket\A_{\nu},\A_{\rho}\rrbracket^{\fl{N}}\right)\,.
-	\end{aligned}
+	\end{split}
 \end{equation}
 
 However, the case of the potential term $\mathscr{L}_{\rm int}$, leading to a potential $V$ for the three-dimensional scalars $\M_{\fl{MN}}$, is more subtle. We expect $V$ to be quadratic in the embedding tensor, which makes the identification of $X_{\fl{MN}}$ more complicated. Moreover, the potential of three-dimensional ${\cal N}=16$ gauged supergravity in terms of the embedding tensor is unknown, with currently the potential only expressed in terms of the fermion shift matrices of the gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv}. Thus, in the following, we will follow the truncation procedure carefully and thereby construct the potential of the three-dimensional ${\cal N}=16$ gauged supergravity in terms of the embedding tensor.
@@ -463,7 +463,7 @@ Finally, by requiring
 \end{equation}
 the parameters in \eqref{eq:Lintexpansion} and \eqref{eq:Vexpansion} are fixed to
 \begin{equation}
-	\alpha = \frac{1}{28}\,,\quad \beta = \frac{1}{2}\,,\quad a=1\,,\quad \delta=\frac{13}{28} \,. %, \quad \gamma=0.
+	\alpha = \frac{1}{28}\,,\quad \beta = \frac{1}{2}\,, \quad \delta=\frac{13}{28}\,, \quad a=1 \,. %, \quad \gamma=0.
 \end{equation}
 %\CE{Freedom for $\delta$ and $\gamma$: $2\delta-(62)^2\gamma=\rho^{2}(1/2+3/7)$.}
 %\EM{MG and EM are confused about this -- we need to chat all together}
@@ -565,7 +565,7 @@ and similarly for other generalised tensors. Closure of the generalised Lie deri
 \end{equation}
 which restricts the dependence of all fields to a subset of physical coordinates.
 
-We are interested in the maximal solutions of the section condition \eqref{eq:SLnSC} which preserve a $\SL{n} \subset \SL{n+1}$ subgroup. Under this decomposition $\SL{n+1} \rightarrow \SL{n}$ with $V^I = \left( V^i,\, V^0 \right)$, where $i = 1, \ldots, n$, we solve the section condition by having physical coordinates $y^{i0}$ on the $n$-dimensional manifold $M$, i.e. $\partial_{ij} = 0$ for all fields with only $\partial_{i0} \neq 0$. Correspondingly, the generalised tangent bundle, whose sections are in the antisymmetric representation of $\SL{n+1}$ and carry weight $\frac{n-3}{n+1}$, decomposes as
+We are interested in the maximal solutions of the section condition \eqref{eq:SLnSC} which preserve a $\SL{n} \subset \SL{n+1}$ subgroup. Under this decomposition $\SL{n+1} \rightarrow \SL{n}$ with $V^I = \left( V^i,\, V^0 \right)$, where $i = 1, \ldots, n$, we solve the section condition by having physical coordinates $y^{0i}$ on the $n$-dimensional manifold $M$, i.e. $\partial_{ij} = 0$ for all fields with only $\partial_{0i} = \partial_i \neq 0$. Correspondingly, the generalised tangent bundle, whose sections are in the antisymmetric representation of $\SL{n+1}$ and carry weight $\frac{n-3}{n+1}$, decomposes as
 \begin{equation} \label{eq:SLnE}
 	E = TM \oplus \Lambda^{n-2} T^*M \,,
 \end{equation}
@@ -581,15 +581,14 @@ Sections of $N$ are generalised tensors transforming in the anti-fundamental of 
 \begin{equation}
 	\begin{split}
 		\gL_{V} V' &= [v, v'] + L_{v} \omega'_{(n-2)} - \imath_{v'} d\omega_{(n-2)} \,, \\
-		\gL_{V} W &= L_v \omega_{(1)} + L_v \omega_{(n)} - \EM{\alpha} \omega_{(1)} \wedge d\omega_{(n-2)} \,,
+		\gL_{V} W &= L_v \omega_{(1)} + L_v \omega_{(n)} + \omega_{(1)} \wedge d\omega_{(n-2)} \,,
 	\end{split}
 \end{equation}
-\EM{(I think $\alpha = 1$ but not 100\% sure)}
 where we write $V = v + \omega_{(n-2)}$, $V' = v' + \omega'_{(n-2)}$ and $W = \omega_{(1)} + \omega_{(n)}$ as a formal of vectors and $p$-forms, and $L$ denotes the ordinary Lie derivative and $[v,v']$ the ordinary Lie bracket between vector fields $v$ and $v'$.
 
-We can now describe the $S^n$ consistent truncation using the $\SL{n+1}$ ExFT above. Let $Y^I$, $I = 1, \ldots, n+1$ be the embedding coordinates of $S^{n} \subset \mathbb{R}^{n+1}$, such that $Y^I\, Y_I = 1$. On $S^n$, we can define a parallelisation of $N$ using the generalised frame \EM{Check sign of A! Although I'm pretty confident about it.}
+We can now describe the $S^n$ consistent truncation using the $\SL{n+1}$ ExFT above. Let $Y^I$, $I = 1, \ldots, n+1$ be the embedding coordinates of $S^{n} \subset \mathbb{R}^{n+1}$, such that $Y^I\, Y_I = 1$. On $S^n$, we can define a parallelisation of $N$ using the generalised frame
 \begin{equation}\label{eq:SnFrame}
-	\cU^{\fl{I}} = dY^{\fl{I}} + Y^{\fl{I}}\, vol_{S^n} - A \wedge dY^{\fl{I}} \,,
+	\cU^{\fl{I}} = dY^{\fl{I}} + Y^{\fl{I}}\, vol_{S^n} - dY^{\fl{I}} \wedge A \,,
 \end{equation}
 where $A$ is an $(n-1)$-potential with field strength $dA = (n-1) vol_{S^n}$, and
 \begin{equation}
@@ -605,38 +604,32 @@ with $\mathring{g}$ the round metric on $S^n$. Using \eqref{eq:SnFrame} and \eqr
 \begin{equation} \label{eq:SLnFrame}
 	U_I{}^{\fl{I}} = \rho^{2/(n+1)}\, \cU_I{}^{\fl{I}} \,,
 \end{equation}
-and hence a generalised frame for $E$ or a generalised bundle in any other rep of $\SL{n+1}$.
-
-Evaluating \eqref{eq:SLnFrame} and \eqref{eq:rho} on the northern hemisphere $Y^I = \left( y^i,\, \sqrt{1-y^i y_i}\right)$, $i = 1, \ldots, n$ and using the gauge choice for the potential $A$
-\begin{equation}
-	A_{ij} = \epsilon_{ijk}\, y^k (1 + K(v)) \,,
+and hence a generalised frame for $E$ or a generalised bundle in any other rep of $\SL{n+1}$. For example, in the generalised tangent bundle \eqref{eq:SLnE}, we have the generalised frame $\cU_{\fl{I}\fl{J}}{}^{IJ} = \left(\det \mathring{g}\right)^{1/2} \cU_{[\fl{I}}{}^{I} \cU_{\fl{J}]}{}^J$, with components given by
+\begin{equation} \label{eq:SLnGenFrame}
+	2\, \cU_{\fl{I}\fl{J}} = v_{\fl{I}\fl{J}} + \star dY_{\fl{I}\fl{J}} + \imath_{v_{\fl{I}\fl{J}}} A \,,
 \end{equation}
-with $v = y^i\, y^i$ and $\epsilon_{ijk}$ the volume form on $S^3$, we precisely recover the $\SL{4}$ twist matrix of \cite{Hohm:2014qga}, i.e.
+where $v_{\fl{I}\fl{J}}$ are the $\SO{n+1}$ Killing vectors of the round $S^n$, matching precisely the $\SL{n+1}$ parallelisations constructed in \cite{Lee:2014mla}.
+
+Using \eqref{eq:SLnGenLie}, we can easily check that the generalised frame  \eqref{eq:SLnGenFrame}, \eqref{eq:SLnTwist} defines a generalised Leibniz parallelisation. In particular, using $dA = (n-1) vol_{S^n}$, we obtain the embedding tensor
+\begin{equation}
+	\gL_{\cU_{\fl{I}\fl{J}}} \cU^{\fl{K}} = - X_{\fl{I}\fl{J}\fl{L}}{}^{\fl{K}}\, \cU^{\fl{L}} \,,
+\end{equation}
+with
+\begin{equation} \label{eq:SLnEmbeddingTensor}
+	X_{\fl{I}\fl{J},\fl{L}}{}^{\fl{K}} = - \delta_{\fl{L}[\fl{I}} \delta_{\fl{J}]}^{\fl{K}} \,.
+\end{equation}
+
+Finally, we can also connect the above with the $\SL{n+1}$ Ansatz construction of \cite{Hohm:2014qga}. We do this by evaluating \eqref{eq:SLnFrame} and \eqref{eq:rho} on the northern hemisphere $Y^I = \left( y^i,\, \sqrt{1-y^i y_i}\right)$, $i = 1, \ldots, n$ and using the gauge choice for the potential $A$
+\begin{equation}
+	A_{i_1 \ldots i_{n-1}} = \epsilon_{i_1 \ldots i_{n-1}j}\, y^j (1 + K(v)) \,,
+\end{equation}
+with $v = y^i\, y^i$ and $\epsilon_{i_1 \ldots i_{n-1}j}$ the volume form on $S^n$. With the above choices, we precisely recover the $\SL{n+1}$ twist matrix of \cite{Hohm:2014qga}, i.e.
 \begin{equation} \label{eq:SLnTwist}
 	\UI_{\fl{I}}{}^I = \begin{pmatrix}
-		\left(1-v\right)^{-1/4} \left( \delta_i{}^j + y_i\, y^j K(v) \right) & y_i \left(1-v\right)^{1/4} \\
-		y^j \left(1-v\right)^{1/4} K(v) & \left(1-v\right)^{3/4}
+		\left(1-v\right)^{-1/(n+1)} \left( \delta_i{}^j + y_i\, y^j K(v) \right) & y_i \left(1-v\right)^{(n-1)/(2(n+1))} \\
+		y^j \left(1-v\right)^{(n-1)/(2(n+1))} K(v) & \left(1-v\right)^{\tfrac{n}{n+1}}
 	\end{pmatrix} \,.
 \end{equation}
-Moreover, the generalised frame for $E$ precisely coincides with the twist matrix in \cite{Lee:2014mla,Baguet:2015iou}. \EM{Give it explicitly?}
-
-\EM{To do: Should mention Leibniz parallelisability somewhere and the embedding tensor that arises}
-
-\EM{I think the sign conventions are:
-	\begin{equation}
-		\begin{split}
-			\cU^{\fl{I}} &= dY^{\fl{I}} + Y^{\fl{I}}\, vol_{S^n} + dY^{\fl{I}} \wedge A \,, \\
-			\gL_{V} W &= L_v \omega_{(1)} + L_v \omega_{(n)} + \omega_{(1)} \wedge d\omega_{(n-2)} \,, \\
-			\gL_{\cU_{\fl{I}\fl{J}}} \cU^{\fl{K}} &= - X_{\fl{I}\fl{J},\fl{L}}{}^{\fl{K}}\, \cU^{\fl{L}} \,, \\
-			X_{\fl{I}\fl{J},\fl{L}}{}^{\fl{K}} &= 2\, \delta_{\fl{L}[\fl{I}} \delta_{\fl{J}]}^{\fl{K}} \,.
-		\end{split}
-	\end{equation}
-For the twist matrix in the antisymmetric rep, I find
-\begin{equation}
-	\cU_{[\fl{I}} \cU_{\fl{J}]} = v_{\fl{J}\fl{I}} + \star \left( dY_{\fl{I}} \wedge dY_{\fl{J}} \right) + \left(-1\right)^{n-1} \imath_{v_{\fl{J}\fl{I}}} A \,,
-\end{equation}
-where the vector part is $V^{i\,0}$, the $(n-2)$-form part is $V^{ij} = \frac{1}{(n-2)!} \epsilon^{k_1 \ldots k_{n-2} ij} \lambda_{k_{1} \ldots k_{n-2}}$ and the coordinates are identified as $Y^{i\,0} = y^i$. We can probably match the sign of the vector part of \cite{Baguet:2015iou} by taking the vector part to be $V^{0\,i}$ and also changing the coordinates to be $Y^{0\,i} = y^i$. We should probably check this carefully since it's useful to write up properly.
-}
 
 \subsubsection{Adding flux}
 To demonstrate our methodology, we will now show how the parameter $\lambda$ introduced in \cite{Eloy:2021fhc} can be obtained by the twisting procedure described above. Thus, we want to consider the $\SO{3,3} \subset \SO{4,4}$ twist matrix corresponding to $S^3$ \eqref{eq:SLnTwist} and add a 3-form flux via a $\SO{4,4}$ twist. We begin by decomposing $\SO{4,4} \rightarrow \SO{3,3} \times \SO{1,1}$, such that
@@ -690,16 +683,28 @@ with $\cA, \cB = 1, \ldots, 8$ labelling the fundamental of $\SL{8}$, correspond
 \begin{equation} \label{eq:PhysicalCoords}
 	y^i = Y^{i8},\, \qquad \tilde{y}_a = Y_{a7} \,, \qquad i = 1, 2, 3 \,, \qquad a = 4, 5, 6 \,.
 \end{equation}
-This solution of the section condition defines the ``geometric'' $\SL{3}_1 \times \mathbb{R}^+_1 \subset \SL{4}_1$ and $\SL{3}_2 \times \mathbb{R}^+_2 \subset \SL{4}_2$ subgroups, that will play an important role soon.
+This solution of the section condition defines the ``geometric'' $\SL{3}_1 \times \mathbb{R}^+_1 \subset \SL{4}_1$ and $\SL{3}_2 \times \mathbb{R}^+_2 \subset \SL{4}_2$ subgroups, that will play an important role when adding flux in section \ref{s:AddFluxS3S3S1}.
 
-We can now use one copy of the $\SL{4}$ frame \eqref{eq:SLnFrame} for each $\SL{4}$ subgroup of \eqref{eq:SL4Embedding} to construct a generalised parallelisation for the full $\En{7}$ ExFT, with an embedding tensor via \eqref{eq:GenLeibniz} \EM{given by \ldots}.
+We can now use one copy of the $\SL{4}$ frame \eqref{eq:SLnFrame} for each $\SL{4}$ subgroup of \eqref{eq:SL4Embedding} to construct a generalised parallelisation for the full $\En{7}$ ExFT, with an embedding tensor via \eqref{eq:GenLeibniz} given as in \eqref{eq:SLnEmbeddingTensor} embedded in $\En{7}$ as follows. Under $\En{7} \rightarrow \SL{8}$, the embedding tensor representation branches as
+\begin{equation}
+	\mathbf{912} \rightarrow \mathbf{36} \oplus \overline{\mathbf{36}} \oplus \mathbf{420} \oplus \overline{\mathbf{420}} \,,
+\end{equation}
+and we only generate the $\mathbf{36}$ and $\overline{\mathbf{36}}$ components, $\eta_{{\cal AB}}$, $\eta^{{\cal AB}}$. Thus, the $\En{7}$ embedding tensor is given by
+\begin{equation}
+	\begin{split}
+		X_{{\cal AB, CD}}{}^{\cal EF} &= \eta_{\cA[\cC} \delta_{{\cal D}]\cB}^{{\cal EF}} - \eta_{\cB[\cC} \delta_{{\cal D}]\cA}^{{\cal EF}} \,, \\
+		X^{{\cal AB}}{}_{{\cal CD}}{}^{\cal EF} &= -\eta^{\cA[{\cal E}}_{\phantom{[\cA]}} \delta_{\cC{\cal D}}^{{\cal F}]{\cal B}} + \eta^{\cB[{\cal E}}_{\phantom{[\cA]}} \delta_{\cC{\cal D}}^{{\cal F}]{\cal A}} \,.
+	\end{split}
+\end{equation}
+Because we are embedding the $\SL{4}_1$ coordinates in the $\mathbf{28}$ but those of $\SL{4}_2$ in the $\overline{\mathbf{28}}$, the twist matrix will generate an embedding tensor in the $\mathbf{36}$ for $\SL{4}_1$ and $\overline{\mathbf{36}}$ for $\SL{4}_2$, whose only non-vanishing components are
+\begin{equation}
+	\eta_{IJ} = \delta_{IJ} \,, \qquad \eta^{AB} = \delta^{AB} \,.
+\end{equation}
 
-\EM{Include breaking of adjoint here?}\\
-\EM{Should mention the geometric $\SL{3}$ subgroups here???}
-
-\EM{What we should actually do: Read this and next section again and make sure they make sense. Maybe when referring to the $\SL{3}$ subgroups in the next section, we can cite \eqref{eq:PhysicalCoords}}
-
-\CE{(Add $\alpha$ here?)}
+We can also rescale their $S^3$'s using their corresponding $\mathbf{R}^+$ generator. Without loss of generality, we can rescale $S^3$ to have radius $\alpha$, using the $\mathbf{R}^+_1$ generator on the frame. The embedding tensor then becomes
+\begin{equation}
+	\eta_{IJ} = \frac{1}{\alpha} \delta_{IJ} \,, \qquad \eta^{AB} = \delta^{AB} \,.
+\end{equation}
 
 \subsubsection{The $S^3 \times S^3 \times S^1$ truncation} \label{s:S3S3S1}
 We now construct the consistent truncation on $S^3 \times S^3 \times S^1$ by embedding the $\En{7}$ twist matrix corresponding to the $S^3 \times S^3$ truncation reviewed above in \ref{s:S3S3} in $\EE$ via the branching $\EE \rightarrow \En{7} \times \SL{2}$, such that $\mathbf{248} \rightarrow \mathbf{\left(133,1\right)} \oplus \mathbf{\left(56,2\right)} \oplus \mathbf{\left(1,3\right)}$. As explained in \cite{Galli:2022idq}, we can construct a consistent truncation on $M \times S^1$ to 3-dimensional gauged supergravity by embedding a consistent truncation on $M$ to 4-dimensional supergravity, characterised by an $\En{7}$ twist matrix and $\En{7}$ scalar density $\sigma$, as well as 
@@ -714,7 +719,7 @@ Finally, the $\EE$ scalar density satisfies $\rho = \sigma^2$ to ensure a consis
 
 Employing this procedure for $M = S^3 \times S^3$, gives us the consistent truncation on $S^3 \times S^3 \times S^1$. However, this does not have any AdS$_3$ vacua, since we still need to add the 7-form flux. To do this, let us first review the group theory of the $S^3 \times S^3$ truncation, since this will allow us to determine whether the 7-form flux is stabilised by the twist matrix.
 
-\subsubsection{Adding flux}
+\subsubsection{Adding flux} \label{s:AddFluxS3S3S1}
 %We now wish to add a 7-form flux to the $S^3 \times S^3 \times S^1$ truncation constructed above.
 To add a 7-form flux to the above truncation, we need to determine whether the 7-form flux is stabilised by the twist matrix on $S^3 \times S^3 \times S^1$ constructed in section \ref{s:S3S3S1}. Thus, we need to understand 
 %the group theory underlying the consistent truncation on $S^3 \times S^3$ \cite{Inverso:2016eet}. The $\En{7}$ twist matrix describing this truncation is constructed from two $\SL{4}$ twist matrices, one for each $S^3$ similar to \ref{s:S3Flux}, via the decomposition
@@ -768,7 +773,6 @@ The branching of the adjoint \eqref{eq:AdjointSL6} under $\SL{6} \times \SL{2} \
 	\end{split}
 \end{equation}
 Using \eqref{eq:R+charges}, we can now identify each of the singlet generators $\left(1,1\right)_{\pm4}$ with one of the $\SL{2}$ doublet generators of charge $\mp 6$. Therefore, we find exactly one singlet $\SL{4}_1 \times \SL{4}_2$ generator, which we can write as $t_{1238}$, corresponding to a 6-form potential. The other $\SL{4}_1 \times \SL{4}_2$ singlet generator, $t_{4567}$, only differs by a compact generator and thus does not corresponding to a different physical field. Finally, the other elements of the $\SL{2}$ doublet of 6-form potential can be mapped to the $\mathbf{\left(4,\overline{4}\right)_{2}} \oplus \mathbf{\left(\overline{4},4\right)_{-2}}$ generators, specifically $t_7{}^8$ and $t_8{}^7$ and are clearly not $\SL{4}$ singlets.
-\EM{Is this sufficiently clear? I am not so sure...}
 
 Therefore, we can add a 7-form flux to the twist matrix using
 \begin{equation}
@@ -781,62 +785,30 @@ with $C_M{}^N = \lambda\, z\,\rho^{-1}\, t_{1238\,M}{}^N$ and $\lambda$ a numeri
 		\mathbf{248} & \ \tikz{\draw[arrows={->[scale=1.1]}] (0,0) -- (3.65
 	,0);}\  (\mathbf{63},\mathbf{1}) \oplus (\mathbf{70},\mathbf{1}) \oplus (\mathbf{28},\mathbf{2}) \oplus (\mathbf{\fl{28}},\mathbf{2}) \oplus (\mathbf{1},\mathbf{3}) \\
 		X^{\fl{M}} & \ \tikz{\draw[arrows={->[scale=1.1]}] (0,0) -- (3.65
-	,0);}\ \left\{X^{\fl{\cal A}}{}_{\fl{\cal B}},X^{\fl{\cal ABCD}},X^{\fl{\cal AB}\,\fl{i}},X_{\fl{\cal AB}}{}^{\fl{i}},X^{\fl{\alpha}}\right\},
+	,0);}\ \left\{X^{\fl{\cal A}}{}_{\fl{\cal B}},\,X^{\fl{\cal ABCD}},\,X^{\fl{\cal AB}\,\fl{i}},\,X_{\fl{\cal AB}}{}^{\fl{i}},\,X^{\fl{\alpha}}\right\},
 	\end{aligned}
 \end{equation}
-and has the following non-vanishing components:
+and has the following non-vanishing components under the $\SL{4}_1 \times \SL{4}_2$ subgroups of $\SL{8}$:
 \begin{equation} \label{eq:embeddingtensor@origin}
-	\begin{aligned}
+	\begin{split}
 		X_{(\mathbf{63},\mathbf{1});(\mathbf{28},\mathbf{2})}:&
 		\begin{cases}
 			\displaystyle X_{\fl{I}}{}^{\fl{J}}{}_{;\fl{KL}+}=-\frac{1}{\alpha}\,\delta_{\fl{I}[\fl{K}}\delta_{\fl{L}]}{}^{\fl{J}},\\[7pt]
-			\displaystyle X_{\fl{A}}{}^{\fl{I}}{}_{;\fl{BJ}+}=-\frac{1}{2\alpha}\,\delta_{\fl{AB}}\delta_{\fl{J}}{}^{\fl{I}},\\
+			\displaystyle X_{\fl{A}}{}^{\fl{I}}{}_{;\fl{BJ}+}=-\frac{1}{2\alpha}\,\delta_{\fl{AB}}\delta_{\fl{J}}{}^{\fl{I}}\,,\\
 		\end{cases} \\[5pt]
 		X_{(\mathbf{63},\mathbf{1});(\mathbf{\fl{28}},\mathbf{2})}:&
 		\begin{cases}
-			\displaystyle X_{\fl{A}}{}^{\fl{B}}{}_{;}{}^{\fl{CD}}{}_{+}=-\,\delta_{\fl{A}}{}^{[\fl{C}}\delta^{\fl{D}]\fl{B}},\\[7pt]
-			\displaystyle X_{\fl{A}}{}^{\fl{I}}{}_{;}{}^{\fl{BJ}}{}_{+}=-\frac{1}{2}\,\delta_{\fl{A}}{}^{\fl{B}}\delta^{\fl{IJ}},\\
+			\displaystyle X_{\fl{A}}{}^{\fl{B}}{}_{;}{}^{\fl{CD}}{}_{+}=-\,\delta_{\fl{A}}{}^{[\fl{C}}\delta^{\fl{D}]\fl{B}}\,,\\[7pt]
+			\displaystyle X_{\fl{A}}{}^{\fl{I}}{}_{;}{}^{\fl{BJ}}{}_{+}=-\frac{1}{2}\,\delta_{\fl{A}}{}^{\fl{B}}\delta^{\fl{IJ}}\,,\\
 		\end{cases} \\[5pt]
-		X_{(\mathbf{70},\mathbf{1});(\mathbf{1},\mathbf{3})}:&\  X_{\fl{IJKL};++} = -\frac{\lambda}{12\sqrt{6}}\,\varepsilon_{\fl{IJKL}}.
-	\end{aligned}
+		X_{(\mathbf{70},\mathbf{1});(\mathbf{1},\mathbf{3})}:&\  X_{\fl{IJKL};++} = -\frac{\lambda}{12\sqrt{6}}\,\varepsilon_{\fl{IJKL}}\,.
+	\end{split}
 \end{equation}
-With this embedding tensor, the potential~\eqref{eq:3dpotential} is stabilized at the scalar origin for $\lambda=4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$. We fix this value in the following.
+With this embedding tensor, the potential~\eqref{eq:3dpotential} has a vacuum at the scalar origin when $\lambda=4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$. We choose this value of $\lambda$ from here onwards. \EM{Presumably condition is on $\lambda^2$ and the sign of $\lambda$ is fixed by SUSY (which we can ignore)?}
 
 % \EM{Give embedding tensor components wrt the 3-d basis used for the moduli}\\
 % \EM{Vacuum condition for $\lambda$}\\
 % \EM{SUSY AdS$_3$ vacuum in 10-d}
-
-\paragraph{} At $\lambda=4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$, the three-dimensional solution described by the embedding tensor~\eqref{eq:embeddingtensor@origin} corresponds to the consistent truncation of the pure NSNS ten-dimensional solution~\cite{deBoer:1999gea}
-\begin{equation}
-	\begin{aligned}
-		\d s^{2} &= \ell_{\rm AdS}^{2}\,\d s^{2}\left({\rm AdS}_{3}\right) + \alpha^{2}\,\d s^{2}\big(S^{3}\big)+\d s^{2}\big(\ts{S}^{3}\big)+\d z^{2},\\
-		H_{(3)} &= 2\left(\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}})+\alpha^{2}\,{\rm Vol}\big(S^{3}\big)+{\rm Vol}\big(\ts{S}^{3}\big)\right),
-	\end{aligned}
-\end{equation}
-with $H_{(3)} = \d B_{(2)}$ and
-\begin{equation}
-	\ell_{\rm AdS}^{2} = \frac{\alpha^{2}}{1+\alpha^{2}}.
-\end{equation}
-The $S^{1}$ coordinate $z$ has periodicity $z\rightarrow z+2\pi$.
-
-\paragraph{}
-The 3d solution preserves ${\cal N}=(4,4)$ supercharges, with isometry group ${\cal G}=D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R}$, \textit{i.e.} two copies of the large ${\cal N}=4$ supergroup. The even part of $D^{1}(2,1;\alpha)$ is isomorphic to ${\rm SL}(2,\mathbb{R})\times{\rm SO}(3)\times\ts{{\rm SO}(3)}$ and the bosonic isometries of the ${\rm AdS}_{3}\times S^{3}\times\ts{S}^{3}$ background are built from the even part of ${\cal G}$. The ${\rm AdS}_{3}$ isometry group is ${\rm SO}(2,2)\simeq{\rm SL}(2,\mathbb{R})_{\rm L}\times{\rm SL}(2,\mathbb{R})_{\rm R}$, and the factors ${\rm SO}(3)_{\rm L}\times{\rm SO}(3)_{\rm R}\times\ts{{\rm SO}(3)}_{\rm L}\times\ts{{\rm SO}(3)}_{\rm R}\simeq{\rm SO}(4)\times\ts{SO(4)}$ combine into the isometry groups of the two spheres. The spectrum organizes into multiplets of ${\cal G}$, made out of products of long representations $[\ell,\ts{\ell}]$ of $D^{1}(2,1;\alpha)$ (see app.~\ref{app:d21a} for a review of the representations of $D^{1}(2,1;\alpha)$). Explicitly, the spectrum is~\cite{Eberhardt:2017fsi}
-\begin{equation} \label{eq:spectrumorigin}
-	\bigoplus_{\ell,\ts{\ell}\geq0} [\ell,\ts{\ell}]\otimes[\ell,\ts{\ell}] \ \ominus\ [0,0]_{\rm s} \otimes [0,0]_{\rm s}.
-\end{equation}
-In each factor the lowest conformal dimension is
-\begin{equation}
-	h_{\rm L} = h_{\rm R} = -\frac{1}{2} + \frac{1}{2}\sqrt{1+\frac{4\,\ell(\ell+1)+4\,\alpha^{2}\,\ts{\ell}(\ts{\ell}+1)+(2\pi n)^{2}}{1+\alpha^{2}}},
-\end{equation}
-with $n$ corresponding to the $S^{1}$ harmonics, and the lowest conformal dimension of $[\ell,\ts{\ell}]\otimes[\ell,\ts{\ell}]$ is then
-\begin{equation} \label{eq:confdims3s3s1}
-	\Delta_{\ell,\,\ts{\ell},\,n} = h_{\rm L} + h_{\rm R} = - 1 + \sqrt{1+\frac{4\,\ell(\ell+1)+4\,\alpha^{2}\,\ts{\ell}(\ts{\ell}+1)+(2\pi n)^{2}}{1+\alpha^{2}}}.
-\end{equation}
- For $n=0$, the representations get shortened whenever $\ell = \ts{\ell}$. The spectrum at the consistent truncation is then the one of ref.~\cite{Hohm:2005ui}. It corresponds to $\ell=\ts{\ell}=n=0$ in eq.~\eqref{eq:spectrumorigin}:
- \begin{equation} \label{eq:CTmultorigin}
- 	[0,0]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \ \oplus \ [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [0,0]_{\rm s} \ \oplus \ [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}.
- \end{equation}
- The first two terms build the supergravity multiplet, each of them carrying one spin-2 field, four gravitini, seven vectors and four spin-$\nicefrac{1}{2}$ fields, all massless. The only propagating degrees of freedom are in $[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}\otimes[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}$ (see the details in the tab.~4 of ref.~\cite{Hohm:2005ui}).
 
 %, which transform under the subgroup $\SL{6} \times \SL{2} \times \mathbb{R}^+_{IIB} \subset \En{7}$ as $\mathbf{\left(1,2\right)_{6}} \subset \mathbf{133}$
 
@@ -844,19 +816,53 @@ with $n$ corresponding to the $S^{1}$ harmonics, and the lowest conformal dimens
 
 \section{Moduli of \texorpdfstring{AdS$_3 \times S^3 \times S^3 \times S^1$}{AdS3xS3xS3xS1}} \label{s:Moduli}
 
-\subsection{Moduli in gauged supergravity}
-We identified a 11-parameter family of solutions, connected to the origin and given by the \EE coset representative \CE{($\fl{28}\leftrightarrow28$ compared to the code, I think we made a mistake and confused down and up indices)}
+\subsection{The undeformed ${\cal N}=(4,4)$ AdS$_3 \times S^3 \times S^3 \times S^1$ solution}
+\paragraph{} At $\lambda=4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$, the three-dimensional solution described by the embedding tensor~\eqref{eq:embeddingtensor@origin} corresponds to the consistent truncation of the pure NSNS ten-dimensional solution~\cite{deBoer:1999gea}
+\begin{equation} \label{eq:AdS3}
+	\begin{split}
+		\d s^{2} &= \ell_{\rm AdS}^{2}\,\d s^{2}\left({\rm AdS}_{3}\right) + \alpha^{2}\,\d s^{2}\big(S^{3}\big)+\d s^{2}\big(\ts{S}^{3}\big)+\d z^{2},\\
+		H_{(3)} &= 2\left(\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}})+\alpha^{2}\,{\rm Vol}\big(S^{3}\big)+{\rm Vol}\big(\ts{S}^{3}\big)\right)\,,
+	\end{split}
+\end{equation}
+with $H_{(3)} = \d B_{(2)}$ and
 \begin{equation}
-	\begin{aligned}
+	\ell_{\rm AdS}^{2} = \frac{\alpha^{2}}{1+\alpha^{2}}\,.
+\end{equation}
+The $S^{1}$ coordinate $z$ has periodicity $z\rightarrow z+2\pi$.
+
+\paragraph{}
+The AdS$_3$ solution \eqref{eq:AdS3} preserves ${\cal N}=(4,4)$ supersymmetry, with super-isometry group ${\cal G}=D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R}$, \textit{i.e.} two copies of the large ${\cal N}=4$ supergroup. The even part of $D^{1}(2,1;\alpha)$ is isomorphic to ${\rm SL}(2,\mathbb{R})\times{\rm SO}(3)\times\ts{{\rm SO}(3)}$ and the bosonic isometries of the ${\rm AdS}_{3}\times S^{3}\times\ts{S}^{3}$ background are built from the even part of ${\cal G}$. The ${\rm AdS}_{3}$ isometry group is ${\rm SO}(2,2)\simeq{\rm SL}(2,\mathbb{R})_{\rm L}\times{\rm SL}(2,\mathbb{R})_{\rm R}$, and the factors ${\rm SO}(3)_{\rm L}\times{\rm SO}(3)_{\rm R}\times\ts{{\rm SO}(3)}_{\rm L}\times\ts{{\rm SO}(3)}_{\rm R}\simeq{\rm SO}(4)\times\ts{SO(4)}$ combine into the isometry groups of the two spheres. The spectrum organizes into multiplets of ${\cal G}$, made out of products of long representations $[\ell,\ts{\ell}]$ of $D^{1}(2,1;\alpha)$ (see app.~\ref{app:d21a} for a review of the representations of $D^{1}(2,1;\alpha)$). Explicitly, the spectrum is~\cite{Eberhardt:2017fsi}
+\begin{equation} \label{eq:spectrumorigin}
+	\bigoplus_{\ell,\ts{\ell}\geq0} [\ell,\ts{\ell}]\otimes[\ell,\ts{\ell}] \ \ominus\ [0,0]_{\rm s} \otimes [0,0]_{\rm s}\,.
+\end{equation}
+In each factor the lowest conformal dimension is
+\begin{equation}
+	h_{\rm L} = h_{\rm R} = -\frac{1}{2} + \frac{1}{2}\sqrt{1+\frac{4\,\ell(\ell+1)+4\,\alpha^{2}\,\ts{\ell}(\ts{\ell}+1)+(2\pi n)^{2}}{1+\alpha^{2}}}\,,
+\end{equation}
+with $n$ corresponding to the $S^{1}$ harmonics, and the lowest conformal dimension of $[\ell,\ts{\ell}]\otimes[\ell,\ts{\ell}]$ is then
+\begin{equation} \label{eq:confdims3s3s1}
+	\Delta_{\ell,\,\ts{\ell},\,n} = h_{\rm L} + h_{\rm R} = - 1 + \sqrt{1+\frac{4\,\ell(\ell+1)+4\,\alpha^{2}\,\ts{\ell}(\ts{\ell}+1)+(2\pi n)^{2}}{1+\alpha^{2}}}\,.
+\end{equation}
+For $n=0$, the representations get shortened whenever $\ell = \ts{\ell}$. The spectrum at the consistent truncation is then the one of ref.~\cite{Hohm:2005ui}. It corresponds to $\ell=\ts{\ell}=n=0$ in eq.~\eqref{eq:spectrumorigin}:
+\begin{equation} \label{eq:CTmultorigin}
+	[0,0]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \ \oplus \ [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [0,0]_{\rm s} \ \oplus \ [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s} \otimes [\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}\,.
+\end{equation}
+The first two terms build the supergravity multiplet, each of them carrying one spin-2 field, four gravitini, seven vectors and four spin-$\nicefrac{1}{2}$ fields, all massless. The only propagating degrees of freedom are in $[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}\otimes[\nicefrac{1}{2},\nicefrac{1}{2}]_{\rm s}$ (see the details in table 4 of \cite{Hohm:2005ui}).
+
+\subsection{Moduli in gauged supergravity}
+Surprisingly, within the 3-dimensional gauged supergravity, the AdS$_3$ vacuum contains a large moduli space, which even has supersymmetric submanifolds. In particular, without any attempts at being exhaustive \EM{(too strong? does this make us sound lazy?)}, we identified a continuous 11-parameter family of AdS$_3$ solutions, connected to the origin and given by the \EE coset representative \CE{($\fl{28}\leftrightarrow28$ compared to the code, I think we made a mistake and confused down and up indices)}
+\begin{equation} \label{eq:FullDeformation}
+	\begin{split}
 		{\cal V}_{\rm def} &= \exp\left[\sqrt{2}\left(\chi_{1}\big(t_{(\mathbf{28},\mathbf{2})}\big)_{23,-}+\chi_{2}\big(t_{(\mathbf{28},\mathbf{2})}\big)_{81,-}+\ts{\chi}_{1}\big(t_{(\mathbf{\fl{28}},\mathbf{2})}\big)_{56,-}+\ts{\chi}_{2}\big(t_{(\mathbf{\fl{28}},\mathbf{2})}\big)_{74,-}\right)\right] \\
 		& \times \exp\left[\sqrt{2}\left(\zeta_{1}\big(t_{(\mathbf{\fl{28}},\mathbf{2})}\big)_{23,+}+\zeta_{2}\big(t_{(\mathbf{\fl{28}},\mathbf{2})}\big)_{81,+}+\ts{\zeta}_{1}\big(t_{(\mathbf{28},\mathbf{2})}\big)_{56,+}+\ts{\zeta}_{2}\big(t_{(\mathbf{28},\mathbf{2})}\big)_{74,+}\right)\right] \\
 		& \times \exp\bigg[\Omega\Big(\big(t_{(\mathbf{63},\mathbf{1})}\big)_{1}{}^{1}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{2}{}^{2}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{3}{}^{3}+\big(t_{(\mathbf{63},\mathbf{1})}\big)_{8}{}^{8}\Big)\\
 		&\ \qquad+\ts{\Omega}\Big(\big(t_{(\mathbf{63},\mathbf{1})}\big)_{4}{}^{4}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{5}{}^{5}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{6}{}^{6}+\big(t_{(\mathbf{63},\mathbf{1})}\big)_{7}{}^{7}\Big)\bigg] \\
-		& \times \exp\left[\ln(T)\left(\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{I}{}^{I}-\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{A}{}^{A}-\frac{1}{2}\,\big(t_{(\mathbf{1},\mathbf{3})}\big)_{1}\right)\right],
-	\end{aligned}
+		& \times \exp\left[\psi\left(\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{I}{}^{I}-\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{A}{}^{A}-\frac{1}{2}\,\big(t_{(\mathbf{1},\mathbf{3})}\big)_{1}\right)\right]\,,
+	\end{split}
 \end{equation}
-where we denoted the generators according to the decomposition~\eqref{eq:248decompoinSL8}. The $(\chi_{i},\ts{\chi}_{i},\zeta_{i},\ts{\zeta}_{i})$ deformations excite the $(\mathbf{6},\mathbf{1})_{2}$ and $(\mathbf{1},\mathbf{6})_{2}$ generators in the branching~\eqref{eq:56inSL4SL4}. \CE{(Describe what we do for $T$? I think there is some freedom in the coeff there.)} \CE{(Describe what we do for $\Omega$? Check coeff with code. Possible to change the signs to $(+,+,-,-)$, but very long to compute uplift.)}
+where we denoted the generators according to the decomposition~\eqref{eq:248decompoinSL8}. The $(\chi_{i},\ts{\chi}_{i},\zeta_{i},\ts{\zeta}_{i})$ deformations excite the $(\mathbf{6},\mathbf{1})_{2}$ and $(\mathbf{1},\mathbf{6})_{2}$ generators in the branching~\eqref{eq:56inSL4SL4}. \CE{(Describe what we do for $T = \exp{\psi}$? I think there is some freedom in the coeff there.)} \CE{(Describe what we do for $\Omega$? Check coeff with code. Possible to change the signs to $(+,+,-,-)$, but very long to compute uplift.)}
 
+\EM{Kinetic terms? Might be interesting for the S-fold deformations to see what kind of metric we have on the moduli space.}
 
 % \paragraph{S-fold like deformations} Scalar spectrum:
 % \begin{equation}
@@ -878,115 +884,139 @@ where we denoted the generators according to the decomposition~\eqref{eq:248deco
 
 
 \subsection{Moduli in 10 dimensions}
-The seven form flux is unaffected by the deformations.
+The consistent truncation Ansatz we constructed in this paper can be used to uplift the full 11-parameter family of AdS$_3$ vacua of the 3-dimensional gauged supergravity in \eqref{eq:FullDeformation} to IIB supergravity. However, this full 11-parameter solution can quickly become unwieldy. Therefore, here we will instead focus on a few interesting subsets of deformations.
 
-\paragraph{\boldmath $(\chi, \ts{\chi}, T)$}
-Using spherical coordinates for both spheres:
+%In all cases, the internal seven form flux is unaffected by the deformations, i.e. $H_{(3)}\vert_{AdS_3}$ remains unchanged, so that we will not give it explicitly below.
+
+\paragraph{\boldmath $(\chi, \ts{\chi}, \psi)$}
+Using Hopf coordinates for both $S^3$'s we can write the 5-parameter deformation involving $(\chi_i, \ts{\chi}_i, \psi)$, $i = 1,2$, as follows:
 \begin{equation}
-	\begin{aligned}
+	\begin{split}
 		\d s^{2} &= \ell_{\rm AdS}^{2} \,\d s^{2}({\rm AdS}_{3}) +\alpha^{2}\left(\d\theta^{2} + \cos^{2}(\theta)\,\d\phi'_{1}{}^{2} + \sin^{2}(\theta)\,\d\phi'_{2}{}^{2} \right) \\
-		&\quad +\d\ts{\theta}^{2} + \cos^{2}(\ts{\theta})\,\d\ts{\phi}'_{1}{}^{2} + \sin^{2}(\ts{\theta})\,\d\ts{\phi}'_{2}{}^{2} + T^{2}\,\d z^{2}, \\[5pt]
-		H_{(3)} &= 2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}}) + 2\,\alpha^{2}\cos(\theta)\sin(\theta)\,\d\theta\wedge\d\phi'_{1}\wedge\d\phi'_{2}+ 2\cos(\ts{\theta})\sin(\ts{\theta})\,\d\ts{\theta}\wedge\d\ts{\phi}'_{1}\wedge\d\ts{\phi}'_{2},
-	\end{aligned}
+		&\quad +\d\ts{\theta}^{2} + \cos^{2}(\ts{\theta})\,\d\ts{\phi}'_{1}{}^{2} + \sin^{2}(\ts{\theta})\,\d\ts{\phi}'_{2}{}^{2} + e^{2\psi}\,\d z^{2}\,, \\[5pt]
+		H_{(3)} &= 2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}}) + 2\,\alpha^{2}\cos(\theta)\sin(\theta)\,\d\theta\wedge\d\phi'_{1}\wedge\d\phi'_{2}+ 2\cos(\ts{\theta})\sin(\ts{\theta})\,\d\ts{\theta}\wedge\d\ts{\phi}'_{1}\wedge\d\ts{\phi}'_{2}\,,
+	\end{split}
 \end{equation}
-where
+where \EM{Can we double check the $\alpha$'s? I'm slightly confused}
 \begin{equation}
 	\begin{cases}
-		\displaystyle \d\phi'_{1} = \d\phi_{1} + \frac{1}{\alpha}\,\chi_{1}\,\d z,\\[6pt]
-		\displaystyle \d\phi'_{2} = \d\phi_{2} + \frac{1}{\alpha}\,\chi_{2}\,\d z,
+		\displaystyle \d\phi'_{1} = \d\phi_{1} + \frac{1}{\alpha}\,\chi_{1}\,\d z\,,\\[6pt]
+		\displaystyle \d\phi'_{2} = \d\phi_{2} + \frac{1}{\alpha}\,\chi_{2}\,\d z\,,
 	\end{cases}\qquad
 	\begin{cases}
-		\d\ts{\phi}'_{1} = \d\ts{\phi}_{1} + \ts{\chi}_{1}\,\d z,\\[6pt]
-		\d\ts{\phi}'_{2} = \d\ts{\phi}_{2} + \ts{\chi}_{2}\,\d z.
+		\d\ts{\phi}'_{1} = \d\ts{\phi}_{1} + \ts{\chi}_{1}\,\d z\,,\\[6pt]
+		\d\ts{\phi}'_{2} = \d\ts{\phi}_{2} + \ts{\chi}_{2}\,\d z\,.
 	\end{cases}
 \end{equation}
 
-This deformation breaks $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. Concerning the spectrum, the conformal dimension of each physical field (\textit{c.f.} eq.~\eqref{eq:confdims3s3s1}) get shifted by replacing
+This 5-parameter deformation generically breaks $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. The $\chi_i$, $\ts{\chi}_i$, $i = 1, 2$ deformations are analogous to the two-parameter ``flat deformations'' \cite{Guarino:2021hrc} of AdS$_4 \times S^5 \times S^1$ \cite{Giambrone:2021zvp,Giambrone:2021wsm}. From the 4-dimensional perspective obtained after reducing on $S^3 \times S^3$, these deformations correspond to turning on Wilson lines for the $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ gauge fields along $S^1$. The $\psi$ deformation is even simpler: it just rescales the $S^1$ radius. These $\chi_i$, $\ts{\chi}_i$, $\psi$ deformations are completely analogous to $\mathbb{C}$-structure deformations of $T^2$, with the $\chi_i$, $\ts{\chi}_i$ corresponding to the real part and the $\psi$ deformation to the imaginary part of the $\mathbb{C}$-structure deformation.
+
+Therefore, these deformations affect the Kaluza-Klein spectrum as follows: the conformal dimension of each physical field (\textit{c.f.} eq.~\eqref{eq:confdims3s3s1}) get shifted by replacing
 \begin{equation} \label{eq:confdimshiftchi}
-	2\pi n\longrightarrow \frac{2\pi n}{T} + \frac{1}{2T}\Big((q_{\rm L}+q_{\rm R})\,\chi_{1}+(q_{\rm L}-q_{\rm R})\,\chi_{2}+ \alpha\,(\ts{q}_{\rm L}+\ts{q}_{\rm R})\,\ts{\chi}_{1}+ \alpha\,(\ts{q}_{\rm R}-\ts{q}_{\rm L})\,\ts{\chi}_{2}\Big),
+	2\pi n\longrightarrow e^{-2\psi} \left[ 2\pi n + \Big((q_{\rm L}+q_{\rm R})\,\chi_{1}+(q_{\rm L}-q_{\rm R})\,\chi_{2}+ \alpha\,(\ts{q}_{\rm L}+\ts{q}_{\rm R})\,\ts{\chi}_{1}+ \alpha\,(\ts{q}_{\rm R}-\ts{q}_{\rm L})\,\ts{\chi}_{2}\Big) \right]\,,
 \end{equation}
-where the $q$ denote the charges under the different ${\rm U}(1)$.
+where the $q$ denote the charges under the different ${\rm U}(1)$. \EM{Somewhere here, we should give the character for all multiplets.}
 
 Eq.~\eqref{eq:confdimshiftchi} can be used to search for SUSY enhancement points within the 5-parameter landscape. At the undeformed origin, the massless gravitini sit in the two first multiplets in eq.~\eqref{eq:CTmultorigin} with ${\rm SO}(3)_{\rm L}\times\ts{{\rm SO}(3)}_{\rm L}\times{\rm SO}(3)_{\rm R}\times\ts{{\rm SO}(3)}_{\rm R}$ spins
 \begin{equation}
-	\big(\nicefrac{1}{2},\nicefrac{1}{2};0,0\big) \quad {\rm and} \quad \big(0,0;\nicefrac{1}{2},\nicefrac{1}{2}\big).
+	\big(\nicefrac{1}{2},\nicefrac{1}{2};0,0\big) \quad {\rm and} \quad \big(0,0;\nicefrac{1}{2},\nicefrac{1}{2}\big)\,.
 \end{equation}
 and conformal dimension $\Delta=\nicefrac{3}{2}$. Turning on the deformation leads to a split into four groups of two modes, with the following ${\rm U}(1)_{\rm L}\times\ts{{\rm U}(1)}_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm R}$ charges and conformal dimensions:
 \begin{equation}
-	\begin{aligned}
-		\left(\pm1,\pm1;0,0\right):\quad \Delta=\frac{1}{2}+\sqrt{1+\frac{\left(\chi_{1}+\chi_{2}+\alpha\,\big(\ts{\chi}_{1}-\ts{\chi}_{2}\right)^{2}\big)}{4\,T^{2}(1+\alpha^{2})}}, \\
-		\left(\pm1,\mp1;0,0\right):\quad \Delta=\frac{1}{2}+\sqrt{1+\frac{\left(\chi_{1}+\chi_{2}-\alpha\,\big(\ts{\chi}_{1}-\ts{\chi}_{2}\right)^{2}\big)}{4\,T^{2}(1+\alpha^{2})}}, \\
-		\left(0,0;\pm1,\pm1\right):\quad \Delta=\frac{1}{2}+\sqrt{1+\frac{\left(\chi_{1}-\chi_{2}+\alpha\,\big(\ts{\chi}_{1}+\ts{\chi}_{2}\right)^{2}\big)}{4\,T^{2}(1+\alpha^{2})}}, \\
-		\left(0,0;\pm1,\mp1\right):\quad \Delta=\frac{1}{2}+\sqrt{1+\frac{\left(\chi_{1}-\chi_{2}+\alpha\,\big(\ts{\chi}_{1}+\ts{\chi}_{2}\right)^{2}\big)}{4\,T^{2}(1+\alpha^{2})}}.
-	\end{aligned}
+	\begin{split}
+		\left(\pm1,\pm1;0,0\right):\quad \Delta=\frac{1}{2}+\sqrt{1 + \frac{\left(%2\pi n +
+		\chi_{1}+\chi_{2}+\alpha\,\big(\ts{\chi}_{1}-\ts{\chi}_{2}\big)\right)^{2}}{4\, e^{2\psi}\, (1+\alpha^{2})}}\,, \\
+		\left(\pm1,\mp1;0,0\right):\quad \Delta=\frac{1}{2}+\sqrt{1 + \frac{\left(%2\pi n +
+		\chi_{1}+\chi_{2}-\alpha\,\big(\ts{\chi}_{1}-\ts{\chi}_{2}\big)\right)^{2}}{4\, e^{2\psi}\, (1+\alpha^{2})}}\,, \\
+		\left(0,0;\pm1,\pm1\right):\quad \Delta=\frac{1}{2}+\sqrt{1 + \frac{\left(%2\pi n +
+		\chi_{1}-\chi_{2}+\alpha\,\big(\ts{\chi}_{1}+\ts{\chi}_{2}\big)\right)^{2}}{4\, e^{2\psi}\, (1+\alpha^{2})}}\,, \\
+		\left(0,0;\pm1,\mp1\right):\quad \Delta=\frac{1}{2}+\sqrt{1 + \frac{\left(%2\pi n + 
+		\chi_{1}-\chi_{2} - \alpha\,\big(\ts{\chi}_{1}+\ts{\chi}_{2}\big)\right)^{2}}{4\, e^{2\psi}\, (1+\alpha^{2})}}\,.
+	\end{split}
 \end{equation}
-SUSY enhancement points are then given by combinations of the parameters that leave some modes invariant with $\Delta=\nicefrac{3}{2}$. The different possibilities are listed below. \CE{(Shall we give the multiplets? At least for the truncation?)}
+\EM{There was some typo with the $^2$ only acting on the $\alpha$ bracket.}\\
+SUSY enhancement points are then given by combinations of the parameters that yield $\Delta = \nicefrac32$. This can either happen by leaving some modes with $\Delta=\nicefrac{3}{2}$ invariant, or where some other, originally massive gravitini outside the consistent truncation, i.e. with conformal dimension given by \eqref{eq:confdims3s3s1} with $n \neq 0$, obain $\Delta = \nicefrac32$. The different possibilities are listed below. \CE{(Shall we give the multiplets? At least for the truncation?)}
 
 \begin{itemize}
 	\item {\boldmath ${\cal N}=2$} The four-dimensional hypersurfaces
-	\begin{equation}
-		\chi_{2} = \chi_{1} \pm\alpha\,(\ts{\chi}_{1}+\ts{\chi}_{2}) \quad {\rm or}\quad \chi_{2} = -\chi_{1} \pm\alpha\,(\ts{\chi}_{1}-\ts{\chi}_{2}),
+	\begin{equation} \label{eq:N2}
+		\chi_{2} = \chi_{1} \pm\alpha\,(\ts{\chi}_{1}+\ts{\chi}_{2})% + 2\pi k 
+		\quad {\rm or}\quad \chi_{2} = -\chi_{1} \pm\alpha\,(\ts{\chi}_{1}-\ts{\chi}_{2})% + 2\pi k \,, \qquad k \in \mathbb{Z}
+		\,,
 	\end{equation}
-	give enhancements to ${\cal N}=(2,0)$ and ${\cal N}=(0,2)$, respectively. The spectrum then organizes into multiplets of $\SU{1\vert1,1}$.
+	give enhancements to ${\cal N}=(2,0)$ and ${\cal N}=(0,2)$, respectively. On this hypersurface \eqref{eq:N2}, the spectrum then organizes into multiplets of $\SU{1\vert1,1}$.
 	\item {\boldmath ${\cal N}=4$} Choosing
-	\begin{equation}
+	\begin{equation} \label{eq:N4Large}
 		\begin{cases}
-			\chi_{2} = \chi_{1},\\
-			\ts{\chi}_{2} = -\ts{\chi}_{1},
+			\chi_{2} = \chi_{1}\,,\\% + 2\pi k\,,\\
+			\ts{\chi}_{2} = -\ts{\chi}_{1}\,,% + 2\pi l / \alpha \,,
 		\end{cases}
-		\quad {\rm or}\quad
+		\quad {\rm or }\quad
 		\begin{cases}
-			\chi_{2} = - \chi_{1},\\
-			\ts{\chi}_{2} = \ts{\chi}_{1},
-		\end{cases}
+			\chi_{2} = - \chi_{1}\,,\\% + 2\pi k\,,\\
+			\ts{\chi}_{2} = \ts{\chi}_{1}\,,% + 2\pi l / \alpha \,,
+		\end{cases}% \qquad k, l \in \mathbb{Z} \,,
 	\end{equation}
-	leads to enhancements to ${\cal N}=(4,0)$ and ${\cal N}=(0,4)$, respectively. On these three-dimensional hyper-surfaces, the isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum reorganizes into multiplets of $D^{1}(2,1;\alpha)$. Another possibility is to set
-	\begin{equation}
+	leads to enhancements to ${\cal N}=(4,0)$ and ${\cal N}=(0,4)$, respectively. On these three-dimensional hyper-surfaces \eqref{eq:N4Large}, the isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum reorganizes into multiplets of $D^{1}(2,1;\alpha)$.
+	
+	Another possibility is to set
+	\begin{equation} \label{eq:N4Small}
 		\begin{cases}
-			\ts{\chi}_{1} = \pm \chi_{1}/\alpha,\\
-			\ts{\chi}_{2} = \mp \chi_{2}/\alpha,
+			\ts{\chi}_{1} = \pm \chi_{1}/\alpha\,,\\% + 2\pi k \,,\\
+			\ts{\chi}_{2} = \mp \chi_{2}/\alpha\,,% + 2\pi l\,,
 		\end{cases}
 		\quad {\rm or}\quad
 		\begin{cases}
-			\ts{\chi}_{1} = \pm \chi_{2}/\alpha,\\
-			\ts{\chi}_{2} = \mp \chi_{1}/\alpha,
-		\end{cases}
+			\ts{\chi}_{1} = \pm \chi_{2}/\alpha\,,\\% + 2\pi k\,,\\
+			\ts{\chi}_{2} = \mp \chi_{1}/\alpha\,,% + 2\pi l\,,
+		\end{cases}% \qquad k, l \in \mathbb{Z} \,,
 	\end{equation}
 	giving 3-parameter families of ${\cal N}=(2,2)$ solutions, with multiplets of $\SU{1\vert1,1}_{\rm L}\times\SU{1\vert1,1}_{\rm R}$.
 	\item {\boldmath ${\cal N}=6$} Finally, for
-	\begin{equation}
+	\begin{equation} \label{eq:N6}
 		\begin{cases}
-			\chi_{2} = \chi_{1},\\
-			\ts{\chi}_{1} = \pm \chi_{1}/\alpha,\\
-			\ts{\chi}_{2} = \mp \chi_{1}/\alpha,
+			\chi_{2} = \chi_{1}\,,\\% + 2\pi k\,,\\
+			\ts{\chi}_{1} = %\left(
+			\pm \chi_{1}% + 2 \pi l \right)
+			/\alpha\,,\\
+			\ts{\chi}_{2} = %\left(
+			\mp \chi_{1}% + 2 \pi m \right)
+			/\alpha\,,
 		\end{cases}
 		\quad {\rm or}\quad
 		\begin{cases}
-			\chi_{2} = -\chi_{1},\\
-			\ts{\chi}_{1} = \pm \chi_{1}/\alpha,\\
-			\ts{\chi}_{2} = \mp \chi_{1}/\alpha,
-		\end{cases}
+			\chi_{2} = -\chi_{1}\,,\\% + 2\pi k\,,\\
+			\ts{\chi}_{1} = %\left(
+			\pm \chi_{1}% + 2 \pi l\right) 
+			/\alpha\,,\\
+			\ts{\chi}_{2} = %\left(
+			\mp \chi_{1}% + 2\pi m \right)
+			/\alpha\,,
+		\end{cases}% \qquad k, l, m \in \mathbb{Z} \,,
 	\end{equation}
 	there are enhancements to ${\cal N}=(4,2)$ and ${\cal N}=(2,4)$, respectively. The isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum is then given by multiplets of $D^{1}(2,1;\alpha)_{\rm L, R}\times\SU{1\vert1,1}_{\rm R,L}$.
 \end{itemize}
 
+In the above cases, it is easy to see from \eqref{eq:confdimshiftchi} that the spectrum  is invariant under $\chi_i \rightarrow \chi_i + 2\pi k_i$, $\ts{\chi}_i \rightarrow \ts{\chi}_i + 2\pi \ts{k}_i/\alpha$, for $k_i$, $\ts{k}_i \in \mathbb{Z}$, with the SUSY enhancements also occurring if the relations \eqref{eq:N2}, \eqref{eq:N4Large}, \eqref{eq:N4Small} or \eqref{eq:N6} are satisfied up to integer shifts. We will return to this point below in section \ref{s:Compact}, when discussing compactness of the moduli space.
 
-\paragraph{\boldmath $(\zeta,\ts{\zeta},T)$}
+For generic values of $\chi_i$, $\ts{\chi}_i$, the AdS$_3$ vacuum will be completely non-supersymmetric. However, it is easy to see from inspection of the spectrum \eqref{eq:confdims3s3s1} and \eqref{eq:confdimshiftchi} that the spectrum is bounded from below by the masses of the 3-dimensional gauged supergravity modes at the ${\cal N}=(4,4)$ supersymmetric origin. Therefore, these non-supersymmetric AdS$_3$ vacua are still perturbatively stable within IIB supergravity and, similarly to \cite{Giambrone:2021wsm} suggest that there may be a dual non-supersymmetric conformal manifold if there are no instabilities beyond supergravity, such as non-perturbative instabilities triggered by brane nucleation or non-vanishing $\beta$-functions of marginal multi-trace operators \EM{add citations}.
+
+\paragraph{\boldmath $(\zeta,\ts{\zeta},\psi)$}
 Again with spherical coordinates:
 \begin{equation}
-	\begin{aligned}
+	\begin{split}
 		\d s^{2} &= \ell_{\rm AdS}^{2}\,\d s^{2}\left({\rm AdS}_{3}\right) -\Delta\,\d z^{2}\\
 		&+ \alpha^{2}\Big[\d\theta^{2} + \Delta\left(\cos^{2}(\theta)\,\d\phi_{1}^{2}+\sin^{2}(\theta)\,\d\phi_{2}^{2}\right)\Big]+\d\ts{\theta}^{2} + \Delta\left(\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1}^{2}+\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}^{2}\right)\\
-		&+\Delta\,T^{2}\,\cos^{2}(\theta)\cos^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{2}\,\d\phi_{1}-\zeta_{2}\,\d\ts{\phi}_{1}\right)^{2}+\Delta\,T^{2}\,\sin^{2}(\theta)\sin^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{1}\,\d\phi_{2}-\zeta_{1}\,\d\ts{\phi}_{2}\right)^{2}\\
-		&+\Delta\,T^{2}\,\cos^{2}(\theta)\sin^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{1}\,\d\phi_{1}-\zeta_{2}\,\d\ts{\phi}_{2}\right)^{2}+\Delta\,T^{2}\,\sin^{2}(\theta)\cos^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{2}\,\d\phi_{2}-\zeta_{1}\,\d\ts{\phi}_{1}\right)^{2}\\
-		&-2\,\alpha\,\Delta\,T^{2}\left(\zeta_{1}\,\cos^{2}(\theta)\,\d\phi_{1}+\zeta_{2}\,\sin^{2}(\theta)\,\d\phi_{2}\right)\left(\ts{\zeta}_{1}\,\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1}+\ts{\zeta}_{2}\,\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}\right)\\
-		&+\Delta\,T^{2}\,\cos^{2}(\theta)\left(\alpha\,\zeta_{1}\,\d\phi_{1}+\d z\right)^{2}+\Delta\,T^{2}\,\sin^{2}(\theta)\left(\alpha\,\zeta_{2}\,\d\phi_{2}+\d z\right)^{2}\\
-		&+\Delta\,T^{2}\,\cos^{2}(\ts{\theta})\left(\ts{\zeta}_{1}\,\d\ts{\phi}_{1}-\d z\right)^{2}+\Delta\,T^{2}\,\sin^{2}(\ts{\theta})\left(\ts{\zeta}_{2}\,\d\ts{\phi}_{2}-\d z\right)^{2},
-	\end{aligned}
+		&+\Delta\,e^{2\psi}\,\cos^{2}(\theta)\cos^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{2}\,\d\phi_{1}-\zeta_{2}\,\d\ts{\phi}_{1}\right)^{2}+\Delta\,e^{2\psi}\,\sin^{2}(\theta)\sin^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{1}\,\d\phi_{2}-\zeta_{1}\,\d\ts{\phi}_{2}\right)^{2}\\
+		&+\Delta\,e^{2\psi}\,\cos^{2}(\theta)\sin^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{1}\,\d\phi_{1}-\zeta_{2}\,\d\ts{\phi}_{2}\right)^{2}+\Delta\,e^{2\psi}\,\sin^{2}(\theta)\cos^{2}(\ts{\theta}) \left(\alpha\,\ts{\zeta}_{2}\,\d\phi_{2}-\zeta_{1}\,\d\ts{\phi}_{1}\right)^{2}\\
+		&-2\,\alpha\,\Delta\,e^{2\psi}\left(\zeta_{1}\,\cos^{2}(\theta)\,\d\phi_{1}+\zeta_{2}\,\sin^{2}(\theta)\,\d\phi_{2}\right)\left(\ts{\zeta}_{1}\,\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1}+\ts{\zeta}_{2}\,\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}\right)\\
+		&+\Delta\,e^{2\psi}\,\cos^{2}(\theta)\left(\alpha\,\zeta_{1}\,\d\phi_{1}+\d z\right)^{2}+\Delta\,e^{2\psi}\,\sin^{2}(\theta)\left(\alpha\,\zeta_{2}\,\d\phi_{2}+\d z\right)^{2}\\
+		&+\Delta\,e^{2\psi}\,\cos^{2}(\ts{\theta})\left(\ts{\zeta}_{1}\,\d\ts{\phi}_{1}-\d z\right)^{2}+\Delta\,e^{2\psi}\,\sin^{2}(\ts{\theta})\left(\ts{\zeta}_{2}\,\d\ts{\phi}_{2}-\d z\right)^{2},
+	\end{split}
 \end{equation}
 with the warp factor
 \begin{equation}
-	\Delta^{-1} = 1+T^{2}\left(\zeta_{1}^{2}\sin^{2}(\theta)+\zeta_{2}^{2}\cos^{2}(\theta)+\ts{\zeta}_{1}^{2}\sin^{2}(\ts{\theta})+\ts{\zeta}_{2}^{2}\cos^{2}(\ts{\theta})\right).
+	\Delta^{-1} = 1+e^{2\psi}\left(\zeta_{1}^{2}\sin^{2}(\theta)+\zeta_{2}^{2}\cos^{2}(\theta)+\ts{\zeta}_{1}^{2}\sin^{2}(\ts{\theta})+\ts{\zeta}_{2}^{2}\cos^{2}(\ts{\theta})\right)\,.
 \end{equation}.
 
 \CE{(Expression of $H$?)}
@@ -994,7 +1024,7 @@ with the warp factor
 \paragraph{\boldmath $(\zeta,\ts{\zeta},\Omega,\ts{\Omega})$}
 Again with spherical coordinates:
 \begin{equation}
-	\begin{aligned}
+	\begin{split}
 		\d s^{2} &= \ell_{\rm AdS}^{2}\,\d s^{2}\left({\rm AdS}_{3}\right) -\Delta\Big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\Big)\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\,\d z^{2}\\
 		&+ \alpha^{2}\Big[\d\theta^{2} + \Delta\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\Big(e^{\Omega}\cos^{2}(\theta)\,\d\phi_{1}^{2}+\sin^{2}(\theta)\,\d\phi_{2}^{2}\Big)\Big]\\
 		&+\d\ts{\theta}^{2} + \Delta\Big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\Big)\Big(\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1}^{2}+e^{\ts{\Omega}}\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}^{2}\Big)\\
@@ -1003,7 +1033,7 @@ Again with spherical coordinates:
 		&-2\,\alpha\,\Delta\left(\zeta_{1}\,\cos^{2}(\theta)\,\d\phi_{1}+e^{\Omega}\,\zeta_{2}\,\sin^{2}(\theta)\,\d\phi_{2}\right)\left(e^{\ts{\Omega}}\,\ts{\zeta}_{1}\,\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1}+\ts{\zeta}_{2}\,\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}\right)\\
 		&+\Delta\,\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\Big[\cos^{2}(\theta)\left(\alpha\,\zeta_{1}\,\d\phi_{1}+\d z\right)^{2}+e^{\Omega}\sin^{2}(\theta)\left(\alpha\,\zeta_{2}\,\d\phi_{2}+\d z\right)^{2}\Big]\\
 		&+\Delta\Big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\Big)\Big[e^{\ts{\Omega}}\cos^{2}(\ts{\theta})\left(\ts{\zeta}_{1}\,\d\ts{\phi}_{1}-\d z\right)^{2}+\sin^{2}(\ts{\theta})\left(\ts{\zeta}_{2}\,\d\ts{\phi}_{2}-\d z\right)^{2}\Big],
-	\end{aligned}
+	\end{split}
 \end{equation}
 with the warp factor
 \begin{equation}
@@ -1135,7 +1165,32 @@ Note that setting $...$ recovers the supersymmetric deformation described earlie
 %\end{equation}
 
 
-\subsection{Compactification of the moduli space}
+\subsection{Compactification of the moduli space} \label{s:Compact}
+We can use the Kaluza-Klein spectrum and the uplift of the 3-dimensional gauged supergravity models to IIB supergravity to understand properties of the dual CFTs that are obscured in the lower-dimensional supergravities. One such aspect is the compactness of the conformal manifold. Consider the deformations $\chi_i$, $\ts{\chi}_i$, which appear non-compact in 3-dimensional ${\cal N}=16$ gauged supergravity, with only the point $\chi_i = \ts{\chi}_i = 0$ having ${\cal N}=(4,4)$ supersymmetry. The subset of these deformations corresponding to the SUSY lines $\chi_1 = \chi_2 = \chi$, $\ts{\chi}_i = 0$, \EM{Is this right?} was analysed in the half-maximal theory in \cite{Eloy:2021fhc}. Again, within 3-dimensional ${\cal N}=8$ supergravity, this deformation is non-compact, and remains non-compact even after uplifting to 6-dimensional supergravity on $S^3$, with no periodicity in $\chi$ observed in the KK spectrum of the 6-dimensional solution \cite{Eloy:2021fhc}.
+
+However, from  \eqref{eq:confdims3s3s1}, \eqref{eq:confdimshiftchi}, \eqref{eq:Multiplets} we see that the full Kaluza-Klein spectrum is invariant under the shifts
+\begin{equation} \label{eq:ShiftSymmetries}
+	\begin{split}
+		\chi_i &\rightarrow \chi_i + 2\pi k_i\,, \\
+		\ts{\chi}_i &\rightarrow \ts{\chi}_i + 2\pi \ts{k}_i/\alpha \,,
+	\end{split}
+\end{equation}
+for $k_i$, $\ts{k}_i \in \mathbb{Z}$. In these cases, higher KK modes on the $S^1$ outside the ${\cal N}=16$ truncation replace those within the consistent truncation. Therefore, even though neither the 3-dimensional gauged supergravity, nor 6-dimensional supergravity is invariant under these shifts, upon lifting to the full 10-dimensional IIB theory, the higher KK modes on $S^1$ restore the invariance under the shifts, just as in the analogous deformations studied in AdS$_4 \times S^5 \times S^1$ \cite{Giambrone:2021zvp,Giambrone:2021wsm}. This highlights the importance of the $S^1$ direction, which is often ignored in holographic applications \EM{Maybe remove this last sentence?}.
+
+%One interesting aspect that we observe is that the invariance of the KK spectrum under the shifts requires the inclusion of the $S^1$ direction. A subset of the $\chi_i$, $\ts{\chi}_i$ moduli, corresponding to the SUSY line $\chi_1 = \chi_2 = \chi$, $\ts{\chi}_i = 0$, was analysed in the half-maximal theory in \cite{Eloy:2021fhc}. The deformation $\chi$ is both non-compact in the 3-dimensional half-maximal gauged supergravity and in its 6-dimensional uplift, with no periodicity in $\chi$ observed in the KK spectrum of the 6-dimensional solution \cite{Eloy:2021fhc}. However, as we have shown, the full uplift to 10 dimensions compactifies the moduli space, thanks to the $S^1$ direction, which is often ignored in holographic applications \EM{Maybe forget this last sentence
+
+The compactification of the moduli space in 10 dimensions can also be understood geometrically. Each of $\chi_i$, $\ts{\chi}_i$ corresponds to the real part of the complex structure modulus of a $T^2$ fibration with local coordinates $\phi_i$, $\ts{\phi}_i$ together with $z$, respectively. Explicitly, the complex structure is given by \EM{Not sure about this, see comment about $\alpha$ above}
+\begin{equation} \label{eq:T2CStructure}
+	\tau = i\,\frac{e^\psi}{\alpha} + \frac1\alpha \chi \,.
+\end{equation}
+Under this identification, the shifts \eqref{eq:ShiftSymmetries} correspond to Dehn twists, or $T$-transformations, of the torus, which belong to the modular group $\SL{2,\mathbb{Z}}$, just as for AdS$_4 \times S^5 \times S^1$ \cite{Giambrone:2021zvp,Giambrone:2021wsm}.
+
+Given the interpretation of the shifts \eqref{eq:ShiftSymmetries} as $T$-transformations of a $T^2$-fibration, it is natural to ask whether $S$-transformations of these $T^2$ would also leave the AdS$_3 \times S^3 \times S^3 \times S^1$ solution invariant. The $S$-transformation acts on the moduli as
+\begin{equation} \label{eq:Stransform}
+	\psi \rightarrow - \psi \,,
+\end{equation}
+thus inverting the radius of the $S^1$. The KK spectrum \eqref{eq:confdims3s3s1}, \eqref{eq:confdimshiftchi} is clearly not invariant under this transformation. However, the $S$-transformation takes us out of the regime of validity of supergravity, with new string degrees of freedom potentially becoming light. Indeed, in this case, after the transformation \eqref{eq:Stransform}, strings wound around $S^1$ will become light, and one would expect them to replace the KK modes that have become heavy, realising the T-duality on $S^1$. Thus, in the full IIB string theory, the moduli space of each $T^2$ fibration with complex structure \eqref{eq:T2CStructure} should be identified under the M\"{o}bius group $\SL{2,\mathbb{Z}}$. \EM{Can we check the T-dual explicitly? Maybe we need a different gauge choice for $C_6$ so that it does not depend on $z$. Can we describe the $T^4 \times S^1$ a bit better instead of as a collection of $T^2$'s?}
+
 
 \section{Conclusions} \label{s:Conclusions}
 
