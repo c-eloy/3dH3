@@ -377,7 +377,7 @@ The embedding tensor is most nicely expressed once projected on the adjoint repr
 \begin{equation} \label{eq:symembeddingtensor}
 	\begin{split}
 		X_{\fl{MN}} = -\frac{1}{60}\,X_{\fl{MP}}{}^{\fl{Q}}\,f_{\fl{NQ}}{}^{\fl{P}} &= - 2\,\rho^{-1}\,\Gamma_{(\fl{MN})} - \rho^{-1}\,\Gamma_{\fl{P}(\fl{M}}{}^{\fl{Q}}\,f_{\fl{N})\fl{Q}}{}^{\fl{P}} + \frac12 f_{\ov{M}\ov{N}}{}^{\ov{P}}\, \xi_{\ov{P}} \\
-		&= - 14\,\rho^{-1}\,(\mathbb{P}_{3875})_{\fl{MN}}{}^{\fl{PQ}}\,\Gamma_{\fl{PQ}} - \frac{1}{4}\,\rho^{-1}\,\eta_{\fl{MN}}\,\Gamma_{\fl{P}}{}^{\fl{P}} + \frac12 f_{\ov{M}\ov{N}}{}^{\ov{P}}\, \xi_{\ov{P}} \,,
+		&= - 14\,\rho^{-1}\,(\mathbb{P}_{3875})_{\fl{MN}}{}^{\fl{PQ}}\,\Gamma_{\fl{PQ}} - \frac{1}{4}\,\rho^{-1}\,\eta_{\fl{MN}}\,\Gamma_{\fl{P}}{}^{\fl{P}} - \frac12 f_{\ov{M}\ov{N}}{}^{\ov{P}}\, \xi_{\ov{P}} \,,
 	\end{split}
 \end{equation}
 with the projection of the current $\Gamma_{\fl{MN}} = - \tfrac{1}{60}\,\Gamma_{\fl{MP}}{}^{\fl{Q}}\,f_{\fl{NQ}}{}^{\fl{P}}$. In the following, we will focus on gaugings with $\xi_{\fl{M}}=0$.
@@ -424,7 +424,7 @@ However, in three dimensions, because the vector fields transform in the adjoint
 \end{equation}
 where the second term corresponds to the square of the singlet part of the embedding tensor.
 
-It turns out that for gaugings that arise from consistent truncations, these two terms \eqref{eq:ExtraX2Terms} can be related to the square of the trombone tensor. We can square eq.~\eqref{eq:symembeddingtensor} to derive an expression for $X_{\ov{MN}}X^{\ov{MN}}$ in terms of the current $\Gamma$. We find \EM{check coefficient of last term}
+It turns out that for gaugings that arise from consistent truncations, these two terms \eqref{eq:ExtraX2Terms} can be related to the square of the trombone tensor. We can square eq.~\eqref{eq:symembeddingtensor} to derive an expression for $X_{\ov{MN}}X^{\ov{MN}}$ in terms of the current $\Gamma$. We find
 \begin{equation}\label{eq:XXwitheta}
 	X_{\ov{MN}}X^{\ov{MN}} = 21 \rho^{-2}\, \Gamma_{\ov{MN}}\, \Gamma^{\ov{NM}} + 19 \rho^{-2}\left(\Gamma_{\ov M}{}^{\ov M}\right)^2 - 15\, \xi_{\ov{M}}\, \xi^{\ov{M}} \,.
 \end{equation}
@@ -867,18 +867,6 @@ creates yet another flat direction of the potential. This highlights how many fl
 
 \EM{Kinetic terms? Might be interesting for the S-fold deformations to see what kind of metric we have on the moduli space. This will go below the specific zoom-ins}
 
-\begin{equation}
-	\begin{aligned}
-		\d s^{2}_{\rm Zam.} &= -\frac{1}{2}\bigg[e^{2\psi}\left(e^{-\Omega}\,\d\zeta_{1}^{2}+e^{\Omega}\,\d\zeta_{2}^{2}+e^{\ts{\Omega}}\,\d\ts{\zeta}_{1}^{2}+e^{-\ts{\Omega}}\,\d\ts{\zeta}_{2}^{2}\right) \\
-		&+ \left(e^{-2\psi-\ts{\Omega}}+\ts{\zeta}_{1}^{2}+e^{-\Omega-\ts{\Omega}}\zeta_{1}^{2}\right)\left(e^{\Omega+\ts{\Omega}}+e^{2\psi+\Omega}\ts{\zeta}_{2}^{2}+e^{2\psi+\ts{\Omega}}\zeta_{1}^{2}\right) \,\d\chi_{1}^{2} \\
-		&+ \left(e^{-2\psi-\Omega}+e^{-\Omega-\ts{\Omega}}\ts{\zeta}_{2}^{2}+\zeta_{2}^{2}\right)\left(1+e^{2\psi+\ts{\Omega}}\ts{\zeta}_{1}^{2}+e^{2\psi+\Omega}\zeta_{2}^{2}\right) \,\d\chi_{2}^{2}\\
-		&+ \left(e^{-2\psi-\ts{\Omega}}+\ts{\zeta}_{1}^{2}+e^{-\Omega-\ts{\Omega}}\zeta_{1}^{2}\right)\left(1+e^{2\psi+\ts{\Omega}}\ts{\zeta}_{1}^{2}+e^{2\psi+\Omega}\zeta_{2}^{2}\right) \,\d\ts{\chi}_{1}^{2} \\
-		&+ \left(e^{-2\psi-\Omega}+e^{-\Omega-\ts{\Omega}}\ts{\zeta}_{2}^{2}+\zeta_{2}^{2}\right)\left(e^{\Omega+\ts{\Omega}}+e^{2\psi+\Omega}\ts{\zeta}_{2}^{2}+e^{2\psi+\ts{\Omega}}\zeta_{1}^{2}\right) \,\d\ts{\chi}_{2}^{2} + \ldots \\
-		&+2\,\d\psi^{2}\bigg]
-	\end{aligned}
-\end{equation}
-
-
 % \paragraph{S-fold like deformations} Scalar spectrum:
 % \begin{equation}
 % 	\begin{aligned}
@@ -903,13 +891,14 @@ The consistent truncation Ansatz we constructed in this paper can be used to upl
 
 %In all cases, the internal seven form flux is unaffected by the deformations, i.e. $H_{(3)}\vert_{AdS_3}$ remains unchanged, so that we will not give it explicitly below.
 
-\paragraph{\boldmath $(\chi, \ts{\chi}, \psi)$}
-Using Hopf coordinates for both $S^3$'s we can write the 5-parameter deformation involving $(\chi_i, \ts{\chi}_i, \psi)$, $i = 1,2$, as follows:
-\begin{equation}
+\paragraph{\boldmath $(\chi, \ts{\chi}, \Omega, \ts{\Omega}, \psi)$}
+Using Hopf coordinates for both $S^3$'s we can write the 7-parameter deformation involving $(\chi_i, \ts{\chi}_i, \Omega, \ts{\Omega}, \psi)$, $i = 1,2$, as follows:
+\begin{equation} \label{eq:chiomegapsi}
 	\begin{split}
-		\d s^{2} &= \ell_{\rm AdS}^{2} \,\d s^{2}({\rm AdS}_{3}) +\alpha^{2}\left(\d\theta^{2} + \cos^{2}(\theta)\,\d\phi'_{1}{}^{2} + \sin^{2}(\theta)\,\d\phi'_{2}{}^{2} \right) \\
-		&\quad +\d\ts{\theta}^{2} + \cos^{2}(\ts{\theta})\,\d\ts{\phi}'_{1}{}^{2} + \sin^{2}(\ts{\theta})\,\d\ts{\phi}'_{2}{}^{2} + e^{2\psi}\,\d z^{2}\,, \\[5pt]
-		H_{(3)} &= 2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}}) + 2\,\alpha^{2}\cos(\theta)\sin(\theta)\,\d\theta\wedge\d\phi'_{1}\wedge\d\phi'_{2}+ 2\cos(\ts{\theta})\sin(\ts{\theta})\,\d\ts{\theta}\wedge\d\ts{\phi}'_{1}\wedge\d\ts{\phi}'_{2}\,,
+		\d s^{2} &= \ell_{\rm AdS}^{2} \,\d s^{2}({\rm AdS}_{3}) + \alpha^{2}\,\d\theta^{2} +\frac{\alpha^{2}}{\cos^{2}(\theta)+e^{\Omega}\,\sin^{2}(\theta)}\left( e^{\Omega}\cos^{2}(\theta)\,\d\phi'_{1}{}^{2} + \sin^{2}(\theta)\,\d\phi'_{2}{}^{2} \right) \\
+		&\quad +\d\ts{\theta}^{2} + \frac{1}{e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})} \left(\cos^{2}(\ts{\theta})\,\d\ts{\phi}'_{1}{}^{2} + e^{\ts{\Omega}}\sin^{2}(\ts{\theta})\,\d\ts{\phi}'_{2}{}^{2}\right) + e^{2\psi}\,\d z^{2}\,, \\[10pt]
+		H_{(3)} &= 2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}}) \\
+		&\quad + \frac{2\,\alpha^{2}\,e^{\Omega}\cos(\theta)\sin(\theta)}{\left(\cos^{2}(\theta)+e^{\Omega}\,\sin^{2}(\theta)\right)^{2}}\,\d\theta\wedge\d\phi'_{1}\wedge\d\phi'_{2}+ \frac{2\,e^{\ts{\Omega}}\cos(\ts{\theta})\sin(\ts{\theta})}{\left(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\right)^{2}}\,\d\ts{\theta}\wedge\d\ts{\phi}'_{1}\wedge\d\ts{\phi}'_{2}\,,
 	\end{split}
 \end{equation}
 where
@@ -923,8 +912,23 @@ where
 		\d\ts{\phi}'_{2} = \d\ts{\phi}_{2} + \ts{\chi}_{2}\,\d z\,.
 	\end{cases}
 \end{equation}
+This 7-parameter deformation generically breaks $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. The moduli space of the solution is described by the following metric:
+\begin{equation}
+	\begin{aligned}
+		\d s^{2}_{\rm mod.} &= -\frac{1}{2}\bigg[e^{-2\psi}\left(e^{\Omega}\,\d\chi_{1}^{2}+e^{-\Omega}\,\d\chi_{2}^{2}+e^{-\ts{\Omega}}\,\d\ts{\chi}_{1}^{2}+e^{\ts{\Omega}}\,\d\ts{\chi}_{2}^{2}\right) +2\,\d\psi^{2} + \frac{1}{2}\,\d\Omega^{2}+ \frac{1}{2}\,\d\ts{\Omega}^{2}\bigg].
+	\end{aligned}
+\end{equation}
 
-This 5-parameter deformation generically breaks $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. The $\chi_i$, $\ts{\chi}_i$, $i = 1, 2$ deformations are analogous to the two-parameter ``flat deformations'' \cite{Guarino:2021hrc} of AdS$_4 \times S^5 \times S^1$ \cite{Giambrone:2021zvp,Giambrone:2021wsm}. From the 4-dimensional perspective obtained after reducing on $S^3 \times S^3$, these deformations correspond to turning on Wilson lines for the $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ gauge fields along $S^1$. The $\psi$ deformation is even simpler: it just rescales the $S^1$ radius. These $\chi_i$, $\ts{\chi}_i$, $\psi$ deformations are completely analogous to $\mathbb{C}$-structure deformations of $T^2$, with the $\chi_i$, $\ts{\chi}_i$ corresponding to the real part and the $\psi$ deformation to the imaginary part of the $\mathbb{C}$-structure deformation.
+\paragraph{}
+A particularly interesting family of solutions is obtained in the case $\Omega=\ts{\Omega}=0$, where eq.~\eqref{eq:chiomegapsi} reduces to
+\begin{equation} \label{eq:chipsi}
+	\begin{split}
+		\d s^{2} &= \ell_{\rm AdS}^{2} \,\d s^{2}({\rm AdS}_{3}) +\alpha^{2}\left(\d\theta^{2} + \cos^{2}(\theta)\,\d\phi'_{1}{}^{2} + \sin^{2}(\theta)\,\d\phi'_{2}{}^{2} \right) \\[3pt]
+		&\quad +\d\ts{\theta}^{2} + \cos^{2}(\ts{\theta})\,\d\ts{\phi}'_{1}{}^{2} + \sin^{2}(\ts{\theta})\,\d\ts{\phi}'_{2}{}^{2} + e^{2\psi}\,\d z^{2}\,, \\[5pt]
+		H_{(3)} &= 2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}}) + 2\,\alpha^{2}\cos(\theta)\sin(\theta)\,\d\theta\wedge\d\phi'_{1}\wedge\d\phi'_{2}+ 2\cos(\ts{\theta})\sin(\ts{\theta})\,\d\ts{\theta}\wedge\d\ts{\phi}'_{1}\wedge\d\ts{\phi}'_{2}\,.
+	\end{split}
+\end{equation}
+Again, the deformation generically breaks $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. The $\chi_i$, $\ts{\chi}_i$, $i = 1, 2$ deformations are analogous to the two-parameter ``flat deformations'' \cite{Guarino:2021hrc} of AdS$_4 \times S^5 \times S^1$ \cite{Giambrone:2021zvp,Giambrone:2021wsm}. From the 4-dimensional perspective obtained after reducing on $S^3 \times S^3$, these deformations correspond to turning on Wilson lines for the $\SO{3}_{\rm L}\times\SO{3}_{\rm R}\times\ts{\SO{3}}_{\rm L}\times\ts{\SO{3}}_{\rm R}$ gauge fields along $S^1$. The $\psi$ deformation is even simpler: it just rescales the $S^1$ radius. These $\chi_i$, $\ts{\chi}_i$, $\psi$ deformations are completely analogous to $\mathbb{C}$-structure deformations of $T^2$, with the $\chi_i$, $\ts{\chi}_i$ corresponding to the real part and the $\psi$ deformation to the imaginary part of the $\mathbb{C}$-structure deformation.
 
 Therefore, these deformations affect the Kaluza-Klein spectrum as follows: the conformal dimension of each physical field (\textit{c.f.} eq.~\eqref{eq:confdims3s3s1}) get shifted by replacing
 \begin{equation} \label{eq:confdimshiftchi}
@@ -958,7 +962,7 @@ SUSY enhancement points are then given by combinations of the parameters that yi
 		\quad {\rm or}\quad \chi_{2} = -\chi_{1} \pm\alpha\,(\ts{\chi}_{1}-\ts{\chi}_{2})% + 2\pi k \,, \qquad k \in \mathbb{Z}
 		\,,
 	\end{equation}
-	give enhancements to ${\cal N}=(2,0)$ and ${\cal N}=(0,2)$, respectively. On this hypersurface \eqref{eq:N2}, the spectrum then organizes into multiplets of $\SU{1\vert1,1}$.
+	give enhancements to ${\cal N}=(0,2)$ and ${\cal N}=(2,0)$, respectively. On this hypersurface \eqref{eq:N2}, the spectrum then organizes into multiplets of $\SU{1\vert1,1}$.
 	\item {\boldmath ${\cal N}=4$} Choosing
 	\begin{equation} \label{eq:N4Large}
 		\begin{cases}
@@ -971,9 +975,16 @@ SUSY enhancement points are then given by combinations of the parameters that yi
 			\ts{\chi}_{2} = \ts{\chi}_{1}\,,% + 2\pi l / \alpha \,,
 		\end{cases}% \qquad k, l \in \mathbb{Z} \,,
 	\end{equation}
-	leads to enhancements to ${\cal N}=(4,0)$ and ${\cal N}=(0,4)$, respectively. On these three-dimensional hyper-surfaces \eqref{eq:N4Large}, the isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum reorganizes into multiplets of $D^{1}(2,1;\alpha)$. 
-	
-	\CE{(Mention here the SUSY family of \cite{Eloy:2021fhc}.)}
+	leads to enhancements to ${\cal N}=(0,4)$ and ${\cal N}=(4,0)$, respectively. On these three-dimensional hyper-surfaces \eqref{eq:N4Large}, the isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum reorganizes into multiplets of $D^{1}(2,1;\alpha)$. In the special limit where
+	\begin{equation} \label{eq:limittoT4}
+		\begin{cases}
+			\chi_{1}=\chi_{2}= \chi,\\
+			\ts{\chi}_{1}=\ts{\chi}_{2}=0,\\
+			\psi=0,\\
+			\alpha \rightarrow 0,
+		\end{cases}
+	\end{equation}
+	the solution~\eqref{eq:chipsi} corresponds to the 10-dimensional uplift on $T^{4}$ of the one-parameter deformation of ${\rm AdS}_{3}\times S^{3}$ preserving ${\cal N}=(0,4)$ supersymmetries of ref.~\cite{Eloy:2021fhc} (using the notations there, the precise matching is obtained for $\chi=\sqrt{e^{2\omega}-1}$). In this limit, $D^{1}(2,1;\alpha)$ breaks into its small counterpart $\SU{2\vert1,1}$.
 	
 	Another possibility is to set
 	\begin{equation} \label{eq:N4Small}
@@ -1010,7 +1021,7 @@ SUSY enhancement points are then given by combinations of the parameters that yi
 			/\alpha\,,
 		\end{cases}% \qquad k, l, m \in \mathbb{Z} \,,
 	\end{equation}
-	there are enhancements to ${\cal N}=(4,2)$ and ${\cal N}=(2,4)$, respectively. The isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum is then given by multiplets of $D^{1}(2,1;\alpha)_{\rm L, R}\times\SU{1\vert1,1}_{\rm R,L}$.
+	there are enhancements to ${\cal N}=(2,4)$ and ${\cal N}=(4,2)$, respectively. The isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum is then given by multiplets of $D^{1}(2,1;\alpha)_{\rm L, R}\times\SU{1\vert1,1}_{\rm R,L}$.
 \end{itemize}
 
 In the above cases, it is easy to see from \eqref{eq:confdimshiftchi} that the spectrum  is invariant under $\chi_i \rightarrow \chi_i + 2\pi k_i\,\alpha$, $\ts{\chi}_i \rightarrow \ts{\chi}_i + 2\pi \ts{k}_i$, for $k_i$, $\ts{k}_i \in \mathbb{Z}$, with the SUSY enhancements also occurring if the relations \eqref{eq:N2}, \eqref{eq:N4Large}, \eqref{eq:N4Small} or \eqref{eq:N6} are satisfied up to integer shifts. We will return to this point below in section \ref{s:Compact}, when discussing compactness of the moduli space.
@@ -1082,6 +1093,16 @@ with the warp factor
 \end{equation}
 
 \CE{(Expression of $H$?)}
+
+The metric parametrising this moduli space is:
+\begin{equation}
+	\begin{aligned}
+		\d s^{2}_{\rm mod.} &= -\frac{1}{2}\bigg[e^{2\psi}\left(e^{-\Omega}\,\d\zeta_{1}^{2}+e^{\Omega}\,\d\zeta_{2}^{2}+e^{\ts{\Omega}}\,\d\ts{\zeta}_{1}^{2}+e^{-\ts{\Omega}}\,\d\ts{\zeta}_{2}^{2}\right) +2\,\d\psi^{2} + \frac{1}{2}\,\d\Omega^{2}+ \frac{1}{2}\,\d\ts{\Omega}^{2}\bigg].
+	\end{aligned}
+\end{equation}
+
+
+
 %
 %\paragraph{SUSY deformation}
 %
@@ -1204,7 +1225,7 @@ with the warp factor
 
 \subsection{Compactification of the moduli space} \label{s:Compact}
 
-We can use the Kaluza-Klein spectrum and the uplift of the 3-dimensional gauged supergravity models to IIB supergravity to understand properties of the dual CFTs that are obscured in the lower-dimensional supergravities. One such aspect is the compactness of the conformal manifold. Consider the deformations $\chi_i$, $\ts{\chi}_i$, which appear non-compact in 3-dimensional ${\cal N}=16$ gauged supergravity, with only the point $\chi_i = \ts{\chi}_i = 0$ having ${\cal N}=(4,4)$ supersymmetry. The subset of these deformations corresponding to the SUSY lines $\chi_1 = \chi_2 = \chi$, $\ts{\chi}_i = 0$, \EM{Camille will fix this} was analysed in the half-maximal theory in \cite{Eloy:2021fhc}. Again, within 3-dimensional ${\cal N}=8$ supergravity, this deformation is non-compact, and remains non-compact even after uplifting to 6-dimensional supergravity on $S^3$, with no periodicity in $\chi$ observed in the KK spectrum of the 6-dimensional solution \cite{Eloy:2021fhc}.
+We can use the Kaluza-Klein spectrum and the uplift of the 3-dimensional gauged supergravity models to IIB supergravity to understand properties of the dual CFTs that are obscured in the lower-dimensional supergravities. One such aspect is the compactness of the conformal manifold. Consider the deformations $\chi_i$, $\ts{\chi}_i$, which appear non-compact in 3-dimensional ${\cal N}=16$ gauged supergravity, with only the point $\chi_i = \ts{\chi}_i = 0$ having ${\cal N}=(4,4)$ supersymmetry. The subset of these deformations corresponding to the limit~\eqref{eq:limittoT4} was analysed in the half-maximal theory in ref.~\cite{Eloy:2021fhc}. Again, within 3-dimensional ${\cal N}=8$ supergravity, this deformation is non-compact, and remains non-compact even after uplifting to 6-dimensional supergravity on $S^3$, with no periodicity in $\chi$ observed in the KK spectrum of the 6-dimensional solution \cite{Eloy:2021fhc}.
 
 However, from  \eqref{eq:spectrumorigin}, \eqref{eq:confdims3s3s1}, \eqref{eq:confdimshiftchi} we see that the full Kaluza-Klein spectrum is invariant under the shifts
 \begin{equation} \label{eq:ShiftSymmetries}
@@ -1249,9 +1270,9 @@ We are grateful to XXX for useful discussions and correspondence. CE is supporte
 \section{Representations of \texorpdfstring{$D^{1}(2,1;\alpha)$}{D(2,1,a)}} \label{app:d21a}
 The supergroup $D^{1}(2,1;\alpha)$ has
 \begin{equation}
-	{\rm SL}(2,\mathbb{R})\times{\rm SU}(2)\times\ts{{\rm SU}(2)}
+	{\rm SU}(1\vert1)\times{\rm SU}(2)\times\ts{{\rm SU}(2)}
 \end{equation}
-as even part. Its multiplets are labelled by the spins $\ell$ and $\ts{\ell}$ of each ${\rm SU}(2)$ factor and the eigenvalue $h$ of the $\mathfrak{sl}(2,\mathbb{R})$ generator. Generic short multiplets $[\ell,\ts{\ell}]_{\rm s}$ are given by~\cite{deBoer:1999gea,Eberhardt:2017fsi}
+as even part. Its multiplets are labelled by the spins $\ell$ and $\ts{\ell}$ of each ${\rm SU}(2)$ factor and the eigenvalue $h$ of the $\mathfrak{su}(1\vert1)\simeq\mathfrak{sl}(2,\mathbb{R})$ generator. Generic short multiplets $[\ell,\ts{\ell}]_{\rm s}$ are given by~\cite{deBoer:1999gea,Eberhardt:2017fsi}
 \begin{equation}
 	\begin{array}{cc}
 	 h_{0} & \big(\ell,\ts{\ell}\big) \\[5pt]
