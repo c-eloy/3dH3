@@ -1068,7 +1068,7 @@ For generic values of $\chi_i$, $\ts{\chi}_i$, the AdS$_3$ vacuum will be comple
 
 \paragraph{\boldmath $(\zeta,\ts{\zeta},\Omega,\ts{\Omega},\psi)$}
 Again in Hopf coordinates:
-\begin{equation}
+\begin{equation} \label{eq:metriczeta}
 	\begin{split}
 		\d s^{2} &= \ell_{\rm AdS}^{2}\,\d s^{2}\left({\rm AdS}_{3}\right) -\Delta\Big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\Big)\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\,\d z^{2}\\
 		&+ \alpha^{2}\Big[\d\theta^{2} + \Delta\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\Big(e^{\Omega}\cos^{2}(\theta)\,\d\phi_{1}^{2}+\sin^{2}(\theta)\,\d\phi_{2}^{2}\Big)\Big]\\
@@ -1098,126 +1098,136 @@ The metric parametrising this moduli space is:
 	\end{aligned}
 \end{equation}
 
+As previously, the deformation breaks the isometry group down to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. Note that for
+\begin{equation}
+	\zeta_{1}=\pm\zeta_{2},\quad \ts{\zeta}_{1}=\mp\ts{\zeta}_{2}\,\quad\Omega=\ts{\Omega}=0,
+\end{equation}
+the solution~\eqref{eq:metriczeta} reproduces eq.~\eqref{eq:chipsi} for
+\begin{equation}
+	\chi_{1}=\pm\chi_{2}=\frac{\zeta_{1}}{1+\zeta_{1}^{2}+\ts{\zeta}_{1}^{2}},\quad \ts{\chi}_{1}=\mp\ts{\chi}_{2}=-\frac{\ts{\zeta}_{1}}{1+\zeta_{1}^{2}+\ts{\zeta}_{1}^{2}},\quad e^{2\psi}=\frac{1}{(1+\zeta_{1}^{2}+\ts{\zeta}_{1}^{2})^{2}},
+\end{equation}
+with ${\cal N}=(4,0)$ (or $(0,4)$) and symmetry enhancement to ${\rm SO}(4)\times{\rm U}(1)^{2}$. There seems to be no other points with (super)-symmetry enhancement in the scalar manifold.
 
 
-%
-%\paragraph{SUSY deformation}
-%
-%%In Hopf coordinates:
-%%\begin{equation}
-%%	\begin{split}
-%%		ds^2 &= \alpha^2 \left[ ds^2_{\mathbb{CP}^1} + \kappa^2 \right] + ds^2_{\tilde{S}^3} + e^{-4\omega} d\psi^2 \,, \\
-%%		\kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{\CE{-}(1-e^{2\omega})} d\psi \,, \\
-%%		d\sigma &= vol_{\mathbb{CP}^1} \,.
-%%	\end{split}
-%%\end{equation}
-%
-%It is convenient to use the Hopf fibration to describe this, we denote by $\phi$ the coordinate on the $S^1$ fibre and by $\xi$ the homogeneous coordinate on $\mathbb{CP}^1$. The round metric on $S^3$ then reads
-%\begin{equation}
-%	g= \mathrm{d}s^2_{\mathbb{CP}^1} + (\sigma + \mathrm{d}\phi)^2
-%\end{equation}
-%where 
-%\begin{equation}
-%	\begin{split}
-%		\mathrm{d}s^2_{\mathbb{CP}^1} &= \frac1{(1+|\xi|^2)^2}\mathrm{d}\xi\,\mathrm{ d}\ov{\xi}\\
-%		\sigma&=\frac{i}{2(1+|\xi|^2)}(\xi \mathrm{d} \ov{\xi}-\ov{\xi}\mathrm{d}\xi)\\ 
-%		vol_{S^3}&=vol_{\mathbb{CP}^1}\wedge \mathrm{d}\psi .
-%	\end{split}
-%\end{equation}
-%The deformation does not affect $S_+^3$, but it mixes the $S^1$ factor in the internal space with the Hopf fibre of $S_-^3$. It is parametrised by a real number $\Omega$, such that the metric reads
-%\begin{equation}
-%	\begin{split}
-%		\mathrm{d}s^2 &= \alpha^2(\mathrm{d}s^2_{\mathbb{CP}^1}+\kappa^2) + \mathrm{d}s^2_{S_+^3} + e^{-4\Omega}\mathrm{d}\psi^2\\
-%		\kappa &= \mathrm{d}\phi + \sigma - \frac1{\alpha}e^{-2\Omega}\sqrt{e^{2\Omega}-1}\d\psi.
-%	\end{split}
-%\end{equation}
+
+
+% \paragraph{SUSY deformation}
+
+% %In Hopf coordinates:
+% %\begin{equation}
+% %	\begin{split}
+% %		ds^2 &= \alpha^2 \left[ ds^2_{\mathbb{CP}^1} + \kappa^2 \right] + ds^2_{\tilde{S}^3} + e^{-4\omega} d\psi^2 \,, \\
+% %		\kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{\CE{-}(1-e^{2\omega})} d\psi \,, \\
+% %		d\sigma &= vol_{\mathbb{CP}^1} \,.
+% %	\end{split}
+% %\end{equation}
+
+% It is convenient to use the Hopf fibration to describe this, we denote by $\phi$ the coordinate on the $S^1$ fibre and by $\xi$ the homogeneous coordinate on $\mathbb{CP}^1$. The round metric on $S^3$ then reads
+% \begin{equation}
+% 	g= \mathrm{d}s^2_{\mathbb{CP}^1} + (\sigma + \mathrm{d}\phi)^2
+% \end{equation}
+% where 
+% \begin{equation}
+% 	\begin{split}
+% 		\mathrm{d}s^2_{\mathbb{CP}^1} &= \frac1{(1+|\xi|^2)^2}\mathrm{d}\xi\,\mathrm{ d}\ov{\xi}\\
+% 		\sigma&=\frac{i}{2(1+|\xi|^2)}(\xi \mathrm{d} \ov{\xi}-\ov{\xi}\mathrm{d}\xi)\\ 
+% 		vol_{S^3}&=vol_{\mathbb{CP}^1}\wedge \mathrm{d}\psi .
+% 	\end{split}
+% \end{equation}
+% The deformation does not affect $S_+^3$, but it mixes the $S^1$ factor in the internal space with the Hopf fibre of $S_-^3$. It is parametrised by a real number $\Omega$, such that the metric reads
+% \begin{equation}
+% 	\begin{split}
+% 		\mathrm{d}s^2 &= \alpha^2(\mathrm{d}s^2_{\mathbb{CP}^1}+\kappa^2) + \mathrm{d}s^2_{S_+^3} + e^{-4\Omega}\mathrm{d}\psi^2\\
+% 		\kappa &= \mathrm{d}\phi + \sigma - \frac1{\alpha}e^{-2\Omega}\sqrt{e^{2\Omega}-1}\d\psi.
+% 	\end{split}
+% \end{equation}
 % The three form flux gets changed according to the prescription $\d\phi \rightarrow \d\phi -  \frac1{\alpha}e^{-2\Omega}\sqrt{e^{2\Omega}-1}\d \psi$ and we find:
-%\begin{equation}
-%	H_{(3)}=\alpha^2vol_{\mathbb{CP}^1}\wedge (\d\phi - \frac1{\alpha}e^{-2\Omega}\sqrt{e^{2\Omega}-1}\d\psi) + vol_{S_+^3}.
-%\end{equation}
-%
-%%
-%%In spherical coordinates:
-%%\begin{equation}
-%%	\begin{aligned}
-%%		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right)+\alpha^{2}\,\d s^2\left(S^{3}_{-}\right) +e^{-2\omega}\,\d\psi^{2}\\
-%%		&\quad+2\,\alpha\,e^{-2\omega}\,\sqrt{-1+e^{2\omega}}\left(-\cos^{2}(\theta)\,\d\varphi_{1}+\sin^{2}(\theta)\,\d\varphi_{2}\right)\,\d\psi\\[5pt]
-%%		&= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right)+e^{-4\omega}\,\d\psi^{2}\\
-%%		&\quad+\alpha^{2}\bigg[\d \theta^2+\cos^{2}(\theta)\left(\d\varphi_{1}-\frac{e^{-2\omega}}{\alpha}\sqrt{-1+e^{2\omega}}\,\d\psi\right)^{2}+\sin^{2}(\theta)\left(\d\varphi_{2}+\frac{e^{-2\omega}}{\alpha}\sqrt{-1+e^{2\omega}}\,\d\psi\right)^{2}\bigg] ,\\[5pt]
-%%		\d s^2\left(S^{3}_{-}\right) &= \d\theta^{2}+\cos^{2}(\theta)\,\d\varphi_{1}^{2}+\sin^{2}(\theta)\,\d\varphi_{2}^{2}.
-%%	\end{aligned}
-%%\end{equation}
-%
-%\paragraph{Non-SUSY deformation}
-%Here we study a more general deformation depending on three parameters $\Omega$, $\zeta_{1,8}$ and $\zeta_{2,3}$. It is convenient to write down the uplift in terms of the Hopf coordinates on $S_-^3$, while again $S_+^3$ is not deformed.\\
-%\noindent For the metric we find
-%%\begin{equation}
-%%	\begin{aligned}
-%%		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
-%%		&\quad + \alpha^{2}\left(\d\theta^{2}+\Delta\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\cos^{2}(\theta)\,\d\varphi^{2}_{1}+\Delta\left(2+e^{2\Omega}\,\zeta_{1,8}^{2}\right)\,\sin^{2}(\theta)\,\d\varphi_{2}^{2}\right)\\
-%%		&\quad+2\sqrt{2}\,\alpha\,\Delta\left(-\zeta_{2,3}\,\cos^{2}(\theta)\,\d\varphi_{1}+\zeta_{1,8}\,\sin^{2}(\theta)\,\d\varphi_{2}\right)\,\d\psi \\
-%%		&\quad+2\,\Delta\left(\cos^{2}(\theta)+e^{2\Omega}\,\sin^{2}(\theta)\right)\,\d\psi^{2}.\\[5pt]
-%%		\Delta^{-1} &= 2\,e^{2\Omega}+\zeta_{2,3}^{2}+\cos^{2}(\theta)\left(2-2\,e^{2\Omega}-\zeta_{2,3}^{2}+e^{2\Omega}\,\zeta_{1,8}^{2}\right).
-%%	\end{aligned}
-%%\end{equation}
-%\begin{equation}
-%	\begin{aligned}
-%		\d s^{2} &= \ell_{\rm AdS}^{2} \,\d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
-%		&\quad + \alpha^{2}\left(\d\theta^{2}+\Delta\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\cos^{2}(\theta)\,\d\varphi^{2}_{1}+\Delta\left(2+e^{2\Omega}\,\zeta_{1,8}^{2}\right)\,\sin^{2}(\theta)\,\d\varphi_{2}^{2}\right)\\
-%		&\quad+2\sqrt{2}\,\alpha\,\Delta\left(-\zeta_{2,3}\,\cos^{2}(\theta)\,\d\varphi_{1}+\zeta_{1,8}\,\sin^{2}(\theta)\,\d\varphi_{2}\right)\,\d\psi \\
-%		&\quad+2\,\Delta\left(\cos^{2}(\theta)+e^{2\Omega}\,\sin^{2}(\theta)\right)\,\d\psi^{2},
-%	\end{aligned}
-%\end{equation}
-%where $\Delta$ is the warp factor
-%\begin{equation}
-%		\Delta^{-1} = 2\,e^{2\Omega}+\zeta_{2,3}^{2}+\cos^{2}(\theta)\left(2-2\,e^{2\Omega}-\zeta_{2,3}^{2}+e^{2\Omega}\,\zeta_{1,8}^{2}\right).
-%\end{equation}
-%The three-form flux is 
-%\begin{equation}
-%	H_{(3)}=vol_{S_-^3}+\alpha ^2\sin(\theta)\cos (\theta)(2+e^{2\Omega}\zeta^2_{1,8})(2e^{2\Omega}+\zeta_{2,3}^2)\Delta^2\mathrm{d}\theta\wedge\kappa_1\wedge\kappa_2,
-%\end{equation}
-%with the two one forms $\kappa_{1,2}$ defined by 
-%\begin{equation}
-%\begin{split}
-%		\kappa_1&=\mathrm{d}\phi_1-\frac{\zeta_{2,3}}{\alpha(2e^{2\Omega}+\zeta_{2,3}^2)}\mathrm{d}\psi \\
-%	\kappa_2&=\mathrm{d}\phi_2+ \frac{\zeta_{1,8}}{\alpha(2+e^{2\Omega}\zeta_{1,8}^2)}\mathrm{d}\psi.
-%\end{split}
-%\end{equation}
-%Note that setting $...$ recovers the supersymmetric deformation described earlier.
-%%In Hopf coordinates:
-%% \begin{equation}
-%% \begin{split}
-%% ds^2 &= \alpha^2 \left[ d\alpha_1^2 +  ds^2_{\mathbb{CP}^1} + \kappa^2 \right] + ds^2_{\tilde{S}^3} + e^{-4\omega} d\psi^2 \,, \\
-%% \kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{1-e^{2\omega}} d\psi \,, \\
-%% d\sigma &= vol_{\mathbb{CP}^1} \,.
-%% \end{split}
-%% \end{equation}
-%% \begin{equation}
-%% 	\begin{aligned}
-%% 		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
-%% 		&\quad + \Delta\,\alpha^{2}\bigg[\frac{1}{\left(1+\vert z\vert^{2}\right)^{2}}\Big(\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(1+(2+\vert z\vert^{2})\,z_{\rm I}^{2}\right)+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,z_{\rm R}^{2}\Big)\,\d z_{\rm R}^{2}\\
-%% 		&\qquad\ \  + \frac{1}{\left(1+\vert z\vert^{2}\right)^{2}}\Big(\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(1+(2+\vert z\vert^{2})\,z_{\rm R}^{2}\right)+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,z_{\rm I}^{2}\Big)\,\d z_{\rm I}^{2}\\
-%% 		&\qquad\ \  + 2\,\frac{1}{\left(1+\vert z\vert^{2}\right)^{2}}\Big(-\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(2+\vert z\vert^{2}\right)+2\,e^{2\Omega}+\zeta_{2,3}^{2}\Big)\,\d z_{\rm R}\d z_{\rm I}\\
-%% 		&\qquad\ \  +2\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\d\theta+\Big(\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\,\vert z\vert^{2}+2\,e^{2\Omega}+\zeta_{2,3}^{2}\Big)\,\d\theta^{2}\bigg]\\
-%% 		&\quad + \Delta\,\alpha\bigg[-2\sqrt{2}\,e^{2\Omega}\,\zeta_{1,8}\,\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\,\d\psi-2\sqrt{2}\left(e^{2\Omega}\,\zeta_{1,8}\,\vert z\vert^{2}+\zeta_{2,3}\right)\,\d\theta\,\d\psi\bigg]\\
-%% 		&\quad + 2\,\Delta\left(1+e^{2\Omega}\,\vert z\vert^{2}\right)\,\d\psi^{2} ,\\[5pt]
-%% 		\Delta^{-1} &= 2+e^{2\Omega}\zeta_{1,8}^{2}+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\vert z\vert^{2}.
-%% 	\end{aligned}
-%% \end{equation}
-%
-%%%%%
-%
-%%\begin{equation}
-%%	\begin{aligned}
-%%		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
-%%		&\quad + \frac{\alpha^{2}}{1+\gamma\,\vert z\vert^{2}}\bigg[\Big(\left(1+\vert z\vert^{2}\right)\left(1+z_{\rm I}^{2}\right)+\left(\gamma-1\right)\,z_{\rm R}^{2}\Big)\,\frac{\d z_{\rm R}^{2}}{\left(1+\vert z\vert^{2}\right)^{2}}\\
-%%		&\qquad + \Big(\left(1+\vert z\vert^{2}\right)\left(1+z_{\rm R}^{2}\right)+\left(\gamma-1\right)\,z_{\rm I}^{2}\Big)\,\frac{\d z_{\rm I}^{2}}{\left(1+\vert z\vert^{2}\right)^{2}} - 2\,\Big(1+\vert z\vert^{2}-\left(\gamma-1\right)\Big)\,\frac{\d z_{\rm R}\d z_{\rm I}}{\left(1+\vert z\vert^{2}\right)^{2}}\\
-%%		&\qquad+2\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\d\theta+\left(\gamma+\vert z\vert^{2}\right)\d\theta^{2}\bigg]\\
-%%		&\quad + \Delta\,\alpha\bigg[-2\sqrt{2}\,e^{2\Omega}\,\zeta_{1,8}\,\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\,\d\psi-2\sqrt{2}\left(e^{2\Omega}\,\zeta_{1,8}\,\vert z\vert^{2}+\zeta_{2,3}\right)\,\d\theta\,\d\psi\bigg]\\
-%%		&\quad + 2\,\Delta\left(1+e^{2\Omega}\,\vert z\vert^{2}\right)\,\d\psi^{2} ,\\[5pt]
-%%		\gamma &= \frac{2\,e^{2\Omega}+\zeta_{2,3}^{2}}{2+e^{2\Omega}\zeta_{1,8}^{2}},\qquad \Delta^{-1} = 2+e^{2\Omega}\zeta_{1,8}^{2}+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\vert z\vert^{2}.
-%%	\end{aligned}
-%%\end{equation}
+% \begin{equation}
+% 	H_{(3)}=\alpha^2vol_{\mathbb{CP}^1}\wedge (\d\phi - \frac1{\alpha}e^{-2\Omega}\sqrt{e^{2\Omega}-1}\d\psi) + vol_{S_+^3}.
+% \end{equation}
+
+% %
+% %In spherical coordinates:
+% %\begin{equation}
+% %	\begin{aligned}
+% %		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right)+\alpha^{2}\,\d s^2\left(S^{3}_{-}\right) +e^{-2\omega}\,\d\psi^{2}\\
+% %		&\quad+2\,\alpha\,e^{-2\omega}\,\sqrt{-1+e^{2\omega}}\left(-\cos^{2}(\theta)\,\d\varphi_{1}+\sin^{2}(\theta)\,\d\varphi_{2}\right)\,\d\psi\\[5pt]
+% %		&= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right)+e^{-4\omega}\,\d\psi^{2}\\
+% %		&\quad+\alpha^{2}\bigg[\d \theta^2+\cos^{2}(\theta)\left(\d\varphi_{1}-\frac{e^{-2\omega}}{\alpha}\sqrt{-1+e^{2\omega}}\,\d\psi\right)^{2}+\sin^{2}(\theta)\left(\d\varphi_{2}+\frac{e^{-2\omega}}{\alpha}\sqrt{-1+e^{2\omega}}\,\d\psi\right)^{2}\bigg] ,\\[5pt]
+% %		\d s^2\left(S^{3}_{-}\right) &= \d\theta^{2}+\cos^{2}(\theta)\,\d\varphi_{1}^{2}+\sin^{2}(\theta)\,\d\varphi_{2}^{2}.
+% %	\end{aligned}
+% %\end{equation}
+
+% \paragraph{Non-SUSY deformation}
+% Here we study a more general deformation depending on three parameters $\Omega$, $\zeta_{1,8}$ and $\zeta_{2,3}$. It is convenient to write down the uplift in terms of the Hopf coordinates on $S_-^3$, while again $S_+^3$ is not deformed.\\
+% \noindent For the metric we find
+% %\begin{equation}
+% %	\begin{aligned}
+% %		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
+% %		&\quad + \alpha^{2}\left(\d\theta^{2}+\Delta\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\cos^{2}(\theta)\,\d\varphi^{2}_{1}+\Delta\left(2+e^{2\Omega}\,\zeta_{1,8}^{2}\right)\,\sin^{2}(\theta)\,\d\varphi_{2}^{2}\right)\\
+% %		&\quad+2\sqrt{2}\,\alpha\,\Delta\left(-\zeta_{2,3}\,\cos^{2}(\theta)\,\d\varphi_{1}+\zeta_{1,8}\,\sin^{2}(\theta)\,\d\varphi_{2}\right)\,\d\psi \\
+% %		&\quad+2\,\Delta\left(\cos^{2}(\theta)+e^{2\Omega}\,\sin^{2}(\theta)\right)\,\d\psi^{2}.\\[5pt]
+% %		\Delta^{-1} &= 2\,e^{2\Omega}+\zeta_{2,3}^{2}+\cos^{2}(\theta)\left(2-2\,e^{2\Omega}-\zeta_{2,3}^{2}+e^{2\Omega}\,\zeta_{1,8}^{2}\right).
+% %	\end{aligned}
+% %\end{equation}
+% \begin{equation}
+% 	\begin{aligned}
+% 		\d s^{2} &= \ell_{\rm AdS}^{2} \,\d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
+% 		&\quad + \alpha^{2}\left(\d\theta^{2}+\Delta\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\cos^{2}(\theta)\,\d\varphi^{2}_{1}+\Delta\left(2+e^{2\Omega}\,\zeta_{1,8}^{2}\right)\,\sin^{2}(\theta)\,\d\varphi_{2}^{2}\right)\\
+% 		&\quad+2\sqrt{2}\,\alpha\,\Delta\left(-\zeta_{2,3}\,\cos^{2}(\theta)\,\d\varphi_{1}+\zeta_{1,8}\,\sin^{2}(\theta)\,\d\varphi_{2}\right)\,\d\psi \\
+% 		&\quad+2\,\Delta\left(\cos^{2}(\theta)+e^{2\Omega}\,\sin^{2}(\theta)\right)\,\d\psi^{2},
+% 	\end{aligned}
+% \end{equation}
+% where $\Delta$ is the warp factor
+% \begin{equation}
+% 		\Delta^{-1} = 2\,e^{2\Omega}+\zeta_{2,3}^{2}+\cos^{2}(\theta)\left(2-2\,e^{2\Omega}-\zeta_{2,3}^{2}+e^{2\Omega}\,\zeta_{1,8}^{2}\right).
+% \end{equation}
+% The three-form flux is 
+% \begin{equation}
+% 	H_{(3)}=vol_{S_-^3}+\alpha ^2\sin(\theta)\cos (\theta)(2+e^{2\Omega}\zeta^2_{1,8})(2e^{2\Omega}+\zeta_{2,3}^2)\Delta^2\mathrm{d}\theta\wedge\kappa_1\wedge\kappa_2,
+% \end{equation}
+% with the two one forms $\kappa_{1,2}$ defined by 
+% \begin{equation}
+% \begin{split}
+% 		\kappa_1&=\mathrm{d}\phi_1-\frac{\zeta_{2,3}}{\alpha(2e^{2\Omega}+\zeta_{2,3}^2)}\mathrm{d}\psi \\
+% 	\kappa_2&=\mathrm{d}\phi_2+ \frac{\zeta_{1,8}}{\alpha(2+e^{2\Omega}\zeta_{1,8}^2)}\mathrm{d}\psi.
+% \end{split}
+% \end{equation}
+% Note that setting $...$ recovers the supersymmetric deformation described earlier.
+% %In Hopf coordinates:
+% % \begin{equation}
+% % \begin{split}
+% % ds^2 &= \alpha^2 \left[ d\alpha_1^2 +  ds^2_{\mathbb{CP}^1} + \kappa^2 \right] + ds^2_{\tilde{S}^3} + e^{-4\omega} d\psi^2 \,, \\
+% % \kappa &= d\theta + \sigma - \frac1{\alpha} e^{-2\omega} \sqrt{1-e^{2\omega}} d\psi \,, \\
+% % d\sigma &= vol_{\mathbb{CP}^1} \,.
+% % \end{split}
+% % \end{equation}
+% % \begin{equation}
+% % 	\begin{aligned}
+% % 		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
+% % 		&\quad + \Delta\,\alpha^{2}\bigg[\frac{1}{\left(1+\vert z\vert^{2}\right)^{2}}\Big(\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(1+(2+\vert z\vert^{2})\,z_{\rm I}^{2}\right)+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,z_{\rm R}^{2}\Big)\,\d z_{\rm R}^{2}\\
+% % 		&\qquad\ \  + \frac{1}{\left(1+\vert z\vert^{2}\right)^{2}}\Big(\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(1+(2+\vert z\vert^{2})\,z_{\rm R}^{2}\right)+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,z_{\rm I}^{2}\Big)\,\d z_{\rm I}^{2}\\
+% % 		&\qquad\ \  + 2\,\frac{1}{\left(1+\vert z\vert^{2}\right)^{2}}\Big(-\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(2+\vert z\vert^{2}\right)+2\,e^{2\Omega}+\zeta_{2,3}^{2}\Big)\,\d z_{\rm R}\d z_{\rm I}\\
+% % 		&\qquad\ \  +2\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\d\theta+\Big(\left(2+e^{2\Omega}\zeta_{1,8}^{2}\right)\,\vert z\vert^{2}+2\,e^{2\Omega}+\zeta_{2,3}^{2}\Big)\,\d\theta^{2}\bigg]\\
+% % 		&\quad + \Delta\,\alpha\bigg[-2\sqrt{2}\,e^{2\Omega}\,\zeta_{1,8}\,\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\,\d\psi-2\sqrt{2}\left(e^{2\Omega}\,\zeta_{1,8}\,\vert z\vert^{2}+\zeta_{2,3}\right)\,\d\theta\,\d\psi\bigg]\\
+% % 		&\quad + 2\,\Delta\left(1+e^{2\Omega}\,\vert z\vert^{2}\right)\,\d\psi^{2} ,\\[5pt]
+% % 		\Delta^{-1} &= 2+e^{2\Omega}\zeta_{1,8}^{2}+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\vert z\vert^{2}.
+% % 	\end{aligned}
+% % \end{equation}
+
+% %%%%
+
+% %\begin{equation}
+% %	\begin{aligned}
+% %		\d s^{2} &= \d s^2\left({\rm AdS}_{3}\right)+\d s^2\left(S^{3}_{+}\right) \\
+% %		&\quad + \frac{\alpha^{2}}{1+\gamma\,\vert z\vert^{2}}\bigg[\Big(\left(1+\vert z\vert^{2}\right)\left(1+z_{\rm I}^{2}\right)+\left(\gamma-1\right)\,z_{\rm R}^{2}\Big)\,\frac{\d z_{\rm R}^{2}}{\left(1+\vert z\vert^{2}\right)^{2}}\\
+% %		&\qquad + \Big(\left(1+\vert z\vert^{2}\right)\left(1+z_{\rm R}^{2}\right)+\left(\gamma-1\right)\,z_{\rm I}^{2}\Big)\,\frac{\d z_{\rm I}^{2}}{\left(1+\vert z\vert^{2}\right)^{2}} - 2\,\Big(1+\vert z\vert^{2}-\left(\gamma-1\right)\Big)\,\frac{\d z_{\rm R}\d z_{\rm I}}{\left(1+\vert z\vert^{2}\right)^{2}}\\
+% %		&\qquad+2\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\d\theta+\left(\gamma+\vert z\vert^{2}\right)\d\theta^{2}\bigg]\\
+% %		&\quad + \Delta\,\alpha\bigg[-2\sqrt{2}\,e^{2\Omega}\,\zeta_{1,8}\,\left(z_{\rm I}\,\d z_{\rm R}-z_{\rm R}\,\d z_{\rm I}\right)\,\d\psi-2\sqrt{2}\left(e^{2\Omega}\,\zeta_{1,8}\,\vert z\vert^{2}+\zeta_{2,3}\right)\,\d\theta\,\d\psi\bigg]\\
+% %		&\quad + 2\,\Delta\left(1+e^{2\Omega}\,\vert z\vert^{2}\right)\,\d\psi^{2} ,\\[5pt]
+% %		\gamma &= \frac{2\,e^{2\Omega}+\zeta_{2,3}^{2}}{2+e^{2\Omega}\zeta_{1,8}^{2}},\qquad \Delta^{-1} = 2+e^{2\Omega}\zeta_{1,8}^{2}+\left(2\,e^{2\Omega}+\zeta_{2,3}^{2}\right)\,\vert z\vert^{2}.
+% %	\end{aligned}
+% %\end{equation}
 
 
 \subsection{Compactification of the moduli space} \label{s:Compact}
