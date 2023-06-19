@@ -185,8 +185,8 @@
 \newcommand{\dg}{\vert g \vert}
 \newcommand{\CG}{\Com{G}{\EE}}
 \newcommand{\cJ}{{\cal J}}
-\newcommand{\RO}{\mathbb{R}^+_{\SL{3}_1}}
-\newcommand{\RT}{\mathbb{R}^+_{\SL{3}_2}}
+\newcommand{\RO}{\mathbb{R}^+_{\SL{4}_1}}
+\newcommand{\RT}{\mathbb{R}^+_{\SL{4}_2}}
 
 %%%%%%%% math operators
 \DeclareMathOperator{\tr}{Tr}
@@ -250,7 +250,7 @@
 	\item Comment earlier on uplift of 6d gSUGRA
 	\item Add references to introduction
 	%\item Complex geometry of moduli space?
-	%\item Compare with classification known in literature, e.g. in IIA (and IIB -- Jerome's story)
+	%\item Compare with classification known in literature, \textit{e.g.} in IIA (and IIB -- Jerome's story)
 	\item Email DW and MP to ask who we should cite for \eqref{eq:Twisting}
 \end{itemize}
 }
@@ -258,21 +258,21 @@
 \section{Introduction}
 Consistent truncations are a powerful technique that simplifies the dynamics of 10-/11-dimensional supergravity by focusing on a restricted subset of fields. The key principle behind a consistent truncation is to truncate to a subsector of fields, such that all solutions of the truncated theory correspond to solutions of the original 10-/11-dimensional supergravity theory. By considering only a, typically finite, subset of fields, consistent truncations provide a powerful tool to find complicated new 10-/11-dimensional supergravity solutions and to study their deformations. Consistent truncations have proven particularly powerful in the AdS/CFT correspondence, since all well-understood AdS vacua of string theory do not admit scale-separation and, thus, cannot be studied using the usual tools of lower-dimensional effective theories.
 
-Exceptional Field Theory (ExFT) is a reformulation of 10-/11-dimensional supergravity that unifies the metric and flux degrees of freedom and thereby makes manifest an exceptional symmetry group\footnote{For the purposes of this paper, we do not draw a distinction between ExFT and Exceptional Generalised Geometry, since these agree when the ``section condition'' is solved, which we will always assume here.}. Over the last decade, this has proven extremely useful for constructing consistent truncations, leading to a number of new examples preserving various amounts of supersymmetry \cite{Hohm:2014qga,Lee:2014mla,Malek:2015hma,Baguet:2015sma,Baguet:2015iou,Lee:2015xga,Malek:2016bpu,Ciceri:2016dmd,Cassani:2016ncu,Inverso:2016eet,Malek:2017cle,Malek:2017njj,Malek:2018zcz,Malek:2019ucd,Cassani:2019vcl,Malek:2020jsa,Cassani:2020cod}. However, consistent truncations to three dimensions have, until recently \cite{Galli:2022idq}, remained largely unexplored. One reason is that the $\EE$ ExFT requires modifications for its local symmetry structure, i.e. the generalised Lie derivative, to close into an algebra \cite{Hohm:2014fxa,Cederwall:2015ica}. Another is that there are no maximally supersymmetric AdS$_3$ vacua, i.e. preserving 32 supercharges, of string theory, leaving no natural candidate for constructing a consistent truncation with vacua. Indeed, while the consistent truncations of 11-dimensional supergravity on $S^7$ and $S^4$ and of 10-dimensional supergravity on $S^5$ contain maximally supersymmetric AdS vacua and are captured by a universal Ansatz in ExFT \cite{Hohm:2014qga,Lee:2014mla}, the analogous $S^8$ truncation of 11-dimensional supergravity does not exist, while there are two $S^7$ truncations of 10-dimensional supergravity but neither contains a maximally symmetric vacuum\cite{Fischbacher:2003yw,Galli:2022idq}.
+Exceptional Field Theory (ExFT) is a reformulation of 10-/11-dimensional supergravity that unifies the metric and flux degrees of freedom and thereby makes manifest an exceptional symmetry group\footnote{For the purposes of this paper, we do not draw a distinction between ExFT and Exceptional Generalised Geometry, since these agree when the ``section condition'' is solved, which we will always assume here.}. Over the last decade, this has proven extremely useful for constructing consistent truncations, leading to a number of new examples preserving various amounts of supersymmetry \cite{Hohm:2014qga,Lee:2014mla,Malek:2015hma,Baguet:2015sma,Baguet:2015iou,Lee:2015xga,Malek:2016bpu,Ciceri:2016dmd,Cassani:2016ncu,Inverso:2016eet,Malek:2017cle,Malek:2017njj,Malek:2018zcz,Malek:2019ucd,Cassani:2019vcl,Malek:2020jsa,Cassani:2020cod}. However, consistent truncations to three dimensions have, until recently \cite{Galli:2022idq}, remained largely unexplored. One reason is that the $\EE$ ExFT requires modifications for its local symmetry structure, \textit{i.e.} the generalised Lie derivative, to close into an algebra \cite{Hohm:2014fxa,Cederwall:2015ica}. Another is that there are no maximally supersymmetric AdS$_3$ vacua, \textit{i.e.} preserving 32 supercharges, of string theory, leaving no natural candidate for constructing a consistent truncation with vacua. Indeed, while the consistent truncations of 11-dimensional supergravity on $S^7$ and $S^4$ and of 10-dimensional supergravity on $S^5$ contain maximally supersymmetric AdS vacua and are captured by a universal Ansatz in ExFT \cite{Hohm:2014qga,Lee:2014mla}, the analogous $S^8$ truncation of 11-dimensional supergravity does not exist, while there are two $S^7$ truncations of 10-dimensional supergravity but neither contains a maximally symmetric vacuum\cite{Fischbacher:2003yw,Galli:2022idq}.
 
-Nonetheless, there are half-maximal, i.e. ${\cal N}=(4,4)$, supersymmetric AdS$_3$ vacua of string theory that are extremely intriguing. These are the AdS$_3 \times S^3 \times S^3 \times S^1$ and AdS$_3 \times S^3 \times T^4$ of IIB string theory (realising the ``large'' and ``small'' ${\cal N}=(4,4)$ superconformal symmetries), and, unlike in higher dimensions, can be supported by pure NS-NS flux. Not only does this mean that there are also heterotic versions of these vacua (preserving ${\cal N}=(4,0)$ supersymmetry), but also that they can be readily studied via the string worldsheet CFT \cite{Maldacena:2000hw,Eberhardt:2018ouy,Eberhardt:2019niq,Eberhardt:2019ywk}. \EM{Cut?} Moreover, the string sigma model in these vacua is also integrable \cite{}. Finally, the AdS$_3$/CFT$_2$ correspondence has seen much progress recently, with many new holographic duals being established \cite{}.
+Nonetheless, there are half-maximal, \textit{i.e.} ${\cal N}=(4,4)$, supersymmetric AdS$_3$ vacua of string theory that are extremely intriguing. These are the AdS$_3 \times S^3 \times S^3 \times S^1$ and AdS$_3 \times S^3 \times T^4$ of IIB string theory (realising the ``large'' and ``small'' ${\cal N}=(4,4)$ superconformal symmetries), and, unlike in higher dimensions, can be supported by pure NS-NS flux. Not only does this mean that there are also heterotic versions of these vacua (preserving ${\cal N}=(4,0)$ supersymmetry), but also that they can be readily studied via the string worldsheet CFT \cite{Maldacena:2000hw,Eberhardt:2018ouy,Eberhardt:2019niq,Eberhardt:2019ywk}. \EM{Cut?} Moreover, the string sigma model in these vacua is also integrable \cite{}. Finally, the AdS$_3$/CFT$_2$ correspondence has seen much progress recently, with many new holographic duals being established \cite{}.
 
 Here we will focus on the ${\cal N}=(4,4)$ AdS$_3 \times S^3 \times S^3 \times S^1$ vacuum of IIB string theory and show that it admits a consistent truncation to a 3-dimensional maximal gauged supergravity, which was first studied in \cite{Hohm:2005ui}. All vacua of this theory break at least half the supersymmetries, reflecting the absence of a maximally supersymmetric AdS$_3$ vacuum in string theory. Key to constructing this consistent truncation is to add new fluxes to the $S^1$ reduction of the consistent truncation of IIB supergravity on $S^3 \times S^3$ \cite{Inverso:2016eet}. We will also show that this procedure for adding flux fails to produce a consistent truncation for the $S^1$ reduction of other ``dyonic'' truncations to 4 dimensions \cite{Guarino:2015jca,Inverso:2016eet}.
 
-Using our consistent truncation, we will show that the AdS$_3 \times S^3 \times S^3 \times S^1$ has a rich moduli space of symmetry- and supersymmetry-breaking deformations, including some that are analogous to the ``flat deformations'' studied for AdS$_4 \times S^5 \times S^1$ \cite{Guarino:2020gfe,Guarino:2021hrc,Giambrone:2021zvp,Giambrone:2021wsm}. While some of these deformations preserve some amounts of supersymmetry, others break all supersymmetries. Yet, surprisingly, at least a subset of vacua continue to be perturbatively stable within IIB supergravity, similar to \cite{Giambrone:2021wsm}. Our work also provides an uplift of 6-dimensional supergravity on $S^3$ studied in \cite{Eloy:2021fhc} to IIB string theory. As we will show, some supersymmetric deformations that appear non-compact in 6-dimensional supergravity \cite{Eloy:2021fhc} are compactified within the full 10-dimensional supergravity theory. We will also find evidence of T-duality playing a role in the global properties of the moduli space.
+Using our consistent truncation, we will show that the AdS$_3 \times S^3 \times S^3 \times S^1$ has a rich moduli space of symmetry- and supersymmetry-breaking deformations, including some that are analogous to the ``flat deformations'' studied for AdS$_4 \times S^5 \times S^1$ \cite{Guarino:2020gfe,Guarino:2021hrc,Giambrone:2021zvp,Giambrone:2021wsm}. While some of these deformations preserve some amounts of supersymmetry, others break all supersymmetries. Yet, surprisingly, at least a subset of vacua continue to be perturbatively stable within IIB supergravity, similar to \cite{Giambrone:2021wsm}. Our work also provides an uplift of the supersymmetric deformation of 6-dimensional supergravity on $S^3$ studied in \cite{Eloy:2021fhc} to IIB string theory. As we will show, some supersymmetric deformations that appear non-compact in 6-dimensional supergravity \cite{Eloy:2021fhc} are compactified within the full 10-dimensional supergravity theory. We will also find evidence of T-duality playing a role in the global properties of the moduli space.
 
-Another technical result of our work is the derivation of the potential of 3-dimensional gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv} in terms of the embedding tensor. The potential was previously only known in terms of fermion shift matrices. As a by-product, we find a constraint that must be obeyed by the embedding tensor of any 3-dimensional gauged supergravity that can be uplifted to 10-/11-dimensional supergravity. As we show, this allows us to prove the lack of a higher-dimensional origin of some 3-dimensional gaugings. \EM{update}
+Another technical result of our work is the derivation of the potential of 3-dimensional gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv} in terms of the embedding tensor. The potential was previously only known in terms of fermion shift matrices. As a by-product, we find a constraint that must be obeyed by the embedding tensor of any 3-dimensional gauged supergravity that can be uplifted to 10-/11-dimensional supergravity. As we show, this allows to prove the lack of a higher-dimensional origin of some 3-dimensional gaugings, as we illustrate on an example. \EM{update}
 
 The outline of our paper is as follows. We begin with a review of $\EE$ ExFT in section \ref{s:Review} and how to derive consistent truncations in this formalism in \ref{s:TruncationReview}. In section \ref{s:Potential} we derive the potential of 3-dimensional gauged supergravity in terms of the embedding tensor and prove the lack of higher-dimensional origin of some 3-dimensional theories. Then, we show how to add fluxes to consistent truncations in \ref{s:AddFlux}, allowing us to construct the consistent truncation of IIB supergravity on $S^3 \times S^3 \times S^1$. Using this truncation, we study the moduli space of the AdS$_3$ vacua in section \ref{s:Moduli}, before concluding in section \ref{s:Conclusions}.
 
 \section{Review of \texorpdfstring{\EE}{E8(8)} exceptional field theory} \label{s:Review}
 
-The \EE exceptional field theory, first constructed in ref.~\cite{Hohm:2014fxa}, is an \EE duality-covariant formulation of type II and 11d supergravities. It is defined on a set of $3+248$ coordinates made of three-dimensonal external coordinates $\{x^{\mu}\}$ and internal coordinates $\{Y^{M}\}$ in the 248-dimensional adjoint representation of \EE. The dependance of the fields on these coordinates is constrained by the ``section constraints''\footnote{We use the notation $\otimes$ to indicate that both derivatives may act on different functions.}
+The \EE exceptional field theory, first constructed in ref.~\cite{Hohm:2014fxa}, is an \EE duality-covariant formulation of type II and 11d supergravities. It is defined on a set of $3+248$ coordinates made of three-dimensional external coordinates $\{x^{\mu}\}$ and internal coordinates $\{Y^{M}\}$ in the 248-dimensional adjoint representation of \EE. The dependence of the fields on these coordinates is constrained by the ``section constraints''\footnote{We use the notation $\otimes$ to indicate that both derivatives may act on different functions.}
 \begin{equation} \label{eq:sectionconstraints}
 	\begin{cases}
 		\eta^{MN}\partial_{M}\otimes\partial_{N} = 0\,,\\
@@ -344,7 +344,7 @@ with
 \begin{equation}
 	\Sigma_{\fl{M}\,M}=\frac{\rho^{-1}}{60}\,f_{\fl{M}}{}^{\fl{PQ}}\,\UI_{\fl{P}P}\,\partial_{M}\UI_{\fl{Q}}{}^{P}\,.
 \end{equation}
-The fields with flat indices $\fl{M}$ (in the $\mathbf{248}$ representation of \EE) belong to the three-dimensional theory; all the dependence on the internal manifold is factored out in $U_{\fl{M}}{}^{M}$ and $\rho$. Note that with the definition of $\Sigma_{\fl{M}\,M}$ the condition~\eqref{eq:sectionconstraint2} is automatically satisfied.
+The fields with flat indices $\fl{M}$ (in the $\mathbf{248}$ representation of \EE) belong to the three-dimensional theory; all the dependence on the internal manifold is factored out in $U_{M}{}^{\fl{M}}$ and $\rho$. Note that with the definition of $\Sigma_{\fl{M}\,M}$ the condition~\eqref{eq:sectionconstraint2} is automatically satisfied.
 
 The Ansätze~\eqref{eq:GSSansatz} describe a \textit{consistent} truncation if the following condition is satisfied:
 \begin{equation} \label{eq:GenLeibniz}
@@ -362,14 +362,14 @@ where
 	{\cal D}_{\mu}\M_{\fl{MN}} = \partial_{\mu}\M_{\fl{MN}} + 2\,\A_{\mu}{}^{\fl{P}}X_{\fl{P}(\fl{M}}{}^{\fl{Q}}\M_{\fl{N})\fl{Q}}\,, \quad {\rm and} \quad \llbracket\A_{\mu},\A_{\nu}\rrbracket^{\fl{M}}=X_{\fl{PQ}}{}^{\fl{M}}\A_{\mu}{}^{\fl{P}}\A_{\nu}^{\fl{Q}} \,.
 \end{equation}
 
-Thus, for a given twist matrix $U_{M}{}^{\fl{M}}$ satisfying the consistency condition~\eqref{eq:GenLeibniz}, the action~\eqref{eq:ExFTaction} reduces to three-dimensional ${\cal N}=16$ gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv}. The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity, as is clear from its appearance in \eqref{eq:3dCovDeriv} in the gauge-covariant derivative and the gauge algebra of the vector fields. From eq. \eqref{eq:GenLeibniz}, it has the following expression in terms of the twist matrix and $\rho$
+Thus, for a given twist matrix $U_{M}{}^{\fl{M}}$ satisfying the consistency condition~\eqref{eq:GenLeibniz}, the action~\eqref{eq:ExFTaction} reduces to three-dimensional ${\cal N}=16$ gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv}. The constant tensor $X_{\fl{M}\fl{N}}{}^{\fl{P}}$ plays the role of the embedding tensor of the three-dimensional gauged supergravity, as is clear from its appearance in \eqref{eq:3dCovDeriv} in the gauge-covariant derivative and the gauge algebra of the vector fields. From eq. \eqref{eq:GenLeibniz}, it has the following expression in terms of the twist matrix and $\rho$:
 \begin{equation}
 	\begin{split}
 		X_{\fl{MN}}{}^{\fl{P}}&=-\rho^{-1}\,\Gamma_{\fl{MN}}{}^{\fl{P}} + \rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}\,f^{\fl{QK}}{}_{\fl{L}}\,\Gamma_{\fl{KM}}{}^{\fl{L}}-\frac{1}{60}\,\rho^{-1}\,f^{\fl{PK}}{}_{\fl{N}}\,f_{\fl{ML}}{}^{\fl{Q}}\,\Gamma_{\fl{KQ}}{}^{\fl{L}}\\
 		&\quad-\frac{1}{2}\,\rho^{-1}\,f^{\fl{P}}{}_{\fl{NQ}}\,f^{\fl{QK}}{}_{\fl{M}}\,\Gamma_{\fl{RK}}{}^{\fl{R}}+\left(\delta_{\fl{M}}{}^{\fl{K}}\delta_{\fl{N}}{}^{\fl{P}}-\frac{1}{2}\,f_{\fl{M}}{}^{\fl{LK}}f_{\fl{NL}}{}^{\fl{P}}\right)\,\xi_{\fl{K}}\,.
 	\end{split}
 \end{equation}
-Here, we defined the ${\rm E}_{8(8)}$ current $\Gamma_{\fl{MN}}{}^{\fl{P}}=\UI_{\fl{M}}{}^{K}\UI_{\fl{N}}{}^{L}\partial_{K}U_{L}{}^{\fl{P}}$ and the trombone gauging
+Here, we defined the $\EE$ current $\Gamma_{\fl{MN}}{}^{\fl{P}}=\UI_{\fl{M}}{}^{K}\UI_{\fl{N}}{}^{L}\partial_{K}U_{L}{}^{\fl{P}}$ and the trombone gauging
 \begin{equation} \label{eq:Trombone}
 	\begin{split}
 		\xi_{\fl{M}} %&= 2\,U_{\fl{M}}{}^{N}\partial_{N}\rho^{-1}+\rho^{-1}\,\partial_{N}U_{\fl{M}}{}^{N} \\
@@ -385,7 +385,7 @@ The embedding tensor is most nicely expressed once projected on the adjoint repr
 \end{equation}
 with the projection of the current $\Gamma_{\fl{MN}} = - \tfrac{1}{60}\,\Gamma_{\fl{MP}}{}^{\fl{Q}}\,f_{\fl{NQ}}{}^{\fl{P}}$. In the following, we will focus on gaugings with $\xi_{\fl{M}}=0$.
 
-The three-dimensional action follows from inserting the Ansätze~\eqref{eq:GSSansatz} in the ExFT action~\eqref{eq:ExFTaction}. The expressions of the kinetic and Chern-Simons terms result immediately from eq.~\eqref{eq:GSSexample}
+The three-dimensional action follows from inserting the Ansätze~\eqref{eq:GSSansatz} in the ExFT action~\eqref{eq:ExFTaction}. The expressions of the kinetic and Chern-Simons terms result immediately from eq.~\eqref{eq:GSSexample}:
 \begin{equation}
 	\begin{split}
 		\mathscr{L}_{\rm kin} &= \frac{1}{240}\,D_{\mu}\M_{MN}D^{\mu}\M^{MN} \underset{\rm gSS}{=} \frac{\rho^{2}}{240}\,{\cal D}_{\mu}\M_{\fl{MN}}{\cal D}^{\mu}\M^{\fl{MN}}, \\
@@ -396,9 +396,10 @@ The three-dimensional action follows from inserting the Ansätze~\eqref{eq:GSSan
 However, the case of the potential term $\mathscr{L}_{\rm int}$, leading to a potential $V$ for the three-dimensional scalars $\M_{\fl{MN}}$, is more subtle. We expect $V$ to be quadratic in the embedding tensor, which makes the identification of $X_{\fl{MN}}$ more complicated. Moreover, the potential of three-dimensional ${\cal N}=16$ gauged supergravity in terms of the embedding tensor is unknown, with currently the potential only expressed in terms of the fermion shift matrices of the gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv}. Thus, in the following, we will follow the truncation procedure carefully and thereby construct the potential of the three-dimensional ${\cal N}=16$ gauged supergravity in terms of the embedding tensor.
 
 \section{Deriving the potential of ${\cal N}=16$ gauged supergravity} \label{s:Potential}
-Here we will use the $\EE$ ExFT Lagrangian and the consistent truncation Ansatz \eqref{eq:GSSansatz} to derive the potential of three-dimensional ${\cal N}=16$ gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv} in terms of the embedding tensor. Not only is this an interesting application of ExFT, relying on purely bosonic considerations and bypassing the usual construction of the gauged supergravity potential using supersymmetry\footnote{Note that the same strategy was recently used to impressively derive the potential of maximal two-dimensional gauged supergravity \cite{Bossard:2022wvi}, where fermions are extremely poorly understood. As a result, in that case, the bosonic $\En{9}$ ExFT \cite{Bossard:2018utw,Bossard:2021jix} provides the only currently accessible route for computing the gauged supergravity potential.}, but the potential is crucial for finding vacua of the three-dimensional theory and uplifting these in the later parts of this paper.
+Here we will use the $\EE$ ExFT Lagrangian and the consistent truncation Ansatz \eqref{eq:GSSansatz} to derive the potential of three-dimensional ${\cal N}=16$ gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv} in terms of the embedding tensor. Not only is this an interesting application of ExFT, relying on purely bosonic considerations and bypassing the usual construction of the gauged supergravity potential using supersymmetry\footnote{Note that the same strategy was recently used to impressively derive the potential of maximal two-dimensional gauged supergravity \cite{Bossard:2022wvi}, where fermions are extremely poorly understood. As a result, in that case, the bosonic $\En{9}$ ExFT \cite{Bossard:2018utw,Bossard:2021jix} provides the only currently accessible route for computing the gauged supergravity potential.}, but the potential is crucial for finding vacua of the three-dimensional theory and uplifting these in the later parts of this paper. In addition, we derive a necessary condition for the embedding tensor to arise from a compactification of higher-dimensional supergravity and illustrate it on an example.
 
-In order to derive the potential, we adopt the following strategy. We want $\mathscr{L}_{\rm int}$ \eqref{eq:ExFTLint} to reduce to the embedding tensor squared upon inserting the generalised Scherk-Schwarz Ans\"{a}tze \eqref{eq:GSSansatz}. However, as in higher dimensions, e.g. \cite{Berman:2012uy,Musaev:2013rq,Blair:2014zba}, this does not have to match identically, but only up to total derivative terms and terms which violate the section condition. The possible boundary terms are
+\subsection{Expression of the potential in terms of the embedding tensor}
+In order to derive the potential, we adopt the following strategy. We want $\mathscr{L}_{\rm int}$ \eqref{eq:ExFTLint} to reduce to the embedding tensor squared upon inserting the generalised Scherk-Schwarz Ans\"{a}tze \eqref{eq:GSSansatz}. However, as in higher dimensions, \textit{e.g.} \cite{Berman:2012uy,Musaev:2013rq,Blair:2014zba}, this does not have to match identically, but only up to total derivative terms and terms which violate the section condition. The possible boundary terms are
 \begin{equation} \label{eq:BoundaryTerms}
 	\frac{1}{\sqrt{\dg}} \partial_M \left(\sqrt{\dg} \partial_N \gM^{MN} \right) \quad \text{and} \quad \frac{1}{\sqrt{\dg}} \partial_M \left( \gM^{MN} \partial_N \sqrt{\dg}\right) \,.
 \end{equation}
@@ -407,7 +408,7 @@ However, since the ${\cal N}=16$ supergravity potential will be given by terms q
 	\frac{1}{\sqrt{\dg}}\,\partial_{M}\Big(\sqrt{\dg}\,\partial_{N}\M^{MN}+\frac{4}{3}\,\M^{MN}\partial_{N}\sqrt{\dg}\Big) \,.
 \end{equation}
 
-Now, we first insert the generalized Sherk-Schwarz Ansätze \eqref{eq:GSSansatz} into the expression of $\mathscr{L}_{\rm int}$ \eqref{eq:ExFTLint} with the additional total derivative \eqref{eq:BoundaryTermCombination}
+Now, we first insert the generalized Sherk-Schwarz Ansätze \eqref{eq:GSSansatz} into the expression of $\mathscr{L}_{\rm int}$~\eqref{eq:ExFTLint} with the additional total derivative \eqref{eq:BoundaryTermCombination}
 \begin{equation} \label{eq:Lintexpansion}
 	\begin{aligned}
 		\mathscr{L}_{\rm int} &+ \frac{a}{\sqrt{\vert g\vert}}\,\partial_{M}\Big(\sqrt{\vert g\vert}\,\partial_{N}\M^{MN}+\frac{4}{3}\,\M^{MN}\partial_{N}\sqrt{\vert g\vert}\Big)\\
@@ -417,9 +418,13 @@ Now, we first insert the generalized Sherk-Schwarz Ansätze \eqref{eq:GSSansatz}
 	\end{aligned}
 \end{equation}
 
-Secondly, knowing that the ${\cal N}=16$ potential must be quadratic in $X_{\fl{MN}}$, we consider the most general quadratic function in $X_{\fl{MN}}$ and develop it in \EE currents using eq.~\eqref{eq:symembeddingtensor}. Note that in higher dimensions, there exist only two quadratic combinations of the embedding tensor
+Secondly, knowing that the ${\cal N}=16$ potential must be quadratic in $X_{\fl{MN}}$, we consider the most general quadratic function in $X_{\fl{MN}}$ and develop it in \EE currents using eq.~\eqref{eq:symembeddingtensor}. Note that in higher dimensions, there exist only two quadratic combinations of the embedding tensor:
 \begin{equation}
-	X_{\fl{M}\fl{N}}{}^{\fl{P}} X_{\fl{Q}\fl{P}}{}^{\fl{N}} \gM^{\fl{MQ}} \qquad \text{and} \qquad X_{\fl{M}\fl{N}}{}^{\fl{P}} X_{\fl{Q}\fl{R}}{}^{\fl{S}} \gM^{\fl{MQ}} \gM^{\fl{N}\fl{R}} \gM_{\fl{P}\fl{S}} \,.
+	X_{\fl{M}\fl{N}}{}^{\fl{P}} X_{\fl{Q}\fl{P}}{}^{\fl{N}} \gM^{\fl{MQ}} \qquad \text{and} \qquad X_{\fl{M}\fl{N}}{}^{\fl{P}} X_{\fl{Q}\fl{R}}{}^{\fl{S}} \gM^{\fl{MQ}} \gM^{\fl{N}\fl{R}} \gM_{\fl{P}\fl{S}} \,,
+\end{equation}
+or equivalently
+\begin{equation}
+	X_{\fl{MN}}X_{\fl{PQ}}\,\M^{\fl{MP}}\eta^{\fl{NQ}} \qquad {\rm and} \qquad X_{\fl{MN}}X_{\fl{PQ}}\,\M^{\fl{MP}}\M^{\fl{NQ}}.
 \end{equation}
 However, in three dimensions, because the vector fields transform in the adjoint representation of $\EE$, we can write two additional terms
 \begin{equation} \label{eq:ExtraX2Terms}
@@ -439,7 +444,7 @@ We can now deduce
 \begin{equation}
 	X_{\ov{MN}} \,X^{\ov{MN}}= 6\, \xi_{\ov M} \, \xi^{\ov M} - 2\, \rho^{-2}\left(\Gamma_{\ov M}{}^{\ov M}\right)^2 \,,
 \end{equation}
-which can be expressed entirely in terms of $X_{\fl{M}\fl{N}}$ after tracing eq.~\eqref{eq:symembeddingtensor}
+which can be expressed entirely in terms of $X_{\fl{M}\fl{N}}$ after tracing eq.~\eqref{eq:symembeddingtensor}:
 \begin{equation}\label{eq:reltrX}
 	X_{\ov{MN}}\,X^{\ov{MN}} = 6\, \xi_{\ov M}\, \xi^{\ov M} - \frac1{1922}\left(X_{\ov M}{}^{\ov M}\right)^2 \,. 
 \end{equation}
@@ -527,10 +532,42 @@ As in higher dimensions, $X_{\ov{M}\ov{N}}$ obtained from \eqref{eq:GenLeibniz} 
 \subsection{Ruling out gaugings}
 \EM{Let's check the $\GL{6} \times \SO{2,2}$ gauging (half-maximal embedded in maximal)....}
 
+As mentioned above, eq.~\eqref{eq:reltrX} can be used to assess whether a given three-dimensional theory of embedding tensor $X_{\fl{MN}}$ has a higher-dimensional origin. Let us illustrate that on the ${\cal N}=(8,0)$ ${\rm AdS}_{3}$ vacuum with $\GL{6} \times \SO{2,2}$ gauging constructed in ref.~\cite{Deger:2019tem}. This solution has a compact gauging smaller than $\SO{9}$, thus escaping the no-go result of ref.~\cite{Galli:2022idq}. The embedding tensor of the solution is expressed by breaking $\EE$ as
+\begin{equation}
+	\begin{aligned}
+		\EE &\longrightarrow \SO{8,8}\\
+		\mathbf{248} &\longrightarrow \mathbf{120} \oplus \mathbf{128}\\
+		X^{\fl{M}} &\longrightarrow \left\{X^{[\fl{\sf IJ}]},X^{\fl{\sf A}}\right\},
+	\end{aligned}
+\end{equation}
+with $\fl{\sf I}$ and $\fl{\sf A}$ labels of the fundamental and spinorial representations of $\SO{8,8}$, respectively. Explicitly,
+\begin{equation}
+	\begin{aligned}
+		X_{\fl{\sf IJ},\fl{\sf KL}} &= \Theta_{\fl{\sf IJ},\fl{\sf KL}},\\
+		X_{\fl{\sf AB}} &= -2\,\theta\,\eta_{\fl{\sf AB}}+\frac{1}{24}\,\Gamma^{\fl{\sf IJ},\fl{\sf KL}}_{\fl{\sf AB}}\,\Theta_{\fl{\sf IJKL}},\\
+		X_{\fl{\sf IJ},\fl{\sf A}} &=0,
+	\end{aligned}
+\end{equation}
+where $\Gamma^{\fl{\sf IJKL}}_{\fl{\sf AB}}$ is the four-fold product of $\SO{8,8}$ $\Gamma$ matrices and $\eta_{\fl{\sf AB}}$ the $\mathbf{128}\otimes\mathbf{128}$ component of the Cartan-Killing metric. The tensor $\Theta_{\fl{\sf IJ},\fl{\sf KL}}$ is given by
+\begin{equation}
+	\Theta_{\fl{\sf IJ},\fl{\sf KL}}=\theta_{\fl{\sf IJKL}}+\frac12\big(\eta_{\fl{\sf K}[\fl{\sf I}}\theta_{\fl{\sf J}]\fl{\sf L}}-\eta_{\fl{\sf L}[\fl{\sf I}}\theta_{\fl{\sf J}]\fl{\sf K}}\big)+\theta\,\eta_{\fl{\sf K}[\fl{\sf I}}\eta_{\fl{\sf J}]\fl{\sf L}}\,,
+\end{equation}
+with $\theta_{\fl{\sf IJKL}}$ totally antisymmetric and $\theta_{\fl{\sf IJ}}$ symmetric, with non vanishing components
+\begin{align}
+  & \theta_{ij}=4\,\delta_{ij}\;,\quad \theta_{\alpha\beta}=-12\,\delta_{\alpha\beta}\;,\quad \theta_{r_{+}s_{+}}=-4\,\delta_{r_{+}s_{+}}\;,\quad \theta_{r_{-}s_{-}}=12\,\delta_{r_{-}s_{-}}\;,\nonumber\\
+  & \theta=-8\;,\quad \theta_{\alpha\beta r_{-}s_{-}} = -48\,\sigma_{\alpha\beta}\,\sigma_{r_{-}s_{-}}\;,\quad \theta_{ij r_{+}s_{+}} = 32\,\delta_{i[r_{+}}\,\delta_{s_{+}]j}\;,
+\end{align}
+where... \CE{(explain all notations...)} With this embedding, we get
+\begin{equation}
+	X_{\ov{MN}}\,X^{\ov{MN}} = \frac{55}{1922}\left(X_{\ov M}{}^{\ov M}\right)^2,
+\end{equation}
+thus violating the condition~\eqref{eq:reltrX} (the trombone gauging vanishes for the solution). Then, we deduce that the ${\cal N}=(8,0)$ solution of ref.~\cite{Deger:2019tem} with gauging $\GL{6} \times \SO{2,2}$ does not admit a higher-dimensional origin. This illustrate how the constraint~\eqref{eq:reltrX} can be used to determine if a given three-dimensional vacuum can be uplifted.
+
+
 \section{Adding fluxes to consistent truncations} \label{s:AddFlux}
 In order to construct the consistent truncation around the ${\cal N}=(4,4)$ AdS$_3 \times S^3 \times S^3 \times S^1$ vacuum of IIB supergravity, a promising starting point is the dyonic $S^3 \times S^3$ truncation of IIB supergravity constructed in \cite{Inverso:2016eet}, and further reducing this on $S^1$. However, this will not give the correct AdS$_3$ vacuum since the truncation is missing the required 7-form flux on $S^3 \times S^3 \times S^1$. Indeed, the 3-dimensional gauged supergravity that would be obtained this way does not have any AdS$_3$ vacua. We can remedy this situation by defining a new consistent truncation by adding a 7-form flux to the one obtained from the $S^3 \times S^3$ reduction constructed in $\En{7}$ ExFT.
 
-This motivates the following question: Given a consistent truncation, i.e. $\cU_{\fl{M}}{}^M$, satisfying \eqref{eq:GenLeibniz}, when can we add a new flux component of string theory to the compactification to obtain a new consistent truncation? Adding a new flux component to the truncation is equivalent to twisting the generalised frame as follows \EM{Email DW and MP to ask who we should cite for this?}
+This motivates the following question: Given a consistent truncation, \textit{i.e.} $\cU_{\fl{M}}{}^M$, satisfying \eqref{eq:GenLeibniz}, when can we add a new flux component of string theory to the compactification to obtain a new consistent truncation? Adding a new flux component to the truncation is equivalent to twisting the generalised frame as follows \EM{Email DW and MP to ask who we should cite for this?}
 \begin{equation} \label{eq:Twisting}
 	\cU_{\fl{M}}{}^M \longrightarrow \cU'_{\fl{M}}{}^M = \cU_{\fl{M}}{}^N \exp(C)_N{}^M \,,
 \end{equation}
@@ -538,7 +575,7 @@ where $C$ denotes the $\EE$ generator corresponding to the potential we want to 
 \begin{equation}
 	\gL_{\ff{U}'_{\fl{M}}} \cU'_{\fl{N}}{}^M = \left( \gL_{\ff{U}_{\fl{M}}} \cU_{\fl{N}}{}^N + F_{PQ}{}^N\, \cU_{\fl{M}}{}^P\, \cU_{\fl{N}}{}^Q \right) \exp(C)_N{}^M \,,
 \end{equation}
-where $F_{MN}{}^P$ is a tensor in the $\mathbf{1} \oplus \mathbf{248} \oplus \mathbf{3875}$ of $\EE$, i.e. the same representation as the embedding tensor, corresponding to the field strength of the potential $C$ in \eqref{eq:Twisting}. Using \eqref{eq:GenLeibniz}, we now have
+where $F_{MN}{}^P$ is a tensor in the $\mathbf{1} \oplus \mathbf{248} \oplus \mathbf{3875}$ of $\EE$, \textit{i.e.} the same representation as the embedding tensor, corresponding to the field strength of the potential $C$ in \eqref{eq:Twisting}. Using \eqref{eq:GenLeibniz}, we now have
 \begin{equation}
 	\gL_{\ff{U}'_{\fl{M}}} \cU'_{\fl{N}}{}^M = \left( X_{\fl{M}\fl{N}}{}^{\fl{P}} + \rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\fl{P}} \right) \cU'_{\fl{P}}{}^M \,,
 \end{equation}
@@ -554,10 +591,10 @@ A particularly simple way of having constant $\rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\f
 As a warm-up for the $S^3 \times S^3 \times S^1$ truncation, let us demonstrate this methodology for the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity on $S^3$, which was constructed in \cite{Eloy:2021fhc}. As discussed in \cite{Eloy:2021fhc}, the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity to 3-dimensional half-maximal gauged supergravity can be described using the $\SO{8,4}$ ExFT \cite{Hohm:2017wtr,Samtleben:2019zrh}. On the other hand, the consistent truncation on $S^3$ is conveniently described by twist matrices living in $\SL{4} \simeq \SO{3,3}$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} with the embedding $\SO{3,3} \subset \SO{4,4} \subset \SO{8,4}$. However, the twist matrix in \cite{Eloy:2021fhc} differs from this $\SO{3,3}$ twist matrix \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} by an additional parameter, $\lambda$, which gives rise to an external 3-form flux or, equivalently, a new internal 3-form flux.
 
 \subsubsection{The $S^n$ twist matrix} \label{s:SLn}
-\EM{Move to appendix?!?!} \CE{(I think I would say yes)}\\
+\EM{Move to appendix?!?!} \CE{(I think I would say yes. Work here.)}\\
 Since we will use it throughout this paper, let us construct the $\SL{4} \simeq \SO{3,3}$ twist matrix that describes the consistent truncation on $S^3$. This can be viewed as a special case of a family of consistent truncations on $S^n$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou}. Here, we give a slightly different, but equivalent, form of this construction.
 
-We use an $\SL{n+1}$ ExFT, like in \cite{Lee:2014mla}, which encodes an $n$-dimensional metric and volume-form flux, i.e. Freund-Rubin compactifications, and thus gives a natural description of $S^n$ compactifications. The $\SL{n+1}$ ExFT formally has coordinates in the antisymmetric representation of $\SL{n+1}$, $y^{IJ} = - y^{JI}$, with $I = 1, \ldots, n+1$, and similarly, generalised vector fields transform in the antisymmetric representation of $\SL{n+1}$. The generalised Lie derivative on a generalised tensor in the fundamental $V^I$ of weight $\lambda$ is given by
+We use an $\SL{n+1}$ ExFT, like in \cite{Lee:2014mla}, which encodes an $n$-dimensional metric and volume-form flux, \textit{i.e.} Freund-Rubin compactifications, and thus gives a natural description of $S^n$ compactifications. The $\SL{n+1}$ ExFT formally has coordinates in the antisymmetric representation of $\SL{n+1}$, $y^{IJ} = - y^{JI}$, with $I = 1, \ldots, n+1$, and similarly, generalised vector fields transform in the antisymmetric representation of $\SL{n+1}$. The generalised Lie derivative on a generalised tensor in the fundamental $V^I$ of weight $\lambda$ is given by
 \begin{equation} \label{eq:SLnGenLie}
 	\gL_\Lambda V^I = \frac12 \Lambda^{JK} \partial_{JK} V^{I} - V^J \partial_{JK} \Lambda^{IK} + \left( \frac{\lambda}{2} + \frac{1}{n+1} \right) V^I \partial_{JK} \Lambda^{JK} \,,
 \end{equation}
@@ -567,7 +604,7 @@ and similarly for other generalised tensors. Closure of the generalised Lie deri
 \end{equation}
 which restricts the dependence of all fields to a subset of physical coordinates.
 
-We are interested in the maximal solutions of the section condition \eqref{eq:SLnSC} which preserve a $\SL{n} \subset \SL{n+1}$ subgroup. Under this decomposition $\SL{n+1} \rightarrow \SL{n}$ with $V^I = \left( V^i,\, V^0 \right)$, where $i = 1, \ldots, n$, we solve the section condition by having physical coordinates $y^{0i}$ on the $n$-dimensional manifold $M$, i.e. $\partial_{ij} = 0$ for all fields with only $\partial_{0i} = \partial_i \neq 0$. Correspondingly, the generalised tangent bundle, whose sections are in the antisymmetric representation of $\SL{n+1}$ and carry weight $\frac{n-3}{n+1}$, decomposes as
+We are interested in the maximal solutions of the section condition \eqref{eq:SLnSC} which preserve a $\SL{n} \subset \SL{n+1}$ subgroup. Under this decomposition $\SL{n+1} \rightarrow \SL{n}$ with $V^I = \left( V^i,\, V^0 \right)$, where $i = 1, \ldots, n$, we solve the section condition by having physical coordinates $y^{0i}$ on the $n$-dimensional manifold $M$, \textit{i.e.} $\partial_{ij} = 0$ for all fields with only $\partial_{0i} = \partial_i \neq 0$. Correspondingly, the generalised tangent bundle, whose sections are in the antisymmetric representation of $\SL{n+1}$ and carry weight $\frac{n-3}{n+1}$, decomposes as
 \begin{equation} \label{eq:SLnE}
 	E = TM \oplus \Lambda^{n-2} T^*M \,,
 \end{equation}
@@ -621,11 +658,11 @@ with
 	X_{\fl{I}\fl{J},\fl{L}}{}^{\fl{K}} = - \delta_{\fl{L}[\fl{I}} \delta_{\fl{J}]}^{\fl{K}} \,.
 \end{equation}
 
-Finally, we can also connect the above with the $\SL{n+1}$ Ansatz construction of \cite{Hohm:2014qga}. We do this by evaluating \eqref{eq:SLnFrame} and \eqref{eq:rho} on the northern hemisphere $Y^I = \left( y^i,\, \sqrt{1-y^i y_i}\right)$, $i = 1, \ldots, n$ and using the gauge choice for the potential $A$
+Finally, we can also connect the above with the $\SL{n+1}$ Ansatz construction of \cite{Hohm:2014qga}. We do this by evaluating \eqref{eq:rho} and \eqref{eq:SLnFrame} on the northern hemisphere $Y^I = \left( y^i,\, \sqrt{1-y^i y_i}\right)$, $i = 1, \ldots, n$ and using the gauge choice for the potential $A$
 \begin{equation}
 	A_{i_1 \ldots i_{n-1}} = \epsilon_{i_1 \ldots i_{n-1}j}\, y^j (1 + K(v)) \,,
 \end{equation}
-with $v = y^i\, y^i$ and $\epsilon_{i_1 \ldots i_{n-1}j}$ the volume form on $S^n$. With the above choices, we precisely recover the $\SL{n+1}$ twist matrix of \cite{Hohm:2014qga}, i.e.
+with $v = y^i\, y^i$ and $\epsilon_{i_1 \ldots i_{n-1}j}$ the volume form on $S^n$. With the above choices, we precisely recover the $\SL{n+1}$ twist matrix of \cite{Hohm:2014qga}, \textit{i.e.}
 \begin{equation} \label{eq:SLnTwist}
 	\UI_{\fl{I}}{}^I = \begin{pmatrix}
 		\left(1-v\right)^{-1/(n+1)} \left( \delta_i{}^j + y_i\, y^j K(v) \right) & y_i \left(1-v\right)^{(n-1)/(2(n+1))} \\
@@ -647,7 +684,7 @@ Correspondingly, we write a $\SO{4,4}$ vector $V^M$ as
 \end{equation}
 where $A = 1, \ldots, 6$ labels the vector of $\SO{3,3}$ and $z$, $\bar{z}$ label the $\mathbf{1_2}$ and $\mathbf{1_{-2}}$, respectively.
 
-We denote by $U_A{}^{\ov{A}}$ the $\SO{3,3}$ twist matrix corresponding to the $S^3$ truncation constructed in \cite{Lee:2014mla,Baguet:2015iou} and obtained from \eqref{eq:SLnFrame}, \eqref{eq:rho}, \eqref{eq:SLnTwist}. Then, we can add a 3-form potential by twisting with the $\SO{4,4}$ generator
+We denote by $U_A{}^{\ov{A}}$ the $\SO{3,3}$ twist matrix corresponding to the $S^3$ truncation constructed in \cite{Lee:2014mla,Baguet:2015iou} and obtained from \eqref{eq:SLnFrame}, \eqref{eq:rho}, \eqref{eq:SLnTwist}. Then, we can add a 3-form potential by twisting with the $\SO{4,4}$ generator \CE{(Sure here? Check notes.)}
 \begin{equation} \label{eq:C2S3example}
 	(e^C)^{MN} = C_A \left( t^A \right)^{MN} \,,
 \end{equation}
@@ -806,14 +843,14 @@ and has the following non-vanishing components under the $\SL{4}_1 \times \SL{4}
 		X_{(\mathbf{70},\mathbf{1});(\mathbf{1},\mathbf{3})}:&\  X_{\fl{IJKL};++} = -\frac{\lambda}{12\sqrt{6}}\,\varepsilon_{\fl{IJKL}}\,.
 	\end{split}
 \end{equation}
-With this embedding tensor, the potential~\eqref{eq:3dpotential} has a vacuum at the scalar origin when $\lambda=\pm 4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$. The sign changes the chirality of the Killing spinors and, therefore, without loss of generality, we will choose $\lambda = 4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$ from here onwards.
+With this embedding tensor, the potential~\eqref{eq:3dpotential} has a vacuum at the scalar origin when $\lambda=\pm4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$. The sign changes the chirality of the Killing spinors and, therefore, without loss of generality, we will choose $\lambda = 4\sqrt{3}\,\sqrt{1+(1/\alpha^{2})}$ from here onwards.
 
 \subsection{Adding fluxes to other consistent truncations}
 We can also try to apply the same procedure we described here to turn on fluxes in other consistent truncations. One set of natural candidates are the $S^1$ reductions of the consistent truncations to dyonically gauged 4-dimensional maximal supergravities \cite{Guarino:2015jca,Inverso:2016eet}. These 4-dimensional truncations arise from compactifications of 10-dimensional supergravity on $S^6$, $S^5\times S^1$, $S^4\times S^2$, with the 10-d theory corresponding to (massive) IIA/IIB when the spheres have even/odd dimensions, respectively. The corresponding twist matrices for $S^6$, $S^5\times S^1$, $S^4\times S^2$ belong to $\SL{8-p} \times \SL{p}$, with $p = 1,\, 2,\, 3$ for the respective cases, and are constructed as in section \ref{s:SLn}.
 
 Let us see whether we can turn on a similar flux as in the case of $S^3 \times S^3 \times S^1$ for these cases. Here we will consider the case of a flux which has one leg on $S^1$, so as to require the truncation to 3 dimensions. In this case, we can always choose a gauge where the potential is fully on $S^{7-p} \times S^{p-1}$ and depends on the $S^1$ coordinate. Turning on such a flux only leads to a consistent truncation if we can find singlets in the $\mbf{133}$ of $\En{7}$ under $\SL{8-p} \times \SL{p}$ for the respective cases of $S^{7-p} \times S^{p-1}$, $p = 1,\, 2,\, 3$, that correspond to $p$-form potential. And, indeed for all these cases, the $\mbf{133}$ only contains exactly one singlet, corresponding to the $\mathbb{R}^+$ generator that commutes with $\SL{8-p} \times \SL{p}$.
 
-However, this $\mathbb{R}^+$ generator cannot correspond to a form potential. If it did, there would also have be a corresponding compact generator in the same representation (with possibly different $\mathbb{R}^+$ chargse), just as in \eqref{eq:133DecompSL4SL4}, associated to the ``dual'' potential. Since we only have one $\SL{8-p} \times \SL{p}$ singlet, this cannot be a $p$-form potential and, therefore, turning on new fluxes with legs on $S^1$ will not lead to consistent truncation for $S^{7-p} \times S^{p-1} \times S^1$, $p = 1,\, 2,\, 3$. This analysis also reveals why the $S^3\times S^3 \times S^1$ case is special: the $\mbf{133}$ contains a 4 form of $\SL{8}$, i.e. the $\mathbf{70}$, which naturally contains the relevant singlets under $\SL{4}\times \SL{4}$.
+However, this $\mathbb{R}^+$ generator cannot correspond to a form potential. If it did, there would also have be a corresponding compact generator in the same representation (with possibly different $\mathbb{R}^+$ chargse), just as in \eqref{eq:133DecompSL4SL4}, associated to the ``dual'' potential. Since we only have one $\SL{8-p} \times \SL{p}$ singlet, this cannot be a $p$-form potential and, therefore, turning on new fluxes with legs on $S^1$ will not lead to consistent truncation for $S^{7-p} \times S^{p-1} \times S^1$, $p = 1,\, 2,\, 3$. This analysis also reveals why the $S^3\times S^3 \times S^1$ case is special: the $\mbf{133}$ contains a 4 form of $\SL{8}$, \textit{i.e.} the $\mathbf{70}$, which naturally contains the relevant singlets under $\SL{4}\times \SL{4}$.
 
 Our analysis does not rule out the possibility of adding fluxes whose only legs are on $S^{7-p} \times S^p$, with none on $S^1$. In this case, we could use the analysis above but look for singlets in the $\mathbf{56} \otimes \mathbf{133}$, corresponding to the fluxes on $S^{7-p} \times S^p$.
 
@@ -842,7 +879,7 @@ with $H_{(3)} = \d B_{(2)}$ and
 The $S^{1}$ coordinate $z$ has periodicity $z\rightarrow z+1$.
 
 \paragraph{}
-The AdS$_3$ solution \eqref{eq:AdS3} preserves ${\cal N}=(4,4)$ supersymmetry, with super-isometry group ${\cal G}=D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R}$, \textit{i.e.} two copies of the large ${\cal N}=4$ supergroup. The even part of $D^{1}(2,1;\alpha)$ is isomorphic to ${\rm SL}(2,\mathbb{R})\times{\rm SO}(3)\times\ts{{\rm SO}(3)}$ and the bosonic isometries of the ${\rm AdS}_{3}\times S^{3}\times\ts{S}^{3}$ background are built from the even part of ${\cal G}$. The ${\rm AdS}_{3}$ isometry group is ${\rm SO}(2,2)\simeq{\rm SL}(2,\mathbb{R})_{\rm L}\times{\rm SL}(2,\mathbb{R})_{\rm R}$, and the factors ${\rm SO}(3)_{\rm L}\times{\rm SO}(3)_{\rm R}\times\ts{{\rm SO}(3)}_{\rm L}\times\ts{{\rm SO}(3)}_{\rm R}\simeq{\rm SO}(4)\times\ts{{\rm SO}(4)}$ combine into the isometry groups of the two spheres. Additionally, there is a $\U{1}_F$ symmetry due to the $S^1$ factor in \eqref{eq:AdS3}. The spectrum organizes into multiplets of ${\cal G}$, made out of products of long representations $[\ell,\ts{\ell}]$ of $D^{1}(2,1;\alpha)$ (see app.~\ref{app:d21a} for a review of the representations of $D^{1}(2,1;\alpha)$), and carrying a charge under the $\U{1}_F$. Explicitly, the spectrum is~\cite{Eberhardt:2017fsi}
+The AdS$_3$ solution \eqref{eq:AdS3} preserves ${\cal N}=(4,4)$ supersymmetry, with super-isometry group ${\cal G}=D^{1}(2,1;\alpha)_{\rm L}\times D^{1}(2,1;\alpha)_{\rm R}$, \textit{i.e.} two copies of the large ${\cal N}=4$ supergroup. The even part of $D^{1}(2,1;\alpha)$ is isomorphic to ${\rm SL}(2,\mathbb{R})\times{\rm SO}(3)\times\ts{{\rm SO}(3)}$ and the bosonic isometries of the ${\rm AdS}_{3}\times S^{3}\times\ts{S}^{3}$ background are built from the even part of ${\cal G}$. The ${\rm AdS}_{3}$ isometry group is ${\rm SO}(2,2)\simeq{\rm SL}(2,\mathbb{R})_{\rm L}\times{\rm SL}(2,\mathbb{R})_{\rm R}$, and the factors ${\rm SO}(3)_{\rm L}\times{\rm SO}(3)_{\rm R}\times\ts{{\rm SO}(3)}_{\rm L}\times\ts{{\rm SO}(3)}_{\rm R}\simeq{\rm SO}(4)\times\ts{{\rm SO}(4)}$ combine into the isometry groups of the two spheres. Additionally, there is a $\U{1}_F$ symmetry due to the $S^1$ factor in \eqref{eq:AdS3}. The spectrum organizes into multiplets of ${\cal G}$, made out of products of long representations $[\ell,\ts{\ell}]$ of $D^{1}(2,1;\alpha)$ (see app.~\ref{app:d21a} for a review of the representations of $D^{1}(2,1;\alpha)$), and carrying a charge $n$ under the $\U{1}_F$. Explicitly, the spectrum is~\cite{Eberhardt:2017fsi}
 \begin{equation} \label{eq:spectrumorigin}
 	\bigoplus_{\ell,\ts{\ell}\geq0,\,n} \Big([\ell,\ts{\ell}]\otimes[\ell,\ts{\ell}]\Big)_n \ \ominus\ [0,0]_{\rm s} \otimes [0,0]_{\rm s} \,.
 \end{equation}
@@ -871,7 +908,7 @@ Surprisingly, within the 3-dimensional gauged supergravity, the AdS$_3$ vacuum c
 		& \times \exp\left[\psi\left(\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{I}{}^{I}-\frac{1}{120}\,\big(t_{(\mathbf{63},\mathbf{1})}\big)_{A}{}^{A}-\frac{1}{2}\,\big(t_{(\mathbf{1},\mathbf{3})}\big)_{1}\right)\right]\,,
 	\end{split}
 \end{equation}
-where we denoted the generators according to the decomposition~\eqref{eq:248decompoinSL8}. The $(\chi_{i},\ts{\chi}_{i},\zeta_{i},\ts{\zeta}_{i})$ deformations excite the $(\mathbf{6},\mathbf{1})_{2}$ and $(\mathbf{1},\mathbf{6})_{2}$ generators in the branching~\eqref{eq:56inSL4SL4}. Note that changing the sign in some terms in \eqref{eq:FullDeformation}, e.g. changing the factor with $\Omega$ to
+where we denoted the generators according to the decomposition~\eqref{eq:248decompoinSL8}. The $(\chi_{i},\ts{\chi}_{i},\zeta_{i},\ts{\zeta}_{i})$ deformations excite the $(\mathbf{6},\mathbf{1})_{\mathbf{2}}$ and $(\mathbf{1},\mathbf{6})_{\mathbf{2}}$ generators in the branching~\eqref{eq:56inSL4SL4}. Note that changing the sign in some terms in \eqref{eq:FullDeformation}, \textit{e.g.} changing the factor with $\Omega$ to
 \begin{equation}
 	\exp\bigg[\frac{\Omega'}{120}\Big(\big(t_{(\mathbf{63},\mathbf{1})}\big)_{1}{}^{1}+\big(t_{(\mathbf{63},\mathbf{1})}\big)_{2}{}^{2}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{3}{}^{3}-\big(t_{(\mathbf{63},\mathbf{1})}\big)_{8}{}^{8}\Big) \bigg] \,,
 \end{equation}
@@ -963,7 +1000,7 @@ and conformal dimension $\Delta=\nicefrac{3}{2}$. Turning on the deformation lea
 		\chi_{1}-\chi_{2} - \alpha\,\big(\ts{\chi}_{1}+\ts{\chi}_{2}\big)\right)^{2}}{4\, e^{2\psi}\, (1+\alpha^{2})}}\,.
 	\end{split}
 \end{equation}
-SUSY enhancement points are then given by combinations of the parameters that yield $\Delta = \nicefrac32$. This can either happen by leaving some modes with $\Delta=\nicefrac{3}{2}$ invariant, or where some other, originally massive gravitini outside the consistent truncation, i.e. with conformal dimension given by \eqref{eq:confdims3s3s1} with $n \neq 0$, obtain $\Delta = \nicefrac32$. Here we will focus on the supersymmetry enhancement within the 3-dimensional truncation and will discuss the higher KK modes in section \ref{s:Compact}. The different possibilities are listed below.
+SUSY enhancement points are then given by combinations of the parameters that yield $\Delta = \nicefrac32$. This can either happen by leaving some modes with $\Delta=\nicefrac{3}{2}$ invariant, or where some other, originally massive gravitini outside the consistent truncation, \textit{i.e.} with conformal dimension given by \eqref{eq:confdims3s3s1} with $n \neq 0$, obtain $\Delta = \nicefrac32$. Here we will focus on the supersymmetry enhancement within the 3-dimensional truncation and will discuss the higher KK modes in section \ref{s:Compact}. The different possibilities are listed below.
 
 \begin{itemize}
 	\item {\boldmath ${\cal N}=2$} The four-dimensional hypersurfaces
@@ -989,7 +1026,7 @@ SUSY enhancement points are then given by combinations of the parameters that yi
 	\begin{equation} \label{eq:limittoT4}
 		\begin{cases}
 			\chi_{1}=\chi_{2}= 0,\\
-			\ts{\chi}_{1}=-\,\ts{\chi}_{2}=\sqrt{1-e^{2\omega}},\\
+			\ts{\chi}_{1}=-\,\ts{\chi}_{2}=\ts{\chi}=\sqrt{1-e^{2\omega}},\\
 			\psi = -\,\omega,
 		\end{cases}
 	\end{equation}
@@ -1035,7 +1072,7 @@ SUSY enhancement points are then given by combinations of the parameters that yi
 
 In the above cases, it is easy to see from \eqref{eq:confdimshiftchi} that the spectrum  is invariant under $\chi_i \rightarrow \chi_i + 2\pi k_i\,\alpha$, $\ts{\chi}_i \rightarrow \ts{\chi}_i + 2\pi \ts{k}_i$, for $k_i$, $\ts{k}_i \in \mathbb{Z}$, with the SUSY enhancements also occurring if the relations \eqref{eq:N2}, \eqref{eq:N4Large}, \eqref{eq:N4Small} or \eqref{eq:N6} are satisfied up to integer shifts. We will return to this point below in section \ref{s:Compact}, when discussing compactness of the moduli space.
 
-For generic values of $\chi_i$, $\ts{\chi}_i$, the AdS$_3$ vacuum will be completely non-supersymmetric. However, it is easy to see from inspection of the spectrum \eqref{eq:confdims3s3s1} and \eqref{eq:confdimshiftchi} that the spectrum is bounded from below by the masses of the 3-dimensional gauged supergravity modes at the ${\cal N}=(4,4)$ supersymmetric origin, i.e. where $\chi_i = \ts{\chi}_i = n = \ell = \ts{\ell} = 0$. Therefore, these non-supersymmetric AdS$_3$ vacua are perturbatively stable within IIB supergravity and, similarly to \cite{Giambrone:2021wsm} suggest that there may be a dual non-supersymmetric conformal manifold if there are no instabilities beyond supergravity. However, just as in \cite{Giambrone:2021wsm}, the non-SUSY vacua are protected against perturbative $\alpha'$ or $g_s$ corrections of string theory, which might have lifted the moduli $\chi_i$, $\ts{\chi}_i$, and there are no scalars at the BF bound which may have been pushed below by such corrections. The moduli $\chi_i$, $\ts{\chi}_i$ locally correspond to diffeomorphisms and, therefore, any diffeomorphism-invariant quantity, such as higher powers of the curvature tensor or fluxes, as would appear in $\alpha'$ or $g_s$ corrections, will be independent of $\chi_i$ and $\ts{\chi}_i$. The vacua are also protected against Witten's bubbles of nothing \cite{Witten:1981gj}, due to flux quantisation on $S^3$ and the spin structure on $S^1$. This does not rule out all potential sources of instabilities. For example, the non-SUSY vacua may suffer from non-perturbative instabilities triggered by brane nucleation \cite{Ooguri:2016pdq,Bomans:2021ara} or non-vanishing $\beta$-functions of marginal multi-trace operators \cite{Witten:2001ua}. However, our non-SUSY vacua here may have further protection against such instabilities due to their continuous limits to the SUSY vacua, just as they have against perturbative higher-derivative corrections.
+For generic values of $\chi_i$, $\ts{\chi}_i$, the AdS$_3$ vacuum will be completely non-supersymmetric. However, it is easy to see from inspection of the spectrum \eqref{eq:confdims3s3s1} and \eqref{eq:confdimshiftchi} that the spectrum is bounded from below by the masses of the 3-dimensional gauged supergravity modes at the ${\cal N}=(4,4)$ supersymmetric origin, \textit{i.e.} where $\chi_i = \ts{\chi}_i = n = \ell = \ts{\ell} = 0$. Therefore, these non-supersymmetric AdS$_3$ vacua are perturbatively stable within IIB supergravity and, similarly to \cite{Giambrone:2021wsm} suggest that there may be a dual non-supersymmetric conformal manifold if there are no instabilities beyond supergravity. However, just as in \cite{Giambrone:2021wsm}, the non-SUSY vacua are protected against perturbative $\alpha'$ or $g_s$ corrections of string theory, which might have lifted the moduli $\chi_i$, $\ts{\chi}_i$, and there are no scalars at the BF bound which may have been pushed below by such corrections. The moduli $\chi_i$, $\ts{\chi}_i$ locally correspond to diffeomorphisms and, therefore, any diffeomorphism-invariant quantity, such as higher powers of the curvature tensor or fluxes, as would appear in $\alpha'$ or $g_s$ corrections, will be independent of $\chi_i$ and $\ts{\chi}_i$. The vacua are also protected against Witten's bubbles of nothing \cite{Witten:1981gj}, due to flux quantisation on $S^3$ and the spin structure on $S^1$. This does not rule out all potential sources of instabilities. For example, the non-SUSY vacua may suffer from non-perturbative instabilities triggered by brane nucleation \cite{Ooguri:2016pdq,Bomans:2021ara} or non-vanishing $\beta$-functions of marginal multi-trace operators~\cite{Witten:2001ua}. However, our non-SUSY vacua here may have further protection against such instabilities due to their continuous limits to the SUSY vacua, just as they have against perturbative higher-derivative corrections.
 
 % \paragraph{\boldmath $(\zeta,\ts{\zeta},\psi)$}
 % Again with spherical coordinates:
@@ -1100,32 +1137,32 @@ with the warp factor
 	&+e^{2\psi}\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\left(e^{\Omega}\,\zeta_{2}^{2}\cos^{2}(\theta)+\zeta_{1}^{2}\sin^{2}(\theta)\right).
 	\end{aligned}
 \end{equation}
-We can also provide an expression for $H_3$ in the simplified case where $\Omega=\tilde\Omega=0$. It is convenient to first define some forms.
+We can also provide an expression for $H_3$ in the simplified case where $\Omega=\tilde\Omega=0$. It is convenient to first define some forms. \CE{(Work on this.)}
 \begin{equation}\label{eq:forms}
 	\begin{split}
-		Z(\theta,u,v,w)&=2+2e^{2\psi}(u^2\sin \theta^2+v^2\cos \theta^2+w^2)\\
-		\gamma&=4\sin\tilde\theta\cos\tilde \theta(\tilde{\zeta}_1^2-\tilde{\zeta}_2 ^2)\left(\zeta_2\cos \theta ^2\d \phi _1+\zeta _1\sin\theta ^2\d\phi _2\right)\\
-		\kappa_{ij}&=2\sin \theta \cos \theta Z(\tilde \theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_i)\zeta_j\d\phi_i\\
-		\omega_{ij} &=2\sin\tilde\theta \cos\tilde\theta Z(\theta,\zeta_1,\zeta_2,\tilde\zeta _i)\d \tilde \phi _i\wedge \left [(\zeta _1\tilde \zeta _j + \tilde \zeta _i \zeta _2)\cos \theta ^2 \d \phi_1+ (\zeta _1\tilde \zeta _i + \tilde \zeta _j \zeta _2)\sin \theta ^2 \d \phi_2\right]\\
-		\Theta&=(\zeta _1^2-\zeta_2 ^2)(\tilde{\zeta}_1 ^2-\tilde \zeta _2^2)\sin\tilde\theta \cos \tilde\theta \sin (2 \theta) ^2\d\tilde \theta\wedge\d \phi _1\wedge\d   \phi _2
+		Z(\theta,u,v,w)&=2+2e^{2\psi}(u^2\sin^2(\theta)+v^2\cos^2(\theta)+w^2)\\
+		\gamma&=4\sin(\tilde\theta)\cos(\tilde \theta)(\tilde{\zeta}_1^2-\tilde{\zeta}_2 ^2)\left(\zeta_2\cos^2(\theta)\d \phi _1+\zeta _1\sin^2(\theta)\d\phi _2\right)\\
+		\kappa_{ij}&=2\sin (\theta) \cos (\theta) Z(\tilde \theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_i)\zeta_j\d\phi_i\\
+		\omega_{ij} &=2\sin(\tilde\theta) \cos(\tilde\theta) Z(\theta,\zeta_1,\zeta_2,\tilde\zeta _i)\d \tilde \phi _i\wedge \left [(\zeta _1\tilde \zeta _j + \tilde \zeta _i \zeta _2)\cos^2 (\theta) \d \phi_1+ (\zeta _1\tilde \zeta _i + \tilde \zeta _j \zeta _2)\sin^2(\theta)  \d \phi_2\right]\\
+		\Theta&=(\zeta _1^2-\zeta_2 ^2)(\tilde{\zeta}_1 ^2-\tilde \zeta _2^2)\sin(\tilde\theta) \cos (\tilde\theta) \sin (2 \theta) ^2\d\tilde \theta\wedge\d \phi _1\wedge\d   \phi _2
 	\end{split}
 \end{equation}
 where we take $i,j\in\{1,2\}$ and they are not summed over. It is further useful to introduce (now sum over repeated $i,j$ as usual)
 \begin{equation}\label{eq:omegagamma}
 	\kappa = \epsilon^{ij}\kappa_{ij},\quad \omega=\epsilon^{ij}\omega _{ij}.
 \end{equation}
-In terms of the objects in \eqref{eq:forms} and \eqref{eq:omegagamma} we can write 
+In terms of the objects in \eqref{eq:forms} and \eqref{eq:omegagamma} we can write \CE{(Add AdS legs?)}
 \begin{equation}\label{eq:defH3}
 	\begin{split}
-		H_3=&\Delta^2\alpha^2\sin\theta \cos \theta Z(\tilde \theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_1) Z(\tilde \theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_2)\d \theta\wedge\d\phi_1\wedge\d\phi _2\\
-		&+\Delta^2\sin\tilde\theta \cos \tilde\theta Z(\theta,\zeta_1,\zeta_2,\tilde{\zeta}_1) Z( \theta,\zeta_1,\zeta_2,\tilde{\zeta}_2)\d \tilde\theta\wedge\d\tilde{\phi}_1\wedge\d\tilde{\phi} _2\\
+		H_(3)=&\Delta^2\alpha^2\sin(\theta) \cos (\theta) Z(\tilde \theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_1) Z(\tilde \theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_2)\d \theta\wedge\d\phi_1\wedge\d\phi _2\\
+		&+\Delta^2\sin(\tilde\theta) \cos (\tilde\theta) Z(\theta,\zeta_1,\zeta_2,\tilde{\zeta}_1) Z( \theta,\zeta_1,\zeta_2,\tilde{\zeta}_2)\d \tilde\theta\wedge\d\tilde{\phi}_1\wedge\d\tilde{\phi} _2\\
 		&+e^{2\psi}\alpha\Delta^2\left(\omega\wedge\d \tilde\theta+\tilde\omega\wedge\d \theta\right)+e^{4\psi}\Delta^2\alpha ^2\left(\Theta +\frac 1{\alpha^2}\tilde \Theta \right)\\
 		&+\Delta^2e^{2\psi}\alpha\left(\d \theta\wedge \kappa +\frac 1{\alpha}\d \tilde \theta \wedge \tilde \kappa\right)\wedge\d\psi+e^{4\psi}\alpha\Delta^2\left(\d\tilde \theta \wedge \gamma +\frac 1{\alpha}\d \theta\wedge\tilde\gamma\right)\wedge\d\psi.
 	\end{split}
 \end{equation}
 Note that in equation \eqref{eq:defH3} all forms with a tilde correspond to the analogues of \eqref{eq:forms} and \eqref{eq:omegagamma} where every variable and form is ``conjugated" as $x\mapsto\tilde x$, $\tilde x\mapsto x$. For example 
 \begin{equation}
-	\tilde\gamma=4\sin\theta\cos\theta(\zeta_1^2-\zeta_2 ^2)\left(\tilde{\zeta}_2\cos\tilde \theta ^2\d \tilde \phi _1+\tilde{\zeta} _1\sin\tilde\theta ^2\d\tilde\phi _2\right).
+	\tilde\gamma=4\sin(\theta)\cos(\theta)(\zeta_1^2-\zeta_2 ^2)\left(\tilde{\zeta}_2\cos^2(\tilde \theta)\d \tilde \phi _1+\tilde{\zeta} _1\sin^2(\tilde\theta)\d\tilde\phi _2\right).
 \end{equation} 
 %\CE{(Expression of $H$?)}
 
@@ -1137,9 +1174,9 @@ Finally, the metric parametrising this moduli space is:
 \end{equation}
 As previously, the deformation breaks the isometry group down to ${\rm U}(1)_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm L}\times\ts{{\rm U}(1)}_{\rm R}$ and all supersymmetries. Note that for
 \begin{equation}
-	\zeta_{1}=\pm\zeta_{2},\quad \ts{\zeta}_{1}=\mp\ts{\zeta}_{2}\,\quad\Omega=\ts{\Omega}=0,
+	\zeta_{1}=\pm\zeta_{2},\quad \ts{\zeta}_{1}=\mp\ts{\zeta}_{2},\quad\Omega=\ts{\Omega}=0,
 \end{equation}
-the solution~\eqref{eq:metriczeta} reproduces eq.~\eqref{eq:chipsi} for
+the solution~\eqref{eq:metriczeta} reproduces eq.~\eqref{eq:chipsi} for \CE{(Double check.)}
 \begin{equation}
 	\chi_{1}=\pm\chi_{2}=\frac{\zeta_{1}}{1+\zeta_{1}^{2}+\ts{\zeta}_{1}^{2}},\quad \ts{\chi}_{1}=\mp\ts{\chi}_{2}=-\frac{\ts{\zeta}_{1}}{1+\zeta_{1}^{2}+\ts{\zeta}_{1}^{2}},\quad e^{2\psi}=\frac{1}{(1+\zeta_{1}^{2}+\ts{\zeta}_{1}^{2})^{2}},
 \end{equation}
@@ -1268,7 +1305,7 @@ with ${\cal N}=(4,0)$ (or $(0,4)$) and symmetry enhancement to ${\rm SO}(4)\time
 
 \subsection{Compactification of the moduli space} \label{s:Compact}
 
-We can use the Kaluza-Klein spectrum and the uplift of the 3-dimensional gauged supergravity models to IIB supergravity to understand properties of the dual CFTs that are obscured in the lower-dimensional supergravities. One such aspect is the compactness of the conformal manifold. Consider the deformations $\chi_i$, $\ts{\chi}_i$, which appear non-compact in 3-dimensional ${\cal N}=16$ gauged supergravity, with only the point $\chi_i = \ts{\chi}_i = 0$ having ${\cal N}=(4,4)$ supersymmetry. The subset of these deformations corresponding to the limit~\eqref{eq:limittoT4} was analysed in the half-maximal theory in ref.~\cite{Eloy:2021fhc}. Again, within 3-dimensional ${\cal N}=8$ supergravity, this deformation is non-compact, and remains non-compact even after uplifting to 6-dimensional supergravity on $S^3$, with no periodicity in $\chi$ observed in the KK spectrum of the 6-dimensional solution \cite{Eloy:2021fhc}.
+We can use the Kaluza-Klein spectrum and the uplift of the 3-dimensional gauged supergravity models to IIB supergravity to understand properties of the dual CFTs that are obscured in the lower-dimensional supergravities. One such aspect is the compactness of the conformal manifold. Consider the deformations $\chi_i$, $\ts{\chi}_i$, which appear non-compact in 3-dimensional ${\cal N}=16$ gauged supergravity, with only the point $\chi_i = \ts{\chi}_i = 0$ having ${\cal N}=(4,4)$ supersymmetry. The subset of these deformations corresponding to the limit~\eqref{eq:limittoT4} was analysed in the half-maximal theory in ref.~\cite{Eloy:2021fhc}. Again, within 3-dimensional ${\cal N}=8$ supergravity, this deformation is non-compact, and remains non-compact even after uplifting to 6-dimensional supergravity on $S^3$, with no periodicity in $\ts{\chi}$ observed in the KK spectrum of the 6-dimensional solution \cite{Eloy:2021fhc}.
 
 However, from  \eqref{eq:spectrumorigin}, \eqref{eq:confdims3s3s1}, \eqref{eq:confdimshiftchi} we see that the full Kaluza-Klein spectrum is invariant under the shifts
 \begin{equation} \label{eq:ShiftSymmetries}
@@ -1301,31 +1338,31 @@ for the $T^2_{(\ts{\phi}_i,\, z)}$. Thus, the $S$-transformation effectively inv
 \end{equation}
 If we consider a truncation where the $n \neq 0$ modes are discarded, for example, by uplifting only on $S^3$ to 6 dimensions as in \cite{Eloy:2021fhc} or on $S^3 \times S^3 \times S^1$ to 9 dimensions, then the $S$-transformation clearly leaves the KK spectrum \eqref{eq:spectrumorigin}, \eqref{eq:confdims3s3s1}, \eqref{eq:confdimshiftchi} invariant. This is because the spectrum for the $n = 0$ modes only depends on the combinations $e^{-\psi}\chi_i$ and $e^{-\psi}\ts{\chi}_i$, which pick up minus signs, as in \eqref{eq:STransformChi}. The effect of \eqref{eq:Stransformchi} is to simply exchanges modes of the opposite charges under the ${\rm U}(1)_{\rm L}\times\ts{{\rm U}(1)}_{\rm L}\times{\rm U}(1)_{\rm R}\times\ts{{\rm U}(1)}_{\rm R}$ within the spectrum.
 
-However, if we include the $n \neq 0$ modes by going to the full 10-dimensional IIB supergravity theory, the KK spectrum \eqref{eq:spectrumorigin}, \eqref{eq:confdims3s3s1}, \eqref{eq:confdimshiftchi} is not invariant under the $S$ transformation. At the same time, the $S$-transformation effectively inverts the radius of the $S^1$, as in \eqref{eq:STransformChi} and, thus, takes us out of the regime of validity of supergravity, with new string degrees of freedom potentially becoming light. Indeed, in this case, after the transformation \eqref{eq:STransformChi}, strings wound around $S^1$ will become light, and one would expect them to replace the KK modes that have become heavy, realising the T-duality on $S^1$. This suggests that in the full IIB string theory, the moduli space of each $T^2$ fibration with complex structure \eqref{eq:T2CStructure} should be identified under the M\"{o}bius group $\SL{2,\mathbb{Z}}$, which has a natural action on the metric of this 5-parameter submanifold of moduli space \eqref{eq:Zam7Param}. Note that this is quite different from the AdS$_4 \times S^5 \times S^1$ ``S-fold'' vacua \cite{Giambrone:2021zvp,Giambrone:2021wsm}, which do not have a $S^1$ rescaling modulus and, therefore, do not carry the natural action of $\SL{2,\mathbb{Z}}$ on each complex structure modulus that we find here.
+However, if we include the $n \neq 0$ modes by going to the full 10-dimensional IIB supergravity theory, the KK spectrum \eqref{eq:spectrumorigin}, \eqref{eq:confdims3s3s1}, \eqref{eq:confdimshiftchi} is not invariant under the $S$ transformation. At the same time, the $S$-transformation effectively inverts the radius of the $S^1$, as in \eqref{eq:STransformChi} and, thus, takes us out of the regime of validity of supergravity, with new string degrees of freedom potentially becoming light. Indeed, in this case, after the transformation \eqref{eq:STransformChi}, strings wound around $S^1$ will become light, and one would expect them to replace the KK modes that have become heavy, realising the T-duality on $S^1$. This suggests that in the full IIB string theory, the moduli space of each $T^2$ fibration with complex structure \eqref{eq:T2CStructure} should be identified under the M\"{o}bius group $\SL{2,\mathbb{Z}}$, which has a natural action on the metric of this 5-parameter submanifold of moduli space~\eqref{eq:Zam7Param}. Note that this is quite different from the AdS$_4 \times S^5 \times S^1$ ``S-fold'' vacua \cite{Giambrone:2021zvp,Giambrone:2021wsm}, which do not have a $S^1$ rescaling modulus and, therefore, do not carry the natural action of $\SL{2,\mathbb{Z}}$ on each complex structure modulus that we find here.
 
 
 \section{Conclusions} \label{s:Conclusions}
 In this paper, we used $\EE$ ExFT to construct the consistent truncation of IIB supergravity around the ${\cal N}=(4,4)$ AdS$_3 \times S^3 \times S^3 \times S^1$ vacuum. Even though the vacuum breaks half of the supersymmetries, we are able to construct a consistent truncation to 3-dimensional maximal gauged supergravity, providing an uplift to the ${\cal N}=16$ gauged supergravity proposed in \cite{Hohm:2005ui} for the 3-dimensional description of this AdS$_3$ vacuum. We constructed our consistent truncation by doing a $S^1$ reduction of the truncation of IIB on $S^3 \times S^3$ \cite{Inverso:2016eet}, and turning on an additional $H_7$ flux on $S^3 \times S^3 \times S^1$, which is necessary to obtain an AdS$_3$ vacuum. We also show that it is not possible to turn on such an additional flux for the other ``dyonic'' consistent truncations on $S^6$, $S^5 \times S^1$, $S^4 \times S^2$ \cite{Guarino:2015jca,Inverso:2016eet} reduced on $S^1$, whilst maintining a consistent truncation to ${\cal N}=16$ gauged supergravity.
 
-To find this vacuum, we had to construct the potential of 3-dimensional ${\cal N}=16$ gauged supergravity in terms of the embedding tensor, which was not previously known. Since the vector fields of ${\cal N}=16$ gauged supergravity transform in the adjoint of $\EE$, the Cartan-Killing metric of $\EE$ can be used to construct new terms in the potential, which leads to a different form of the potential compared to the universal one found in $D \geq 4$ dimensions. Nonetheless, we used the generalised Scherk-Schwarz Ansatz of $\EE$ ExFT \cite{Galli:2022idq} to obtain the potential in terms of the embedding tensor, for all gauged supergravities that can be uplifted to maximal 10-/11-dimensional supergravity. This condition of being able to uplift imposes additional quadratic constraints on the embedding tensor \eqref{eq:reltrX}, beyond the usual quadratic constraints of gauged supergravity. This can be used to rule out the higher-dimensional origin of some 3-dimensional ${\cal N}=16$ gauged supergravities. \EM{Mention if we actually use this.}
+To find this vacuum, we had to construct the potential of 3-dimensional ${\cal N}=16$ gauged supergravity in terms of the embedding tensor, which was not previously known. Since the vector fields of ${\cal N}=16$ gauged supergravity transform in the adjoint of $\EE$, the Cartan-Killing metric of $\EE$ can be used to construct new terms in the potential, which leads to a different form of the potential compared to the universal one found in $D \geq 4$ dimensions. Nonetheless, we used the generalised Scherk-Schwarz Ansatz of $\EE$ ExFT \cite{Galli:2022idq} to obtain the potential in terms of the embedding tensor, for all gauged supergravities that can be uplifted to maximal 10-/11-dimensional supergravity. This condition of being able to uplift imposes additional quadratic constraints on the embedding tensor~\eqref{eq:reltrX}, beyond the usual quadratic constraints of gauged supergravity. This can be used to rule out the higher-dimensional origin of some 3-dimensional ${\cal N}=16$ gauged supergravities, as we illustrated on one ${\cal N}=(8,0)$ ${\rm AdS}_{3}$ vacuum of ref.~\cite{Deger:2019tem}. \EM{Mention if we actually use this.}
 
-Using our consistent truncation and the 3-dimensional potential, we studied the moduli space of the AdS$_3$ vacuum within 3-dimensional gauged supergravity. Even a simple search led to a surprisingly large 11-dimensional moduli space of AdS$_3 \times S^3 \times S^3 \times S^1$ vacua, with more moduli likely. While most of these moduli break all supersymmetries, we also identified submanifolds where ${\cal N}=(4,2),\, (4,0),\, (2,2),\, (2,0)$ is preserved, where the ${\cal N}=4$ cases always correspond to the ``large'' superconformal algebra. The corresponding moduli are analogous to the  ``flat deformations'' that arise in the AdS$_4 \times S^5 \times S^1$ vacuum \cite{Guarino:2020gfe,Guarino:2021hrc,Giambrone:2021zvp,Giambrone:2021wsm}. I.e. they correspond to local diffeomorphisms mixing angles on the $S^3$'s with the $S^1$, but which are not globally well-defined, much like complex structure deformations of $T^2$, allowing us to compute the full Kaluza-Klein spectrum of these deformed AdS$_3$ vacua. Generic ``flat deformations'' of this type break all supersymmetries but are still perturbatively stable. Moreover, they are protected against perturbative higher-derivative corrections because the deformations locally correspond to diffeomorphisms.
+Using our consistent truncation and the 3-dimensional potential, we studied the moduli space of the AdS$_3$ vacuum within 3-dimensional gauged supergravity. Even a simple search led to a surprisingly large 11-dimensional moduli space of AdS$_3 \times S^3 \times S^3 \times S^1$ vacua, with more moduli likely. While most of these moduli break all supersymmetries, we also identified submanifolds where ${\cal N}=(4,2),\, (4,0),\, (2,2),\, (2,0)$ is preserved, where the ${\cal N}=4$ cases always correspond to the ``large'' superconformal algebra. The corresponding moduli are analogous to the  ``flat deformations'' that arise in the AdS$_4 \times S^5 \times S^1$ vacuum \cite{Guarino:2020gfe,Guarino:2021hrc,Giambrone:2021zvp,Giambrone:2021wsm}. \textit{i.e.} they correspond to local diffeomorphisms mixing angles on the $S^3$'s with the $S^1$, but which are not globally well-defined, much like complex structure deformations of $T^2$, allowing us to compute the full Kaluza-Klein spectrum of these deformed AdS$_3$ vacua. Generic ``flat deformations'' of this type break all supersymmetries but are still perturbatively stable. Moreover, they are protected against perturbative higher-derivative corrections because the deformations locally correspond to diffeomorphisms.
 
 We also saw that uplifting our AdS$_3$ vacua to IIB string theory leads to the compactness of some directions of moduli space. The ``flat deformations'' that we studied appear non-compact within the 3-dimensional gauged supergravity, but upon uplifting to 10 dimensions, the moduli become compact, similar to \cite{Giambrone:2021zvp,Giambrone:2021wsm}. Interestingly, this compactness is not visible upon only uplifting on $S^3$ to 6-dimensional supergravity \cite{Eloy:2021fhc}, but require the uplift on the additional $S^1$ direction. The compactification of the moduli can be understood geometrically as the $T$-action of $\SL{2,\mathbb{Z}}$ on $T^2$-fibration. Differently from the AdS$_4 \times S^5 \times S^1$ case \cite{Guarino:2020gfe,Guarino:2021hrc,Giambrone:2021zvp,Giambrone:2021wsm}, in the AdS$_3 \times S^3 \times S^3 \times S^1$ case we also have a $S^1$ rescaling modulus, so that we naturally have the full complex structure moduli related to the $T^2$-fibrations and which carry a natural action of the full $\SL{2,\mathbb{Z}}$. While the $S$-action of $\SL{2,\mathbb{Z}}$ left the Kaluza-Klein spectrum of 6-dimensional supergravity on AdS$_3 \times S^3$ \cite{Eloy:2021fhc} invariant, it is broken by the additional $S^1$ direction when uplifting to IIB supergravity. However, we argued that the $S$-action leave invariant the full AdS$_3 \times S^3 \times S^3 \times S^1$ solution of IIB string theory, once string winding modes around $S^1$ are included. In this case, the complex structure deformations live in the fundamental domain of $\SL{2,\mathbb{Z}}$, rather than the whole $\mathbb{C}$-plane, as the 3-dimensional supergravity would suggest. 
 
 Our work raises several questions that deserve further inquiry. Firstly, we only performed a simple search, yielding an 11-dimensional moduli space of AdS$_3 \times S^3 \times S^3 \times S^1$ within the ${\cal N}=16$ gauged supergravity. It would be good to complete our analysis to compute the full 3-dimensional moduli space and to understand why it is so large. Our consistent truncation Ansatz could then be used to uplift the moduli space to IIB supergravity, and to use Kaluza-Klein spectrometry \cite{Malek:2019eaz,Malek:2020yue,Eloy:2020uix} to obtain the conformal dimensions of all single-trace operators and determine the perturbative stability of the non-SUSY vacua. This would shed light on the dual conformal manifold. Secondly, it would be interesting to study the string sigma-model \cite{Eberhardt:2019niq} on the ``flat deformations'' of AdS$_3 \times S^3 \times S^3 \times S^1$, or the analogous deformations of AdS$_3 \times S^3 \times T^4$. Since these deformations locally are diffeomorphisms, one may expect a simple worldsheet description on the ${\cal N}=(4,2),\, (4,0),\, (2,2),\, (2,0)$ SUSY vacua and, potentially, even for the non-SUSY AdS$_3 \times S^3 \times S^3 \times S^1$ vacua obtained this way. The non-perturbative stability of the perturbatively stable non-supersymmetric AdS$_3$ vacua we found also deserves further study. Finally, similar ``flat deformations'' arise in any string compactification involving an $S^1$, in particular AdS$_3 \times S^3 \times T^4$. It would be interesting to understand universal features of these deformations and their CFT duals. We leave these questions for future work.
 
 \section*{Acknowledgements}
-We are grateful to \EM{add others} Nikolay Bobev, Adolfo Guarino, Yolanda Lozano, Niall Macpherson and Colin Sterckx for useful discussions and correspondence. CE is supported by the FWO-Vlaanderen through the project G006119N and by the Vrije Universiteit Brussel through the Strategic Research Program ``High-Energy Physics''. MG and EM are supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) via the Emmy Noether program ``Exploring the landscape of string theory flux vacua using exceptional field theory'' (project number 426510644).
+We are grateful to \EM{add others} Nikolay Bobev, Adolfo Guarino, Gabriel Larios, Yolanda Lozano, Niall Macpherson and Colin Sterckx for useful discussions and correspondence. CE is supported by the FWO-Vlaanderen through the project G006119N and by the Vrije Universiteit Brussel through the Strategic Research Program ``High-Energy Physics''. MG and EM are supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) via the Emmy Noether program ``Exploring the landscape of string theory flux vacua using exceptional field theory'' (project number 426510644).
 
 \appendix
 
 \section{Representations of \texorpdfstring{$D^{1}(2,1;\alpha)$}{D(2,1,a)}} \label{app:d21a}
 The supergroup $D^{1}(2,1;\alpha)$ has
 \begin{equation}
-	{\rm SU}(1\vert1)\times{\rm SU}(2)\times\ts{{\rm SU}(2)}
+	{\rm SU}(1,1)\times{\rm SU}(2)\times\ts{{\rm SU}(2)}
 \end{equation}
-as its even part. Its multiplets are labelled by the spins $\ell$ and $\ts{\ell}$ of each ${\rm SU}(2)$ factor and the eigenvalue $h$ of the $\mathfrak{su}(1\vert1)\simeq\mathfrak{sl}(2,\mathbb{R})$ generator. Generic short multiplets $[\ell,\ts{\ell}]_{\rm s}$ are given by~\cite{deBoer:1999gea,Eberhardt:2017fsi}
+as its even part. Its multiplets are labelled by the spins $\ell$ and $\ts{\ell}$ of each ${\rm SU}(2)$ factor and the eigenvalue $h$ of the $\mathfrak{su}(1,1)\simeq\mathfrak{sl}(2,\mathbb{R})$ generator. Generic short multiplets $[\ell,\ts{\ell}]_{\rm s}$ are given by~\cite{deBoer:1999gea,Eberhardt:2017fsi}
 \begin{equation}
 	\begin{array}{cc}
 	 h_{0} & \big(\ell,\ts{\ell}\big) \\[5pt]
