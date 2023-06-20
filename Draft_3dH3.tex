@@ -15,8 +15,8 @@
 \usepackage{amsmath}
 \usepackage{epsfig}
 %\usepackage{isomath}
-\usepackage{latexsym,amssymb}
-\usepackage{amsmath,amssymb,amsthm}
+\usepackage{amssymb}
+\usepackage{amsthm}
 \usepackage{xcolor}
 \usepackage{hyperref}
 \definecolor{darkorange}{RGB}{166, 88, 0}
@@ -47,18 +47,18 @@
 \usepackage{nicefrac}
 
 
-%  PDF specials
-%\newif\ifpdf
-\usepackage{ifpdf}
-\ifx\pdfoutput\undefined
-\pdffalse
-\usepackage{cite}
-\else
-\pdfoutput=1
-\pdftrue
-%\usepackage[pdftex]{hyperref}
-\pdfcompresslevel=9
-\fi
+% %  PDF specials
+% %\newif\ifpdf
+% \usepackage{ifpdf}
+% \ifx\pdfoutput\undefined
+% \pdffalse
+% \usepackage{cite}
+% \else
+% \pdfoutput=1
+% \pdftrue
+% %\usepackage[pdftex]{hyperref}
+% \pdfcompresslevel=9
+% \fi
 \DeclareFontFamily{OMS}{rsfs}{\skewchar\font'60}
 \DeclareFontShape{OMS}{rsfs}{m}{n}{<-5>rsfs5 <5-7>rsfs7 <7->rsfs10 }{}
 \DeclareSymbolFont{rsfs}{OMS}{rsfs}{m}{n}
@@ -1157,8 +1157,6 @@ with $h_{0}=(\alpha\,\ell+\ts{\ell})/(1+\alpha)$. Shortenings occur for $\ell<1$
 	 2 & \big(0,0\big)\,.
 	\end{array}
 \end{equation}
-
-
 Two short multiplets can combine into a long multiplets $[\ell,\ts{\ell}]$ as follows:
 \begin{equation}
  	[\ell,\ts{\ell}] = [\ell,\ts{\ell}]_{\rm s} \oplus [\ell+\nicefrac{1}{2},\ts{\ell}+\nicefrac{1}{2}]_{\rm s}\,.
