@@ -268,7 +268,7 @@ Using our consistent truncation, we will show that the AdS$_3 \times S^3 \times 
 
 Another technical result of our work is the derivation of the potential of 3-dimensional gauged supergravity \cite{Nicolai:2000sc,Nicolai:2001sv} in terms of the embedding tensor. The potential was previously only known in terms of fermion shift matrices. As a by-product, we find a constraint that must be obeyed by the embedding tensor of any 3-dimensional gauged supergravity that can be uplifted to 10-/11-dimensional supergravity. This allows to prove the lack of a higher-dimensional origin of some 3-dimensional gaugings, as we illustrate on an example. \EM{update}
 
-The outline of our paper is as follows. We begin with a review of $\EE$ ExFT in section \ref{s:Review} and how to derive consistent truncations in this formalism in \ref{s:TruncationReview}. In section \ref{s:Potential} we derive the potential of 3-dimensional gauged supergravity in terms of the embedding tensor and prove the lack of higher-dimensional origin of some 3-dimensional theories. Then, we show how to add fluxes to consistent truncations in \ref{s:AddFlux}, allowing us to construct the consistent truncation of IIB supergravity on $S^3 \times S^3 \times S^1$. Using this truncation, we study the moduli space of the AdS$_3$ vacua in section \ref{s:Moduli}, before concluding in section \ref{s:Conclusions}. We end the paper by an example in appendix~\ref{app:rulingoutgauging} of how to check if a three-dimensional supergravity can be uplifted, and a discussion of the $D^{1}(2,1;\alpha)$ supermultiplets in appendix~\ref{app:d21a}.
+The outline of our paper is as follows. We begin with a review of $\EE$ ExFT in section \ref{s:Review} and how to derive consistent truncations in this formalism in \ref{s:TruncationReview}. In section \ref{s:Potential} we derive the potential of 3-dimensional gauged supergravity in terms of the embedding tensor and prove the lack of higher-dimensional origin of some 3-dimensional theories. Then, we show how to add fluxes to consistent truncations in \ref{s:AddFlux}, allowing us to construct the consistent truncation of IIB supergravity on $S^3 \times S^3 \times S^1$. Using this truncation, we study the moduli space of the AdS$_3$ vacua in section \ref{s:Moduli}, before concluding in section \ref{s:Conclusions}. We end the paper by an example in appendix~\ref{app:rulingoutgauging} of how to check if a three-dimensional supergravity can be uplifted, a review of the construction of consistent truncations on $S^{3}$ in appendix~\ref{s:SLn} and a discussion of the $D^{1}(2,1;\alpha)$ supermultiplets in appendix~\ref{app:d21a}.
 
 \section{Review of \texorpdfstring{\EE}{E8(8)} exceptional field theory} \label{s:Review}
 
@@ -557,88 +557,7 @@ A particularly simple way of having constant $\rho^{-1}\, F_{\fl{M}\fl{N}}{}^{\f
 \subsection{Adding fluxes to the $S^3$ truncation of 6-dimensional supergravity} \label{s:S3Flux}
 As a warm-up for the $S^3 \times S^3 \times S^1$ truncation, let us demonstrate this methodology for the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity on $S^3$, which was constructed in \cite{Eloy:2021fhc}. As discussed in \cite{Eloy:2021fhc}, the consistent truncation of ${\cal N}=(1,1)$ 6-dimensional supergravity to 3-dimensional half-maximal gauged supergravity can be described using the $\SO{8,4}$ ExFT \cite{Hohm:2017wtr,Samtleben:2019zrh}. On the other hand, the consistent truncation on $S^3$ is conveniently described by twist matrices living in $\SL{4} \simeq \SO{3,3}$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} with the embedding $\SO{3,3} \subset \SO{4,4} \subset \SO{8,4}$. However, the twist matrix in \cite{Eloy:2021fhc} differs from this $\SO{3,3}$ twist matrix \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou} by an additional parameter, $\lambda$, which gives rise to an external 3-form flux or, equivalently, a new internal 3-form flux.
 
-\subsubsection{The $S^n$ twist matrix} \label{s:SLn}
-\EM{Move to appendix?!?!} \CE{(I think I would say yes.)}\\
-Since we will use it throughout this paper, let us construct the $\SL{4} \simeq \SO{3,3}$ twist matrix that describes the consistent truncation on $S^3$. This can be viewed as a special case of a family of consistent truncations on $S^n$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou}. Here, we give a slightly different, but equivalent, form of this construction.
-
-We use an $\SL{n+1}$ ExFT, like in \cite{Lee:2014mla}, which encodes an $n$-dimensional metric and volume-form flux, \textit{i.e.} Freund-Rubin compactifications, and thus gives a natural description of $S^n$ compactifications. The $\SL{n+1}$ ExFT formally has coordinates in the antisymmetric representation of $\SL{n+1}$, $y^{IJ} = - y^{JI}$, with $I = 1, \ldots, n+1$, and similarly, generalised vector fields transform in the antisymmetric representation of $\SL{n+1}$. The generalised Lie derivative on a generalised tensor in the fundamental $V^I$ of weight $\lambda$ is given by
-\begin{equation} \label{eq:SLnGenLie}
-	\gL_\Lambda V^I = \frac12 \Lambda^{JK} \partial_{JK} V^{I} - V^J \partial_{JK} \Lambda^{IK} + \left( \frac{\lambda}{2} + \frac{1}{n+1} \right) V^I \partial_{JK} \Lambda^{JK} \,,
-\end{equation}
-and similarly for other generalised tensors. Closure of the generalised Lie derivative \eqref{eq:SLnGenLie} requires the section condition
-\begin{equation} \label{eq:SLnSC}
-	\partial_{[IJ} \otimes \partial_{KL]} = 0 \,,
-\end{equation}
-which restricts the dependence of all fields to a subset of physical coordinates.
-
-We are interested in the maximal solutions of the section condition \eqref{eq:SLnSC} which preserve a $\SL{n} \subset \SL{n+1}$ subgroup. Under this decomposition $\SL{n+1} \rightarrow \SL{n}$ with $V^I = \left( V^i,\, V^0 \right)$, where $i = 1, \ldots, n$, we solve the section condition by having physical coordinates $y^{0i}$ on the $n$-dimensional manifold $M$, \textit{i.e.} $\partial_{ij} = 0$ for all fields with only $\partial_{0i} = \partial_i \neq 0$. Correspondingly, the generalised tangent bundle, whose sections are in the antisymmetric representation of $\SL{n+1}$ and carry weight $\frac{n-3}{n+1}$, decomposes as
-\begin{equation} \label{eq:SLnE}
-	E = TM \oplus \Lambda^{n-2} T^*M \,,
-\end{equation}
-Note that for the case of interest to us, $n=3$, \eqref{eq:SLnE} reduces to
-\begin{equation}
-	E = TM \oplus T^*M \,,
-\end{equation}
-and its fibres transform in the $\mathbf{6}$ of $\SL{4} \simeq \SO{3,3}$. It is convenient to also introduce the generalised bundle with fibres in the anti-fundamental of $\SL{n+1}$, which is, similarly, given by
-\begin{equation}
-	N = T^*M \oplus \Lambda^{n} T^*M \,.
-\end{equation}
-Sections of $N$ are generalised tensors transforming in the anti-fundamental of $\SL{n+1}$ and carrying weight $\frac{2}{n+1}$. For $V, V' \in \Gamma(E)$ and $W \in \Gamma(N)$, the generalised Lie derivative \eqref{eq:SLnGenLie} reduces to
-\begin{equation}
-	\begin{split}
-		\gL_{V} V' &= [v, v'] + L_{v} \omega'_{(n-2)} - \imath_{v'} d\omega_{(n-2)} \,, \\
-		\gL_{V} W &= L_v \omega_{(1)} + L_v \omega_{(n)} + \omega_{(1)} \wedge d\omega_{(n-2)} \,,
-	\end{split}
-\end{equation}
-where we write $V = v + \omega_{(n-2)}$, $V' = v' + \omega'_{(n-2)}$ and $W = \omega_{(1)} + \omega_{(n)}$ as a formal of vectors and $p$-forms, and $L$ denotes the ordinary Lie derivative and $[v,v']$ the ordinary Lie bracket between vector fields $v$ and $v'$.
-
-We can now describe the $S^n$ consistent truncation using the $\SL{n+1}$ ExFT above. Let $Y^I$, $I = 1, \ldots, n+1$ be the embedding coordinates of $S^{n} \subset \mathbb{R}^{n+1}$, such that $Y^I\, Y_I = 1$. On $S^n$, we can define a parallelisation of $N$ using the generalised frame
-\begin{equation}\label{eq:SnFrame}
-	\cU^{\fl{I}} = dY^{\fl{I}} + Y^{\fl{I}}\, vol_{S^n} - dY^{\fl{I}} \wedge A \,,
-\end{equation}
-where $A$ is an $(n-1)$-potential with field strength $dA = (n-1) vol_{S^n}$, and
-\begin{equation}
-	vol_{S^n} = \frac{1}{n!}\epsilon_{I_1 I_2 \ldots I_{n+1}} Y^{I_1}\, dY^{I_2} \wedge \ldots \wedge dY^{I_{n+1}} \,,
-\end{equation}
-is the volume form on $S^n$. The frame in \eqref{eq:SnFrame} has the important property that the $n+1$ generalised tensors are nowhere vanishing since $dY^I = 0$ only when $Y^I = 1$. Therefore, \eqref{eq:SnFrame} provides a generalised parallelisation of $S^n$ in the $\SL{n+1}$ ExFT.
-
-In a local basis, \eqref{eq:SnFrame} gives us a $\GL{n+1}$ matrix, $\cU_I{}^{\fl{I}}$, whose determinant allows us to define the scalar density
-\begin{equation} \label{eq:rho}
-	\rho = \left(\det \cU_I{}^{\fl{I}}\right)^{-1/2} = \left(\det \mathring{g}\right)^{-1/2} \,,
-\end{equation}
-with $\mathring{g}$ the round metric on $S^n$. Using \eqref{eq:SnFrame} and \eqref{eq:rho} we can define the $\SL{n}$ twist matrix
-\begin{equation} \label{eq:SLnFrame}
-	U_I{}^{\fl{I}} = \rho^{2/(n+1)}\, \cU_I{}^{\fl{I}} \,,
-\end{equation}
-and hence a generalised frame for $E$ or a generalised bundle in any other rep of $\SL{n+1}$. For example, in the generalised tangent bundle \eqref{eq:SLnE}, we have the generalised frame $\cU_{\fl{I}\fl{J}}{}^{IJ} = \left(\det \mathring{g}\right)^{1/2} \cU_{[\fl{I}}{}^{I} \cU_{\fl{J}]}{}^J$, with components given by
-\begin{equation} \label{eq:SLnGenFrame}
-	2\, \cU_{\fl{I}\fl{J}} = v_{\fl{I}\fl{J}} + \star dY_{\fl{I}\fl{J}} + \imath_{v_{\fl{I}\fl{J}}} A \,,
-\end{equation}
-where $v_{\fl{I}\fl{J}}$ are the $\SO{n+1}$ Killing vectors of the round $S^n$, matching precisely the $\SL{n+1}$ parallelisations constructed in \cite{Lee:2014mla}.
-
-Using \eqref{eq:SLnGenLie}, we can easily check that the generalised frame  \eqref{eq:SLnGenFrame}, \eqref{eq:SLnTwist} defines a generalised Leibniz parallelisation. In particular, using $dA = (n-1) vol_{S^n}$, we obtain the embedding tensor
-\begin{equation}
-	\gL_{\cU_{\fl{I}\fl{J}}} \cU^{\fl{K}} = - X_{\fl{I}\fl{J}\fl{L}}{}^{\fl{K}}\, \cU^{\fl{L}} \,,
-\end{equation}
-with
-\begin{equation} \label{eq:SLnEmbeddingTensor}
-	X_{\fl{I}\fl{J},\fl{L}}{}^{\fl{K}} = - \delta_{\fl{L}[\fl{I}} \delta_{\fl{J}]}^{\fl{K}} \,.
-\end{equation}
-
-Finally, we can also connect the above with the $\SL{n+1}$ Ansatz construction of \cite{Hohm:2014qga}. We do this by evaluating \eqref{eq:rho} and \eqref{eq:SLnFrame} on the northern hemisphere $Y^I = \left( y^i,\, \sqrt{1-y^i y_i}\right)$, $i = 1, \ldots, n$ and using the gauge choice for the potential $A$
-\begin{equation}
-	A_{i_1 \ldots i_{n-1}} = \epsilon_{i_1 \ldots i_{n-1}j}\, y^j (1 + K(v)) \,,
-\end{equation}
-with $v = y^i\, y^i$ and $\epsilon_{i_1 \ldots i_{n-1}j}$ the volume form on $S^n$. With the above choices, we precisely recover the $\SL{n+1}$ twist matrix of \cite{Hohm:2014qga}, \textit{i.e.}
-\begin{equation} \label{eq:SLnTwist}
-	\UI_{\fl{I}}{}^I = \begin{pmatrix}
-		\left(1-v\right)^{-1/(n+1)} \left( \delta_i{}^j + y_i\, y^j K(v) \right) & y_i \left(1-v\right)^{(n-1)/(2(n+1))} \\
-		y^j \left(1-v\right)^{(n-1)/(2(n+1))} K(v) & \left(1-v\right)^{\tfrac{n}{n+1}}
-	\end{pmatrix} \,.
-\end{equation}
-
-\subsubsection{Adding flux}
-To demonstrate our methodology, we will now show how the parameter $\lambda$ introduced in \cite{Eloy:2021fhc} can be obtained by the twisting procedure described above. Thus, we want to consider the $\SO{3,3} \subset \SO{4,4}$ twist matrix corresponding to $S^3$ \eqref{eq:SLnTwist} and add a 3-form flux via a $\SO{4,4}$ twist. We begin by decomposing $\SO{4,4} \rightarrow \SO{3,3} \times \SO{1,1}$, such that
+The construction of the the $\SL{4} \simeq \SO{3,3}$ twist matrix describing the consistent truncation on $S^3$ is detailed in appendix~\ref{s:SLn}. To demonstrate our methodology, we will now show how the parameter $\lambda$ introduced in \cite{Eloy:2021fhc} can be obtained by the twisting procedure described in appendix~\ref{s:SLn}. Thus, we want to consider the $\SO{3,3} \subset \SO{4,4}$ twist matrix corresponding to $S^3$ \eqref{eq:SLnTwist} and add a 3-form flux via a $\SO{4,4}$ twist. We begin by decomposing $\SO{4,4} \rightarrow \SO{3,3} \times \SO{1,1}$, such that
 \begin{equation}
 	\begin{split}
 		\mathbf{8} &\rightarrow \mathbf{6_0} \oplus \mathbf{1_2} \oplus \mathbf{1_{-2}} \,, \\
@@ -1037,7 +956,7 @@ SUSY enhancement points are then given by combinations of the parameters that yi
 	there are enhancements to ${\cal N}=(2,4)$ and ${\cal N}=(4,2)$, respectively. The isometry group is $\SO{4}\times {\rm U}(1)^{2}$ and the spectrum is then given by multiplets of $D^{1}(2,1;\alpha)_{\rm L, R}\times\SU{1\vert1,1}_{\rm R,L}$.
 \end{itemize}
 
-In the above cases, it is easy to see from \eqref{eq:confdimshiftchi} that the spectrum  is invariant under $\chi_i \rightarrow \chi_i + 2\pi k_i\,\alpha$, $\ts{\chi}_i \rightarrow \ts{\chi}_i + 2\pi \ts{k}_i$, for $k_i$, $\ts{k}_i \in \mathbb{Z}$, with the SUSY enhancements also occurring if the relations \eqref{eq:N2}, \eqref{eq:N4Large}, \eqref{eq:N4Small} or \eqref{eq:N6} are satisfied up to integer shifts. We will return to this point below in section \ref{s:Compact}, when discussing compactness of the moduli space.
+In the above cases, it is easy to see from \eqref{eq:confdimshiftchi} that the spectrum  is invariant under $\chi_i \rightarrow \chi_i + 4\pi k_i\,\alpha$, $\ts{\chi}_i \rightarrow \ts{\chi}_i + 4\pi \ts{k}_i$, for $k_i$, $\ts{k}_i \in \mathbb{Z}$, with the SUSY enhancements also occurring if the relations \eqref{eq:N2}, \eqref{eq:N4Large}, \eqref{eq:N4Small} or \eqref{eq:N6} are satisfied up to integer shifts. We will return to this point below in section \ref{s:Compact}, when discussing compactness of the moduli space.
 
 For generic values of $\chi_i$, $\ts{\chi}_i$, the AdS$_3$ vacuum will be completely non-supersymmetric. However, it is easy to see from inspection of the spectrum \eqref{eq:confdims3s3s1} and \eqref{eq:confdimshiftchi} that the spectrum is bounded from below by the masses of the 3-dimensional gauged supergravity modes at the ${\cal N}=(4,4)$ supersymmetric origin, \textit{i.e.} where $\chi_i = \ts{\chi}_i = n = \ell = \ts{\ell} = 0$. Therefore, these non-supersymmetric AdS$_3$ vacua are perturbatively stable within IIB supergravity and, similarly to \cite{Giambrone:2021wsm} suggest that there may be a dual non-supersymmetric conformal manifold if there are no instabilities beyond supergravity. However, just as in \cite{Giambrone:2021wsm}, the non-SUSY vacua are protected against perturbative $\alpha'$ or $g_s$ corrections of string theory, which might have lifted the moduli $\chi_i$, $\ts{\chi}_i$, and there are no scalars at the BF bound which may have been pushed below by such corrections. The moduli $\chi_i$, $\ts{\chi}_i$ locally correspond to diffeomorphisms and, therefore, any diffeomorphism-invariant quantity, such as higher powers of the curvature tensor or fluxes, as would appear in $\alpha'$ or $g_s$ corrections, will be independent of $\chi_i$ and $\ts{\chi}_i$. The vacua are also protected against Witten's bubbles of nothing \cite{Witten:1981gj}, due to flux quantisation on $S^3$ and the spin structure on $S^1$. This does not rule out all potential sources of instabilities. For example, the non-SUSY vacua may suffer from non-perturbative instabilities triggered by brane nucleation \cite{Ooguri:2016pdq,Bomans:2021ara} or non-vanishing $\beta$-functions of marginal multi-trace operators~\cite{Witten:2001ua}. However, our non-SUSY vacua here may have further protection against such instabilities due to their continuous limits to the SUSY vacua, just as they have against perturbative higher-derivative corrections.
 
@@ -1277,8 +1196,8 @@ We can use the Kaluza-Klein spectrum and the uplift of the 3-dimensional gauged 
 However, from  \eqref{eq:spectrumorigin}, \eqref{eq:confdims3s3s1}, \eqref{eq:confdimshiftchi} we see that the full Kaluza-Klein spectrum is invariant under the shifts
 \begin{equation} \label{eq:ShiftSymmetries}
 	\begin{split}
-		\chi_i &\rightarrow \chi_i + 2\pi\alpha\, k_i\,, \\
-		\ts{\chi}_i &\rightarrow \ts{\chi}_i + 2\pi \ts{k}_i \,,
+		\chi_i &\rightarrow \chi_i + 4\pi\alpha\, k_i\,, \\
+		\ts{\chi}_i &\rightarrow \ts{\chi}_i + 4\pi \ts{k}_i \,,
 	\end{split}
 \end{equation}
 for $k_i$, $\ts{k}_i \in \mathbb{Z}$. In these cases, higher KK modes on the $S^1$ outside the ${\cal N}=16$ truncation replace those within the consistent truncation. Therefore, even though neither the 3-dimensional gauged supergravity, nor 6-dimensional supergravity is invariant under these shifts, upon lifting to the full 10-dimensional IIB theory, the higher KK modes on $S^1$ restore the invariance under the shifts, just as in the analogous deformations studied in AdS$_4 \times S^5 \times S^1$ \cite{Giambrone:2021zvp,Giambrone:2021wsm}. This highlights the importance of the $S^1$ direction in studying these AdS$_3$ vacua.
@@ -1289,7 +1208,7 @@ The compactification of the moduli space in 10 dimensions can also be understood
 \begin{equation} \label{eq:T2CStructure}
 	\tau_i = i\,\frac{e^\psi}{\alpha} + \frac1\alpha \chi_i \,, \qquad \ts{\tau}_i = i\,e^\psi + \ts{\chi}_i \,.
 \end{equation}
-Under this identification, the shifts \eqref{eq:ShiftSymmetries} correspond to $T$-transformations of the tori, which belong to the modular group $\SL{2,\mathbb{Z}}$, just as for AdS$_4 \times S^5 \times S^1$ \cite{Giambrone:2021zvp,Giambrone:2021wsm}.
+Under this identification, the shifts \eqref{eq:ShiftSymmetries} correspond to $T$-transformations of the tori, which belong to the modular group $\SL{2,\mathbb{Z}}$, just as for AdS$_4 \times S^5 \times S^1$ \cite{Giambrone:2021zvp,Giambrone:2021wsm}. \CE{(Need to change here given $4\pi$ in \eqref{eq:ShiftSymmetries}?)}
 
 Given the interpretation of the shifts \eqref{eq:ShiftSymmetries} as $T$-transformations of a $T^2$-fibration, it is natural to ask whether $S$-transformations of these $T^2$ would also leave the AdS$_3 \times S^3 \times S^3 \times S^1$ solution invariant. The $S$-transformation acts on the moduli as
 \begin{equation} \label{eq:Stransformchi}
@@ -1317,7 +1236,7 @@ Using our consistent truncation and the 3-dimensional potential, we studied the 
 
 We also saw that uplifting our AdS$_3$ vacua to IIB string theory leads to the compactness of some directions of moduli space. The ``flat deformations'' that we studied appear non-compact within the 3-dimensional gauged supergravity, but upon uplifting to 10 dimensions, the moduli become compact, similar to \cite{Giambrone:2021zvp,Giambrone:2021wsm}. Interestingly, this compactness is not visible upon only uplifting on $S^3$ to 6-dimensional supergravity \cite{Eloy:2021fhc}, but require the uplift on the additional $S^1$ direction. The compactification of the moduli can be understood geometrically as the $T$-action of $\SL{2,\mathbb{Z}}$ on $T^2$-fibration. Differently from the AdS$_4 \times S^5 \times S^1$ case \cite{Guarino:2020gfe,Guarino:2021hrc,Giambrone:2021zvp,Giambrone:2021wsm}, in the AdS$_3 \times S^3 \times S^3 \times S^1$ case we also have a $S^1$ rescaling modulus, so that we naturally have the full complex structure moduli related to the $T^2$-fibrations and which carry a natural action of the full $\SL{2,\mathbb{Z}}$. While the $S$-action of $\SL{2,\mathbb{Z}}$ left the Kaluza-Klein spectrum of 6-dimensional supergravity on AdS$_3 \times S^3$ \cite{Eloy:2021fhc} invariant, it is broken by the additional $S^1$ direction when uplifting to IIB supergravity. However, we argued that the $S$-action leave invariant the full AdS$_3 \times S^3 \times S^3 \times S^1$ solution of IIB string theory, once string winding modes around $S^1$ are included. In this case, the complex structure deformations live in the fundamental domain of $\SL{2,\mathbb{Z}}$, rather than the whole $\mathbb{C}$-plane, as the 3-dimensional supergravity would suggest. 
 
-Our work raises several questions that deserve further inquiry. Firstly, we only performed a simple search, yielding an 11-dimensional moduli space of AdS$_3 \times S^3 \times S^3 \times S^1$ within the ${\cal N}=16$ gauged supergravity. It would be good to complete our analysis to compute the full 3-dimensional moduli space and to understand why it is so large. Our consistent truncation Ansatz could then be used to uplift the moduli space to IIB supergravity, and to use Kaluza-Klein spectrometry \cite{Malek:2019eaz,Malek:2020yue,Eloy:2020uix} to obtain the conformal dimensions of all single-trace operators and determine the perturbative stability of the non-SUSY vacua. This would shed light on the dual conformal manifold. Secondly, it would be interesting to study the string sigma-model \cite{Eberhardt:2019niq} on the ``flat deformations'' of AdS$_3 \times S^3 \times S^3 \times S^1$, or the analogous deformations of AdS$_3 \times S^3 \times T^4$. Since these deformations locally are diffeomorphisms, one may expect a simple worldsheet description on the ${\cal N}=(4,2),\, (4,0),\, (2,2),\, (2,0)$ SUSY vacua and, potentially, even for the non-SUSY AdS$_3 \times S^3 \times S^3 \times S^1$ vacua obtained this way. The non-perturbative stability of the perturbatively stable non-supersymmetric AdS$_3$ vacua we found also deserves further study. Thirdly, similar ``flat deformations'' arise in any string compactification involving an $S^1$, in particular AdS$_3 \times S^3 \times T^4$. It would be interesting to understand universal features of these deformations and their CFT duals. Finally, we would like to use the tools developed here to study RG flows between solutions of three-dimensional supergravity, or equivalently between fixed points of a two-dimensional conformal field theory. Note however that this cannot be applied to the RG flow of ref.~\cite{Berg:2001ty}: their solution cannot be described using \EE exceptional field theory as reproducing their embedding tensor would require breaking the section constraint. We leave these questions for future work.
+Our work raises several questions that deserve further inquiry. Firstly, we only performed a simple search, yielding an 11-dimensional moduli space of AdS$_3 \times S^3 \times S^3 \times S^1$ within the ${\cal N}=16$ gauged supergravity. It would be good to complete our analysis to compute the full 3-dimensional moduli space and to understand why it is so large. Our consistent truncation Ansatz could then be used to uplift the moduli space to IIB supergravity, and to use Kaluza-Klein spectrometry \cite{Malek:2019eaz,Malek:2020yue,Eloy:2020uix} to obtain the conformal dimensions of all single-trace operators and determine the perturbative stability of the non-SUSY vacua. This would shed light on the dual conformal manifold. Secondly, it would be interesting to study the string sigma-model \cite{Eberhardt:2019niq} on the ``flat deformations'' of AdS$_3 \times S^3 \times S^3 \times S^1$, or the analogous deformations of AdS$_3 \times S^3 \times T^4$. Since these deformations locally are diffeomorphisms, one may expect a simple worldsheet description on the ${\cal N}=(4,2),\, (4,0),\, (2,2),\, (2,0)$ SUSY vacua and, potentially, even for the non-SUSY AdS$_3 \times S^3 \times S^3 \times S^1$ vacua obtained this way. The non-perturbative stability of the perturbatively stable non-supersymmetric AdS$_3$ vacua we found also deserves further study. Thirdly, similar ``flat deformations'' arise in any string compactification involving an $S^1$, in particular AdS$_3 \times S^3 \times T^4$. It would be interesting to understand universal features of these deformations and their CFT duals. Finally, we would like to use the tools developed here to study RG flows between solutions of three-dimensional supergravity, or equivalently between fixed points of a two-dimensional conformal field theory. Note however that this cannot be applied to the RG flow of ref.~\cite{Berg:2001ty}: their solution cannot be described using the generalized Scherk-Schwarz Ansatz of \EE exceptional field theory as reproducing their embedding tensor would require breaking the section constraint. We leave these questions for future work.
 
 \section*{Acknowledgements}
 We are grateful to \EM{add others} Nikolay Bobev, Adolfo Guarino, Gabriel Larios, Yolanda Lozano, Niall Macpherson and Colin Sterckx for useful discussions and correspondence. CE is supported by the FWO-Vlaanderen through the project G006119N and by the Vrije Universiteit Brussel through the Strategic Research Program ``High-Energy Physics''. MG and EM are supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) via the Emmy Noether program ``Exploring the landscape of string theory flux vacua using exceptional field theory'' (project number 426510644).
@@ -1376,6 +1295,85 @@ With this embedding, we get
 	X_{\ov{MN}}\,X^{\ov{MN}} = \frac{55}{1922}\left(X_{\ov M}{}^{\ov M}\right)^2,
 \end{equation}
 thus violating the condition~\eqref{eq:reltrX} (the trombone gauging vanishes for the solution). Then, we deduce that the ${\cal N}=(8,0)$ solution of ref.~\cite{Deger:2019tem} with gauging $\GL{6} \times \SO{2,2}$ does not admit a higher-dimensional origin as constructed with \EE exceptional field theory. This illustrate how the constraint~\eqref{eq:reltrX} can be used to determine if a given three-dimensional vacuum can be uplifted.
+
+\section{The $S^n$ twist matrix} \label{s:SLn}
+Let us construct the $\SL{4} \simeq \SO{3,3}$ twist matrix that describes the consistent truncation on $S^3$. This can be viewed as a special case of a family of consistent truncations on $S^n$ \cite{Lee:2014mla,Hohm:2014qga,Baguet:2015iou}. Here, we give a slightly different, but equivalent, form of this construction.
+
+We use an $\SL{n+1}$ ExFT, like in \cite{Lee:2014mla}, which encodes an $n$-dimensional metric and volume-form flux, \textit{i.e.} Freund-Rubin compactifications, and thus gives a natural description of $S^n$ compactifications. The $\SL{n+1}$ ExFT formally has coordinates in the antisymmetric representation of $\SL{n+1}$, $y^{IJ} = - y^{JI}$, with $I = 1, \ldots, n+1$, and similarly, generalised vector fields transform in the antisymmetric representation of $\SL{n+1}$. The generalised Lie derivative on a generalised tensor in the fundamental $V^I$ of weight $\lambda$ is given by
+\begin{equation} \label{eq:SLnGenLie}
+	\gL_\Lambda V^I = \frac12 \Lambda^{JK} \partial_{JK} V^{I} - V^J \partial_{JK} \Lambda^{IK} + \left( \frac{\lambda}{2} + \frac{1}{n+1} \right) V^I \partial_{JK} \Lambda^{JK} \,,
+\end{equation}
+and similarly for other generalised tensors. Closure of the generalised Lie derivative \eqref{eq:SLnGenLie} requires the section condition
+\begin{equation} \label{eq:SLnSC}
+	\partial_{[IJ} \otimes \partial_{KL]} = 0 \,,
+\end{equation}
+which restricts the dependence of all fields to a subset of physical coordinates.
+
+We are interested in the maximal solutions of the section condition \eqref{eq:SLnSC} which preserve a $\SL{n} \subset \SL{n+1}$ subgroup. Under this decomposition $\SL{n+1} \rightarrow \SL{n}$ with $V^I = \left( V^i,\, V^0 \right)$, where $i = 1, \ldots, n$, we solve the section condition by having physical coordinates $y^{0i}$ on the $n$-dimensional manifold $M$, \textit{i.e.} $\partial_{ij} = 0$ for all fields with only $\partial_{0i} = \partial_i \neq 0$. Correspondingly, the generalised tangent bundle, whose sections are in the antisymmetric representation of $\SL{n+1}$ and carry weight $\frac{n-3}{n+1}$, decomposes as
+\begin{equation} \label{eq:SLnE}
+	E = TM \oplus \Lambda^{n-2} T^*M \,,
+\end{equation}
+Note that for the case of interest to us, $n=3$, \eqref{eq:SLnE} reduces to
+\begin{equation}
+	E = TM \oplus T^*M \,,
+\end{equation}
+and its fibres transform in the $\mathbf{6}$ of $\SL{4} \simeq \SO{3,3}$. It is convenient to also introduce the generalised bundle with fibres in the anti-fundamental of $\SL{n+1}$, which is, similarly, given by
+\begin{equation}
+	N = T^*M \oplus \Lambda^{n} T^*M \,.
+\end{equation}
+Sections of $N$ are generalised tensors transforming in the anti-fundamental of $\SL{n+1}$ and carrying weight $\frac{2}{n+1}$. For $V, V' \in \Gamma(E)$ and $W \in \Gamma(N)$, the generalised Lie derivative \eqref{eq:SLnGenLie} reduces to
+\begin{equation}
+	\begin{split}
+		\gL_{V} V' &= [v, v'] + L_{v} \omega'_{(n-2)} - \imath_{v'} d\omega_{(n-2)} \,, \\
+		\gL_{V} W &= L_v \omega_{(1)} + L_v \omega_{(n)} + \omega_{(1)} \wedge d\omega_{(n-2)} \,,
+	\end{split}
+\end{equation}
+where we write $V = v + \omega_{(n-2)}$, $V' = v' + \omega'_{(n-2)}$ and $W = \omega_{(1)} + \omega_{(n)}$ as a formal of vectors and $p$-forms, and $L$ denotes the ordinary Lie derivative and $[v,v']$ the ordinary Lie bracket between vector fields $v$ and $v'$.
+
+We can now describe the $S^n$ consistent truncation using the $\SL{n+1}$ ExFT above. Let $Y^I$, $I = 1, \ldots, n+1$ be the embedding coordinates of $S^{n} \subset \mathbb{R}^{n+1}$, such that $Y^I\, Y_I = 1$. On $S^n$, we can define a parallelisation of $N$ using the generalised frame
+\begin{equation}\label{eq:SnFrame}
+	\cU^{\fl{I}} = dY^{\fl{I}} + Y^{\fl{I}}\, vol_{S^n} - dY^{\fl{I}} \wedge A \,,
+\end{equation}
+where $A$ is an $(n-1)$-potential with field strength $dA = (n-1) vol_{S^n}$, and
+\begin{equation}
+	vol_{S^n} = \frac{1}{n!}\epsilon_{I_1 I_2 \ldots I_{n+1}} Y^{I_1}\, dY^{I_2} \wedge \ldots \wedge dY^{I_{n+1}} \,,
+\end{equation}
+is the volume form on $S^n$. The frame in \eqref{eq:SnFrame} has the important property that the $n+1$ generalised tensors are nowhere vanishing since $dY^I = 0$ only when $Y^I = 1$. Therefore, \eqref{eq:SnFrame} provides a generalised parallelisation of $S^n$ in the $\SL{n+1}$ ExFT.
+
+In a local basis, \eqref{eq:SnFrame} gives us a $\GL{n+1}$ matrix, $\cU_I{}^{\fl{I}}$, whose determinant allows us to define the scalar density
+\begin{equation} \label{eq:rho}
+	\rho = \left(\det \cU_I{}^{\fl{I}}\right)^{-1/2} = \left(\det \mathring{g}\right)^{-1/2} \,,
+\end{equation}
+with $\mathring{g}$ the round metric on $S^n$. Using \eqref{eq:SnFrame} and \eqref{eq:rho} we can define the $\SL{n}$ twist matrix
+\begin{equation} \label{eq:SLnFrame}
+	U_I{}^{\fl{I}} = \rho^{2/(n+1)}\, \cU_I{}^{\fl{I}} \,,
+\end{equation}
+and hence a generalised frame for $E$ or a generalised bundle in any other rep of $\SL{n+1}$. For example, in the generalised tangent bundle \eqref{eq:SLnE}, we have the generalised frame $\cU_{\fl{I}\fl{J}}{}^{IJ} = \left(\det \mathring{g}\right)^{1/2} \cU_{[\fl{I}}{}^{I} \cU_{\fl{J}]}{}^J$, with components given by
+\begin{equation} \label{eq:SLnGenFrame}
+	2\, \cU_{\fl{I}\fl{J}} = v_{\fl{I}\fl{J}} + \star dY_{\fl{I}\fl{J}} + \imath_{v_{\fl{I}\fl{J}}} A \,,
+\end{equation}
+where $v_{\fl{I}\fl{J}}$ are the $\SO{n+1}$ Killing vectors of the round $S^n$, matching precisely the $\SL{n+1}$ parallelisations constructed in \cite{Lee:2014mla}.
+
+Using \eqref{eq:SLnGenLie}, we can easily check that the generalised frame  \eqref{eq:SLnGenFrame}, \eqref{eq:SLnTwist} defines a generalised Leibniz parallelisation. In particular, using $dA = (n-1) vol_{S^n}$, we obtain the embedding tensor
+\begin{equation}
+	\gL_{\cU_{\fl{I}\fl{J}}} \cU^{\fl{K}} = - X_{\fl{I}\fl{J}\fl{L}}{}^{\fl{K}}\, \cU^{\fl{L}} \,,
+\end{equation}
+with
+\begin{equation} \label{eq:SLnEmbeddingTensor}
+	X_{\fl{I}\fl{J},\fl{L}}{}^{\fl{K}} = - \delta_{\fl{L}[\fl{I}} \delta_{\fl{J}]}^{\fl{K}} \,.
+\end{equation}
+
+Finally, we can also connect the above with the $\SL{n+1}$ Ansatz construction of \cite{Hohm:2014qga}. We do this by evaluating \eqref{eq:rho} and \eqref{eq:SLnFrame} on the northern hemisphere $Y^I = \left( y^i,\, \sqrt{1-y^i y_i}\right)$, $i = 1, \ldots, n$ and using the gauge choice for the potential $A$
+\begin{equation}
+	A_{i_1 \ldots i_{n-1}} = \epsilon_{i_1 \ldots i_{n-1}j}\, y^j (1 + K(v)) \,,
+\end{equation}
+with $v = y^i\, y^i$ and $\epsilon_{i_1 \ldots i_{n-1}j}$ the volume form on $S^n$. With the above choices, we precisely recover the $\SL{n+1}$ twist matrix of \cite{Hohm:2014qga}, \textit{i.e.}
+\begin{equation} \label{eq:SLnTwist}
+	\UI_{\fl{I}}{}^I = \begin{pmatrix}
+		\left(1-v\right)^{-1/(n+1)} \left( \delta_i{}^j + y_i\, y^j K(v) \right) & y_i \left(1-v\right)^{(n-1)/(2(n+1))} \\
+		y^j \left(1-v\right)^{(n-1)/(2(n+1))} K(v) & \left(1-v\right)^{\tfrac{n}{n+1}}
+	\end{pmatrix} \,.
+\end{equation}
 
 \section{Representations of \texorpdfstring{$D^{1}(2,1;\alpha)$}{D(2,1,a)}} \label{app:d21a}
 The supergroup $D^{1}(2,1;\alpha)$ has
