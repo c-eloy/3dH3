@@ -887,36 +887,18 @@ with the warp factor
 	&+e^{2\psi}\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\left(e^{\Omega}\,\zeta_{2}^{2}\cos^{2}(\theta)+\zeta_{1}^{2}\sin^{2}(\theta)\right).
 	\end{aligned}
 \end{equation}
-We can also provide an expression for $H_{(3)}$, and we will do so here in the simplified case where $\Omega=\tilde\Omega=0$. It is convenient to first define some forms. We will denote by $\star$ and $\star_0$ the hodge star operators on the deformed and undeformed $S^3$'s respectively.
-\begin{equation}\label{eq:forms}
-	\begin{split}
-		Z(\theta,u,v,w)&=2+2e^{2\psi}(u^2\sin \theta^2+v^2\cos \theta^2+w^2) \,, \\
-		\gamma&=4\sin\tilde\theta\cos\tilde \theta(\tilde{\zeta}_1^2-\tilde{\zeta}_2 ^2)\left(\zeta_2\cos \theta ^2\d \phi _1+\zeta _1\sin\theta ^2\d\phi _2\right) \,, \\
-		\sigma&=2\left(	Z(\tilde\theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_2)\zeta_1\cos \theta ^2\d \phi _1+\zeta _2\sin\theta ^2Z(\tilde\theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_1)\d\phi _2\right) \,, \\
-		\omega_{ij} &=2\sin\tilde\theta \cos\tilde\theta Z(\theta,\zeta_1,\zeta_2,\tilde\zeta _i)\d \tilde \phi _i\wedge \left [(\zeta _1\tilde \zeta _j + \tilde \zeta _i \zeta _2)\cos \theta ^2 \d \phi_1+ (\zeta _1\tilde \zeta _i + \tilde \zeta _j \zeta _2)\sin \theta ^2 \d \phi_2\right] \,, \\
-		\Theta&=(\zeta _1^2-\zeta_2 ^2)(\tilde{\zeta}_1 ^2-\tilde \zeta _2^2)\sin(2\tilde\theta ) \sin (2 \theta)\d\tilde \theta\wedge(\star_0\d\theta) \,,
-	\end{split}
-\end{equation}
-where we take $i,j\in\{1,2\}$ and they are not summed over. It is further useful to introduce (now sum over repeated $i,j$ as usual)
-\begin{equation}\label{eq:omegagamma}
- \omega=\epsilon^{ij}\omega _{ij}.
-\end{equation}
-In terms of the objects in \eqref{eq:forms} and \eqref{eq:omegagamma} we can write
-\begin{equation}\label{eq:defH3}
-	\begin{split}
-		H_{(3)}=&2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}})+\frac1 \alpha(\star_0 {\rm Vol}(S^3)){\rm Vol}(S^3)+(\tilde{\star}_0{\rm Vol}(\tilde{S^3})){\rm Vol}(\tilde{S}^3)\\
-		&+e^{2\psi}\alpha\Delta^2\left(\omega\wedge\d \tilde\theta+\tilde\omega\wedge\d \theta\right)
-		+e^{4\psi}\Delta^2\alpha \left(\Theta +\frac 1{\alpha}\tilde \Theta \right)\\
-		&+\Delta^2e^{2\psi}\left(\star_0\sigma+\tilde{\star}_0\tilde\sigma \right)\wedge\d z
-		-e^{4\psi}\alpha\Delta^2\left(\d\tilde \theta \wedge \gamma +\frac 1{\alpha}\d \theta\wedge\tilde\gamma\right)\wedge\d z \,.
-	\end{split}
-\end{equation}
-Note that in equation \eqref{eq:defH3} all forms with a tilde correspond to the analogues of \eqref{eq:forms} and \eqref{eq:omegagamma} where every variable and form is ``conjugated" as $x\mapsto\tilde x$, $\tilde x\mapsto x$. For example 
+We can also provide an expression for $H_{(3)}$, and we will do so here in the simplified case where $\Omega=\tilde\Omega=0$. It is convenient to first define some forms:
 \begin{equation}
-	\tilde\gamma=4\sin(\theta)\cos(\theta)(\zeta_1^2-\zeta_2 ^2)\left(\tilde{\zeta}_2\cos^2(\tilde \theta)\d \tilde \phi _1+\tilde{\zeta} _1\sin^2(\tilde\theta)\d\tilde\phi _2\right) \,.
-\end{equation} 
-
-\CE{Other possibility:
+  \begin{aligned}
+    \Phi_{i} &= \alpha\,\Big(1+e^{2\psi}\left(\cos^{2}(\ts{\theta})\,\ts{\zeta}_{2}^{2}+\sin^{2}(\ts{\theta})\,\ts{\zeta}_{1}^{2}+\zeta_{i}^{2}\right)\Big)\,\d\phi_{i},\\
+    \ts{\Phi}_{i} &= \Big(1+e^{2\psi}\left(\cos^{2}(\theta)\,\zeta_{2}^{2}+\sin^{2}(\theta)\,\zeta_{1}^{2}+\ts{\zeta}_{i}^{2}\right)\Big)\,\d\ts{\phi}_{i},\\
+    \varphi_{1} &= \alpha\,e^{2\psi}\cos^{2}(\theta)\,\d\phi_{1},\qquad
+    \varphi_{2} = \alpha\,e^{2\psi}\sin^{2}(\theta)\,\d\phi_{2},\\
+    \ts{\varphi}_{1} &= e^{2\psi}\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1},\qquad\ \ \,
+    \ts{\varphi}_{2} = e^{2\psi}\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}.
+  \end{aligned}
+\end{equation}
+In terms of these forms, we get
 \begin{equation}
   \begin{aligned}
     H_{(3)} &= 2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}})\\
@@ -925,18 +907,62 @@ Note that in equation \eqref{eq:defH3} all forms with a tilde correspond to the 
     &\qquad-e^{2\psi}\,\Big(\zeta_{1}^{2}-\zeta_{2}^{2}\Big)\Big(\ts{\zeta}_{2}\,\ts{\varphi}_{1}+\ts{\zeta}_{1}\,\ts{\varphi}_{2}\Big)\wedge\d z+e^{2\psi}\,\Big(\zeta_{2}\,\Phi_{1}-\zeta_{1}\,\Phi_{2}\Big)\wedge\d z\bigg]\\
     & + 2\,\Delta^{2}\cos(\ts{\theta})\sin(\ts{\theta})\,\d\ts{\theta}\wedge \bigg[\ts{\Phi}_{1}\wedge\ts{\Phi}_{2} + \left(\zeta_{1}\ts{\zeta}_{2}+\zeta_{2}\ts{\zeta}_{1}\right)\Big(\ts{\Phi}_{1}\wedge\varphi_{1}-\ts{\Phi}_{2}\wedge\varphi_{2}\Big)\\
     &\qquad+ \left(\zeta_{1}\ts{\zeta}_{1}+\zeta_{2}\ts{\zeta}_{2}\right)\Big(\ts{\Phi}_{1}\wedge\varphi_{2}-\ts{\Phi}_{2}\wedge\varphi_{1}\Big)+\Big(\zeta_{1}^{2}-\zeta_{2}^{2}\Big)\Big(\ts{\zeta}_{1}^{2}-\ts{\zeta}_{2}^{2}\Big)\,\varphi_{1}\wedge\varphi_{2}\\
-    &\qquad-e^{2\psi}\,\Big(\ts{\zeta}_{1}^{2}-\ts{\zeta}_{2}^{2}\Big)\Big(\zeta_{2}\,\varphi_{1}+\zeta_{1}\,\varphi_{2}\Big)\wedge\d z+e^{2\psi}\,\Big(\ts{\zeta}_{2}\,\ts{\Phi}_{1}-\ts{\zeta}_{1}\,\ts{\Phi}_{2}\Big)\wedge\d z\bigg], 
+    &\qquad-e^{2\psi}\,\Big(\ts{\zeta}_{1}^{2}-\ts{\zeta}_{2}^{2}\Big)\Big(\zeta_{2}\,\varphi_{1}+\zeta_{1}\,\varphi_{2}\Big)\wedge\d z+e^{2\psi}\,\Big(\ts{\zeta}_{2}\,\ts{\Phi}_{1}-\ts{\zeta}_{1}\,\ts{\Phi}_{2}\Big)\wedge\d z\bigg].
   \end{aligned}
 \end{equation}
-where
+
+% We will denote by $\star$ and $\star_0$ the hodge star operators on the deformed and undeformed $S^3$'s respectively.
+% \begin{equation}\label{eq:forms}
+% 	\begin{split}
+% 		Z(\theta,u,v,w)&=2+2e^{2\psi}(u^2\sin \theta^2+v^2\cos \theta^2+w^2) \,, \\
+% 		\gamma&=4\sin\tilde\theta\cos\tilde \theta(\tilde{\zeta}_1^2-\tilde{\zeta}_2 ^2)\left(\zeta_2\cos \theta ^2\d \phi _1+\zeta _1\sin\theta ^2\d\phi _2\right) \,, \\
+% 		\sigma&=2\left(	Z(\tilde\theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_2)\zeta_1\cos \theta ^2\d \phi _1+\zeta _2\sin\theta ^2Z(\tilde\theta,\tilde{\zeta}_1,\tilde{\zeta}_2,\zeta_1)\d\phi _2\right) \,, \\
+% 		\omega_{ij} &=2\sin\tilde\theta \cos\tilde\theta Z(\theta,\zeta_1,\zeta_2,\tilde\zeta _i)\d \tilde \phi _i\wedge \left [(\zeta _1\tilde \zeta _j + \tilde \zeta _i \zeta _2)\cos \theta ^2 \d \phi_1+ (\zeta _1\tilde \zeta _i + \tilde \zeta _j \zeta _2)\sin \theta ^2 \d \phi_2\right] \,, \\
+% 		\Theta&=(\zeta _1^2-\zeta_2 ^2)(\tilde{\zeta}_1 ^2-\tilde \zeta _2^2)\sin(2\tilde\theta ) \sin (2 \theta)\d\tilde \theta\wedge(\star_0\d\theta) \,,
+% 	\end{split}
+% \end{equation}
+% where we take $i,j\in\{1,2\}$ and they are not summed over. It is further useful to introduce (now sum over repeated $i,j$ as usual)
+% \begin{equation}\label{eq:omegagamma}
+%  \omega=\epsilon^{ij}\omega _{ij}.
+% \end{equation}
+% In terms of the objects in \eqref{eq:forms} and \eqref{eq:omegagamma} we can write
+% \begin{equation}\label{eq:defH3}
+% 	\begin{split}
+% 		H_{(3)}=&2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}})+\frac1 \alpha(\star_0 {\rm Vol}(S^3)){\rm Vol}(S^3)+(\tilde{\star}_0{\rm Vol}(\tilde{S^3})){\rm Vol}(\tilde{S}^3)\\
+% 		&+e^{2\psi}\alpha\Delta^2\left(\omega\wedge\d \tilde\theta+\tilde\omega\wedge\d \theta\right)
+% 		+e^{4\psi}\Delta^2\alpha \left(\Theta +\frac 1{\alpha}\tilde \Theta \right)\\
+% 		&+\Delta^2e^{2\psi}\left(\star_0\sigma+\tilde{\star}_0\tilde\sigma \right)\wedge\d z
+% 		-e^{4\psi}\alpha\Delta^2\left(\d\tilde \theta \wedge \gamma +\frac 1{\alpha}\d \theta\wedge\tilde\gamma\right)\wedge\d z \,.
+% 	\end{split}
+% \end{equation}
+% Note that in equation \eqref{eq:defH3} all forms with a tilde correspond to the analogues of \eqref{eq:forms} and \eqref{eq:omegagamma} where every variable and form is ``conjugated" as $x\mapsto\tilde x$, $\tilde x\mapsto x$. For example 
+% \begin{equation}
+% 	\tilde\gamma=4\sin(\theta)\cos(\theta)(\zeta_1^2-\zeta_2 ^2)\left(\tilde{\zeta}_2\cos^2(\tilde \theta)\d \tilde \phi _1+\tilde{\zeta} _1\sin^2(\tilde\theta)\d\tilde\phi _2\right) \,.
+% \end{equation} 
+
+\CE{With $\Omega$ and $\ts{\Omega}$:
 \begin{equation}
   \begin{aligned}
-    \Phi_{i} &= \alpha\,\Big(1+e^{2\psi}\left(\cos^{2}(\ts{\theta})\,\ts{\zeta}_{2}^{2}+\sin^{2}(\ts{\theta})\,\ts{\zeta}_{1}^{2}+\zeta_{i}\right)\Big)\,\d\phi_{i},\\
-    \ts{\Phi}_{i} &= \Big(1+e^{2\psi}\left(\cos^{2}(\theta)\,\zeta_{2}^{2}+\sin^{2}(\theta)\,\zeta_{1}^{2}+\ts{\zeta}_{i}\right)\Big)\,\d\ts{\phi}_{i},\\
-    \varphi_{1} &= \alpha\,e^{2\psi}\cos^{2}(\theta)\,\d\phi_{1},\qquad
+    \Phi_{1} &= \alpha\,\Big(\big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\big)\big(e^{\Omega}+e^{2\psi}\,\zeta_{1}^{2}\big)+e^{2\psi+\Omega}\left(\ts{\zeta}_{2}^{2}\cos^{2}(\ts{\theta})+e^{\ts{\Omega}}\,\ts{\zeta}_{1}^{2}\sin^{2}(\ts{\theta})\right)\Big)\,\d\phi_{1},\\
+    \Phi_{2} &= \alpha\,\Big(\big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\big)\big(1+e^{2\psi+\Omega}\,\zeta_{2}^{2}\big)+e^{2\psi}\left(\ts{\zeta}_{2}^{2}\cos^{2}(\ts{\theta})+e^{\ts{\Omega}}\,\ts{\zeta}_{1}^{2}\sin^{2}(\ts{\theta})\right)\Big)\,\d\phi_{2},\\
+    \ts{\Phi}_{1} &= \Big(\big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\big)\big(1+e^{2\psi+\ts{\Omega}}\,\ts{\zeta}_{1}^{2}\big)+e^{2\psi}\left(e^{\Omega}\,\zeta_{2}^{2}\cos^{2}(\theta)+\zeta_{1}^{2}\sin^{2}(\theta)\right)\Big)\,\d\ts{\phi}_{1},\\
+    \ts{\Phi}_{2} &= \Big(\big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\big)\big(e^{\ts{\Omega}}+e^{2\psi}\,\ts{\zeta}_{2}^{2}\big)+e^{2\psi+\ts{\Omega}}\left(e^{\Omega}\,\zeta_{2}^{2}\cos^{2}(\theta)+\zeta_{1}^{2}\sin^{2}(\theta)\right)\Big)\,\d\ts{\phi}_{2},\\
+    \varphi_{1} &= \alpha\,e^{2\psi}\cos^{2}(\theta)\,\d\phi_{1},\qquad\qquad\qquad
     \varphi_{2} = \alpha\,e^{2\psi}\sin^{2}(\theta)\,\d\phi_{2},\\
-    \ts{\varphi}_{1} &= e^{2\psi}\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1},\qquad\ \ \,
+    \ts{\varphi}_{1} &= e^{2\psi}\cos^{2}(\ts{\theta})\,\d\ts{\phi}_{1},\qquad\qquad\qquad\ \ \,
     \ts{\varphi}_{2} = e^{2\psi}\sin^{2}(\ts{\theta})\,\d\ts{\phi}_{2}.
+  \end{aligned}
+\end{equation}
+and
+\begin{equation}
+  \begin{aligned}
+    H_{(3)} &= 2\,\ell_{\rm AdS}^{2}\,{\rm Vol}({\rm AdS_{3}})\\
+    & + 2\,\Delta^{2}\cos(\theta)\sin(\theta)\,\d\theta\wedge \bigg[\Phi_{1}\wedge\Phi_{2} + \left(\zeta_{1}\ts{\zeta}_{2}+e^{\Omega+\ts{\Omega}}\zeta_{2}\ts{\zeta}_{1}\right)\Big(\Phi_{1}\wedge\ts{\varphi}_{1}-\Phi_{2}\wedge\ts{\varphi}_{2}\Big)\\
+    &\quad+ \left(e^{\ts{\Omega}}\zeta_{1}\ts{\zeta}_{1}+e^{\Omega}\zeta_{2}\ts{\zeta}_{2}\right)\Big(\Phi_{1}\wedge\ts{\varphi}_{2}-\Phi_{2}\wedge\ts{\varphi}_{1}\Big)+\Big(\zeta_{1}^{2}-e^{2\Omega}\zeta_{2}^{2}\Big)\Big(e^{2\ts{\Omega}}\ts{\zeta}_{1}^{2}-\ts{\zeta}_{2}^{2}\Big)\,\ts{\varphi}_{1}\wedge\ts{\varphi}_{2}\\
+    &\quad+e^{2\psi}\Big(e^{\ts{\Omega}}\cos^{2}(\ts{\theta})+\sin^{2}(\ts{\theta})\Big)\bigg(\Big(e^{\Omega}\zeta_{2}\,\Phi_{1}-\zeta_{1}\,\Phi_{2}\Big)-\Big(\zeta_{1}^{2}-e^{2\Omega}\zeta_{2}^{2}\Big)\Big(\ts{\zeta}_{2}\,\ts{\varphi}_{1}+e^{\ts{\Omega}}\ts{\zeta}_{1}\,\ts{\varphi}_{2}\Big)\bigg)\wedge\d z\bigg]\\
+    & + 2\,\Delta^{2}\cos(\ts{\theta})\sin(\ts{\theta})\,\d\ts{\theta}\wedge \bigg[\ts{\Phi}_{1}\wedge\ts{\Phi}_{2} + \left(\zeta_{1}\ts{\zeta}_{2}+e^{\Omega+\ts{\Omega}}\zeta_{2}\ts{\zeta}_{1}\right)\Big(\ts{\Phi}_{1}\wedge\varphi_{1}-\ts{\Phi}_{2}\wedge\varphi_{2}\Big)\\
+    &\quad+ \left(e^{\ts{\Omega}}\zeta_{1}\ts{\zeta}_{1}+e^{\Omega}\zeta_{2}\ts{\zeta}_{2}\right)\Big(\ts{\Phi}_{1}\wedge\varphi_{2}-\ts{\Phi}_{2}\wedge\varphi_{1}\Big)+\Big(\zeta_{1}^{2}-e^{2\Omega}\zeta_{2}^{2}\Big)\Big(e^{2\ts{\Omega}}\ts{\zeta}_{1}^{2}-\ts{\zeta}_{2}^{2}\Big)\,\varphi_{1}\wedge\varphi_{2}\\
+    &\quad+e^{2\psi}\Big(\cos^{2}(\theta)+e^{\Omega}\sin^{2}(\theta)\Big)\bigg(\Big(\ts{\zeta}_{2}\,\ts{\Phi}_{1}-e^{\ts{\Omega}}\ts{\zeta}_{1}\,\ts{\Phi}_{2}\Big)-\Big(e^{2\ts{\Omega}}\ts{\zeta}_{1}^{2}-\ts{\zeta}_{2}^{2}\Big)\Big(e^{\Omega}\zeta_{2}\,\varphi_{1}+\zeta_{1}\,\varphi_{2}\Big)\bigg)\wedge\d z\bigg]. 
   \end{aligned}
 \end{equation}}
 
